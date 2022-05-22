@@ -1,0 +1,146 @@
+er_magellan/Dirty/DBLP-ACM - 7k training examples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Dirty/DBLP-GoogleScholar - 17k training examples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Dirty/iTunes-Amazon - 321 training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+
+er_magellan/Dirty/Walmart-Amazon - 6k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Structured/Amazon-Google/ - 7k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Structured/Beer/ - 268 training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+
+er_magellan/Structured/DBLP-ACM/ - 7k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Structured/DBLP-GoogleScholar/ - 17k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Structured/Fodors-Zagats/ - 567 training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+
+er_magellan/Structured/iTunes-Amazon/ - 321 training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+
+er_magellan/Structured/Walmart-Amazon/ - 6k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+er_magellan/Textual/Abt-Buy - 6k training exaamples
+Run datasets:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+wdc/all.small - 7k training exaamples
+wdc/all.medium - 20k training exaamples
+wdc/all.large - 83k training exaamples
+wdc/all.xlarge - 171k training exaamples
+Run datasets on all of the above:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+wdc/cameras.small - 1.4k training exaamples
+wdc/cameras.medium - 4k training exaamples
+wdc/cameras.large - 15k training exaamples
+wdc/cameras.xlarge - 31k training exaamples
+Run datasets on all of the above:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+wdc/computers.small - 2k training exaamples
+wdc/computers.medium - 6k training exaamples
+wdc/computers.large - 26k training exaamples
+wdc/computers.xlarge - 53k training exaamples
+Run datasets on all of the above:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+wdc/shoes.small -  2k training exaamples
+wdc/shoes.medium - 4.5k training exaamples
+wdc/shoes.large - 18k training exaamples
+wdc/shoes.xlarge - 33k training exaamples
+Run datasets on all of the above:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
+
+wdc/watches.small - 2k training exaamples
+wdc/watches.medium - 5k training exaamples
+wdc/watches.large - 21k training exaamples
+wdc/watches.xlarge - 48k training exaamples
+Run datasets on all of the above:
+    - generated matches + generated non-matches 
+    - real + generated matches
+    - real + generated non-matches
+    - real + generated matches + generated non-matches 
+Test baseline against 10% real data + generated data on the 10% until size of baseline dataset
