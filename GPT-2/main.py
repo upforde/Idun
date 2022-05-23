@@ -49,3 +49,5 @@ for match in generated_matches:
     file.write(match)
     file.write("\n")
 file.close()
+
+print("Job done")
