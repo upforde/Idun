@@ -24,6 +24,7 @@ echo "Total of $SLURM_NTASKS cores"
 module purge
 module load Anaconda/2020.07
 pip3 install transformers==4.2.2 --user
+pip3 install torch --user
 python3 main.py
 
 uname -a
