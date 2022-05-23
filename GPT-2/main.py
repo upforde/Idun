@@ -22,14 +22,13 @@ cut_valid_matches = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")
 gpt2 = ftGPT2(train, test)
 generator = gpt2.train()
 
-generated_matches = []
-
 with open("Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
   lines = file.readlines()
   train_len = len(lines)
 
 start = time.time()
 
+file = open(save_location + "fine_tuned_matches.txt", "a")
 while len(generated_matches) != train_len:
   print(f"Generating example: {len(generated_matches) + 1} of {train_len}")
   valid = False
@@ -38,16 +37,11 @@ while len(generated_matches) != train_len:
     generated = generator(text)[0]['generated_text']
     match = ditto_data_maker(generated)
     valid = match.isValid()
-  generated_matches.append(match.generate_string(1))
+  file.write(match.generate_string(1))
+  file.write("\n")
+file.close()
 
 end = time.time()
 
 print(f"Time elapsed: {end-start}s")
-
-file = open(save_location + "fine_tuned_matches.txt", "a")
-for match in generated_matches:
-    file.write(match)
-    file.write("\n")
-file.close()
-
 print("Job done")
