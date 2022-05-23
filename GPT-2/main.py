@@ -1,7 +1,6 @@
-import os, random
+import os, random, time
 from ftgpt2 import ftGPT2
 from ditto_parser import ditto_data_maker
-
 
 save_location = "Generated/er_magellan/Structured/Beer/"
 if not os.path.isdir(save_location): os.makedirs(save_location)
@@ -29,6 +28,8 @@ with open("Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
   lines = file.readlines()
   train_len = len(lines)
 
+start = time.time()
+
 while len(generated_matches) != train_len:
   print(f"Generating example: {len(generated_matches) + 1} of {train_len}")
   valid = False
@@ -38,6 +39,10 @@ while len(generated_matches) != train_len:
     match = ditto_data_maker(generated)
     valid = match.isValid()
   generated_matches.append(match.generate_string(1))
+
+end = time.time()
+
+print(f"Time elapsed: {end-start}s")
 
 file = open(save_location + "fine_tuned_matches.txt", "a")
 for match in generated_matches:
