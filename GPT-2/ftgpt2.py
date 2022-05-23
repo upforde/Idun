@@ -45,8 +45,8 @@ class ftGPT2:
             train_dataset=train_dataset,
             eval_dataset=test_dataset)
 
+    def train(self):
         self.model.train()
-
         return pipeline('text-generation', model=self.model, tokenizer='gpt2')
     
     def save(self):

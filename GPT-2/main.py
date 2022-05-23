@@ -20,7 +20,8 @@ with open("Datasets/er_magellan/Structured/Beer/valid.txt") as file:
 # Cutting the right half off from the validation set to make prompts
 cut_valid_matches = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid_matches]
 
-generator = ftGPT2(train, test)
+gpt2 = ftGPT2(train, test)
+generator = gpt2.train()
 
 generated_matches = []
 
