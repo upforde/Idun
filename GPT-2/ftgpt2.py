@@ -2,7 +2,6 @@ from transformers import AutoModelWithLMHead, AutoTokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 from transformers import pipeline
-import torch
 
 # Function for creating the train-test datasets for the model
 def load_dataset(train_path,test_path,tokenizer):

@@ -36,7 +36,7 @@ while generated_matches != train_len:
   valid = False
   while not valid:
     text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
-    generated = generator(text, max_length=110)[0]['generated_text']
+    generated = generator(text, max_length=300)[0]['generated_text']
     match = ditto_data_maker(generated)
     valid = match.isValid()
   file.write(match.generate_string(1))
