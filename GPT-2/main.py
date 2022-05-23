@@ -39,6 +39,7 @@ while not valid:
   generated_text = generated[0]["generated_text"].replace(text, "")
   match = ditto_data_maker(generated_text)
   valid = match.isValid()
+  file.write(f"{valid}: {generated_text}")
 
 file.write(match.generate_string(1))
 file.write("\n")
