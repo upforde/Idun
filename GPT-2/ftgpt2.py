@@ -1,4 +1,4 @@
-from transformers import GPT2LMHeadModel, GPT2Tokenizer, AdamW
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 from transformers import pipeline
