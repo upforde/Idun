@@ -26,11 +26,13 @@ with open("Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
   lines = file.readlines()
   train_len = len(lines)
 
+generated_matches = 0
+
 start = time.time()
 
 file = open(save_location + "fine_tuned_matches.txt", "a")
-while len(generated_matches) != train_len:
-  print(f"Generating example: {len(generated_matches) + 1} of {train_len}")
+while generated_matches != train_len:
+  print(f"Generating example: {generated_matches + 1} of {train_len}")
   valid = False
   while not valid:
     text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
@@ -39,9 +41,16 @@ while len(generated_matches) != train_len:
     valid = match.isValid()
   file.write(match.generate_string(1))
   file.write("\n")
-file.close()
+  generated_matches += 1
 
 end = time.time()
 
 print(f"Time elapsed: {end-start}s")
+
+file = open(save_location + "fine_tuned_matches.txt", "a")
+for match in generated_matches:
+    file.write(match)
+    file.write("\n")
+file.close()
+
 print("Job done")
