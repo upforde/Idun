@@ -2,11 +2,11 @@ import os, random
 from gpt2 import generator
 from ditto_parser import ditto_data_maker
 
-save_location = "Generated/er_magellan/Structured/Beer/"
+save_location = "./Generated/er_magellan/Structured/Beer/"
 if not os.path.isdir(save_location): os.makedirs(save_location)
 
 train_matches = []
-with open("Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
+with open("./Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
   lines = file.readlines()
   for line in lines:
     arr = line.split("\t")
@@ -14,7 +14,7 @@ with open("Datasets/er_magellan/Structured/Beer/train.txt.matches") as file:
 
 # Getting validation set
 valid_matches = []
-with open("Datasets/er_magellan/Structured/Beer/valid.txt") as file:
+with open("./Datasets/er_magellan/Structured/Beer/valid.txt") as file:
   lines = file.readlines()
   for line in lines:
     arr = line.split("\t")
