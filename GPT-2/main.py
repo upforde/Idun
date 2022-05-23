@@ -31,17 +31,23 @@ generated_matches = 0
 start = time.time()
 
 file = open(save_location + "fine_tuned_matches.txt", "a")
-while generated_matches != train_len:
-  print(f"Generating example: {generated_matches + 1} of {train_len}")
-  valid = False
-  while not valid:
-    text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
-    generated = generator(text, max_length=300)[0]['generated_text']
-    match = ditto_data_maker(generated)
-    valid = match.isValid()
-  file.write(match.generate_string(1))
-  file.write("\n")
-  generated_matches += 1
+# while generated_matches != train_len:
+#   print(f"Generating example: {generated_matches + 1} of {train_len}")
+#   valid = False
+#   while not valid:
+#     text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
+#     generated = generator(text, max_length=110)[0]['generated_text']
+#     match = ditto_data_maker(generated)
+#     valid = match.isValid()
+#   file.write(match.generate_string(1))
+#   file.write("\n")
+#   generated_matches += 1
+
+text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
+generated = generator(text, max_length=110)[0]['generated_text']
+match = ditto_data_maker(generated)
+file.write(match.generate_string(1))
+file.write("\n")
 
 end = time.time()
 
