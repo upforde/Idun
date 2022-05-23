@@ -23,10 +23,10 @@ def load_dataset(train_path,test_path,tokenizer):
 
 class ftGPT2:
     def __init__(self, train_data, test_data):
-        self.model = AutoModelWithLMHead.from_pretrained("gpt2")
-
+        # Setting up the training datasets, tokenizer and model
         tokenizer = AutoTokenizer.from_pretrained("gpt2")
-        train_dataset, test_dataset, data_collator = load_dataset(train_data, test_data, tokenizer)
+        train_dataset,test_dataset,data_collator = load_dataset(train_data,test_data,tokenizer)
+        self.model = AutoModelWithLMHead.from_pretrained("gpt2")
 
         training_args = TrainingArguments(
             output_dir="./EMmodel",                                                     #The output directory
@@ -34,21 +34,27 @@ class ftGPT2:
             num_train_epochs=3,                                                         # number of training epochs
             per_device_train_batch_size=32,                                             # batch size for training
             per_device_eval_batch_size=32,                                              # batch size for evaluation
-            eval_steps = 400,                                                           # Number of update steps between two evaluations.
-            save_steps=800,                                                             # after # steps model is saved 
+            eval_steps = 6,                                                             # Number of update steps between two evaluations.
+            save_steps=36,                                                              # after # steps model is saved 
             warmup_steps=500,                                                           # number of warmup steps for learning rate scheduler
-            prediction_loss_only=True)
-            
+            prediction_loss_only=True,
+            )
+
+
         self.trainer = Trainer(
             model=self.model,
             args=training_args,
             data_collator=data_collator,
             train_dataset=train_dataset,
-            eval_dataset=test_dataset)
+            eval_dataset=test_dataset,
+        )
 
     def train(self):
-        self.model.train()
+        self.trainer.train()
         return pipeline('text-generation', model=self.model, tokenizer='gpt2')
     
     def save(self):
         self.model.save_model()
+
+
+
