@@ -1,4 +1,4 @@
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from transformers import AutoModelWithLMHead, AutoTokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 from transformers import pipeline
@@ -22,9 +22,9 @@ def load_dataset(train_path,test_path,tokenizer):
 
 class ftGPT2:
     def __init__(self, train_data, test_data):
-        self.model = GPT2LMHeadModel.from_pretrained("gpt2")
+        self.model = AutoModelWithLMHead.from_pretrained("gpt2")
 
-        tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+        tokenizer = AutoTokenizer.from_pretrained("gpt2")
         train_dataset, test_dataset, data_collator = load_dataset(train_data, test_data, tokenizer)
 
         training_args = TrainingArguments(

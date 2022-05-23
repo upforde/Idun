@@ -1,13 +1,13 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
-#SBATCH --account=<account>
+#SBATCH --account=ie-idi
 #SBATCH --time=00:15:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
-#SBATCH --job-name="hello_test"
-#SBATCH --output=test-srun.out
-#SBATCH --mail-user=<email>
+#SBATCH --job-name="test GPT-2"
+#SBATCH --output=test_gpt2.out
+#SBATCH --mail-user=danilasm@stud.ntnu.no
 #SBATCH --mail-type=ALL
 
 WORKDIR=${SLURM_SUBMIT_DIR}
@@ -23,6 +23,7 @@ echo "Total of $SLURM_NTASKS cores"
 
 module purge
 module load Anaconda/2020.07
-python /path/to/file.py
+pip3 install transformers==4.2.2
+python3 main.py
 
 uname -a
