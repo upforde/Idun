@@ -4,6 +4,7 @@
 #SBATCH --time=00:15:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
+#SBATCH --StdOut=/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/test_ctgan.out
 #SBATCH --mem=12000
 #SBATCH --job-name="test CTGAN"
 #SBATCH --output=test_ctgan.out
