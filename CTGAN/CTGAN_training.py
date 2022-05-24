@@ -12,8 +12,8 @@ datasets_dir = r'/Documents/IDUN/Idun/CTGAN'
 name_of_table = "new_sample_set.csv"
 
 # Model training parameters.
-epochs = 500
-batch_total = 500
+epochs = 2
+batch_total = 3
 
 # Model directory and name to be saved. 
 model_dir = r'/Documents/IDUN/Idun/CTGAN'
