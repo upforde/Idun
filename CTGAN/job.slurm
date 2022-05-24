@@ -26,6 +26,7 @@ module load Anaconda3/2020.07
 module load Python/3.8.6-GCCcore-10.2.0
 pip3 install pandas --user
 pip3 install sdv --user
+pip3 install numpy==1.21
 python3 CTGAN_training.py
 
 uname -a
