@@ -110,5 +110,5 @@ else:
 
 model = CTGAN(primary_key='_id', epochs=epochs, batch_size=batch_total)
 model.fit(table_for_training)
-model_save_path = model_dir + os.sep + model_name
+model_save_path = model_name
 model.save(model_save_path)
