@@ -86,7 +86,7 @@ def ditto_reformater(data):
     return table1, table2, table3
 
 if ditto_format:
-    ditto_data_path = datasets_dir + os.sep + name_of_table
+    ditto_data_path = name_of_table
     
     with open(ditto_data_path, 'r', encoding='utf-8') as file:
         data = file.read()
@@ -100,7 +100,7 @@ if ditto_format:
 
 else:
     print("Please perform the Magellan Sampling pipeline before proceeding.") 
-    magellan_data_path = datasets_dir + os.sep + name_of_table
+    magellan_data_path = name_of_table
     table = pd.read_csv(magellan_data_path)
 
 if train_on_matched:
