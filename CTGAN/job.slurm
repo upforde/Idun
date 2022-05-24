@@ -25,6 +25,6 @@ module purge
 module load Anaconda3/2020.07
 pip3 install pandas --user
 pip3 install sdv --user
-python3 CTGAN_traning.py
+python3 CTGAN_training.py
 
 uname -a
