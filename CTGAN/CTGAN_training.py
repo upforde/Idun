@@ -1,8 +1,6 @@
-import py_entitymatching as em
 import pandas as pd
 import os
 from sdv.tabular import CTGAN
-from utils.utils import *
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
@@ -10,7 +8,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = False
 
 # Data table directory and name.
-datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/GPT-2'
+datasets_dir = r'/Documents/IDUN/Idun/CTGAN'
 name_of_table = "new_sample_set.csv"
 
 # Model training parameters.
@@ -18,11 +16,74 @@ epochs = 500
 batch_total = 500
 
 # Model directory and name to be saved. 
-model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/GPT-2'
-model_name = "testind_IDUN.pkl"
+model_dir = r'/Documents/IDUN/Idun/CTGAN'
+model_name = "testing_IDUN.pkl"
 
 # If the model should trained on "matched" or "non-matched" examples.
 train_on_matched = True
+
+def ditto_reformater(data):
+    columns = []
+    values = []
+    value_writer = ""
+    sentence_order = 0
+    table_order = 0
+    table1 = pd.DataFrame()
+    table2 = pd.DataFrame()
+    table3 = pd.DataFrame()
+
+    for line in data.splitlines():
+        table_order = 0
+        for side in line.split("\t"):
+            for word in side.split(" "):
+                if word == "COL":
+                    if value_writer != "":
+                        values.append(value_writer)
+                        value_writer = ""
+                    read_column = True
+                    read_values = False
+                elif word == "VAL":
+                    read_column = False
+                    read_values = True
+                    first_word = True
+                    value_writer = ""
+                else:
+                    if read_column:
+                        columns.append(word)
+                    elif read_values:
+                        if first_word:
+                            value_writer = word
+                            first_word = False
+                        else:
+                            value_writer += " " + word
+            values.append(value_writer)
+            value_writer = ""
+            res = dict(zip(columns, values))
+            if sentence_order == 0:
+                if table_order == 0:
+                    table1 = pd.DataFrame.from_dict([res])
+                    table_order = 1
+                elif table_order == 1:
+                    table2 = pd.DataFrame.from_dict([res])
+                    table_order = 2
+                elif table_order == 2:
+                    table3 = pd.DataFrame([word], columns=['Truth'])
+                    table_order = 0
+                    values = []
+                    sentence_order = sentence_order + 1
+            else:
+                if table_order == 0:
+                    table1 = table1.append(res, ignore_index=True)
+                    table_order = 1
+                elif table_order == 1:
+                    table2 = table2.append(res, ignore_index=True)
+                    table_order = 2
+                elif table_order == 2:
+                    table3 = table3.append({'Truth': word}, ignore_index=True)
+                    table_order = 0
+                    values = []
+    
+    return table1, table2, table3
 
 if ditto_format:
     ditto_data_path = datasets_dir + os.sep + name_of_table
