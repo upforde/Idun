@@ -22,7 +22,7 @@ echo "We are using $SLURM_CPUS_ON_NODE cores per node"
 echo "Total of $SLURM_NTASKS cores"
 
 module purge
-module load Anaconda/2020.07
+module load Anaconda3/2020.07
 pip3 install transformers==4.2.2 --user
 pip3 install torch --user
 python3 main.py
