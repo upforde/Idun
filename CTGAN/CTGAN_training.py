@@ -12,8 +12,8 @@ datasets_dir = r''
 name_of_table = "new_sample_set.csv"
 
 # Model training parameters.
-epochs = 2
-batch_total = 4
+epochs = 10
+batch_total = 20
 
 # Model directory and name to be saved. 
 model_dir = r''
