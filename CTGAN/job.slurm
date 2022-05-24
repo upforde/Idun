@@ -5,9 +5,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
-#SBATCH --job-name="test GPT-2"
-#SBATCH --output=test_gpt2.out
-#SBATCH --mail-user=danilasm@stud.ntnu.no
+#SBATCH --job-name="test CTGAN"
+#SBATCH --output=test_ctgan.out
+#SBATCH --mail-user=alekssim@stud.ntnu.no
 #SBATCH --mail-type=ALL
 
 WORKDIR=${SLURM_SUBMIT_DIR}
@@ -23,8 +23,10 @@ echo "Total of $SLURM_NTASKS cores"
 
 module purge
 module load Anaconda3/2020.07
-pip3 install transformers==4.2.2 --user
-pip3 install torch --user
-python3 main.py
+module load Python/3.8.6-GCCcore-10.2.0
+pip3 install pandas --user
+pip3 install sdv --user
+pip3 install numpy==1.21
+python3 CTGAN_training.py
 
 uname -a
