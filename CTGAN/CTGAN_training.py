@@ -8,7 +8,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = False
 
 # Data table directory and name.
-datasets_dir = r'/Documents/IDUN/Idun/CTGAN'
+datasets_dir = r''
 name_of_table = "new_sample_set.csv"
 
 # Model training parameters.
@@ -16,7 +16,7 @@ epochs = 2
 batch_total = 3
 
 # Model directory and name to be saved. 
-model_dir = r'/Documents/IDUN/Idun/CTGAN'
+model_dir = r''
 model_name = "testing_IDUN.pkl"
 
 # If the model should trained on "matched" or "non-matched" examples.
