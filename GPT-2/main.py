@@ -36,10 +36,11 @@ while not valid:
   prompt = text + rand + "\tCOL"
 
   generated = generator(prompt, max_length=500, num_return_sequences=1)
-  generated_text = generated[0]["generated_text"].replace(text, "")
+  generated_text = generated[0]["generated_text"]
+  print(generated_text)
   match = ditto_data_maker(generated_text)
   valid = match.isValid()
-  print(generated_text)
+  
   file.write(f"{valid}: {generated_text}")
 
 file.write(match.generate_string(1))
