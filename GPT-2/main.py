@@ -92,7 +92,7 @@ trainer = Trainer(
 )
 
 trainer.train()
-trainer.save()
+trainer.save_model()
 
 generator = pipeline('text-generation', model="./EMmodel", tokenizer='gpt2')
 
