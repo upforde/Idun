@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH --partition=CPUQ
+#SBATCH --partition=GPUQ
 #SBATCH --account=ie-idi
 #SBATCH --time=00:15:00
 #SBATCH --nodes=1
