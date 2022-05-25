@@ -1,6 +1,4 @@
 import os, random
-
-from cv2 import FlannBasedMatcher
 from gpt2 import generator
 from ditto_parser import ditto_data_maker
 from ftgpt2 import ftGPT2
