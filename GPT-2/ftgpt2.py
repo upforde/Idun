@@ -30,7 +30,7 @@ class ftGPT2:
         training_args = TrainingArguments(
             output_dir="./EMmodel",                                                     #The output directory
             overwrite_output_dir=True,                                                  #overwrite the content of the output directory
-            num_train_epochs=10,                                                        # number of training epochs
+            num_train_epochs=5,                                                        # number of training epochs
             per_device_train_batch_size=32,                                             # batch size for training
             per_device_eval_batch_size=32,                                              # batch size for evaluation
             eval_steps = 400,                                                           # Number of update steps between two evaluations.
@@ -57,7 +57,7 @@ class ftGPT2:
         return self.tokenizer
     
     def save(self):
-        self.model.save_model()
+        self.trainer.save_model()
 
 
 
