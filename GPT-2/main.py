@@ -51,8 +51,8 @@ tokenizer = model.getTokenizer()
 generator = model.pipeline()
 
 valid = False
+text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
 while not valid:
-  text = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
   generated = generator(text, max_length=round(len(tokenizer(text)['input_ids'])*3))[0]['generated_text']
   match = ditto_data_maker(generated)
   valid = match.isValid()
