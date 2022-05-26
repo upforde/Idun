@@ -1,6 +1,6 @@
 import random
 
-class ditto_data_maker():
+class ditto_parser():
   def __init__(self, data_string):
     '''
       Takes in the generated strig, splits it up and creates a dictionary that contains the original columns from the left side, and the data from both left and right in those columns
