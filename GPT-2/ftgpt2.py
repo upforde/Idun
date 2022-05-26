@@ -36,7 +36,7 @@ wdc = [
 ]
 
 MODEL_NAME = hp.dataset
-TYPE = 0 if hp.type == "non_matches" else 1
+INSTANCE_TYPE = 0 if hp.type == "non_matches" else 1
 
 if hp.dataset in er_magellan: DATASET = "./Datasets/er_magellan/" + hp.dataset
 else: DATASET = "./Datasets/wdc/" + hp.dataset
@@ -127,7 +127,7 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
 
-    file.write(match.generate_string(TYPE))
+    file.write(match.generate_string(INSTANCE_TYPE))
     file.write("\n")
     count += 1
 
