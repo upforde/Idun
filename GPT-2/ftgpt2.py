@@ -127,8 +127,8 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
 
-    file.write(match.generate_string(INSTANCE_TYPE))
-    file.write("\n")
+    file.write(f"{match.generate_string(INSTANCE_TYPE)}\n")
     count += 1
+    print(f"Created {count} out of {amount}")
 
 file.close()
