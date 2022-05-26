@@ -124,6 +124,7 @@ while count < amount:
     while not valid:
         generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*2.5), num_return_sequences=1)
         generated_text = generated[0]["generated_text"]
+        print(generated_text)
         match = ditto_parser(generated_text)
         valid = match.isValid()
 
