@@ -108,14 +108,14 @@ except:
 
     generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
 
-file = open(SAVE_LOCATION + "/fine_tuned.txt." + hp.type, "a")
-
 if hp.amount == "double":
     with open(DATASET + "/train.txt." + hp.type) as file:
         amount = len(file.readlines())
 if hp.amount == "decimate":
     with open(DATASET + "/train.txt." + hp.type) as file:
         amount = round(len(file.readlines())*0.9)
+
+file = open(SAVE_LOCATION + "/fine_tuned.txt." + hp.type, "a")
 
 count = 0
 while count < amount:
