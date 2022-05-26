@@ -71,7 +71,7 @@ def load_dataset(train_path,test_path,tokenizer):
     return train_dataset,test_dataset,data_collator
 
 train_data = DATASET + "/train.txt." + hp.type if hp.amount == "double" else DATASET + "/train.txt." + hp.type + ".decimated"
-test_data = DATASET + "test.txt." + hp.type
+test_data = DATASET + "/test.txt." + hp.type
 
 # Setting up the training datasets, tokenizer and model
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
