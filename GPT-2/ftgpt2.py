@@ -127,7 +127,8 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
 
-    file.write(f"{match.generate_string(TYPE)}\n")
+    file.write(match.generate_string(TYPE))
+    file.write("\n")
     count += 1
 
 file.close()
