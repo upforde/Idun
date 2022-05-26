@@ -5,6 +5,7 @@ from transformers import Trainer, TrainingArguments
 from transformers import pipeline
 from ditto_parser import ditto_parser
 
+print("parsing")
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
 parser.add_argument("--size", type=str, default=None)
