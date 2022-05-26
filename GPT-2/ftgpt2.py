@@ -70,7 +70,9 @@ def load_dataset(train_path,test_path,tokenizer):
     )
     return train_dataset,test_dataset,data_collator
 
-try: generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
+try: 
+    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+    generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
 except:
     train_data = DATASET + "/train.txt." + hp.type if hp.amount == "double" else DATASET + "/train.txt." + hp.type + ".decimated"
     test_data = DATASET + "/test.txt." + hp.type
