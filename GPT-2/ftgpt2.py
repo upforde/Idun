@@ -46,7 +46,7 @@ if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
 # Getting validation set
 valid = []
-with open(DATASET + "./valid.txt") as file:
+with open(DATASET + "/valid.txt") as file:
   lines = file.readlines()
   for line in lines: valid.append(line.strip())
 
