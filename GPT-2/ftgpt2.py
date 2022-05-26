@@ -44,6 +44,7 @@ else: DATASET = "./Datasets/wdc/" + hp.dataset
 SAVE_LOCATION = "./Generated/" + hp.dataset if hp.size == None else "./Generated" + hp.dataset + "/" + hp.size
 if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
+print("getting validation data")
 # Getting validation set
 valid = []
 with open(DATASET + "/valid.txt") as file:
@@ -71,9 +72,11 @@ def load_dataset(train_path,test_path,tokenizer):
     return train_dataset,test_dataset,data_collator
 
 if os.path.exists("./Models/" + MODEL_NAME):
+    print("Using model")
     tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
     generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
 else:
+    print("Training model")
     train_data = DATASET + "/train.txt." + hp.type if hp.amount == "double" else DATASET + "/train.txt." + hp.type + ".decimated"
     test_data = DATASET + "/test.txt." + hp.type
 
@@ -108,6 +111,8 @@ else:
 
     generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
 
+print("checking amount")
+
 if hp.amount == "double":
     with open(DATASET + "/train.txt." + hp.type) as file:
         amount = len(file.readlines())
@@ -115,6 +120,7 @@ if hp.amount == "decimate":
     with open(DATASET + "/train.txt." + hp.type) as file:
         amount = round(len(file.readlines())*0.9)
 
+print("opening file")
 file = open(SAVE_LOCATION + "/fine_tuned.txt." + hp.type, "a")
 
 print("what the fuck")
@@ -135,4 +141,5 @@ while count < amount:
     count += 1
     print(f"Created {count} out of {amount}")
 
+print("done")
 file.close()
