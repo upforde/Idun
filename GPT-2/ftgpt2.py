@@ -70,37 +70,41 @@ def load_dataset(train_path,test_path,tokenizer):
     )
     return train_dataset,test_dataset,data_collator
 
-train_data = DATASET + "/train.txt." + hp.type if hp.amount == "double" else DATASET + "/train.txt." + hp.type + ".decimated"
-test_data = DATASET + "/test.txt." + hp.type
+try: generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
+except:
+    train_data = DATASET + "/train.txt." + hp.type if hp.amount == "double" else DATASET + "/train.txt." + hp.type + ".decimated"
+    test_data = DATASET + "/test.txt." + hp.type
 
-# Setting up the training datasets, tokenizer and model
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-train_dataset,test_dataset,data_collator = load_dataset(train_data,test_data,tokenizer)
-model = GPT2LMHeadModel.from_pretrained("gpt2")
+    # Setting up the training datasets, tokenizer and model
+    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+    train_dataset,test_dataset,data_collator = load_dataset(train_data,test_data,tokenizer)
+    model = GPT2LMHeadModel.from_pretrained("gpt2")
 
-training_args = TrainingArguments(
-    output_dir="./Models/" + MODEL_NAME,                                        #The output directory
-    overwrite_output_dir=True,                                                  # overwrite the content of the output directory
-    num_train_epochs=5,                                                         # number of training epochs
-    per_device_train_batch_size=32,                                             # batch size for training
-    per_device_eval_batch_size=32,                                              # batch size for evaluation
-    eval_steps = 400,                                                           # Number of update steps between two evaluations.
-    save_steps=800,                                                             # after # steps model is saved 
-    warmup_steps=500,                                                           # number of warmup steps for learning rate scheduler
-    prediction_loss_only=True,
+    training_args = TrainingArguments(
+        output_dir="./Models/" + MODEL_NAME,                                        #The output directory
+        overwrite_output_dir=True,                                                  # overwrite the content of the output directory
+        num_train_epochs=5,                                                         # number of training epochs
+        per_device_train_batch_size=32,                                             # batch size for training
+        per_device_eval_batch_size=32,                                              # batch size for evaluation
+        eval_steps = 400,                                                           # Number of update steps between two evaluations.
+        save_steps=800,                                                             # after # steps model is saved 
+        warmup_steps=500,                                                           # number of warmup steps for learning rate scheduler
+        prediction_loss_only=True,
+        )
+
+
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        data_collator=data_collator,
+        train_dataset=train_dataset,
+        eval_dataset=test_dataset,
     )
 
+    trainer.train()
+    trainer.save_model()
 
-trainer = Trainer(
-    model=model,
-    args=training_args,
-    data_collator=data_collator,
-    train_dataset=train_dataset,
-    eval_dataset=test_dataset,
-)
-
-trainer.train()
-trainer.save_model()
+    generator = pipeline('text-generation', model="./Models/" + MODEL_NAME, tokenizer='gpt2')
 
 file = open(SAVE_LOCATION + "/fine_tuned.txt." + hp.type, "a")
 
@@ -112,7 +116,6 @@ if hp.amount == "decimate":
         amount = round(len(file.readlines())*0.9)
 
 count = 0
-generator = pipeline('text-generation', model="./EMmodel", tokenizer='gpt2')
 while count < amount:
     valid = False
     prompt = cut_valid[random.randint(0, len(cut_valid)-1)]
