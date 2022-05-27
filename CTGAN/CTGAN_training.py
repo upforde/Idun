@@ -90,6 +90,7 @@ def ditto_reformater(data):
                     table_order = 0
                     values = []
     
+    table3["Truth"] = pd.to_numeric(table3["Truth"])
     return table1, table2, table3
 
 if ditto_format:
