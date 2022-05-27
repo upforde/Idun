@@ -10,12 +10,12 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = True
 
 # Data table directory and name.
-datasets_dir = r''
-name_of_table = "new_sample_set.csv"
+datasets_dir = r'Datasets\er_magellan\Dirty\DBLP-ACM'
+name_of_table = "train.txt"
 
 # Model training parameters.
-epochs = 10
-batch_total = 20
+epochs = 300
+batch_total = 500
 
 # Model directory and name to be saved. 
 model_dir = r''
