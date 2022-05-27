@@ -10,7 +10,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = True
 
 # Data table directory and name.
-datasets_dir = r'Datasets/er_magellan/Dirty/DBLP-ACM'
+datasets_dir = r'Datasets/er_magellan/Structured/Amazon-Google'
 name_of_table = "train.txt"
 
 # Model training parameters.
@@ -19,7 +19,7 @@ batch_total = 500
 
 # Model directory and name to be saved. 
 model_dir = r''
-model_name = "testing_IDUN.pkl"
+model_name = "testing_structured.pkl"
 
 # If the model should trained on "matched" or "non-matched" examples.
 train_on_matched = True
@@ -116,7 +116,14 @@ if train_on_matched:
 else:
     table_for_training = table[table['Truth'] < 1]
 
+table_for_training2 = table[table['Truth'] < 1]
+
 model = CTGAN(epochs=epochs, batch_size=batch_total)
 model.fit(table_for_training)
 model_save_path = model_name
 model.save(model_save_path)
+
+model2 = CTGAN(epochs=epochs, batch_size=batch_total)
+model2.fit(table_for_training2)
+model_save_path2 = "testing_structured_nonm.pkl"
+model.save(model_save_path2)
