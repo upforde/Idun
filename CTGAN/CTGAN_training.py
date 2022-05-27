@@ -4,8 +4,10 @@ from sdv.tabular import CTGAN
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
+# NOTE: Todo. Set up sysarg so we can pipeline multiple jobs through job.slurm
+
 # If the data is in DITTO format or not.
-ditto_format = False
+ditto_format = True
 
 # Data table directory and name.
 datasets_dir = r''
@@ -31,15 +33,19 @@ def ditto_reformater(data):
     table1 = pd.DataFrame()
     table2 = pd.DataFrame()
     table3 = pd.DataFrame()
+    starting_row = True
 
     for line in data.splitlines():
         table_order = 0
         for side in line.split("\t"):
             for word in side.split(" "):
                 if word == "COL":
-                    if value_writer != "":
+                    if value_writer != "" and value_writer != " ":
                         values.append(value_writer)
-                        value_writer = ""
+                    elif not starting_row:
+                        values.append(float("NaN"))
+                    else:
+                        starting_row = False
                     read_column = True
                     read_values = False
                 elif word == "VAL":
@@ -58,6 +64,7 @@ def ditto_reformater(data):
                             value_writer += " " + word
             values.append(value_writer)
             value_writer = ""
+            starting_row = True
             res = dict(zip(columns, values))
             if sentence_order == 0:
                 if table_order == 0:
@@ -99,7 +106,7 @@ if ditto_format:
     table = pd.concat([table_A, table_B, truth_table], axis=1)
 
 else:
-    print("Please perform the Magellan Sampling pipeline before proceeding.") 
+    # print("Please perform the Magellan Sampling pipeline before proceeding.") 
     magellan_data_path = name_of_table
     table = pd.read_csv(magellan_data_path)
 
