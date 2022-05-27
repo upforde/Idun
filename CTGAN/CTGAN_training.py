@@ -10,7 +10,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = True
 
 # Data table directory and name.
-datasets_dir = r'Datasets\er_magellan\Dirty\DBLP-ACM'
+datasets_dir = r'Datasets/er_magellan/Dirty/DBLP-ACM'
 name_of_table = "train.txt"
 
 # Model training parameters.
