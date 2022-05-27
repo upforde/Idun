@@ -93,7 +93,7 @@ def ditto_reformater(data):
     return table1, table2, table3
 
 if ditto_format:
-    ditto_data_path = name_of_table
+    ditto_data_path = datasets_dir + os.sep + name_of_table
     
     with open(ditto_data_path, 'r', encoding='utf-8') as file:
         data = file.read()
