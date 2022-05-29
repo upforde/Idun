@@ -70,17 +70,18 @@ names = []
 for job in er_magellan:
     for i in range(2):
         job_name = "Create " + job + " model for fine tuned GPT-2"
-        output = job + ".out"
         if i % 2 == 0: entity_type = "matches"
         else: entity_type = "non_matches"
         for j in range(2): 
             decimate = job in decimate_jobs and j % 2 == 0
             
-            text = make_text(job_name, output, job, entity_type, decimate)
-
             name = "./jobs/" + job.replace("/", "_") + "_" + entity_type
             if decimate: name += "_decimated"
+
+            output = name + ".out"
             
+            text = make_text(job_name, output, job, entity_type, decimate)
+
             names.append(name)
 
             with open(name + ".slurm", "a") as file:
