@@ -92,16 +92,17 @@ for job in wdc:
     for size in sizes:
         for i in range(2):
             job_name = "Create " + job + " model for fine tuned GPT-2"
-            output = job + ".out"
             if i % 2 == 0: entity_type = "matches"
             else: entity_type = "non_matches"
             for j in range(2):
                 decimate = j % 2 == 0
 
-                text = make_text(job_name, output, job, entity_type, decimate, size)
-
                 name = "./jobs/" + job.replace("/", "_") + "_" + size + "_" + entity_type
                 if decimate: name += "_decimated"
+
+                output = name + ".out"
+                
+                text = make_text(job_name, output, job, entity_type, decimate, size)
 
                 names.append(name)
 
