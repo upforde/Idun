@@ -1,5 +1,5 @@
 def make_text(job_name, output, dataset, entity_type, decimate, size=None):
-    python_line = f"python3 create_model.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
+    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/create_model.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
     text = [
         "#!/bin/sh",
