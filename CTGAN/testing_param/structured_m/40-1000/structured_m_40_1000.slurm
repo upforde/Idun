@@ -5,8 +5,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
-#SBATCH --job-name="Textual Data Matches with 32 batch size and 1000 epochs"
-#SBATCH --output=textual_m.out
+#SBATCH --job-name="Structured Data Matches with 40 batch size and 1000 epochs"
+#SBATCH --output=structured_m.out
 #SBATCH --mail-user=alekssim@stud.ntnu.no
 #SBATCH --mail-type=ALL
 
