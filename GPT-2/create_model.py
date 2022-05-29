@@ -13,7 +13,7 @@ parser.add_argument("--decimate", type=bool, default=False)
 hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
-MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset                                           # The name of the model, it's called this
+MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type                           # The name of the model, it's called this
                                                                                           # when saved
 if "/" in hp.dataset: 
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"          # Train test datasets, depending on if they're 
@@ -28,6 +28,7 @@ test_data += f".{hp.type}"
 if hp.decimate:                                                                 # Adding postfix for if to use the decimated
     train_data += ".decimated"                                                  # datasets or not
     test_data += ".decimated"
+    MODEL_NAME += "_decimated"
 
 # Function for creating the train-test datasets for the model
 def load_dataset(train_path,test_path,tokenizer):
