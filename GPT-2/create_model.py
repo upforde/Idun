@@ -3,6 +3,8 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 
+IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
 parser.add_argument("--size", type=str, default=None)
@@ -11,14 +13,14 @@ parser.add_argument("--decimate", type=bool, default=False)
 hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
-MODEL_NAME = "./Models/" + hp.dataset                                           # The name of the model, it's called this
-                                                                                # when saved
+MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset                                           # The name of the model, it's called this
+                                                                                          # when saved
 if "/" in hp.dataset: 
-    train_data = "./Datasets/er_magellan/" + hp.dataset + "/train.txt"          # Train test datasets, depending on if they're 
-    test_data = "./Datasets/er_magellan/" + hp.dataset + "/test.txt"            # from the er_magellan datasets or the wdc
-else:                                                                           # datasets
-    train_data = "./Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
-    test_data = "./Datasets/wdc/" + hp.dataset + "/test.txt"
+    train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"          # Train test datasets, depending on if they're 
+    test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"            # from the er_magellan datasets or the wdc
+else:                                                                                     # datasets
+    train_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
+    test_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/test.txt"
 
 train_data += f".{hp.type}"
 test_data += f".{hp.type}"
