@@ -1,12 +1,12 @@
 #!/bin/sh
-#SBATCH --partition=CPUQ
+#SBATCH --partition=GPUQ
 #SBATCH --account=ie-idi
 #SBATCH --time=09:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
-#SBATCH --job-name="Textual Data Match w 1000 batch size, 3000 epochs, CPU"
-#SBATCH --output=CPU2.out
+#SBATCH --job-name="Structured Data Matches with 1000 batch size and 3000 epochs"
+#SBATCH --output=structured_m_bigger.out
 #SBATCH --mail-user=alekssim@stud.ntnu.no
 #SBATCH --mail-type=ALL
 

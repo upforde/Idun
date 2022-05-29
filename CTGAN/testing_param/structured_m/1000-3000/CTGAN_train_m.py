@@ -17,7 +17,7 @@ epochs = 3000
 
 
 # Model directory and name to be saved. 
-model_name = "textual_m_1000_3000.pkl"
+model_name = "structured_m_1000_3000.pkl"
 
 # If the model should trained on "matched" or "non-matched" examples.
 train_on_matched = True

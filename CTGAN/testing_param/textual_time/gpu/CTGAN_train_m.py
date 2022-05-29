@@ -12,12 +12,12 @@ ditto_format = True
 name_of_table = "train.txt"
 
 # Model training parameters.
-batch_total = 500
-epochs = 300
+batch_total = 1000
+epochs = 3000
 
 
 # Model directory and name to be saved. 
-model_name = "textual_m_500_300.pkl"
+model_name = "textual_m_1000_3000.pkl"
 
 # If the model should trained on "matched" or "non-matched" examples.
 train_on_matched = True
