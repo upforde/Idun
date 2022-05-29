@@ -10,7 +10,8 @@ pd.options.mode.chained_assignment = None  # default='warn'
 ditto_format = True
 
 # Data table directory and name.
-datasets_dir = r'Datasets/er_magellan/Structured/Amazon-Google'
+# datasets_dir = r'Datasets/er_magellan/Structured/Amazon-Google'
+datasets_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\er_magellan\Structured\Amazon-Google'
 name_of_table = "train.txt"
 
 # Model training parameters.
@@ -117,13 +118,14 @@ else:
     table_for_training = table[table['Truth'] < 1]
 
 table_for_training2 = table[table['Truth'] < 1]
+table_for_training.to_csv(r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\er_magellan\Structured\Amazon-Google\test1.csv')
+table_for_training2.to_csv(r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\er_magellan\Structured\Amazon-Google\test2.csv')
+# model = CTGAN(epochs=epochs, batch_size=batch_total)
+# model.fit(table_for_training)
+# model_save_path = model_name
+# model.save(model_save_path)
 
-model = CTGAN(epochs=epochs, batch_size=batch_total)
-model.fit(table_for_training)
-model_save_path = model_name
-model.save(model_save_path)
-
-model2 = CTGAN(epochs=epochs, batch_size=batch_total)
-model2.fit(table_for_training2)
-model_save_path2 = "testing_structured_nonm.pkl"
-model.save(model_save_path2)
+# model2 = CTGAN(epochs=epochs, batch_size=batch_total)
+# model2.fit(table_for_training2)
+# model_save_path2 = "testing_structured_nonm.pkl"
+# model.save(model_save_path2)

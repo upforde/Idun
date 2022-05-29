@@ -1,2 +1,5 @@
 GPT-2/__pycache__/
 GPT-2/EMmodel/
+*.out
+*.csv
+*pkl
