@@ -1,4 +1,4 @@
-def make_text(job_name, output, dataset, entity_type, decimate, size=None):
+def make_text(output, dataset, entity_type, decimate, size=None):
     python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/create_model.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
     decimate_text = "decimate" if decimate else ""
@@ -11,7 +11,7 @@ def make_text(job_name, output, dataset, entity_type, decimate, size=None):
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
-        f"#SBATCH --job-name=\"{job_name} {entity_type}{size_text} {decimate_text}\"",
+        f"#SBATCH --job-name=\"model {dataset} {entity_type}{size_text} {decimate_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
@@ -56,45 +56,63 @@ sizes = [
 names = []
 
 for job in er_magellan:
-    for i in range(2):
-        if i % 2 == 0: entity_type = "matches"
-        else: entity_type = "non_matches"
-        for j in range(2): 
-            decimate = j % 2 == 0
-            
-            name = "./jobs/" + job.replace("/", "_") + "_" + entity_type
-            if decimate: name += "_decimated"
+    name = "./jobs/" + job.replace("/", "_") + "_matches"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            output = name + ".out"
-            
-            text = make_text(job, output, job, entity_type, decimate)
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            names.append(name)
+    name = "./jobs/" + job.replace("/", "_") + "_matches_decimated"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", True)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            with open(name + ".slurm", "a") as file:
-                for line in text:
-                    file.write(f"{line}\n")
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", True)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
 for job in wdc:
     for size in sizes:
-        for i in range(2):
-            if i % 2 == 0: entity_type = "matches"
-            else: entity_type = "non_matches"
-            for j in range(2):
-                decimate = j % 2 == 0
+        name = "./jobs/" + job + "_matches_" + size
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", False, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                name = "./jobs/" + job.replace("/", "_") + "_" + size + "_" + entity_type
-                if decimate: name += "_decimated"
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_" + size
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", False, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                output = name + ".out"
-                
-                text = make_text(job, output, job, entity_type, decimate, size)
+        name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_" + size
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", True, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                names.append(name)
-
-                with open(name + ".slurm", "a") as file:
-                    for line in text:
-                        file.write(f"{line}\n")
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", True, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
 with open("run_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")
