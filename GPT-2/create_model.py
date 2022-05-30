@@ -19,6 +19,7 @@ if "/" in hp.dataset:
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"          # Train test datasets, depending on if they're 
     test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"            # from the er_magellan datasets or the wdc
 else:                                                                                     # datasets
+    MODEL_NAME += f"_{hp.size}"
     train_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
     test_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/test.txt"
 
