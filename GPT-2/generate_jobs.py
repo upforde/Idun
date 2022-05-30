@@ -59,28 +59,28 @@ names = []
 
 for job in er_magellan:
     # FT
-    name = "./jobs/" + job.replace("/", "_") + "_matches_ft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_matches_ft"
     names.append(name)
     text = make_text(name + ".out", job, "matches", False)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_non_matches_ft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_ft"
     names.append(name)
     text = make_text(name + ".out", job, "non_matches", False)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_ft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_matches_decimated_ft"
     names.append(name)
     text = make_text(name + ".out", job, "matches", True)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_ft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_decimated_ft"
     names.append(name)
     text = make_text(name + ".out", job, "non_matches", True)
     with open(name + ".slurm", "a") as file:
@@ -88,28 +88,28 @@ for job in er_magellan:
             file.write(f"{line}\n")
 
     # non FT
-    name = "./jobs/" + job.replace("/", "_") + "_matches_nft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_matches_nft"
     names.append(name)
     text = make_text(name + ".out", job, "matches", False, ft=False)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_non_matches_nft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_nft"
     names.append(name)
     text = make_text(name + ".out", job, "non_matches", False, ft=False)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_nft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_matches_decimated_nft"
     names.append(name)
     text = make_text(name + ".out", job, "matches", True, ft=False)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
 
-    name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_nft"
+    name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_decimated_nft"
     names.append(name)
     text = make_text(name + ".out", job, "non_matches", True, ft=False)
     with open(name + ".slurm", "a") as file:
@@ -119,28 +119,28 @@ for job in er_magellan:
 for job in wdc:
     for size in sizes:
         # FT
-        name = "./jobs/" + job + "_matches_" + size + "_ft"
+        name = "./gen_jobs/" + job + "_matches_" + size + "_ft"
         names.append(name)
         text = make_text(name + ".out", job, "matches", False, size)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_ft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_ft"
         names.append(name)
         text = make_text(name + ".out", job, "non_matches", False, size)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_ft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_ft"
         names.append(name)
         text = make_text(name + ".out", job, "matches", True, size)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_ft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_ft"
         names.append(name)
         text = make_text(name + ".out", job, "non_matches", True, size)
         with open(name + ".slurm", "a") as file:
@@ -148,28 +148,28 @@ for job in wdc:
                 file.write(f"{line}\n")
 
         # NFT
-        name = "./jobs/" + job + "_matches_" + size + "_nft"
+        name = "./gen_jobs/" + job + "_matches_" + size + "_nft"
         names.append(name)
         text = make_text(name + ".out", job, "matches", False, size, False)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_nft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_nft"
         names.append(name)
         text = make_text(name + ".out", job, "non_matches", False, size, False)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_nft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_nft"
         names.append(name)
         text = make_text(name + ".out", job, "matches", True, size, False)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
 
-        name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_nft"
+        name = "./gen_jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_nft"
         names.append(name)
         text = make_text(name + ".out", job, "non_matches", True, size, False)
         with open(name + ".slurm", "a") as file:
