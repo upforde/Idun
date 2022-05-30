@@ -1,9 +1,10 @@
-def make_text(job_name, output, dataset, entity_type, decimate, ft, size=None):
-    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/generate_data.py --dataset={dataset} --type={entity_type} --decimate={decimate} --ft={ft}"
+def make_text(output, dataset, entity_type, decimate, size=None, ft=None):
+    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/generate_data.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
+    if ft != None: python_line += f" --ft={ft}"
     decimate_text = "decimate" if decimate else ""
     size_text = " " + size if size != None else ""
-    ft_text = "fine tuned" if ft else "non fine tuned"
+    ft_text = "fine_tuned" if ft else "non_fine_tuned"
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
@@ -12,7 +13,7 @@ def make_text(job_name, output, dataset, entity_type, decimate, ft, size=None):
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
-        f"#SBATCH --job-name=\"gen {job_name} {entity_type}{size_text} {decimate_text} {ft_text}\"",
+        f"#SBATCH --job-name=\"gen {dataset} {entity_type}{size_text} {decimate_text} {ft_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
@@ -57,47 +58,125 @@ sizes = [
 names = []
 
 for job in er_magellan:
-    for i in range(2):
-        if i % 2 == 0: entity_type = "matches"
-        else: entity_type = "non_matches"
-        for j in range(2): 
-            decimate = j % 2 == 0
-            
-            name = "./jobs/" + job.replace("/", "_") + "_" + entity_type
-            if decimate: name += "_decimated"
+    # FT
+    name = "./jobs/" + job.replace("/", "_") + "_matches_ft"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            output = name + ".out"
-            
-            text = make_text(job, output, job, entity_type, decimate)
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches_ft"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            names.append(name)
+    name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_ft"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", True)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
-            with open(name + ".slurm", "a") as file:
-                for line in text:
-                    file.write(f"{line}\n")
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_ft"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", True)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
+
+    # non FT
+    name = "./jobs/" + job.replace("/", "_") + "_matches_nft"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", False, ft=False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
+
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches_nft"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", False, ft=False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
+
+    name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_nft"
+    names.append(name)
+    text = make_text(name + ".out", job, "matches", True, ft=False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
+
+    name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_nft"
+    names.append(name)
+    text = make_text(name + ".out", job, "non_matches", True, ft=False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
 
 for job in wdc:
     for size in sizes:
-        for i in range(2):
-            if i % 2 == 0: entity_type = "matches"
-            else: entity_type = "non_matches"
-            for j in range(2):
-                decimate = j % 2 == 0
+        # FT
+        name = "./jobs/" + job + "_matches_" + size + "_ft"
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", False, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                name = "./jobs/" + job.replace("/", "_") + "_" + size + "_" + entity_type
-                if decimate: name += "_decimated"
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_ft"
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", False, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                output = name + ".out"
-                
-                text = make_text(job, output, job, entity_type, decimate, size)
+        name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_ft"
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", True, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                names.append(name)
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_ft"
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", True, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-                with open(name + ".slurm", "a") as file:
-                    for line in text:
-                        file.write(f"{line}\n")
+        # NFT
+        name = "./jobs/" + job + "_matches_" + size + "_nft"
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", False, size, False)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
 
-with open("run_jobs.sh", "a") as file:
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_" + size + "_nft"
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", False, size, False)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
+
+        name = "./jobs/" + job.replace("/", "_") + "_matches_decimated_" + size + "_nft"
+        names.append(name)
+        text = make_text(name + ".out", job, "matches", True, size, False)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
+
+        name = "./jobs/" + job.replace("/", "_") + "_non_matches_decimated_" + size + "_nft"
+        names.append(name)
+        text = make_text(name + ".out", job, "non_matches", True, size, False)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
+
+with open("run_gen_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")
     for name in names:
         file.write(f"sbatch {name}.slurm danilasm\n")
