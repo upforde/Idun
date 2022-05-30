@@ -1,21 +1,20 @@
 def make_text(job_name, output, dataset, entity_type, decimate, size=None):
     python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/create_model.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
+    decimate_text = "decimate" if decimate else ""
+    size_text = " " + size if size != None else ""
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=06:00:00",
+        "#SBATCH --time=08:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
-        f"#SBATCH --job-name=\"{job_name} {entity_type}\"",
+        f"#SBATCH --job-name=\"{job_name} {entity_type}{size_text} {decimate_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
-        "WORKDIR=${SLURM_SUBMIT_DIR}",
-        "cd ${WORKDIR}",
-        "cd ..",
         "module purge",
         "module load Anaconda3/2020.07",
         "pip3 install transformers==4.2.2 --user",
@@ -39,17 +38,6 @@ er_magellan = [
     "Textual/Abt-Buy"
     ]
 
-decimate_jobs = [
-    "Dirty/DBLP-ACM",
-    "Dirty/DBLP-GoogleScholar",
-    "Dirty/Walmart-Amazon",
-    "Structured/Amazon-Google/",
-    "Structured/DBLP-ACM/",
-    "Structured/DBLP-GoogleScholar/",
-    "Structured/Walmart-Amazon/",
-    "Textual/Abt-Buy"
-]
-
 wdc = [
     "all",
     "cameras",
@@ -69,18 +57,17 @@ names = []
 
 for job in er_magellan:
     for i in range(2):
-        job_name = "Create " + job + " model for fine tuned GPT-2"
         if i % 2 == 0: entity_type = "matches"
         else: entity_type = "non_matches"
         for j in range(2): 
-            decimate = job in decimate_jobs and j % 2 == 0
+            decimate = j % 2 == 0
             
             name = "./jobs/" + job.replace("/", "_") + "_" + entity_type
             if decimate: name += "_decimated"
 
             output = name + ".out"
             
-            text = make_text(job_name, output, job, entity_type, decimate)
+            text = make_text(job, output, job, entity_type, decimate)
 
             names.append(name)
 
@@ -91,7 +78,6 @@ for job in er_magellan:
 for job in wdc:
     for size in sizes:
         for i in range(2):
-            job_name = "Create " + job + " model for fine tuned GPT-2"
             if i % 2 == 0: entity_type = "matches"
             else: entity_type = "non_matches"
             for j in range(2):
@@ -102,7 +88,7 @@ for job in wdc:
 
                 output = name + ".out"
                 
-                text = make_text(job_name, output, job, entity_type, decimate, size)
+                text = make_text(job, output, job, entity_type, decimate, size)
 
                 names.append(name)
 
