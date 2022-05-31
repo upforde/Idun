@@ -23,7 +23,6 @@ if "/" in hp.dataset:
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train test datasets, depending on if they're 
     valid_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/valid.txt"        # from the er_magellan datasets or the wdc
 else:                                                                                   # datasets
-    MODEL_NAME += f"_{hp.size}"
     train_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
     valid_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/valid.txt." + hp.size
 
@@ -31,6 +30,8 @@ SAVE_LOCATION += f"/{hp.type}"
 MODEL_NAME += f"_{hp.type}" 
 train_data += f".{hp.type}"
 valid_data += f".{hp.type}"
+
+if "/" not in hp.dataset: MODEL_NAME += f"/{hp.size}"
 
 if hp.decimate:               
     SAVE_LOCATION += ".decimated"                                                       # Adding postfix for if to use the decimated
