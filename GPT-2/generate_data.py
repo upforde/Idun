@@ -64,7 +64,7 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
-file = open(SAVE_NAME + ".txt", "a"):
+file = open(SAVE_NAME + ".txt", "a")
 
 count = 0
 while count < amount:
