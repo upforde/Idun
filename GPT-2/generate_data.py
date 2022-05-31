@@ -1,5 +1,6 @@
 import os, random, argparse
 from numpy import save
+import tensorflow
 from tensorflow import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
