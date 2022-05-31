@@ -32,13 +32,13 @@ er_magellan = [
     "Dirty/DBLP-GoogleScholar",
     "Dirty/iTunes-Amazon",
     "Dirty/Walmart-Amazon",
-    "Structured/Amazon-Google/",
-    "Structured/Beer/", 
-    "Structured/DBLP-ACM/",
-    "Structured/DBLP-GoogleScholar/",
-    "Structured/Fodors-Zagats/",
-    "Structured/iTunes-Amazon/",
-    "Structured/Walmart-Amazon/",
+    "Structured/Amazon-Google",
+    "Structured/Beer", 
+    "Structured/DBLP-ACM",
+    "Structured/DBLP-GoogleScholar",
+    "Structured/Fodors-Zagats",
+    "Structured/iTunes-Amazon",
+    "Structured/Walmart-Amazon",
     "Textual/Abt-Buy"
     ]
 

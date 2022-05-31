@@ -13,8 +13,8 @@ parser.add_argument("--decimate", type=str, default="False")
 hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
-MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type         # The name of the model, it's called this
-                                                                                          # when saved
+MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type                         # The name of the model, it's called this
+                                                                                        # when saved
 if "/" in hp.dataset: 
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"          # Train test datasets, depending on if they're 
     test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"            # from the er_magellan datasets or the wdc
