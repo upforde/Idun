@@ -58,13 +58,13 @@ with open(valid_data) as file:
 
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
-file = open(SAVE_NAME + ".txt", "a")
-
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
+
+generated = []
 
 count = 0
 while count < amount:
@@ -76,21 +76,14 @@ while count < amount:
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
     prompt = text + rand
 
-    print("Prompt:")
-    print(prompt)
-    print()
-    print("Generating:")
-    print()
-
     while not valid:
         generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)
-        print(generated_text)
         valid = match.isValid()
     
-    print(match.generate_string(ENTITY_TYPE))
-    file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+    generated.append(match.generate_string(ENTITY_TYPE))
     count += 1
 
-file.close()
+with open(SAVE_NAME + ".txt", "a") as file:
+    for line in generated: file.write(f"{line}\n")
