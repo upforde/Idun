@@ -66,6 +66,8 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate: amount = len(train) * 9
 else: amount = len(train)
 
+print(amount)
+
 count = 0
 while count < amount:
     valid = False

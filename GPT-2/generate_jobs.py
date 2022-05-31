@@ -1,7 +1,10 @@
-def make_text(output, dataset, entity_type, decimate, size=None, ft=None):
-    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/generate_data.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
+def make_text(output, dataset, entity_type, decimate, size=None, ft=False):
+    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/generate_data.py"
+    python_line += f" --dataset={dataset}"
+    python_line += f" --type={entity_type}"
+    python_line += f" --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
-    if ft != None: python_line += f" --ft={ft}"
+    python_line += f" --ft={ft}"
     decimate_text = "decimate" if decimate else ""
     size_text = " " + size if size != None else ""
     ft_text = "fine_tuned" if ft else "non_fine_tuned"
