@@ -66,6 +66,7 @@ with open(valid_data) as file:
 if hp.decimate: amount = len(train) * 9
 else: amount = len(train)
 
+for line in train: print(line)
 print(amount)
 
 # count = 0
