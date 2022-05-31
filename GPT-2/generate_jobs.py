@@ -12,7 +12,7 @@ def make_text(output, dataset, entity_type, decimate, size=None, ft=False):
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=08:00:00",
+        "#SBATCH --time=24:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
