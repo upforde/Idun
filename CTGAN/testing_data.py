@@ -1,62 +1,25 @@
 import argparse
 import pandas as pd
 import os
-from distutils import util
 from sdv.tabular import CTGAN
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--dataset", type=str, default="Structured/Beer")
-parser.add_argument('--matches', dest='matches', type=lambda x:bool(util.strtobool(x)))
-parser.add_argument("--decimate", dest='decimate', type=lambda x:bool(util.strtobool(x)))
-parser.add_argument("--size", type=str, default=None)
-
-hp = parser.parse_args()
 
 # If the data is in DITTO format or not.
 ditto_format = True
 
-# Model directory to be saved at.
-model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
-
-# Dataset directory.
-datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
-
-# Model name.
-job_name = hp.dataset + os.sep
-
-model_name = hp.dataset
-model_name = model_name.replace(os.sep, "_") # Might have to change this later.
-
-if os.sep in hp.dataset :
-    datasets_dir += "er_magellan" + os.sep + job_name + "train.txt"
-    model_dir += "er_magellan" + os.sep + job_name
-else:
-    model_name += "_" + hp.size
-    datasets_dir += "wdc" + os.sep + job_name + "train.txt." + hp.size
-    model_dir += "wdc" + os.sep + job_name + hp.size + os.sep
-
-if hp.matches:
-    datasets_dir += ".matches"
-    model_name += "_matches"
-else:
-    datasets_dir += ".non_matches"
-    model_name += "_non_matches"
-
-if hp.decimate:
-    datasets_dir += ".decimated"
-    model_name += "_decimated"
-
-model_name += ".pkl"
+# Data table directory and name.
+datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets'
 
 # Model training parameters.
 epochs = 3000
 batch_total = 1000
 
 # If the model should trained on "matched" or "non-matched" examples.
-train_on_matched = hp.matches
+train_on_matched = True
 
+# Model directory and name to be saved. 
 
 
 def ditto_reformater(data):
@@ -129,26 +92,28 @@ def ditto_reformater(data):
     return table1, table2, table3
 
 if ditto_format:
-    ditto_data_path = datasets_dir
+    ditto_data_path = r"C:\Users\aleks\Desktop\Master Thesis\Idun\GPT-2\Datasets\er_magellan\Structured\DBLP-GoogleScholar\train.txt.matches.decimated"
     
-    print("====================")
-    print("Checking path...")
-    print(datasets_dir)
-    exists = os.path.exists(ditto_data_path)
-    print(hp.decimate)
-    print(hp.matches)
-    if exists:
-        print("Found!")
-    else:
-        print("NOT FOUND!!!")
+    with open(ditto_data_path, 'r', encoding='utf-8') as file:
+        data = file.read()
+
+    table_A, table_B, truth_table = ditto_reformater(data)
+    
+    # Conjoin tables together with Truth
+    table_A = table_A.add_prefix("ltable_")
+    table_B = table_B.add_prefix("rtable_")
+    table = pd.concat([table_A, table_B, truth_table], axis=1)
 
 else:
-    magellan_data_path = datasets_dir
+    # print("Please perform the Magellan Sampling pipeline before proceeding.") 
+    magellan_data_path = name_of_table
     table = pd.read_csv(magellan_data_path)
 
-if exists:
-    os.makedirs(model_dir, exist_ok=True)
-    model_save_path = model_dir + model_name
-    print("Model path: ")
-    print(model_save_path)
-    f = open(model_save_path + ".txt", "w")
+table.to_csv(r"C:\Users\aleks\Desktop\Master Thesis\Idun\GPT-2\Datasets\er_magellan\Structured\DBLP-GoogleScholar\test.csv", encoding="utf-8")
+
+# model = CTGAN(epochs=epochs, batch_size=batch_total)
+# model.fit(table_for_training)
+# model_save_path = model_name
+# model.save(model_save_path)
+
+# print("CTGAN training " + name_of_table + " epochs: " + str(epochs) + " batchsize: " + str(batch_total))

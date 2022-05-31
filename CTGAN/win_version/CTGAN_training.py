@@ -12,16 +12,17 @@ parser.add_argument('--matches', dest='matches', type=lambda x:bool(util.strtobo
 parser.add_argument("--decimate", dest='decimate', type=lambda x:bool(util.strtobool(x)))
 parser.add_argument("--size", type=str, default=None)
 
+
 hp = parser.parse_args()
 
 # If the data is in DITTO format or not.
 ditto_format = True
 
 # Model directory to be saved at.
-model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
+model_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Models' + os.sep
 
 # Dataset directory.
-datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
+datasets_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets' + os.sep
 
 # Model name.
 job_name = hp.dataset + os.sep
@@ -143,6 +144,7 @@ if ditto_format:
         print("NOT FOUND!!!")
 
 else:
+    # print("Please perform the Magellan Sampling pipeline before proceeding.") 
     magellan_data_path = datasets_dir
     table = pd.read_csv(magellan_data_path)
 
@@ -152,3 +154,10 @@ if exists:
     print("Model path: ")
     print(model_save_path)
     f = open(model_save_path + ".txt", "w")
+
+# model = CTGAN(epochs=epochs, batch_size=batch_total)
+# model.fit(table)
+# model_save_path = model_dir + os.sep + model_name
+# model.save(model_save_path)
+
+# print("CTGAN training " + name_of_table + " epochs: " + str(epochs) + " batchsize: " + str(batch_total))

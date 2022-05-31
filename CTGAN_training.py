@@ -1,15 +1,14 @@
 import argparse
 import pandas as pd
 import os
-from distutils import util
 from sdv.tabular import CTGAN
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
-parser.add_argument('--matches', dest='matches', type=lambda x:bool(util.strtobool(x)))
-parser.add_argument("--decimate", dest='decimate', type=lambda x:bool(util.strtobool(x)))
+parser.add_argument("--matches", type=bool, default=True)
+parser.add_argument("--decimate", type=bool, default=True)
 parser.add_argument("--size", type=str, default=None)
 
 hp = parser.parse_args()
@@ -24,18 +23,16 @@ model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
 datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
 
 # Model name.
-job_name = hp.dataset + os.sep
-
 model_name = hp.dataset
-model_name = model_name.replace(os.sep, "_") # Might have to change this later.
+model_name = model_name.replace("/", "_") # Might have to change this later.
 
-if os.sep in hp.dataset :
-    datasets_dir += "er_magellan" + os.sep + job_name + "train.txt"
-    model_dir += "er_magellan" + os.sep + job_name
+if "/" in hp.dataset:
+    datasets_dir += "er_magellan/" + hp.dataset + "train.txt"
+    model_dir += "er_magellan/" + hp.dataset
 else:
     model_name += "_" + hp.size
-    datasets_dir += "wdc" + os.sep + job_name + "train.txt." + hp.size
-    model_dir += "wdc" + os.sep + job_name + hp.size + os.sep
+    datasets_dir += "wdc/" + hp.dataset + "train.txt." + hp.size
+    model_dir += "wdc/" + hp.dataset + "/" + hp.size + "/"
 
 if hp.matches:
     datasets_dir += ".matches"
@@ -131,24 +128,26 @@ def ditto_reformater(data):
 if ditto_format:
     ditto_data_path = datasets_dir
     
-    print("====================")
-    print("Checking path...")
-    print(datasets_dir)
-    exists = os.path.exists(ditto_data_path)
-    print(hp.decimate)
-    print(hp.matches)
-    if exists:
-        print("Found!")
-    else:
-        print("NOT FOUND!!!")
+    with open(ditto_data_path, 'r', encoding='utf-8') as file:
+        data = file.read()
+
+    table_A, table_B, truth_table = ditto_reformater(data)
+    
+    # Conjoin tables together with Truth
+    table_A = table_A.add_prefix("ltable_")
+    table_B = table_B.add_prefix("rtable_")
+    table = pd.concat([table_A, table_B, truth_table], axis=1)
 
 else:
+    # print("Please perform the Magellan Sampling pipeline before proceeding.") 
     magellan_data_path = datasets_dir
     table = pd.read_csv(magellan_data_path)
 
-if exists:
-    os.makedirs(model_dir, exist_ok=True)
-    model_save_path = model_dir + model_name
-    print("Model path: ")
-    print(model_save_path)
-    f = open(model_save_path + ".txt", "w")
+
+
+model = CTGAN(epochs=epochs, batch_size=batch_total)
+model.fit(table)
+model_save_path = model_dir + "/" + model_name
+model.save(model_save_path)
+
+# print("CTGAN training " + name_of_table + " epochs: " + str(epochs) + " batchsize: " + str(batch_total))
