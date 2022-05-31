@@ -1,7 +1,5 @@
 import os, random, argparse
-from numpy import save
-import tensorflow
-from tensorflow import pipeline, GPT2Tokenizer
+from transformers import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
