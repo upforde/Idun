@@ -82,15 +82,15 @@ while count < amount:
     print("Generating:")
     print()
 
-    while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
-        generated_text = generated[0]["generated_text"]
-        match = ditto_parser(generated_text)
-        print(generated_text)
-        valid = match.isValid()
+    #while not valid:
+        #generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
+        #generated_text = generated[0]["generated_text"]
+        #match = ditto_parser(generated_text)
+        #print(generated_text)
+        #valid = match.isValid()
     
-    print(match.generate_string(ENTITY_TYPE))
-    file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+    #print(match.generate_string(ENTITY_TYPE))
+    #file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
 
 file.close()
