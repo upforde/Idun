@@ -76,10 +76,17 @@ while count < amount:
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
     prompt = text + rand + "\tCOL"
 
+    print("Prompt:")
+    print(prompt)
+    print()
+    print("Generating:")
+    print()
+
     while not valid:
         generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)
+        print(generated_text)
         valid = match.isValid()
     
     print(match.generate_string(ENTITY_TYPE))
