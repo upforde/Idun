@@ -1,5 +1,8 @@
 def make_text(output, dataset, entity_type, decimate, size=None):
-    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/create_model.py --dataset={dataset} --type={entity_type} --decimate={decimate}"
+    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/create_model.py"
+    python_line += f" --dataset={dataset}"
+    python_line += f" --type={entity_type}"
+    python_line += f" --decimate={decimate}"
     if size != None: python_line += f" --size={size}"
     decimate_text = "decimate" if decimate else ""
     size_text = " " + size if size != None else ""
@@ -15,6 +18,7 @@ def make_text(output, dataset, entity_type, decimate, size=None):
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
+        
         "module purge",
         "module load Anaconda3/2020.07",
         "pip3 install transformers==4.2.2 --user",

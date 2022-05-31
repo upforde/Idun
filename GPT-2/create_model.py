@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
 parser.add_argument("--size", type=str, default=None)
 parser.add_argument("--type", type=str, default="matches")
-parser.add_argument("--decimate", type=bool, default=False)
+parser.add_argument("--decimate", type=str, default="False")
 hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
@@ -26,7 +26,7 @@ else:                                                                           
 train_data += f".{hp.type}"
 test_data += f".{hp.type}"
 
-if hp.decimate:                                                                 # Adding postfix for if to use the decimated
+if hp.decimate == "True":                                                       # Adding postfix for if to use the decimated
     train_data += ".decimated"                                                  # datasets or not
     test_data += ".decimated"
     MODEL_NAME += "_decimated"
