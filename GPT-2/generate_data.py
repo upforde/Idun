@@ -30,19 +30,21 @@ MODEL_NAME += f"_{hp.type}"
 train_data += f".{hp.type}"
 valid_data += f".{hp.type}"
 
-if "/" not in hp.dataset: MODEL_NAME += f"/{hp.size}"
+if "/" not in hp.dataset: 
+    SAVE_NAME += f"_{hp.size}"
+    MODEL_NAME += f"/{hp.size}"
 
 if hp.decimate:               
-    SAVE_NAME += ".decimated.txt"                                                   # Adding postfix for if to use the decimated
+    SAVE_NAME += "_decimated"                                                   # Adding postfix for if to use the decimated
     MODEL_NAME += "_decimated"                                                          # datasets or not
     train_data += ".decimated"
     valid_data += ".decimated"
 
 if not hp.ft:
     MODEL_NAME = "gpt2"
-    SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}.{hp.type}"
-    if hp.decimate: SAVE_NAME += ".decimated.txt"
-    if hp.decimate: SAVE_LOCATION += ".decimated"
+    SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}_{hp.type}"
+    if hp.decimate: SAVE_NAME += "_decimated"
+    SAVE_NAME += "_nft"
 
 if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
@@ -56,7 +58,7 @@ with open(valid_data) as file:
 
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
-file = open(SAVE_NAME, "a")
+file = open(SAVE_NAME + ".txt", "a")
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
@@ -67,13 +69,14 @@ else: amount = len(train)
 count = 0
 while count < amount:
     valid = False
+    text = ""
+    if not hp.ft: 
+        for i in range(5):
+            text += train[random.randint(0, len(train)-1)] + "\n"
+    rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+    prompt = text + rand + "\tCOL"
+
     while not valid:
-        text = ""
-        if not hp.ft: 
-            for i in range(5):
-                text += train[random.randint(0, len(train)-1)] + "\n"
-        rand = cut_valid[random.randint(0, len(cut_valid)-1)]
-        prompt = text + rand + "\tCOL"
         generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)

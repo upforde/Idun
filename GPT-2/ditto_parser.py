@@ -11,7 +11,9 @@ class ditto_parser():
     self.data = {}
     for field in sides[0].split("COL"):                                         # Setting up the left side
       if "VAL" not in field: continue                                           # Error handling
-      col, val = field.split("VAL")                                             # Getting the column and value data
+      colval = field.split("VAL")                                               # Finding the data in the string
+      col = colval[0]                                                           # Getting the column and value data
+      val = colval[1]
       self.data[col.strip()] = [val.strip()]                                    # Inserting data into internal dictionary to aggregate the true columns
 
     if "COL" not in sides[1]: return                                            # Error handling

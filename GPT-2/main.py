@@ -43,8 +43,6 @@ with open("./Datasets/er_magellan/Structured/Beer/valid.txt") as file:
 # Cutting the right half off from the validation set to make prompts
 cut_valid_matches = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid_matches]
 
-file = open(save_location + "fine_tuned_matches.txt", "a")
-
 # valid = False
 # while not valid:
 #   text = ""
@@ -95,6 +93,8 @@ trainer.train()
 trainer.save_model()
 
 generator = pipeline('text-generation', model="./EMmodel", tokenizer='gpt2')
+
+file = open(save_location + "fine_tuned_matches.txt", "a")
 
 valid = False
 prompt = cut_valid_matches[random.randint(0, len(cut_valid_matches)-1)]
