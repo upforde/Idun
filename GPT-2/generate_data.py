@@ -74,7 +74,7 @@ while count < amount:
         for i in range(5):
             text += train[random.randint(0, len(train)-1)] + "\n"
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
-    prompt = text + rand + "\tCOL"
+    prompt = text + rand
 
     print("Prompt:")
     print(prompt)
