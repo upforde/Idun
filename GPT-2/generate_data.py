@@ -8,8 +8,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
 parser.add_argument("--size", type=str, default=None)
 parser.add_argument("--type", type=str, default="matches")
-parser.add_argument("--decimate", type=bool, default=False)
-parser.add_argument("--ft", type=bool, default=True)
+parser.add_argument("--decimate", type=str, default="False")
+parser.add_argument("--ft", type=str, default="True")
 hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
@@ -34,13 +34,13 @@ if "/" not in hp.dataset:
     SAVE_NAME += f"_{hp.size}"
     MODEL_NAME += f"/{hp.size}"
 
-if hp.decimate:               
+if hp.decimate == "True":               
     SAVE_NAME += "_decimated"                                                   # Adding postfix for if to use the decimated
     MODEL_NAME += "_decimated"                                                          # datasets or not
     train_data += ".decimated"
     valid_data += ".decimated"
 
-if not hp.ft:
+if hp.ft == "False":
     MODEL_NAME = "gpt2"
     SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}_{hp.type}"
     if hp.decimate: SAVE_NAME += "_decimated"
@@ -63,7 +63,7 @@ with open(valid_data) as file:
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 
-if hp.decimate: amount = len(train) * 9
+if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
 for line in train: print(f"{line}\n")
