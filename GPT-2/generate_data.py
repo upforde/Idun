@@ -34,7 +34,7 @@ if "/" not in hp.dataset:
     SAVE_NAME += f"_{hp.size}"
     MODEL_NAME += f"/{hp.size}"
 
-if hp.decimate == "True":               
+if hp.decimate == "True":
     SAVE_NAME += "_decimated"                                                   # Adding postfix for if to use the decimated
     MODEL_NAME += "_decimated"                                                          # datasets or not
     train_data += ".decimated"
