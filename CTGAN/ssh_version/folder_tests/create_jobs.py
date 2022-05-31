@@ -10,7 +10,7 @@ def make_text(output, dataset, matches, decimate, size=None):
         "#!/bin/sh",
         "#SBATCH --partition=CPUQ",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=09:00:00",
+        "#SBATCH --time=00:10:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
