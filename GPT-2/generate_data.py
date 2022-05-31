@@ -79,6 +79,7 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
     
+    print(match.generate_string(ENTITY_TYPE))
     file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
 
