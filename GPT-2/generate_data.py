@@ -56,36 +56,36 @@ with open(valid_data) as file:
     lines = file.readlines()
     for line in lines: valid.append(line)
 
-cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
+# cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
-file = open(SAVE_NAME + ".txt", "a")
+# file = open(SAVE_NAME + ".txt", "a")
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
+# tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+# generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 
 if hp.decimate: amount = len(train) * 9
 else: amount = len(train)
 
 print(amount)
 
-count = 0
-while count < amount:
-    valid = False
-    text = ""
-    if not hp.ft: 
-        for i in range(5):
-            text += train[random.randint(0, len(train)-1)] + "\n"
-    rand = cut_valid[random.randint(0, len(cut_valid)-1)]
-    prompt = text + rand + "\tCOL"
+# count = 0
+# while count < amount:
+#     valid = False
+#     text = ""
+#     if not hp.ft: 
+#         for i in range(5):
+#             text += train[random.randint(0, len(train)-1)] + "\n"
+#     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+#     prompt = text + rand + "\tCOL"
 
-    while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
-        generated_text = generated[0]["generated_text"]
-        match = ditto_parser(generated_text)
-        valid = match.isValid()
+#     while not valid:
+#         generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
+#         generated_text = generated[0]["generated_text"]
+#         match = ditto_parser(generated_text)
+#         valid = match.isValid()
     
-    print(match.generate_string(ENTITY_TYPE))
-    file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
-    count += 1
+#     print(match.generate_string(ENTITY_TYPE))
+#     file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+#     count += 1
 
-file.close()
+# file.close()
