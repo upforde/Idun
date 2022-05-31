@@ -25,7 +25,7 @@ else:                                                                           
     train_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
     valid_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/valid.txt." + hp.size
 
-SAVE_LOCATION += f"/{hp.type}"
+SAVE_NAME = SAVE_LOCATION + f"/{hp.type}"
 MODEL_NAME += f"_{hp.type}" 
 train_data += f".{hp.type}"
 valid_data += f".{hp.type}"
@@ -33,14 +33,15 @@ valid_data += f".{hp.type}"
 if "/" not in hp.dataset: MODEL_NAME += f"/{hp.size}"
 
 if hp.decimate:               
-    SAVE_LOCATION += ".decimated"                                                       # Adding postfix for if to use the decimated
+    SAVE_NAME += ".decimated.txt"                                                   # Adding postfix for if to use the decimated
     MODEL_NAME += "_decimated"                                                          # datasets or not
     train_data += ".decimated"
     valid_data += ".decimated"
 
 if not hp.ft:
     MODEL_NAME = "gpt2"
-    SAVE_LOCATION = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}.{hp.type}"
+    SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}.{hp.type}"
+    if hp.decimate: SAVE_NAME += ".decimated.txt"
     if hp.decimate: SAVE_LOCATION += ".decimated"
 
 if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
@@ -55,7 +56,7 @@ with open(valid_data) as file:
 
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
-file = open(SAVE_LOCATION, "a")
+file = open(SAVE_NAME, "a")
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
