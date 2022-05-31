@@ -64,7 +64,7 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
-generated = []
+file = open(SAVE_NAME + ".txt", "a"):
 
 count = 0
 while count < amount:
@@ -82,8 +82,7 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
     
-    generated.append(match.generate_string(ENTITY_TYPE))
+    file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
 
-with open(SAVE_NAME + ".txt", "a") as file:
-    for line in generated: file.write(f"{line}\n")
+file.close()
