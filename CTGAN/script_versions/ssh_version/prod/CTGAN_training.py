@@ -147,6 +147,12 @@ else:
 
 os.makedirs(model_dir, exist_ok=True)
 
+# CTGAN cannot train on tables smaller than 10.
+if len(table.index) < 10:
+    length_of_table = len(table.index)
+    amount_to_generate = 10 - length_of_table
+    table.append(table.tail(amount_to_generate+1))
+
 model = CTGAN(epochs=epochs, batch_size=batch_total)
 model.fit(table)
 model_save_path = model_dir + model_name

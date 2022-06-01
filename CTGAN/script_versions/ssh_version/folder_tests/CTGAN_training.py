@@ -131,29 +131,24 @@ def ditto_reformater(data):
 if ditto_format:
     ditto_data_path = datasets_dir
     
-    with open(ditto_data_path, 'r', encoding='utf-8') as file:
-        data = file.read()
-
-    table_A, table_B, truth_table = ditto_reformater(data)
-    
-    # Conjoin tables together with Truth
-    table_A = table_A.add_prefix("ltable_")
-    table_B = table_B.add_prefix("rtable_")
-    table = pd.concat([table_A, table_B, truth_table], axis=1)
+    print("====================")
+    print("Checking path...")
+    print(datasets_dir)
+    exists = os.path.exists(ditto_data_path)
+    print(hp.decimate)
+    print(hp.matches)
+    if exists:
+        print("Found!")
+    else:
+        print("NOT FOUND!!!")
 
 else:
     magellan_data_path = datasets_dir
     table = pd.read_csv(magellan_data_path)
 
-os.makedirs(model_dir, exist_ok=True)
-
-# CTGAN cannot train on tables smaller than 10.
-if len(table.index) < 10:
-    length_of_table = len(table.index)
-    amount_to_generate = 10 - length_of_table
-    table.append(table.tail(amount_to_generate+1))
-
-model = CTGAN(epochs=epochs, batch_size=batch_total)
-model.fit(table)
-model_save_path = model_dir + model_name
-model.save(model_save_path)
+if exists:
+    os.makedirs(model_dir, exist_ok=True)
+    model_save_path = model_dir + model_name
+    print("Model path: ")
+    print(model_save_path)
+    f = open(model_save_path + ".txt", "w")
