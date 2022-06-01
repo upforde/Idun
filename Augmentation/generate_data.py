@@ -118,8 +118,8 @@ with open(train_data) as file:
         else: non_matches.append(pair)
     file.close()
 
-amount_matches = len(matches) if hp.decimated == "False" else len(matches)*9
-amount_non_matches = len(non_matches) if hp.decimated == "False" else len(non_matches)*9
+amount_matches = len(matches) if hp.decimate == "False" else len(matches)*9
+amount_non_matches = len(non_matches) if hp.decimate == "False" else len(non_matches)*9
 
 new_non_matches = []
 new_matches = []
