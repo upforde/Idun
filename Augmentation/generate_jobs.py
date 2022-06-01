@@ -7,7 +7,7 @@ def make_text(output, dataset, decimate, size=None):
     size_text = " " + size if size != None else ""
     text = [
         "#!/bin/sh",
-        "#SBATCH --partition=GPUQ",
+        "#SBATCH --partition=CPUQ",
         "#SBATCH --account=ie-idi",
         "#SBATCH --time=24:00:00",
         "#SBATCH --nodes=1",
