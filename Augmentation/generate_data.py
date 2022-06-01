@@ -83,6 +83,7 @@ if "/" not in hp.dataset:
 if hp.decimate == "True":
     SAVE_LOCATION += "_decimated/"                                                   # Adding postfix for if to use the decimated
     train_data += ".decimated"
+else: SAVE_LOCATION += "/"
 
 if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
