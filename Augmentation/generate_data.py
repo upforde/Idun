@@ -118,6 +118,9 @@ with open(train_data) as file:
         else: non_matches.append(pair)
     file.close()
 
+amount_matches = len(matches) if hp.decimated == "False" else len(matches)*9
+amount_non_matches = len(non_matches) if hp.decimated == "False" else len(non_matches)*9
+
 new_non_matches = []
 new_matches = []
 
@@ -125,14 +128,14 @@ seed(current_milli_time())
 
 alphabet_list = list(string.ascii_lowercase) + list(string.digits)
 
-for _ in range(len(matches)):
+for _ in range(amount_matches):
     # Pick a random parent from matches
     parent = matches[round((len(matches)-1)*random())]
 
     # Create and append the new match
     new_matches.append(create_new_match(parent))  
 
-for _ in range(len(non_matches)):
+for _ in range(amount_non_matches):
     # Getting two random pairs to make a new pair with
     # There can never be two pairs that are matches, but there can be two non-match pairs
     if random() > 0.5:

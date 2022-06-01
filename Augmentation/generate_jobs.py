@@ -59,9 +59,16 @@ names = []
 
 for job in er_magellan:
     # FT
-    name = "./gen_jobs/" + job.replace("/", "_") + "_matches_ft"
+    name = "./gen_jobs/" + job.replace("/", "_")
     names.append(name)
     text = make_text(name + ".out", job, False)
+    with open(name + ".slurm", "a") as file:
+        for line in text:
+            file.write(f"{line}\n")
+
+    name = "./gen_jobs/" + job.replace("/", "_") + "_decimated"
+    names.append(name)
+    text = make_text(name + ".out", job, True)
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
@@ -69,9 +76,16 @@ for job in er_magellan:
 for job in wdc:
     for size in sizes:
         # FT
-        name = "./gen_jobs/" + job + "_matches_" + size + "_ft"
+        name = "./gen_jobs/" + job + size
         names.append(name)
         text = make_text(name + ".out", job, False, size)
+        with open(name + ".slurm", "a") as file:
+            for line in text:
+                file.write(f"{line}\n")
+
+        name = "./gen_jobs/" + job + size + "_decimated"
+        names.append(name)
+        text = make_text(name + ".out", job, True, size)
         with open(name + ".slurm", "a") as file:
             for line in text:
                 file.write(f"{line}\n")
