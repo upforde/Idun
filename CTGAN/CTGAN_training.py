@@ -151,7 +151,7 @@ os.makedirs(model_dir, exist_ok=True)
 if len(table.index) < 10:
     length_of_table = len(table.index)
     amount_to_generate = 10 - length_of_table
-    table.append(table.tail(amount_to_generate+1), ignore_index=True)
+    table = table.append(table.tail(amount_to_generate+1), ignore_index=True)
 
 model = CTGAN(epochs=epochs, batch_size=batch_total)
 model.fit(table)
