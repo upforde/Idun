@@ -12,13 +12,28 @@ parser.add_argument("--decimate", type=str, default="False")
 parser.add_argument("--ft", type=str, default="True")
 hp = parser.parse_args()
 
+er_magellan = [
+    "Dirty/DBLP-ACM",
+    "Dirty/DBLP-GoogleScholar",
+    "Dirty/iTunes-Amazon",
+    "Dirty/Walmart-Amazon",
+    "Structured/Amazon-Google",
+    "Structured/Beer", 
+    "Structured/DBLP-ACM",
+    "Structured/DBLP-GoogleScholar",
+    "Structured/Fodors-Zagats",
+    "Structured/iTunes-Amazon",
+    "Structured/Walmart-Amazon",
+    "Textual/Abt-Buy"
+    ]
+
 # Parsing arguments and creating variable names
 ENTITY_TYPE = 1 if hp.type == "matches" else 0
 
 SAVE_LOCATION = IDUN_PATH + "Generated/" + hp.dataset
 MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset                                         # The name of the model, it's called this
                                                                                         # when saved
-if "/" in hp.dataset: 
+if hp.dataset in er_magellan: 
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train test datasets, depending on if they're 
     valid_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/valid.txt"        # from the er_magellan datasets or the wdc
 else:                                                                                   # datasets
@@ -30,7 +45,7 @@ MODEL_NAME += f"_{hp.type}"
 train_data += f".{hp.type}"
 valid_data += f".{hp.type}"
 
-if "/" not in hp.dataset: 
+if hp.dataset not in er_magellan: 
     SAVE_NAME += f"_{hp.size}"
     MODEL_NAME += f"/{hp.size}"
 
@@ -42,7 +57,9 @@ if hp.decimate == "True":
 
 if hp.ft == "False":
     MODEL_NAME = "gpt2"
-    SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/{hp.size}_{hp.type}"
+    SAVE_NAME = IDUN_PATH + f"Generated/{hp.dataset}/"
+    if hp.dataset not in er_magellan: SAVE_NAME += f"{hp.size}_"
+    SAVE_NAME += f"{hp.type}"
     if hp.decimate: SAVE_NAME += "_decimated"
     SAVE_NAME += "_nft"
 
