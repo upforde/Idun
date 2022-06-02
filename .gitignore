@@ -5,3 +5,6 @@ GPT-2/gen_jobs/
 GPT-2/*.sh
 Augmentation/gen_jobs/
 Augmentation/*.sh
+ditto/jobs
+ditto/run_jobs.sh
+ditto/checkpoints/*

@@ -1,0 +1,290 @@
+[ 
+{
+	"name": "Dirty_DBLP-ACM_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Dirty_DBLP-GoogleScholar_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Dirty_iTunes-Amazon_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Dirty_Walmart-Amazon_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Structured_Amazon-Google_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/Amazon-Google/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Structured_Beer_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/Beer/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Structured_DBLP-ACM_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/DBLP-ACM/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Structured_DBLP-GoogleScholar_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Structured_Fodors-Zagats_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Structured_iTunes-Amazon_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Structured_Walmart-Amazon_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Textual_Abt-Buy_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/er_magellan/Textual/Abt-Buy/train.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "all_small_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/all/train.txt.small",
+	"validset": "../ditto/data/wdc/all/valid.txt.small",
+	"testset": "../ditto/data/wdc/all/test.txt"
+}
+,
+{
+	"name": "all_medium_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/all/train.txt.medium",
+	"validset": "../ditto/data/wdc/all/valid.txt.medium",
+	"testset": "../ditto/data/wdc/all/test.txt"
+}
+,
+{
+	"name": "all_large_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/all/train.txt.large",
+	"validset": "../ditto/data/wdc/all/valid.txt.large",
+	"testset": "../ditto/data/wdc/all/test.txt"
+}
+,
+{
+	"name": "all_xlarge_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/all/train.txt.xlarge",
+	"validset": "../ditto/data/wdc/all/valid.txt.xlarge",
+	"testset": "../ditto/data/wdc/all/test.txt"
+}
+,
+{
+	"name": "cameras_small_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/cameras/train.txt.small",
+	"validset": "../ditto/data/wdc/cameras/valid.txt.small",
+	"testset": "../ditto/data/wdc/cameras/test.txt"
+}
+,
+{
+	"name": "cameras_medium_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/cameras/train.txt.medium",
+	"validset": "../ditto/data/wdc/cameras/valid.txt.medium",
+	"testset": "../ditto/data/wdc/cameras/test.txt"
+}
+,
+{
+	"name": "cameras_large_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/cameras/train.txt.large",
+	"validset": "../ditto/data/wdc/cameras/valid.txt.large",
+	"testset": "../ditto/data/wdc/cameras/test.txt"
+}
+,
+{
+	"name": "cameras_xlarge_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/cameras/train.txt.xlarge",
+	"validset": "../ditto/data/wdc/cameras/valid.txt.xlarge",
+	"testset": "../ditto/data/wdc/cameras/test.txt"
+}
+,
+{
+	"name": "computers_small_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/computers/train.txt.small",
+	"validset": "../ditto/data/wdc/computers/valid.txt.small",
+	"testset": "../ditto/data/wdc/computers/test.txt"
+}
+,
+{
+	"name": "computers_medium_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/computers/train.txt.medium",
+	"validset": "../ditto/data/wdc/computers/valid.txt.medium",
+	"testset": "../ditto/data/wdc/computers/test.txt"
+}
+,
+{
+	"name": "computers_large_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/computers/train.txt.large",
+	"validset": "../ditto/data/wdc/computers/valid.txt.large",
+	"testset": "../ditto/data/wdc/computers/test.txt"
+}
+,
+{
+	"name": "computers_xlarge_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/computers/train.txt.xlarge",
+	"validset": "../ditto/data/wdc/computers/valid.txt.xlarge",
+	"testset": "../ditto/data/wdc/computers/test.txt"
+}
+,
+{
+	"name": "shoes_small_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/shoes/train.txt.small",
+	"validset": "../ditto/data/wdc/shoes/valid.txt.small",
+	"testset": "../ditto/data/wdc/shoes/test.txt"
+}
+,
+{
+	"name": "shoes_medium_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/shoes/train.txt.medium",
+	"validset": "../ditto/data/wdc/shoes/valid.txt.medium",
+	"testset": "../ditto/data/wdc/shoes/test.txt"
+}
+,
+{
+	"name": "shoes_large_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/shoes/train.txt.large",
+	"validset": "../ditto/data/wdc/shoes/valid.txt.large",
+	"testset": "../ditto/data/wdc/shoes/test.txt"
+}
+,
+{
+	"name": "shoes_xlarge_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/shoes/train.txt.xlarge",
+	"validset": "../ditto/data/wdc/shoes/valid.txt.xlarge",
+	"testset": "../ditto/data/wdc/shoes/test.txt"
+}
+,
+{
+	"name": "watches_small_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/watches/train.txt.small",
+	"validset": "../ditto/data/wdc/watches/valid.txt.small",
+	"testset": "../ditto/data/wdc/watches/test.txt"
+}
+,
+{
+	"name": "watches_medium_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/watches/train.txt.medium",
+	"validset": "../ditto/data/wdc/watches/valid.txt.medium",
+	"testset": "../ditto/data/wdc/watches/test.txt"
+}
+,
+{
+	"name": "watches_large_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/watches/train.txt.large",
+	"validset": "../ditto/data/wdc/watches/valid.txt.large",
+	"testset": "../ditto/data/wdc/watches/test.txt"
+}
+,
+{
+	"name": "watches_xlarge_baseline",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../ditto/data/wdc/watches/train.txt.xlarge",
+	"validset": "../ditto/data/wdc/watches/valid.txt.xlarge",
+	"testset": "../ditto/data/wdc/watches/test.txt"
+}
+,
+{}]
