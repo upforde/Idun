@@ -1,7 +1,7 @@
 import os, shutil, random
 
-# IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
-IDUN_PATH = "../"
+IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
+
 if not os.path.exists(IDUN_PATH + "ditto/jobs"):
     os.makedirs(IDUN_PATH + "ditto/jobs")
 
@@ -200,6 +200,7 @@ for job in wdc:
         make_files(task, train, test, valid)
 
 config.write("{}]")
+
 config.close()
 
 open(IDUN_PATH + "ditto/run_jobs.sh", "w").close() 
