@@ -57,7 +57,7 @@ while count < amount:
     prompt = text + rand
 
     while not valid:
-        generated = generator(prompt)
+        generated = generator(prompt, max_length=512)
         generated_text = generated[0]["generated_text"].replace(text, "")
         print(generated_text)
         match = ditto_parser(generated_text)
