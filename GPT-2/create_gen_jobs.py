@@ -77,7 +77,7 @@ for job in er_magellan:
     names.append(name)
     create(name, job, "non-matches", True)
 
-open("run_jobs.sh", "w").close()
+open("run_cg_jobs.sh", "w").close()
 with open("run_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")
     for name in names:
