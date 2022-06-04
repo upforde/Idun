@@ -56,6 +56,7 @@ while count < amount:
         text += train[random.randint(0, len(train)-1)] + "\n"
     prompt = text + rand
 
+    print()
     print(prompt)
     print(round(len(tokenizer(prompt)['input_ids'])))
 
