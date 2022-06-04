@@ -24,7 +24,7 @@ def make_text(output, dataset, entity_type, decimate):
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
-        f"#SBATCH --job-name=\"mg {dataset} {entity_type}{decimate_text}\"",
+        f"#SBATCH --job-name=\"cg {dataset} {entity_type}{decimate_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
