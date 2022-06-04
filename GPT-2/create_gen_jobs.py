@@ -78,7 +78,7 @@ for job in er_magellan:
     create(name, job, "non-matches", True)
 
 open("run_cg_jobs.sh", "w").close()
-with open("run_jobs.sh", "a") as file:
+with open("run_cg_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")
     for name in names:
         file.write(f"sbatch {name}.slurm danilasm\n")
