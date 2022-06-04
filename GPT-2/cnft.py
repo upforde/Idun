@@ -51,13 +51,13 @@ while count < amount:
     valid = False
     text = ""
 
-    for i in range(5):
-        text += train[random.randint(0, len(train)-1)] + "\n"
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+    while len(tokenizer(text)['input_ids']) + len(tokenizer(rand)['input_ids'])*2 < 512:
+        text += train[random.randint(0, len(train)-1)] + "\n"
     prompt = text + rand
 
     print(prompt)
-    print(round(len(tokenizer(prompt)['input_ids'])))
+    print()
     print(round(len(tokenizer(rand)['input_ids'])))
 
     # while not valid:
