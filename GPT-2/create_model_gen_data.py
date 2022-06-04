@@ -1,4 +1,4 @@
-import argparse, os, random
+import argparse, os, random, shutil
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
@@ -13,8 +13,10 @@ hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
-MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type                         # The name of the model, it's called this
-                                                                                        # when saved
+MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type
+SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/"
+if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
+
 if "/" in hp.dataset: 
     train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train test valid datasets 
     test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"          # from the er_magellan datasets
@@ -23,12 +25,14 @@ if "/" in hp.dataset:
 train_data += f".{hp.type}"
 test_data += f".{hp.type}"
 valid_data += f".{hp.type}"
+FILE_NAME = SAVE_LOCATION + f"{hp.type}"
 
-if hp.decimate == "True":                                                       # Adding postfix for if to use the decimated
+if hp.decimate == "True":                                                       # Adding suffix for if to use the decimated
     train_data += ".decimated"                                                  # datasets or not
     test_data += ".decimated"
     valid_data += ".decimated"
     MODEL_NAME += "_decimated"
+    FILE_NAME += "_decimated"
 
 # Function for creating the train-test datasets for the model
 def load_dataset(train_path,test_path,tokenizer):
@@ -79,8 +83,8 @@ trainer.save_model()
 ENTITY_TYPE = 1 if hp.type == "matches" else 0
 
 valid = []
-with open(valid_data) as file:
-    for line in file.readlines():
+with open(valid_data) as valid:
+    for line in valid.readlines():
         valid.append(line)
 
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
@@ -89,6 +93,8 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 
 if hp.decimate == "True": amount = len(open(train_data).readlines()) * 9
 else: amount = len(open(train_data).readlines())
+
+generated_data = open(FILE_NAME + "_ft.txt", "a")
 
 count = 0
 while count < amount:
@@ -101,7 +107,7 @@ while count < amount:
         match = ditto_parser(generated_text)
         valid = match.isValid()
     
-    file.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+    generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
 
-file.close()
+generated_data.close()
