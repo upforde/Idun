@@ -66,6 +66,5 @@ while count < amount:
     
     generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
-    break
 
 generated_data.close()

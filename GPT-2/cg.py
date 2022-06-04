@@ -58,7 +58,7 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
 training_args = TrainingArguments(
     output_dir=MODEL_NAME,                                                      # The output directory
     overwrite_output_dir=True,                                                  # overwrite the content of the output directory
-    num_train_epochs=5,                                                         # number of training epochs
+    num_train_epochs=3,                                                         # number of training epochs
     per_device_train_batch_size=64,                                             # batch size for training
     per_device_eval_batch_size=64,                                              # batch size for evaluation
     eval_steps = 400,                                                           # Number of update steps between two evaluations.
@@ -108,6 +108,5 @@ while count < amount:
     
     generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
-    break
 
 generated_data.close()
