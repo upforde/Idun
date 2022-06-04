@@ -50,18 +50,19 @@ count = 0
 while count < amount:
     valid = False
     text = ""
-
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+
     while len(tokenizer(text)['input_ids']) + len(tokenizer(rand)['input_ids'])*2 < 512:
         text += train[random.randint(0, len(train)-1)] + "\n"
+
     prompt = text + rand
 
-    while not valid:
-        generated = generator(prompt, max_length=512)
-        generated_text = generated[0]["generated_text"].replace(text, "")
-        print(generated_text)
-        match = ditto_parser(generated_text)
-        valid = match.isValid()
+    # while not valid:
+    generated = generator(prompt, max_length=512)
+    generated_text = generated[0]["generated_text"].replace(text, "")
+    print(generated_text)
+    match = ditto_parser(generated_text)
+    valid = match.isValid()
     
     generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
