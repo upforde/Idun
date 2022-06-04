@@ -56,7 +56,7 @@ while count < amount:
     prompt = text + rand
 
     while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*1.5), num_return_sequences=1)
+        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*1.5))
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)
         valid = match.isValid()

@@ -101,7 +101,7 @@ while count < amount:
     prompt = cut_valid[random.randint(0, len(cut_valid)-1)]
 
     while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
+        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*2.5))
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)
         valid = match.isValid()
