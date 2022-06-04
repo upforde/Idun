@@ -14,7 +14,7 @@ hp = parser.parse_args()
 # Parsing arguments and creating variable names
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
 MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type
-SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/"
+SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/fine_tuned/"
 if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
 if "/" in hp.dataset: 
@@ -94,7 +94,7 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate == "True": amount = len(open(train_data).readlines()) * 9
 else: amount = len(open(train_data).readlines())
 
-generated_data = open(FILE_NAME + "_ft.txt", "a")
+generated_data = open(FILE_NAME + ".txt", "a")
 
 count = 0
 while count < amount:
