@@ -10,7 +10,7 @@ if len(os.listdir(IDUN_PATH + "GPT-2/cnft_jobs")) != 0:
     os.makedirs(IDUN_PATH + "GPT-2/cnft_jobs")
 
 def make_text(output, dataset, entity_type, decimate):
-    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/generate_data.py"
+    python_line = f"python3 /cluster/home/danilasm/masters/Idun/GPT-2/cnft.py.py"
     python_line += f" --dataset={dataset}"
     python_line += f" --type={entity_type}"
     python_line += f" --decimate={decimate}"
