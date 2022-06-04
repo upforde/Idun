@@ -19,7 +19,7 @@ if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train and valid datasets
 valid_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/valid.txt"
 
-SAVE_NAME = SAVE_LOCATION + f"/{hp.type}"
+SAVE_NAME = SAVE_LOCATION + f"{hp.type}"
 train_data += f".{hp.type}"
 valid_data += f".{hp.type}"
 

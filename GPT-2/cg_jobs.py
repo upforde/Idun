@@ -66,7 +66,7 @@ for job in er_magellan:
 
     name = "./cg_jobs/" + job.replace("/", "_") + "_non_matches"
     names.append(name)
-    create(name, job, "non-matches", False)
+    create(name, job, "non_matches", False)
 
     name = "./cg_jobs/" + job.replace("/", "_") + "_matches_decimated"
     names.append(name)
@@ -74,7 +74,7 @@ for job in er_magellan:
 
     name = "./cg_jobs/" + job.replace("/", "_") + "_non_matches_decimated"
     names.append(name)
-    create(name, job, "non-matches", True)
+    create(name, job, "non_matches", True)
 
 open("run_cg_jobs.sh", "w").close()
 with open("run_cg_jobs.sh", "a") as file:
