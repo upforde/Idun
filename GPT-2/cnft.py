@@ -57,8 +57,7 @@ while count < amount:
     prompt = text + rand
 
     print(prompt)
-    print()
-    print(round(len(tokenizer(rand)['input_ids'])))
+    print(round(len(tokenizer(prompt)['input_ids'])))
 
     # while not valid:
     #     generated = generator(prompt)
