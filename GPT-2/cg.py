@@ -1,4 +1,4 @@
-import argparse, os, random, shutil
+import argparse, os, random
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
@@ -17,10 +17,9 @@ MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type
 SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/fine_tuned/"
 if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
-if "/" in hp.dataset: 
-    train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train test valid datasets 
-    test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"          # from the er_magellan datasets
-    valid_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/valid.txt"
+train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train test valid datasets 
+test_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/test.txt"          # from the er_magellan datasets
+valid_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/valid.txt"
 
 train_data += f".{hp.type}"
 test_data += f".{hp.type}"

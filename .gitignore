@@ -3,6 +3,8 @@ GPT-2/EMmodel/
 GPT-2/jobs/
 GPT-2/gen_jobs/
 GPT-2/*.sh
+GPT-2/cnft_jobs/
+GPT-2/cg_jobs/
 Augmentation/gen_jobs/
 Augmentation/*.sh
 ditto/jobs
