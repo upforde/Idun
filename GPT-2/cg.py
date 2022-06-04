@@ -82,8 +82,8 @@ trainer.save_model()
 ENTITY_TYPE = 1 if hp.type == "matches" else 0
 
 valid = []
-with open(valid_data) as valid:
-    for line in valid.readlines():
+with open(valid_data) as valid_file:
+    for line in valid_file.readlines():
         valid.append(line)
 
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
