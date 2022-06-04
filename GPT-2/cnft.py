@@ -39,7 +39,7 @@ with open(valid_data) as file:
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-generator = pipeline('text-generation', model="gpt2", tokenizer='gpt2')
+generator = pipeline('text-generation', model='gpt2', tokenizer='gpt2')
 
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
@@ -56,7 +56,7 @@ while count < amount:
     prompt = text + rand
 
     while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*3), num_return_sequences=1)
+        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*1.5), num_return_sequences=1)
         generated_text = generated[0]["generated_text"]
         match = ditto_parser(generated_text)
         valid = match.isValid()
