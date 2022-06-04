@@ -58,6 +58,7 @@ while count < amount:
     while not valid:
         generated = generator(prompt)
         generated_text = generated[0]["generated_text"].replace(text, "")
+        print(generated_text)
         match = ditto_parser(generated_text)
         valid = match.isValid()
     
