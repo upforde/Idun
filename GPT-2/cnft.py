@@ -39,7 +39,7 @@ with open(valid_data) as file:
 cut_valid = [item.split("\t")[0] + "\t" + item.split("\t")[1].split(" ")[0] for item in valid]
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-generator = pipeline('text-generation', model="gpt-2", tokenizer='gpt2')
+generator = pipeline('text-generation', model="gpt2", tokenizer='gpt2')
 
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
