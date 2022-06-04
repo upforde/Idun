@@ -51,12 +51,12 @@ while count < amount:
     valid = False
     text = ""
 
-    print(len(tokenizer(prompt))*2)
-
     for i in range(5):
         text += train[random.randint(0, len(train)-1)] + "\n"
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
     prompt = text + rand
+
+    print(len(tokenizer(prompt))*2)
 
     # while not valid:
     #     generated = generator(prompt)
