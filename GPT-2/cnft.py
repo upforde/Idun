@@ -52,23 +52,19 @@ while count < amount:
     text = ""
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
 
-    while len(tokenizer(text)['input_ids']) + len(tokenizer(rand)['input_ids'])*2 < 512:
-        text += train[random.randint(0, len(train)-1)] + "\n"
+    while len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) < 512:
+        add = train[random.randint(0, len(train)-1)] + "\n"
+        if len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) + len(tokenizer(add)['input_ids']) <= 512:
+            text += add
 
     prompt = text + rand
-
-    print()
-    print(prompt)
-    print()
-
-    # while not valid:
-    generated = generator(prompt, max_length=512)
-    generated_text = generated[0]["generated_text"].replace(text, "")
-    print(generated_text)
-    match = ditto_parser(generated_text)
-    valid = match.isValid()
+    while not valid:
+        generated = generator(prompt, max_length=512)
+        generated_text = generated[0]["generated_text"].replace(text, "")
+        match = ditto_parser(generated_text)
+        valid = match.isValid()
     
-    # generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+    generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     count += 1
     break
 
