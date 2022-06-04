@@ -56,6 +56,7 @@ while count < amount:
     rand = cut_valid[random.randint(0, len(cut_valid)-1)]
     prompt = text + rand
 
+    print(prompt)
     print(len(tokenizer(prompt))*2)
 
     # while not valid:
