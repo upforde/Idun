@@ -8,6 +8,7 @@ GPT-2/cg_jobs/
 GPT-2/processed_generated/
 Augmentation/gen_jobs/
 Augmentation/*.sh
+Augmentation/Generated/
 ditto/jobs
 ditto/run_jobs.sh
 ditto/checkpoints/*

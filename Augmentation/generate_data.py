@@ -61,112 +61,210 @@ def create_new_match(parent):
     return new_match
 
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/Augmentation/"
+IDUN_PATH = "./"
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--dataset", type=str, default="Structured/Beer")
-parser.add_argument("--size", type=str, default=None)
-parser.add_argument("--decimate", type=str, default="False")
-hp = parser.parse_args()
+er_magellan = [
+    "Dirty/DBLP-ACM",
+    "Dirty/DBLP-GoogleScholar",
+    "Dirty/iTunes-Amazon",
+    "Dirty/Walmart-Amazon",
+    "Structured/Amazon-Google",
+    "Structured/Beer",
+    "Structured/DBLP-ACM",
+    "Structured/DBLP-GoogleScholar",
+    "Structured/Fodors-Zagats",
+    "Structured/iTunes-Amazon",
+    "Structured/Walmart-Amazon",
+    "Textual/Abt-Buy"
+    ]
 
-# Parsing arguments and creating variable names
-SAVE_LOCATION = IDUN_PATH + "Generated/" + hp.dataset
+for job in er_magellan:
+    # Parsing arguments and creating variable names
+    SAVE_LOCATION = IDUN_PATH + "Generated/" + job + "/"
+    if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
 
-if "/" in hp.dataset: 
-    train_data = IDUN_PATH + "Datasets/er_magellan/" + hp.dataset + "/train.txt"        # Train dataset, depending on if they're 
-else:                                                                                   # from the er_magellan datasets or the wdc datasets
-    train_data = IDUN_PATH + "Datasets/wdc/" + hp.dataset + "/train.txt." + hp.size
+    non_matches, non_matches_decimated, matches, matches_decimated = [], [], [], []
 
-
-if "/" not in hp.dataset: 
-    SAVE_LOCATION += f"_{hp.size}"
-
-if hp.decimate == "True":
-    SAVE_LOCATION += "_decimated/"                                                   # Adding postfix for if to use the decimated
-    train_data += ".decimated"
-else: SAVE_LOCATION += "/"
-
-if not os.path.isdir(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
-
-non_matches = []
-matches = []
-
-with open(train_data) as file:
-    lines = file.readlines()
-    
-    for line in lines:
-        pair = {}
-        # Each item of the pair is split up by a \t
-        parts = line.split("\t")
+    with open(IDUN_PATH + f"Datasets/er_magellan/{job}/train.txt") as file:
+        lines = file.readlines()
         
-        # First item
-        first = parts[0].split("COL ")
-        for part in first:
-            if part == '': continue
-            colval = part.split(" VAL ")
-            pair[colval[0]] = [colval[1]]
+        for line in lines:
+            pair = {}
+            # Each item of the pair is split up by a \t
+            parts = line.split("\t")
+            
+            # First item
+            first = parts[0].split("COL ")
+            for part in first:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]] = [colval[1]]
 
-        # Second item
-        second = parts[1].split("COL ")
-        for part in second:
-            if part == '': continue
-            colval = part.split(" VAL ")
-            pair[colval[0]].append(colval[1])
+            # Second item
+            second = parts[1].split("COL ")
+            for part in second:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]].append(colval[1])
 
-        # Adding match parameter
-        pair["Match"] = int(parts[2])
+            # Adding match parameter
+            pair["Match"] = int(parts[2])
 
-        if pair["Match"] == 1: matches.append(pair)
-        else: non_matches.append(pair)
-    file.close()
+            if pair["Match"] == 1: matches.append(pair)
+            else: non_matches.append(pair)
 
-amount_matches = len(matches) if hp.decimate == "False" else len(matches)*9
-amount_non_matches = len(non_matches) if hp.decimate == "False" else len(non_matches)*9
+    with open(IDUN_PATH + f"Datasets/er_magellan/{job}/train.txt.matches.decimated") as file:
+        lines = file.readlines()
+        
+        for line in lines:
+            pair = {}
+            # Each item of the pair is split up by a \t
+            parts = line.split("\t")
+            
+            # First item
+            first = parts[0].split("COL ")
+            for part in first:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]] = [colval[1]]
 
-new_non_matches = []
-new_matches = []
+            # Second item
+            second = parts[1].split("COL ")
+            for part in second:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]].append(colval[1])
 
-seed(current_milli_time())
+            # Adding match parameter
+            pair["Match"] = int(parts[2])
 
-alphabet_list = list(string.ascii_lowercase) + list(string.digits)
+            matches_decimated.append(pair)
 
-for _ in range(amount_matches):
-    # Pick a random parent from matches
-    parent = matches[round((len(matches)-1)*random())]
+    with open(IDUN_PATH + f"Datasets/er_magellan/{job}/train.txt.non_matches.decimated") as file:
+        lines = file.readlines()
+        
+        for line in lines:
+            pair = {}
+            # Each item of the pair is split up by a \t
+            parts = line.split("\t")
+            
+            # First item
+            first = parts[0].split("COL ")
+            for part in first:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]] = [colval[1]]
 
-    # Create and append the new match
-    new_matches.append(create_new_match(parent))  
+            # Second item
+            second = parts[1].split("COL ")
+            for part in second:
+                if part == '': continue
+                colval = part.split(" VAL ")
+                pair[colval[0]].append(colval[1])
 
-for _ in range(amount_non_matches):
-    # Getting two random pairs to make a new pair with
-    # There can never be two pairs that are matches, but there can be two non-match pairs
-    if random() > 0.5:
-        pair1 = non_matches[round((len(non_matches)-1)*random())]
-        if random() > 0.5: pair2 = non_matches[round((len(non_matches)-1)*random())]
-        else: pair2 = matches[round((len(matches)-1)*random())]
-    else: 
-        pair1 = matches[round((len(matches)-1)*random())]
-        pair2 = non_matches[round((len(non_matches)-1)*random())]
-    
-    # Append the new pair into the new pairs array
-    new_non_matches.append(create_new_pair(pair1, pair2))
+            # Adding match parameter
+            pair["Match"] = int(parts[2])
+
+            non_matches_decimated.append(pair)
+
+    new_non_matches = []
+    new_matches = []
+
+    seed(current_milli_time())
+
+    alphabet_list = list(string.ascii_lowercase) + list(string.digits)
+
+    for _ in range(len(matches)):
+        # Pick a random parent from matches
+        parent = matches[round((len(matches)-1)*random())]
+
+        # Create and append the new match
+        new_matches.append(create_new_match(parent))  
+
+    for _ in range(len(non_matches)):
+        # Getting two random pairs to make a new pair with
+        # There can never be two pairs that are matches, but there can be two non-match pairs
+        if random() > 0.5:
+            pair1 = non_matches[round((len(non_matches)-1)*random())]
+            if random() > 0.5: pair2 = non_matches[round((len(non_matches)-1)*random())]
+            else: pair2 = matches[round((len(matches)-1)*random())]
+        else: 
+            pair1 = matches[round((len(matches)-1)*random())]
+            pair2 = non_matches[round((len(non_matches)-1)*random())]
+        
+        # Append the new pair into the new pairs array
+        new_non_matches.append(create_new_pair(pair1, pair2))
 
 
-with open(SAVE_LOCATION + "augmented_only.txt", "a") as file:
-    for match in new_matches: file.write(pair_to_string(match) + "\n")
-    for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+    new_non_matches_decimated = []
+    new_matches_decimated = []
 
-with open(SAVE_LOCATION + "real_pluss_all.txt", "a") as file:
-    for match in matches: file.write(pair_to_string(match) + "\n")
-    for match in new_matches: file.write(pair_to_string(match) + "\n")
-    for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
-    for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+    for _ in range(len(matches_decimated)*9):
+        # Pick a random parent from matches
+        parent = matches[round((len(matches)-1)*random())]
 
-with open(SAVE_LOCATION + "real_pluss_match.txt", "a") as file:
-    for match in matches: file.write(pair_to_string(match) + "\n")
-    for match in new_matches: file.write(pair_to_string(match) + "\n")
-    for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
+        # Create and append the new match
+        new_matches_decimated.append(create_new_match(parent))  
 
-with open(SAVE_LOCATION + "real_pluss_non_match.txt", "a") as file:
-    for match in matches: file.write(pair_to_string(match) + "\n")
-    for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
-    for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+    for _ in range(len(non_matches_decimated)*9):
+        # Getting two random pairs to make a new pair with
+        # There can never be two pairs that are matches, but there can be two non-match pairs
+        if random() > 0.5:
+            pair1 = non_matches[round((len(non_matches)-1)*random())]
+            if random() > 0.5: pair2 = non_matches[round((len(non_matches)-1)*random())]
+            else: pair2 = matches[round((len(matches)-1)*random())]
+        else: 
+            pair1 = matches[round((len(matches)-1)*random())]
+            pair2 = non_matches[round((len(non_matches)-1)*random())]
+        
+        # Append the new pair into the new pairs array
+        new_non_matches_decimated.append(create_new_pair(pair1, pair2))
+
+
+    open(SAVE_LOCATION + "gen_only.txt", "w").close()
+    with open(SAVE_LOCATION + "gen_only.txt", "a") as file:
+        for match in new_matches: file.write(pair_to_string(match) + "\n")
+        for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_all.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_all.txt", "a") as file:
+        for match in matches: file.write(pair_to_string(match) + "\n")
+        for match in new_matches: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
+        for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_match.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_match.txt", "a") as file:
+        for match in matches: file.write(pair_to_string(match) + "\n")
+        for match in new_matches: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_non_match.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_non_match.txt", "a") as file:
+        for match in matches: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
+        for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "gen_only_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "gen_only_decimated.txt", "a") as file:
+        for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
+        for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_all_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_all_decimated.txt", "a") as file:
+        for match in matches_decimated: file.write(pair_to_string(match) + "\n")
+        for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+        for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_match_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_match_decimated.txt", "a") as file:
+        for match in matches_decimated: file.write(pair_to_string(match) + "\n")
+        for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+
+    open(SAVE_LOCATION + "real_pluss_non_match_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_pluss_non_match_decimated.txt", "a") as file:
+        for match in matches_decimated: file.write(pair_to_string(match) + "\n")
+        for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+        for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
