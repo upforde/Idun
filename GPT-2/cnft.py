@@ -3,7 +3,6 @@ from transformers import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
-IDUN_PATH = "./"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
