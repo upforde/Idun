@@ -58,7 +58,7 @@ while len(tokenizer(text)['input_ids']) + round(len(tokenizer(rand)['input_ids']
         text += add
 
 prompt = text + rand
-print(len(tokenizer(prompt)))
+print(len(tokenizer(prompt)['input_ids']))
 # while not valid:
 generated = generator(prompt, max_length=512)
 generated_text = generated[0]["generated_text"].split(text)
