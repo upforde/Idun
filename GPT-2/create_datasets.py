@@ -29,153 +29,199 @@ er_magellan = [
 no_data = []
 
 for job in er_magellan:
+    GENERATED_FT_DIR = IDUN_PATH + f"GPT-2/Generated/{job}/fine_tuned/"
+    GENERATED_NFT_DIR = IDUN_PATH + f"GPT-2/Generated/{job}/non_fine_tuned/"
     FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/processed_generated/{job}/fine_tuned/"
     NON_FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/processed_generated/{job}/non_fine_tuned/"
     os.makedirs(FINE_TUNED_DIR)
     os.makedirs(NON_FINE_TUNED_DIR)
-    # Fine tuned
-    try:
-        # Open the files
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt") as real_file:
-            real_data = [line for line in real_file.readlines()]
+
+    with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt") as real_file:
+        real_data = [line.replace("\n", "") for line in real_file.readlines()]
+
+    with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.matches.decimated") as real_file_decimated:
+        decimated_real_data = [line.replace("\n", "") for line in real_file_decimated.readlines()]
+    with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.non_matches.decimated") as real_file_decimated:
+        for line in real_file_decimated.readlines():
+            decimated_real_data.append(line.replace("\n", ""))
+
+    # Fine-tuned
+    with open(GENERATED_FT_DIR + "matches.txt") as generated_matches_ft:
+        ft_matches = []
+        for line in generated_matches_ft.readlines():
+            if line[:3] == "COL": ft_matches.append(line.replace("\n", " "))
+            else: ft_matches[-1] += line.replace("\n", " ")
+    if len(ft_matches) == 0: no_data.append(f"{job} fine-tuned matches")
+
+    with open(GENERATED_FT_DIR + "non_matches.txt") as generated_non_matches_ft:
+        ft_non_matches = []
+        for line in generated_non_matches_ft.readlines():
+            if line[:3] == "COL": ft_non_matches.append(line.replace("\n", " "))
+            else: ft_non_matches[-1] += line.replace("\n", " ")
+    if len(ft_non_matches) == 0: no_data.append(f"{job} fine-tuned non-matches")
+
+    # GEN only
+    if f"{job} fine-tuned matches" not in no_data and f"{job} fine-tuned non-matches" not in no_data:
+        open(FINE_TUNED_DIR + "gen_only.txt", "w").close()
+        with open(FINE_TUNED_DIR + "gen_only.txt", "a") as gen_only:
+            for entry in ft_matches: gen_only.write(f"{entry}\n")
+            for entry in ft_non_matches: gen_only.write(f"{entry}\n")
         
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/matches.txt") as generated_matches_ft:
-            generated_matches_ft_data = [line for line in generated_matches_ft.readlines()]
+    # Real + matches
+    if f"{job} fine-tuned matches" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_matches.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_matches.txt", "a") as real_plus_matches:
+            for entry in real_data: real_plus_matches.write(f"{entry}\n")
+            for entry in ft_matches: real_plus_matches.write(f"{entry}\n")
 
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/non_matches.txt") as generated_non_matches_ft:
-            generated_non_matches_ft_data = [line for line in generated_non_matches_ft.readlines()]
+    # Real + non-matches
+    if f"{job} fine-tuned non-matches" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_non_matches.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as real_plus_non_matches:
+            for entry in real_data: real_plus_non_matches.write(f"{entry}\n")
+            for entry in ft_non_matches: real_plus_non_matches.write(f"{entry}\n")
 
-        # Create datasets
-        # GEN only
-        gen_only_ft = numpy.concatenate(generated_matches_ft_data, generated_non_matches_ft_data)
-        with open(FINE_TUNED_DIR + "gen_only.txt", "a") as file:
-            for line in gen_only_ft: file.write(f"{line}\n")
+    # Real + all
+    if f"{job} fine-tuned matches" not in no_data and f"{job} fine-tuned non-matches" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_all.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_all.txt", "a") as real_plus_all:
+            for entry in real_data: real_plus_all.write(f"{entry}\n")
+            for entry in ft_matches: real_plus_all.write(f"{entry}\n")
+            for entry in ft_non_matches: real_plus_all.write(f"{entry}\n")
 
-        # Real + matches
-        real_plus_matches_ft = numpy.concatenate(real_data, generated_matches_ft_data)
-        with open(FINE_TUNED_DIR + "real_plus_matches.txt", "a") as file:
-            for line in real_plus_matches_ft: file.write(f"{line}\n")
+    
+    # Decimated FT
+    with open(GENERATED_FT_DIR + "matches_decimated.txt") as generated_decimated_matches_ft:
+        ft_decimated_matches = []
+        for line in generated_decimated_matches_ft.readlines():
+            if line[:3] == "COL": ft_decimated_matches.append(line.replace("\n", " "))
+            else: ft_decimated_matches[-1] += line.replace("\n", " ")
+    if len(ft_decimated_matches) == 0: no_data.append(f"{job} fine-tuned matches decimated")
 
-        # Real + non-matches
-        real_plus_non_matches_ft = numpy.concatenate(real_data, generated_non_matches_ft_data)
-        with open(FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as file:
-            for line in real_plus_non_matches_ft: file.write(f"{line}\n")
+    with open(GENERATED_FT_DIR + "non_matches_decimated.txt") as generated_decimated_non_matches_ft:
+        ft_decimated_non_matches = []
+        for line in generated_decimated_non_matches_ft.readlines():
+            if line[:3] == "COL": ft_decimated_non_matches.append(line.replace("\n", " "))
+            else: ft_decimated_non_matches[-1] += line.replace("\n", " ")
+    if len(ft_decimated_non_matches) == 0: no_data.append(f"{job} fine-tuned non-matches decimated")
 
-        # Real + all
-        real_plus_all_ft = numpy.concatenate(real_data, generated_matches_ft_data, generated_non_matches_ft_data)
-        with open(FINE_TUNED_DIR + "real_pluss_all.txt", "a") as file:
-            for line in real_plus_all_ft: file.write(f"{line}\n")
-
-    except:
-        no_data.append("ft " + job)
-
-    # Non-fine tuned
-    try:
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt") as real_file:
-            real_data = [line for line in real_file.readlines()]
-
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/matches.txt") as generated_matches_nft:
-            generated_matches_nft_data = [line for line in generated_matches_nft.readlines()]
-
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/non_matches.txt") as generated_non_matches_nft:
-            generated_non_matches_nft_data = [line for line in generated_non_matches_nft.readlines()]
-
-        # GEN only
-        gen_only_nft = numpy.concatenate(generated_matches_nft_data, generated_non_matches_nft_data)
-        with open(NON_FINE_TUNED_DIR + "gen_only.txt", "a") as file:
-            for line in gen_only_nft: file.write(f"{line}\n")
-
-        # Real + matches
-        real_plus_matches_nft = numpy.concatenate(real_data, generated_matches_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_matches.txt", "a") as file:
-             for line in real_plus_matches_nft: file.write(f"{line}\n")
-
-        # Real + non_matches
-        real_plus_non_matches_nft = numpy.concatenate(real_data, generated_non_matches_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as file:
-            for line in real_plus_non_matches_nft: file.write(f"{line}\n")
-
-        # Real + all
-        real_plus_all_nft = numpy.concatenate(real_data, generated_matches_nft_data, generated_non_matches_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_all.txt", "a") as file:
-            for line in real_plus_all_nft: file.write(f"{line}\n")
+    # GEN only
+    if f"{job} fine-tuned matches decimated" not in no_data and f"{job} fine-tuned non-matches decimated" not in no_data:
+        open(FINE_TUNED_DIR + "gen_only_decimated.txt", "w").close()
+        with open(FINE_TUNED_DIR + "gen_only_decimated.txt", "a") as gen_only:
+            for entry in ft_decimated_matches: gen_only.write(f"{entry}\n")
+            for entry in ft_decimated_non_matches: gen_only.write(f"{entry}\n")
         
-    except:
-        no_data.append("nft " + job)
+    # Real + matches
+    if f"{job} fine-tuned matches decimated" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as real_plus_matches:
+            for entry in decimated_real_data: real_plus_matches.write(f"{entry}\n")
+            for entry in ft_decimated_matches: real_plus_matches.write(f"{entry}\n")
 
-    # Fine tuned decimated
-    try:
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.matches.decimated") as real_file_decimated:
-            real_data_decimated = [line for line in real_file_decimated.reallines()]
+    # Real + non-matches
+    if f"{job} fine-tuned non-matches decimated" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as real_plus_non_matches:
+            for entry in decimated_real_data: real_plus_non_matches.write(f"{entry}\n")
+            for entry in ft_decimated_non_matches: real_plus_non_matches.write(f"{entry}\n")
+
+    # Real + all
+    if f"{job} fine-tuned matches decimated" not in no_data and f"{job} fine-tuned non-matches decimated" not in no_data:
+        open(FINE_TUNED_DIR + "real_plus_all_decimated.txt", "w").close()
+        with open(FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as real_plus_all:
+            for entry in decimated_real_data: real_plus_all.write(f"{entry}\n")
+            for entry in ft_decimated_matches: real_plus_all.write(f"{entry}\n")
+            for entry in ft_decimated_non_matches: real_plus_all.write(f"{entry}\n")
+
+
+    # Non-fine-tuned
+    with open(GENERATED_NFT_DIR + "matches.txt") as generated_matches_nft:
+        nft_matches = []
+        for line in generated_matches_nft.readlines():
+            if line[:3] == "COL": nft_matches.append(line.replace("\n", " "))
+            else: nft_matches[-1] += line.replace("\n", " ")
+    if len(nft_matches) == 0: no_data.append(f"{job} non-fine-tuned matches")
+
+    with open(GENERATED_NFT_DIR + "non_matches.txt") as generated_non_matches_nft:
+        nft_non_matches = []
+        for line in generated_non_matches_nft.readlines():
+            if line[:3] == "COL": nft_non_matches.append(line.replace("\n", " "))
+            else: nft_non_matches[-1] += line.replace("\n", " ")
+    if len(nft_non_matches) == 0: no_data.append(f"{job} non-fine-tuned non-matches")
+
+    # GEN only
+    if f"{job} non-fine-tuned matches" not in no_data and f"{job} non-fine-tuned non-matches" not in no_data:
+        open(NON_FINE_TUNED_DIR + "gen_only.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "gen_only.txt", "a") as gen_only:
+            for entry in nft_matches: gen_only.write(f"{entry}\n")
+            for entry in nft_non_matches: gen_only.write(f"{entry}\n")
         
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.non_matches.decimated") as real_file_decimated:
-            for line in real_file_decimated.readlines(): real_data_decimated.append(line)
+    # Real + matches
+    if f"{job} non-fine-tuned matches" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_matches.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_matches.txt", "a") as real_plus_matches:
+            for entry in real_data: real_plus_matches.write(f"{entry}\n")
+            for entry in nft_matches: real_plus_matches.write(f"{entry}\n")
 
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/matches_decimated.txt") as generated_matches_decimated_ft:
-            generated_matches_decimated_ft_data = [line for line in generated_matches_decimated_ft.readlines()]
+    # Real + non-matches
+    if f"{job} non-fine-tuned non-matches" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_non_matches.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as real_plus_non_matches:
+            for entry in real_data: real_plus_non_matches.write(f"{entry}\n")
+            for entry in nft_non_matches: real_plus_non_matches.write(f"{entry}\n")
 
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/non_matches_decimated.txt") as generated_non_matches_decimated_ft:
-            generated_non_matches_decimated_ft_data = [line for line in generated_non_matches_decimated_ft]
+    # Real + all
+    if f"{job} non-fine-tuned matches" not in no_data and f"{job} non-fine-tuned non-matches" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_all.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_all.txt", "a") as real_plus_all:
+            for entry in real_data: real_plus_all.write(f"{entry}\n")
+            for entry in nft_matches: real_plus_all.write(f"{entry}\n")
+            for entry in nft_non_matches: real_plus_all.write(f"{entry}\n")
+    
 
-        # GEN only
-        gen_only_decimated_ft = numpy.concatenate(generated_matches_decimated_ft_data, generated_non_matches_decimated_ft_data)
-        with open(FINE_TUNED_DIR + "gen_only_decimated.txt") as file:
-            for line in gen_only_decimated_ft: file.write(f"{line}\n")
+    # Decimated NFT
+    with open(GENERATED_NFT_DIR + "matches_decimated.txt") as generated_decimated_matches_nft:
+        nft_decimated_matches = []
+        for line in generated_decimated_matches_nft.readlines():
+            if line[:3] == "COL": nft_decimated_matches.append(line.replace("\n", " "))
+            else: nft_decimated_matches[-1] += line.replace("\n", " ")
+    if len(nft_decimated_matches) == 0: no_data.append(f"{job} non-fine-tuned matches decimated")
 
-        # Real + matches
-        real_plus_matches_decimated_ft = numpy.concatenate(real_data_decimated, generated_matches_decimated_ft_data)
-        with open(FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as file:
-            for line in real_plus_matches_decimated_ft: file.write(f"{line}\n")
+    with open(GENERATED_NFT_DIR + "non_matches_decimated.txt") as generated_decimated_non_matches_nft:
+        nft_decimated_non_matches = []
+        for line in generated_decimated_non_matches_nft.readlines():
+            if line[:3] == "COL": nft_decimated_non_matches.append(line.replace("\n", " "))
+            else: nft_decimated_non_matches[-1] += line.replace("\n", " ")
+    if len(nft_decimated_non_matches) == 0: no_data.append(f"{job} non-fine-tuned non-matches decimated")
+    
+    # GEN only
+    if f"{job} non-fine-tuned matches decimated" not in no_data and f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        open(NON_FINE_TUNED_DIR + "gen_only_decimated.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "gen_only_decimated.txt", "a") as gen_only:
+            for entry in nft_decimated_matches: gen_only.write(f"{entry}\n")
+            for entry in nft_decimated_non_matches: gen_only.write(f"{entry}\n")
         
-        # Real + non_matches
-        real_plus_non_matches_decimated_ft = numpy.concatenate(real_data_decimated, generated_non_matches_decimated_ft_data)
-        with open(FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as file:
-            for line in real_plus_non_matches_decimated_ft: file.write(f"{line}\n")
+    # Real + matches
+    if f"{job} non-fine-tuned matches decimated" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as real_plus_matches:
+            for entry in decimated_real_data: real_plus_matches.write(f"{entry}\n")
+            for entry in nft_decimated_matches: real_plus_matches.write(f"{entry}\n")
 
-        # Real + all
-        real_plus_all_decimated_ft = numpy.concatenate(real_data_decimated, generated_matches_decimated_ft_data, generated_non_matches_decimated_ft_data)
-        with open(FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as file:
-            for line in real_plus_all_decimated_ft: file.write(f"{line}\n")
+    # Real + non-matches
+    if f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as real_plus_non_matches:
+            for entry in decimated_real_data: real_plus_non_matches.write(f"{entry}\n")
+            for entry in nft_decimated_non_matches: real_plus_non_matches.write(f"{entry}\n")
 
-    except:
-        no_data.append("ft " + job + " decimated")
-
-    # Non-fine tuned decimated
-    try:
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.matches.decimated") as real_file_decimated:
-            real_data_decimated = [line for line in real_file_decimated.reallines()]
-        
-        with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.non_matches.decimated") as real_file_decimated:
-            for line in real_file_decimated.readlines(): real_data_decimated.append(line)
-
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/matches_decimated_nft.txt") as generated_matches_decimated_nft:
-            generated_matches_decimated_nft_data = [line for line in generated_matches_decimated_nft]
-
-        with open(IDUN_PATH + f"GPT-2/Generated/{job}/non_matches_decimated_nft.txt") as generated_non_matches_decimated_nft:
-            generated_non_matches_decimated_nft_data = [line for line in generated_non_matches_decimated_nft.readlines()]
-
-        # GEN only
-        gen_only_decimated_nft = numpy.concatenate(generated_matches_decimated_nft_data, generated_non_matches_decimated_nft_data)
-        with open(NON_FINE_TUNED_DIR + "gen_only_decimated.txt") as file:
-            for line in gen_only_decimated_nft: file.write(f"{line}\n")
-
-        # Real + matches
-        real_plus_matches_decimated_nft = numpy.concatenate(real_data_decimated, generated_matches_decimated_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as file:
-            for line in real_plus_matches_decimated_nft: file.write(f"{line}\n")
-
-        # Real + non_matches
-        real_plus_non_matches_decimated_nft = numpy.concatenate(real_data_decimated, generated_non_matches_decimated_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as file:
-            for line in real_plus_non_matches_decimated_nft: file.write(f"{line}\n")
-
-        # Real + all
-        real_plus_all_decimated_nft = numpy.concatenate(real_data_decimated, generated_matches_decimated_nft_data, generated_non_matches_decimated_nft_data)
-        with open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as file:
-            for line in real_plus_all_decimated_nft: file.write(f"{line}\n")
-
-    except:
-        no_data.append("nft " + job + " decimated")
+    # Real + all
+    if f"{job} non-fine-tuned matches decimated" not in no_data and f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "w").close()
+        with open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as real_plus_all:
+            for entry in decimated_real_data: real_plus_all.write(f"{entry}\n")
+            for entry in nft_decimated_matches: real_plus_all.write(f"{entry}\n")
+            for entry in nft_decimated_non_matches: real_plus_all.write(f"{entry}\n")
 
 print(no_data)
-    
