@@ -46,8 +46,6 @@ else: amount = len(train)
 
 generated_data = open(SAVE_NAME + ".txt", "a")
 
-print("Starting generation")
-
 count = 0
 while count < amount:
     valid = False
