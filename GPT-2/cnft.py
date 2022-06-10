@@ -62,11 +62,9 @@ while count < amount:
 
         while not valid:
             generated = generator(prompt, max_length=512)
-            generated_text = generated[0]["generated_text"].split(text)
-            if len(generated_text) == 2:
-                match = ditto_parser(generated_text[1])
-                valid = match.isValid()
-            else: valid = False
+            generated_text = generated[0]["generated_text"].replace(text, "")
+            match = ditto_parser(generated_text)
+            valid = match.isValid()
 
         generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
 
