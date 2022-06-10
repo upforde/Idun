@@ -29,6 +29,8 @@ if hp.decimate == "True":
     train_data += ".decimated"
     valid_data += ".decimated"
 
+open(SAVE_NAME + ".txt", "w").close()
+
 valid, train = [], []
 with open(train_data) as file:
     lines = file.readlines()
