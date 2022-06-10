@@ -3,10 +3,11 @@ from transformers import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
+IDUN_PATH = "./"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
-parser.add_argument("--type", type=str, default="matches")
+parser.add_argument("--type", type=str, default="non_matches")
 parser.add_argument("--decimate", type=str, default="False")
 hp = parser.parse_args()
 
@@ -44,30 +45,29 @@ generator = pipeline('text-generation', model='gpt2', tokenizer='gpt2')
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
-generated_data = open(SAVE_NAME + ".txt", "a")
-
 count = 0
 while count < amount:
-    valid = False
-    text = ""
-    rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+    with open(SAVE_NAME + ".txt", "a") as generated_data:
+        valid = False
+        text = ""
+        rand = cut_valid[random.randint(0, len(cut_valid)-1)]
 
-    while len(tokenizer(text)['input_ids']) + round(len(tokenizer(rand)['input_ids'])*2.5) < 512:
-        add = train[random.randint(0, len(train)-1)] + "\n"
-        if len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) + len(tokenizer(add)['input_ids']) <= 512:
-            text += add
+        while len(tokenizer(text)['input_ids']) + round(len(tokenizer(rand)['input_ids'])*2.5) < 512:
+            add = train[random.randint(0, len(train)-1)] + "\n"
+            if len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) + len(tokenizer(add)['input_ids']) <= 512:
+                text += add
+            else: break
 
-    prompt = text + rand
+        prompt = text + rand
 
-    while not valid:
-        generated = generator(prompt, max_length=512)
-        generated_text = generated[0]["generated_text"].split(text)
-        if len(generated_text) == 2:
-            match = ditto_parser(generated_text[1])
-            valid = match.isValid()
-        else: valid = False
-    
-    generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+        while not valid:
+            generated = generator(prompt, max_length=512)
+            generated_text = generated[0]["generated_text"].split(text)
+            if len(generated_text) == 2:
+                match = ditto_parser(generated_text[1])
+                valid = match.isValid()
+            else: valid = False
+
+        generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+
     count += 1
-
-generated_data.close()
