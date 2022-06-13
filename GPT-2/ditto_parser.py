@@ -54,13 +54,13 @@ class ditto_parser():
 
     for key in list(self.data.keys()):                                          # Doing the left side
       if string != "": string += " "
-      string += "COL " + key + " VAL " + self.data[key][0]
+      string += "COL " + key + " VAL " + self.data[key][0].replace("\n", " ")
     
     string += '\t'
 
     for key in list(self.data.keys()):                                          # Doing the right side
       if not string.endswith('\t'): string += " "
-      string += "COL " + key + " VAL " + self.data[key][1]
+      string += "COL " + key + " VAL " + self.data[key][1].replace("\n", " ")
     
     string += '\t'
     string += str(matching_index)                                               # Adding the match index (0 or 1)

@@ -29,8 +29,6 @@ if hp.decimate == "True":
     train_data += ".decimated"
     valid_data += ".decimated"
 
-open(SAVE_NAME + ".txt", "w").close()
-
 valid, train = [], []
 with open(train_data) as file:
     lines = file.readlines()
@@ -47,7 +45,7 @@ generator = pipeline('text-generation', model='gpt2', tokenizer='gpt2')
 if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
-count = 0
+count = len(open(SAVE_NAME + ".txt").readlines())
 while count < amount:
     with open(SAVE_NAME + ".txt", "a") as generated_data:
         valid = False
