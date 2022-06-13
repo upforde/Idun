@@ -12,3 +12,4 @@ Augmentation/Generated/
 ditto/jobs
 ditto/run_jobs.sh
 ditto/checkpoints/*
+cached*

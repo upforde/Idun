@@ -13,6 +13,7 @@ hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
+IDUN_PATH = "./"
 MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type
 SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/fine_tuned/"
 if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
@@ -93,20 +94,22 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate == "True": amount = len(open(train_data).readlines()) * 9
 else: amount = len(open(train_data).readlines())
 
-generated_data = open(FILE_NAME + ".txt", "a")
-
-count = 0
+count = len(open(FILE_NAME + ".txt").readlines())
 while count < amount:
-    valid = False
-    prompt = cut_valid[random.randint(0, len(cut_valid)-1)]
+    with open(FILE_NAME + ".txt", "a") as generated_data:
+        valid = False
+        prompt = cut_valid[random.randint(0, len(cut_valid)-1)]
 
-    while not valid:
-        generated = generator(prompt, max_length=round(len(tokenizer(prompt)['input_ids'])*2.5))
-        generated_text = generated[0]["generated_text"]
-        match = ditto_parser(generated_text)
-        valid = match.isValid()
-    
-    generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+        if round(len(tokenizer(prompt)['input_ids'])*2.5) <= 512: 
+            max_length = round(len(tokenizer(prompt)['input_ids'])*2.5)
+        else: max_length = 512
+
+        while not valid:
+            generated = generator(prompt, max_length=max_length)
+            generated_text = generated[0]["generated_text"]
+            match = ditto_parser(generated_text)
+            valid = match.isValid()
+        
+        generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
+
     count += 1
-
-generated_data.close()
