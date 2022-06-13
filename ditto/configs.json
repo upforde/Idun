@@ -9,10 +9,442 @@
 }
 ,
 {
+	"name": "Augmentation_Dirty_DBLP-ACM_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACMreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Dirty_DBLP-GoogleScholar_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholarreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -27,10 +459,442 @@
 }
 ,
 {
+	"name": "Augmentation_Dirty_iTunes-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazonreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/iTunes-Amazon_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_iTunes-Amazon_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Dirty_Walmart-Amazon_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazonreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -45,10 +909,442 @@
 }
 ,
 {
+	"name": "Augmentation_Structured_Amazon-Google_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Googlereal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Amazon-Google_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Amazon-Google_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Structured_Beer_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Structured/Beer/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beerreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Beer_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Beer_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Beer_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
 }
@@ -63,10 +1359,442 @@
 }
 ,
 {
+	"name": "Augmentation_Structured_DBLP-ACM_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACMreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-ACM_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-ACM_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Structured_DBLP-GoogleScholar_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholarreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -81,10 +1809,442 @@
 }
 ,
 {
+	"name": "Augmentation_Structured_Fodors-Zagats_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagatsreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Fodors-Zagats_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Fodors-Zagats_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
 	"name": "Structured_iTunes-Amazon_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazonreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/iTunes-Amazon_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_iTunes-Amazon_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
 }
@@ -99,6 +2259,222 @@
 }
 ,
 {
+	"name": "Augmentation_Structured_Walmart-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_gen_only_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_gen_only_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_gen_only_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_gen_only_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazonreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_non_matches_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_non_matches_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_non_matches_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_non_matches_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_all_ft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Textual_Abt-Buy_baseline",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -108,183 +2484,219 @@
 }
 ,
 {
-	"name": "all_small_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/all/train.txt.small",
-	"validset": "../ditto/data/wdc/all/valid.txt.small",
-	"testset": "../ditto/data/wdc/all/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "all_medium_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_gen_only_ft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/all/train.txt.medium",
-	"validset": "../ditto/data/wdc/all/valid.txt.medium",
-	"testset": "../ditto/data/wdc/all/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "all_large_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_gen_only_nft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/all/train.txt.large",
-	"validset": "../ditto/data/wdc/all/valid.txt.large",
-	"testset": "../ditto/data/wdc/all/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "all_xlarge_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_gen_only_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/all/train.txt.xlarge",
-	"validset": "../ditto/data/wdc/all/valid.txt.xlarge",
-	"testset": "../ditto/data/wdc/all/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "cameras_small_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_gen_only_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/cameras/train.txt.small",
-	"validset": "../ditto/data/wdc/cameras/valid.txt.small",
-	"testset": "../ditto/data/wdc/cameras/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "cameras_medium_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_gen_only_nft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/cameras/train.txt.medium",
-	"validset": "../ditto/data/wdc/cameras/valid.txt.medium",
-	"testset": "../ditto/data/wdc/cameras/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "cameras_large_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/cameras/train.txt.large",
-	"validset": "../ditto/data/wdc/cameras/valid.txt.large",
-	"testset": "../ditto/data/wdc/cameras/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "cameras_xlarge_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_matches_ft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/cameras/train.txt.xlarge",
-	"validset": "../ditto/data/wdc/cameras/valid.txt.xlarge",
-	"testset": "../ditto/data/wdc/cameras/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "computers_small_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_matches_nft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/computers/train.txt.small",
-	"validset": "../ditto/data/wdc/computers/valid.txt.small",
-	"testset": "../ditto/data/wdc/computers/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "computers_medium_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/computers/train.txt.medium",
-	"validset": "../ditto/data/wdc/computers/valid.txt.medium",
-	"testset": "../ditto/data/wdc/computers/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buyreal_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "computers_large_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/computers/train.txt.large",
-	"validset": "../ditto/data/wdc/computers/valid.txt.large",
-	"testset": "../ditto/data/wdc/computers/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "computers_xlarge_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_matches_nft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/computers/train.txt.xlarge",
-	"validset": "../ditto/data/wdc/computers/valid.txt.xlarge",
-	"testset": "../ditto/data/wdc/computers/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "shoes_small_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_non_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/shoes/train.txt.small",
-	"validset": "../ditto/data/wdc/shoes/valid.txt.small",
-	"testset": "../ditto/data/wdc/shoes/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "shoes_medium_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_non_matches_ft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/shoes/train.txt.medium",
-	"validset": "../ditto/data/wdc/shoes/valid.txt.medium",
-	"testset": "../ditto/data/wdc/shoes/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "shoes_large_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_non_matches_nft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/shoes/train.txt.large",
-	"validset": "../ditto/data/wdc/shoes/valid.txt.large",
-	"testset": "../ditto/data/wdc/shoes/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "shoes_xlarge_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/shoes/train.txt.xlarge",
-	"validset": "../ditto/data/wdc/shoes/valid.txt.xlarge",
-	"testset": "../ditto/data/wdc/shoes/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy_decimated/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "watches_small_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/watches/train.txt.small",
-	"validset": "../ditto/data/wdc/watches/valid.txt.small",
-	"testset": "../ditto/data/wdc/watches/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_matches_non_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "watches_medium_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_non_matches_nft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/watches/train.txt.medium",
-	"validset": "../ditto/data/wdc/watches/valid.txt.medium",
-	"testset": "../ditto/data/wdc/watches/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "watches_large_baseline",
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/watches/train.txt.large",
-	"validset": "../ditto/data/wdc/watches/valid.txt.large",
-	"testset": "../ditto/data/wdc/watches/test.txt"
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {
-	"name": "watches_xlarge_baseline",
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_all_ft",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../ditto/data/wdc/watches/train.txt.xlarge",
-	"validset": "../ditto/data/wdc/watches/valid.txt.xlarge",
-	"testset": "../ditto/data/wdc/watches/test.txt"
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_all_nft",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "Augmentation_Textual_Abt-Buy_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy_decimated/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_all_ft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "GPT-2_Textual_Abt-Buy_real_plus_all_nft_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
 ,
 {}]

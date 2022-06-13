@@ -207,7 +207,7 @@ for job in er_magellan:
         new_matches_decimated.append(create_new_match(parent))  
 
     for _ in range(len(non_matches_decimated)*9):
-        # Getting two random pairs to make a new pair with
+        # Getting two random pairs to make a new pair withreal_plus_non_match
         # There can never be two pairs that are matches, but there can be two non-match pairs
         if random() > 0.5:
             pair1 = non_matches[round((len(non_matches)-1)*random())]
@@ -226,21 +226,21 @@ for job in er_magellan:
         for match in new_matches: file.write(pair_to_string(match) + "\n")
         for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_all.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_all.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_all.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_all.txt", "a") as file:
         for match in matches: file.write(pair_to_string(match) + "\n")
         for match in new_matches: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
         for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_match.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_match.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_matches.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_matches.txt", "a") as file:
         for match in matches: file.write(pair_to_string(match) + "\n")
         for match in new_matches: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_non_match.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_non_match.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_non_matches.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_non_matches.txt", "a") as file:
         for match in matches: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
         for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
@@ -250,21 +250,21 @@ for job in er_magellan:
         for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
         for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_all_decimated.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_all_decimated.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_all_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_all_decimated.txt", "a") as file:
         for match in matches_decimated: file.write(pair_to_string(match) + "\n")
         for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
         for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_match_decimated.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_match_decimated.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_matches_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_matches_decimated.txt", "a") as file:
         for match in matches_decimated: file.write(pair_to_string(match) + "\n")
         for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
 
-    open(SAVE_LOCATION + "real_pluss_non_match_decimated.txt", "w").close()
-    with open(SAVE_LOCATION + "real_pluss_non_match_decimated.txt", "a") as file:
+    open(SAVE_LOCATION + "real_plus_non_matches_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "real_plus_non_matches_decimated.txt", "a") as file:
         for match in matches_decimated: file.write(pair_to_string(match) + "\n")
         for non_match in non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
         for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
