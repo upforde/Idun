@@ -5,7 +5,7 @@ GPT-2/gen_jobs/
 GPT-2/*.sh
 GPT-2/cnft_jobs/
 GPT-2/cg_jobs/
-GPT-2/processed_generated/
+GPT-2/Processed_Generated/
 Augmentation/gen_jobs/
 Augmentation/*.sh
 Augmentation/Generated/

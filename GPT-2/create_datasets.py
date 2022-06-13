@@ -4,12 +4,12 @@ import numpy
 # IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
 IDUN_PATH = "../"
 
-if not os.path.exists(IDUN_PATH + "GPT-2/processed_generated"):
-    os.makedirs(IDUN_PATH + "GPT-2/processed_generated")
+if not os.path.exists(IDUN_PATH + "GPT-2/Processed_Generated"):
+    os.makedirs(IDUN_PATH + "GPT-2/Processed_Generated")
 
-if len(os.listdir(IDUN_PATH + "GPT-2/processed_generated")) != 0:
-    shutil.rmtree(IDUN_PATH + "GPT-2/processed_generated")
-    os.makedirs(IDUN_PATH + "GPT-2/processed_generated")
+if len(os.listdir(IDUN_PATH + "GPT-2/Processed_Generated")) != 0:
+    shutil.rmtree(IDUN_PATH + "GPT-2/Processed_Generated")
+    os.makedirs(IDUN_PATH + "GPT-2/Processed_Generated")
 
 er_magellan = [
     "Dirty/DBLP-ACM",
@@ -31,8 +31,8 @@ no_data = []
 for job in er_magellan:
     GENERATED_FT_DIR = IDUN_PATH + f"GPT-2/Generated/{job}/fine_tuned/"
     GENERATED_NFT_DIR = IDUN_PATH + f"GPT-2/Generated/{job}/non_fine_tuned/"
-    FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/processed_generated/{job}/fine_tuned/"
-    NON_FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/processed_generated/{job}/non_fine_tuned/"
+    FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/Processed_Generated/{job}/fine_tuned/"
+    NON_FINE_TUNED_DIR = IDUN_PATH + f"GPT-2/Processed_Generated/{job}/non_fine_tuned/"
     os.makedirs(FINE_TUNED_DIR)
     os.makedirs(NON_FINE_TUNED_DIR)
 
@@ -224,4 +224,5 @@ for job in er_magellan:
             for entry in nft_decimated_matches: real_plus_all.write(f"{entry}\n")
             for entry in nft_decimated_non_matches: real_plus_all.write(f"{entry}\n")
 
-print(no_data)
+print("Missing data:")
+for job in no_data: print(f"\t{job}")
