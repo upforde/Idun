@@ -94,7 +94,10 @@ generator = pipeline('text-generation', model=MODEL_NAME, tokenizer='gpt2')
 if hp.decimate == "True": amount = len(open(train_data).readlines()) * 9
 else: amount = len(open(train_data).readlines())
 
-count = len(open(FILE_NAME + ".txt").readlines())
+count = 0
+for line in open(FILE_NAME + ".txt").readlines():
+    if "COL" in line: count += 1
+
 while count < amount:
     with open(FILE_NAME + ".txt", "a") as generated_data:
         valid = False
