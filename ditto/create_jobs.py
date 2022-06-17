@@ -47,7 +47,7 @@ def make_text(task, name):
         "pip3 install tensorboardX --user",
         "git clone https://github.com/NVIDIA/apex",
         "cd apex",
-        "pip install -v --disable-pip-version-check --no-cache-dir \ --global-option=\"--cpp_ext\" --global-option=\"--cuda_ext\" ./",
+        "python3 setup.py install",
 
         python_line,
         "uname -a"
