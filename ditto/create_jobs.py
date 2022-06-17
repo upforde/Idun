@@ -27,7 +27,7 @@ def make_text(task, name):
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
         f"#SBATCH --job-name=\"ditto {task}\"",
-        f"#SBATCH --output={task}",
+        f"#SBATCH --output=Output/{task}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
         "module purge",
