@@ -44,6 +44,7 @@ def make_text(task, name):
         "pip3 install tqdm==4.41.0 --user",
         "pip3 install jsonlines==1.2.0 --user",
         "pip3 install nltk==3.5 --user",
+        "pip3 install tensorboardX --user",
 
         python_line,
         "uname -a"
