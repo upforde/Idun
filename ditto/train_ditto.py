@@ -6,6 +6,9 @@ import torch
 import numpy as np
 import random
 import gc
+import nltk
+
+nltk.download('stopwords')
 
 sys.path.insert(0, "Snippext_public")
 
