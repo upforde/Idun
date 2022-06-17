@@ -1,7 +1,6 @@
 import os, shutil, random
 
 IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
-IDUN_PATH = "../"
 
 if not os.path.exists(IDUN_PATH + "ditto/jobs"):
     os.makedirs(IDUN_PATH + "ditto/jobs")
@@ -257,7 +256,7 @@ for job in er_magellan:
     # CTGAN
     # -------- Your code here --------
 
-config.write("{}]")
+config.write("{\"name\":\"eof\"}]")
 
 config.close()
 
