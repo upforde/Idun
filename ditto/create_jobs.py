@@ -73,7 +73,7 @@ config = open(IDUN_PATH + "ditto/configs.json", "a")
 config.write("[ \n")
 
 def make_files(task, train, test, valid):
-    for i in range(5):
+    for i in range(3):
         output = "run_" + str(i+1)
         names.append(f"{task}_{output}")
         text = make_text(task, output)
