@@ -45,7 +45,9 @@ def make_text(task, name):
         "pip3 install jsonlines==1.2.0 --user",
         "pip3 install nltk==3.5 --user",
         "pip3 install tensorboardX --user",
-        "pip3 install apex --user",
+        "git clone https://github.com/NVIDIA/apex",
+        "cd apex",
+        "pip install -v --disable-pip-version-check --no-cache-dir \ --global-option=\"--cpp_ext\" --global-option=\"--cuda_ext\" ./",
 
         python_line,
         "uname -a"
