@@ -8,8 +8,6 @@ import random
 import gc
 import nltk
 
-print(f"Cuda device available: {torch.cuda.is_available()}")
-
 nltk.download('stopwords')
 
 sys.path.insert(0, "Snippext_public")
