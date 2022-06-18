@@ -187,9 +187,8 @@ def train(trainset, validset, testset, run_tag, hp):
                        lm=hp.lm,
                        alpha_aug=hp.alpha_aug)
                        
-    if torch.cuda.is_available():
-        model = model.cuda()
-   
+    model = model.cuda()
+    
     optimizer = AdamW(model.parameters(), lr=hp.lr)
 
     if hp.fp16:
