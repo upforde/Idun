@@ -49,6 +49,8 @@ if __name__=="__main__":
         torch.cuda.manual_seed_all(seed)
 
 
+    print(torch.cuda.is_available())
+
     # Memory management
     torch.cuda.empty_cache()
     gc.collect()
