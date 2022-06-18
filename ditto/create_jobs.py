@@ -34,6 +34,7 @@ def make_text(task, name):
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
         "pip3 install nltk",
+        "pip3 install transformers",
         "python3 setup.py install",
 
         python_line,
