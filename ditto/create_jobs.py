@@ -33,9 +33,9 @@ def make_text(task, name):
         "module load Anaconda3/2020.07",
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
-        "pip3 install nltk",
-        "pip3 install transformers",
-        "pip3 install sklearn",
+        # "pip3 install nltk",
+        # "pip3 install transformers",
+        # "pip3 install sklearn",
         "python3 setup.py install",
 
         python_line,
