@@ -31,7 +31,8 @@ def make_text(task, name):
         "#SBATCH --mail-type=ALL",
         "module purge",
         "module load Anaconda3/2020.07",
-        "conda activate masters",
+        "source /cluster/home/danilasm/.bashrc",
+        "source activate masters",
         "python3 setup.py install",
 
         python_line,
