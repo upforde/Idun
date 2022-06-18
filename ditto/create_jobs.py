@@ -14,8 +14,8 @@ def make_text(task, name):
     python_line += f" --task={task}"
     python_line += " --batch_size=32"
     python_line += f" --output_name=Output/{name}"
-    seed = str(round(random.random()*214748364))
-    python_line += f" --seed={seed}"
+    seed = str(round(random.random()*2147483647))
+    python_line += f" --run_id={seed}"
 
     text = [
         "#!/bin/sh",
