@@ -13,7 +13,7 @@ def make_text(task, name):
     python_line = f"python3 /cluster/home/danilasm/masters/Idun/ditto/train_ditto.py"
     python_line += f" --task={task}"
     python_line += " --batch_size=32"
-    python_line += f" --output_name=Output/{name}"
+    python_line += f" --output_name={name}"
     seed = str(round(random.random()*2147483647))
     python_line += f" --run_id={seed}"
 
