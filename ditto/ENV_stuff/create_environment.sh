@@ -11,7 +11,7 @@
 #SBATCH --mail-type=ALL
 
 module purge
-module load Anaconda3/2020.
+module load Anaconda3/2020.07
 conda env create -f env.yml
 
 uname -a
