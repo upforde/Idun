@@ -185,57 +185,57 @@ def train(trainset, validset, testset, run_tag, hp):
 
     print(f"Device: {device}")
 
-    model = DittoModel(device=device,
-                       lm=hp.lm,
-                       alpha_aug=hp.alpha_aug)
+    # model = DittoModel(device=device,
+    #                    lm=hp.lm,
+    #                    alpha_aug=hp.alpha_aug)
                        
-    model = model.cuda()
+    # model = model.cuda()
 
-    optimizer = AdamW(model.parameters(), lr=hp.lr)
+    # optimizer = AdamW(model.parameters(), lr=hp.lr)
 
-    if hp.fp16:
-        model, optimizer = amp.initialize(model, optimizer, opt_level='O2')
-    num_steps = (len(trainset) // hp.batch_size) * hp.n_epochs
-    scheduler = get_linear_schedule_with_warmup(optimizer,
-                                                num_warmup_steps=0,
-                                                num_training_steps=num_steps)
+    # if hp.fp16:
+    #     model, optimizer = amp.initialize(model, optimizer, opt_level='O2')
+    # num_steps = (len(trainset) // hp.batch_size) * hp.n_epochs
+    # scheduler = get_linear_schedule_with_warmup(optimizer,
+    #                                             num_warmup_steps=0,
+    #                                             num_training_steps=num_steps)
 
-    # logging with tensorboardX
-    writer = SummaryWriter(log_dir=hp.logdir)
+    # # logging with tensorboardX
+    # writer = SummaryWriter(log_dir=hp.logdir)
 
-    best_dev_f1 = best_test_f1 = 0.0
-    for epoch in range(1, hp.n_epochs+1):
-        # train
-        model.train()
-        train_step(train_iter, model, optimizer, scheduler, hp)
+    # best_dev_f1 = best_test_f1 = 0.0
+    # for epoch in range(1, hp.n_epochs+1):
+    #     # train
+    #     model.train()
+    #     train_step(train_iter, model, optimizer, scheduler, hp)
 
-        # eval
-        model.eval()
-        dev_f1, th = evaluate(model, valid_iter)
-        test_f1 = evaluate(model, test_iter, threshold=th)
+    #     # eval
+    #     model.eval()
+    #     dev_f1, th = evaluate(model, valid_iter)
+    #     test_f1 = evaluate(model, test_iter, threshold=th)
 
-        if dev_f1 > best_dev_f1:
-            best_dev_f1 = dev_f1
-            best_test_f1 = test_f1
-            if hp.save_model:
-                # create the directory if not exist
-                directory = os.path.join(hp.logdir, hp.task)
-                if not os.path.exists(directory):
-                    os.makedirs(directory)
+    #     if dev_f1 > best_dev_f1:
+    #         best_dev_f1 = dev_f1
+    #         best_test_f1 = test_f1
+    #         if hp.save_model:
+    #             # create the directory if not exist
+    #             directory = os.path.join(hp.logdir, hp.task)
+    #             if not os.path.exists(directory):
+    #                 os.makedirs(directory)
 
-                # save the checkpoints for each component
-                ckpt_path = os.path.join(hp.logdir, hp.task, 'model.pt')
-                ckpt = {'model': model.state_dict(),
-                        'optimizer': optimizer.state_dict(),
-                        'scheduler': scheduler.state_dict(),
-                        'epoch': epoch}
-                torch.save(ckpt, ckpt_path)
+    #             # save the checkpoints for each component
+    #             ckpt_path = os.path.join(hp.logdir, hp.task, 'model.pt')
+    #             ckpt = {'model': model.state_dict(),
+    #                     'optimizer': optimizer.state_dict(),
+    #                     'scheduler': scheduler.state_dict(),
+    #                     'epoch': epoch}
+    #             torch.save(ckpt, ckpt_path)
 
-        print(f"epoch {epoch}: dev_f1={dev_f1}, f1={test_f1}, best_f1={best_test_f1}")
+    #     print(f"epoch {epoch}: dev_f1={dev_f1}, f1={test_f1}, best_f1={best_test_f1}")
 
-        # logging
-        scalars = {'f1': dev_f1,
-                   't_f1': test_f1}
-        writer.add_scalars(run_tag, scalars, epoch)
+    #     # logging
+    #     scalars = {'f1': dev_f1,
+    #                't_f1': test_f1}
+    #     writer.add_scalars(run_tag, scalars, epoch)
 
-    writer.close()
+    # writer.close()
