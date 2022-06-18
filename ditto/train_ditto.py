@@ -49,7 +49,7 @@ if __name__=="__main__":
         torch.cuda.manual_seed_all(seed)
 
 
-    print(torch.cuda.is_available())
+    print(f"Cuda device available: {torch.cuda.is_available()}")
 
     # Memory management
     torch.cuda.empty_cache()
