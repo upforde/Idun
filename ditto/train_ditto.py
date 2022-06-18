@@ -8,6 +8,8 @@ import random
 import gc
 import nltk
 
+print(f"Cuda device available: {torch.cuda.is_available()}")
+
 nltk.download('stopwords')
 
 sys.path.insert(0, "Snippext_public")
@@ -102,8 +104,6 @@ if __name__=="__main__":
     valid_dataset = DittoDataset(validset, lm=hp.lm)
     test_dataset = DittoDataset(testset, lm=hp.lm)
 
-    print(f"Cuda device available: {torch.cuda.is_available()}")
-    
     # train and evaluate the model
     train(train_dataset,
           valid_dataset,

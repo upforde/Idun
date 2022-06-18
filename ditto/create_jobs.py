@@ -34,10 +34,6 @@ def make_text(task, name):
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
         "module load CUDA/11.0.2-GCC-9.3.0",
-        # "pip3 install nltk",
-        # "pip3 install transformers",
-        # "pip3 install sklearn",
-        "python3 setup.py install",
 
         python_line,
         "uname -a"
