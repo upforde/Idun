@@ -20,6 +20,7 @@ def make_text(task, name):
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
+        "#SBATCH --gres=gpu:1",
         "#SBATCH --account=ie-idi",
         "#SBATCH --time=12:00:00",
         "#SBATCH --nodes=1",
