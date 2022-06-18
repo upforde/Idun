@@ -33,7 +33,7 @@ def make_text(task, name):
         "module load Anaconda3/2020.07",
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
-        "module load CUDA/11.0.2-GCC-9.3.0",
+        "module load CUDA/11.1.1-GCC-10.2.0",
 
         python_line,
         "uname -a"
