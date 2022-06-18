@@ -18,6 +18,7 @@ def make_text(output, dataset, entity_type, decimate):
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
+        "#SBATCH --gres=gpu:1",
         "#SBATCH --account=ie-idi",
         "#SBATCH --time=72:00:00",
         "#SBATCH --nodes=1",
