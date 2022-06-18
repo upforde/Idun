@@ -178,6 +178,7 @@ def train(trainset, validset, testset, run_tag, hp):
 
     # initialize model, optimizer, and LR scheduler
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    print(device)
     model = DittoModel(device=device,
                        lm=hp.lm,
                        alpha_aug=hp.alpha_aug)
