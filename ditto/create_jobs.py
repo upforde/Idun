@@ -31,7 +31,6 @@ def make_text(task, name):
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
         "module purge",
-        "module load Python/3.8.6-GCCcore-10.2.0",
         "module load Anaconda3/2020.07",
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
