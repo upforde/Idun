@@ -187,8 +187,12 @@ def train(trainset, validset, testset, run_tag, hp):
                        lm=hp.lm,
                        alpha_aug=hp.alpha_aug)
                        
-    if torch.cuda.is_available(): model = model.cuda()
-    else:  model = model.cpu()
+    if torch.cuda.is_available(): 
+        print("Cuda available")
+        model = model.cuda()
+    else: 
+        print("Cuda unavailable")
+        model = model.cpu()
    
     optimizer = AdamW(model.parameters(), lr=hp.lr)
 
