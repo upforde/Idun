@@ -48,9 +48,6 @@ if __name__=="__main__":
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
 
-
-    print(f"Cuda device available: {torch.cuda.is_available()}")
-
     # Memory management
     torch.cuda.empty_cache()
     gc.collect()
@@ -105,6 +102,8 @@ if __name__=="__main__":
     valid_dataset = DittoDataset(validset, lm=hp.lm)
     test_dataset = DittoDataset(testset, lm=hp.lm)
 
+    print(f"Cuda device available: {torch.cuda.is_available()}")
+    
     # train and evaluate the model
     train(train_dataset,
           valid_dataset,
