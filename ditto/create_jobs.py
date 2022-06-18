@@ -31,6 +31,7 @@ def make_text(task, name):
         "#SBATCH --mail-type=ALL",
         "module purge",
         "module load Anaconda3/2020.07",
+        "module load CUDA/11.1.1-GCC-10.2.0",
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
         # "pip3 install nltk",
