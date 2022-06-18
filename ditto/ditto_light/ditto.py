@@ -186,7 +186,10 @@ def train(trainset, validset, testset, run_tag, hp):
     model = DittoModel(device=device,
                        lm=hp.lm,
                        alpha_aug=hp.alpha_aug)
-    model = model.cuda()
+                       
+    if torch.cuda.is_available(): model = model.cuda()
+    else:  model = model.cpu()
+   
     optimizer = AdamW(model.parameters(), lr=hp.lr)
 
     if hp.fp16:
