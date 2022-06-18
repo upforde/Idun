@@ -12,6 +12,7 @@
 
 module purge
 module load Anaconda3/2020.07
+conda env remove -n masters
 conda env create -f env.yml
 
 uname -a
