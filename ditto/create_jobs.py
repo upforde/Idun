@@ -35,7 +35,6 @@ def make_text(task, name):
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
         "module load CUDA/11.1.1-GCC-10.2.0",
-        "pip install --user torch==1.8.1+cu111 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html",
 
         python_line,
         "uname -a"
