@@ -35,8 +35,7 @@ def make_text(task, name):
         "source /cluster/home/danilasm/.bashrc",
         "source activate masters",
         "module load CUDA/11.1.1-GCC-10.2.0",
-        # "cd apex",
-        # "python setup.py install --prefix=$HOME/.local",
+        "pip install torch=1.8.1+cu111",
 
         python_line,
         "uname -a"
