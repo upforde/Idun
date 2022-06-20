@@ -10,6 +10,6 @@ Augmentation/gen_jobs/
 Augmentation/*.sh
 Augmentation/Generated/
 ditto/jobs
-ditto/run_jobs.sh
+ditto/*.sh
 ditto/checkpoints/*
 cached*

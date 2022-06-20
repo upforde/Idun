@@ -1,6 +1,7 @@
 import os, shutil, random
 
 IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
+IDUN_PATH = "../"
 
 if not os.path.exists(IDUN_PATH + "ditto/jobs"):
     os.makedirs(IDUN_PATH + "ditto/jobs")
@@ -249,5 +250,21 @@ config.write("{\"name\":\"eof\"}]")
 config.close()
 
 open(IDUN_PATH + "ditto/run_jobs.sh", "w").close() 
-with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: 
-    for name in names: file.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "w").close()
+open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "w").close()
+open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "w").close()
+
+for name in names:
+    with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: 
+        file.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+    if "Augmentation" in name: 
+        with open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "a") as aug:
+            aug.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+    if "GPT-2" in name and "nft" in name: 
+        with open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "a") as gpt2:
+            gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+    if "GPT-2" in name and "nft" not in name:
+        with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as gpt2:
+            gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+
+        
