@@ -70,6 +70,13 @@ er_magellan = [
     "Textual/Abt-Buy"
     ]
 
+small = [
+    "Dirty/iTunes-Amazon",
+    "Structured/Beer",
+    "Structured/Fodors-Zagats",
+    "Structured/iTunes-Amazon"
+]
+
 names = []
 
 open(IDUN_PATH + "ditto/configs.json", "w").close()
@@ -116,25 +123,6 @@ for job in er_magellan:
     # CTGAN
     # -------- Your code here --------
 
-    # GEN only decimated
-    # Augmentation
-    task = "Augmentation_" + job.replace("/", "_") + "_gen_only_decimated"
-    train = IDUN_PATH + "Augmentation/Generated/" + job + "/gen_only_decimated.txt"
-    make_files(task, train, test, valid)
-
-    # GPT-2
-    task = "GPT-2_" + job.replace("/", "_") + "_gen_only_ft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/gen_only_decimated.txt"
-    make_files(task, train, test, valid)
-
-    task = "GPT-2_" + job.replace("/", "_") + "_gen_only_nft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/gen_only_decimated.txt"
-    make_files(task, train, test, valid)
-
-    # CTGAN
-    # -------- Your code here --------
-
-
     # Real + match 
     # Augmentation
     task = "Augmentation_" + job.replace("/", "_") + "_real_plus_matches"
@@ -153,25 +141,6 @@ for job in er_magellan:
     # CTGAN
     # -------- Your code here --------
 
-    # Real + match decimated
-    # Augmentaion
-    task = "Augmentation_" + job.replace("/", "_") + "_real_plus_matches_decimated"
-    train = IDUN_PATH + "Augmentation/Generated/" + job + "real_plus_matches_decimated.txt"
-    make_files(task, train, test, valid)
-    
-    # GPT-2
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_matches_ft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_matches_decimated.txt"
-    make_files(task, train, test, valid)
-
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_matches_nft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_matches_decimated.txt"
-    make_files(task, train, test, valid)
-
-
-    # CTGAN
-    # -------- Your code here --------
-
     # Real + non-match
     # Augmentation
     task = "Augmentation_" + job.replace("/", "_") + "_real_plus_non_matches"
@@ -185,24 +154,6 @@ for job in er_magellan:
 
     task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_nft"
     train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_non_matches.txt"
-    make_files(task, train, test, valid)
-
-    # CTGAN
-    # -------- Your code here --------
-
-    # Real + non-match decimated
-    # Augmentation
-    task = "Augmentation_" + job.replace("/", "_") + "_real_plus_non_matches_decimated"
-    train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_non_matches.txt"
-    make_files(task, train, test, valid)
-
-    # GPT-2
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_ft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_matches_non_decimated.txt"
-    make_files(task, train, test, valid)
-
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_nft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_non_matches_decimated.txt"
     make_files(task, train, test, valid)
 
     # CTGAN
@@ -227,23 +178,79 @@ for job in er_magellan:
     # CTGAN
     # -------- Your code here --------
 
-    # Real + all decimated
-    # Augmentation
-    task = "Augmentation_" + job.replace("/", "_") + "_real_plus_all_decimated"
-    train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_all.txt"
-    make_files(task, train, test, valid)
+    # Some jobs don't work with the decimated test, meaning they shouldn't be made into jobs
+    if job not in small:
+        # GEN only decimated
+        # Augmentation
+        task = "Augmentation_" + job.replace("/", "_") + "_gen_only_decimated"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/gen_only_decimated.txt"
+        make_files(task, train, test, valid)
 
-    # GPT-2
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_all_ft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_all_decimated.txt"
-    make_files(task, train, test, valid)
+        # GPT-2
+        task = "GPT-2_" + job.replace("/", "_") + "_gen_only_ft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/gen_only_decimated.txt"
+        make_files(task, train, test, valid)
 
-    task = "GPT-2_" + job.replace("/", "_") + "_real_plus_all_nft_decimated"
-    train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_all_decimated.txt"
-    make_files(task, train, test, valid)
+        task = "GPT-2_" + job.replace("/", "_") + "_gen_only_nft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/gen_only_decimated.txt"
+        make_files(task, train, test, valid)
 
-    # CTGAN
-    # -------- Your code here --------
+        # CTGAN
+        # -------- Your code here --------
+
+        # Real + match decimated
+        # Augmentaion
+        task = "Augmentation_" + job.replace("/", "_") + "_real_plus_matches_decimated"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "real_plus_matches_decimated.txt"
+        make_files(task, train, test, valid)
+        
+        # GPT-2
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_matches_ft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_matches_decimated.txt"
+        make_files(task, train, test, valid)
+
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_matches_nft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_matches_decimated.txt"
+        make_files(task, train, test, valid)
+
+        # CTGAN
+        # -------- Your code here --------
+
+        # Real + non-match decimated
+        # Augmentation
+        task = "Augmentation_" + job.replace("/", "_") + "_real_plus_non_matches_decimated"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_non_matches.txt"
+        make_files(task, train, test, valid)
+
+        # GPT-2
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_ft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_matches_non_decimated.txt"
+        make_files(task, train, test, valid)
+
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_nft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_non_matches_decimated.txt"
+        make_files(task, train, test, valid)
+
+        # CTGAN
+        # -------- Your code here --------
+
+        # Real + all decimated
+        # Augmentation
+        task = "Augmentation_" + job.replace("/", "_") + "_real_plus_all_decimated"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_all.txt"
+        make_files(task, train, test, valid)
+
+        # GPT-2
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_all_ft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_all_decimated.txt"
+        make_files(task, train, test, valid)
+
+        task = "GPT-2_" + job.replace("/", "_") + "_real_plus_all_nft_decimated"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_all_decimated.txt"
+        make_files(task, train, test, valid)
+
+        # CTGAN
+        # -------- Your code here --------
 
 config.write("{\"name\":\"eof\"}]")
 
