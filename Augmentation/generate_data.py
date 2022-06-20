@@ -220,7 +220,28 @@ for job in er_magellan:
         # Append the new pair into the new pairs array
         new_non_matches_decimated.append(create_new_pair(pair1, pair2))
 
+# ----------------------------- CREATING THE FILES -----------------------------
+    # Generated matches
+    open(SAVE_LOCATION + "generated_matches.txt", "w").close()
+    with open(SAVE_LOCATION + "generated_matches.txt", "a") as file:
+        for match in new_matches: file.write(pair_to_string(match) + "\n")
 
+    # Generated non-matches
+    open(SAVE_LOCATION + "generated_non_matches.txt", "w").close()
+    with open(SAVE_LOCATION + "generated_non_matches.txt", "w") as file:
+        for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
+
+    # Generated matches decimated
+    open(SAVE_LOCATION + "generated_matches_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "generated_matches_decimated.txt", "a") as file:
+        for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
+
+    # Generated non-matches decimated
+    open(SAVE_LOCATION + "generated_non_matches_decimated.txt", "w").close()
+    with open(SAVE_LOCATION + "generated_non_matches_decimated.txt", "w") as file:
+        for non_match in new_non_matches_decimated: file.write(pair_to_string(non_match) + "\n")
+
+    # New datasets
     open(SAVE_LOCATION + "gen_only.txt", "w").close()
     with open(SAVE_LOCATION + "gen_only.txt", "a") as file:
         for match in new_matches: file.write(pair_to_string(match) + "\n")
@@ -245,6 +266,7 @@ for job in er_magellan:
         for non_match in non_matches: file.write(pair_to_string(non_match) + "\n")
         for non_match in new_non_matches: file.write(pair_to_string(non_match) + "\n")
 
+    # New datasets decimated
     open(SAVE_LOCATION + "gen_only_decimated.txt", "w").close()
     with open(SAVE_LOCATION + "gen_only_decimated.txt", "a") as file:
         for match in new_matches_decimated: file.write(pair_to_string(match) + "\n")
