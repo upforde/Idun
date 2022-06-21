@@ -28,10 +28,11 @@ def make_text(output, dataset, entity_type, decimate):
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
+        
         "module purge",
         "module load Anaconda3/2020.07",
         "pip3 install transformers==4.2.2 --user",
-        "pip3 uninstall -y apex",
+        f"echo \"Running {python_line} \"",
         python_line,
         "uname -a"
     ]
