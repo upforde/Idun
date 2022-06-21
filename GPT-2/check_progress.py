@@ -75,14 +75,14 @@ for job in er_magellan:
         for line in generated_decimated_matches_ft.readlines():
             if line[:3] == "COL": ft_decimated_matches.append(line.replace("\n", " "))
             else: ft_decimated_matches[-1] += line.replace("\n", " ")
-    if len(ft_decimated_matches) < len(real_matches): progress.append(f"{job} fine-tuned decimated matches progress:\t{round(len(ft_decimated_matches)/len(real_matches)*100, 2)}%")
+    if len(ft_decimated_matches) < round(len(real_matches)*0.9): progress.append(f"{job} fine-tuned decimated matches progress:\t{round(len(ft_decimated_matches)/len(real_matches)*100, 2)}%")
 
     with open(GENERATED_FT_DIR + "non_matches_decimated.txt") as generated_decimated_non_matches_ft:
         ft_decimated_non_matches = []
         for line in generated_decimated_non_matches_ft.readlines():
             if line[:3] == "COL": ft_decimated_non_matches.append(line.replace("\n", " "))
             else: ft_decimated_non_matches[-1] += line.replace("\n", " ")
-    if len(ft_decimated_non_matches) < len(real_non_matches): progress.append(f"{job} fine-tuned decimated non-matches progress:\t{round(len(ft_decimated_non_matches)/len(real_non_matches)*100, 2)}%")
+    if len(ft_decimated_non_matches) < round(len(real_non_matches)*0.9): progress.append(f"{job} fine-tuned decimated non-matches progress:\t{round(len(ft_decimated_non_matches)/len(real_non_matches)*100, 2)}%")
 
 
     # Non-fine-tuned
@@ -107,14 +107,14 @@ for job in er_magellan:
         for line in generated_decimated_matches_nft.readlines():
             if line[:3] == "COL": nft_decimated_matches.append(line.replace("\n", " "))
             else: nft_decimated_matches[-1] += line.replace("\n", " ")
-    if len(nft_decimated_matches) < len(real_matches): progress.append(f"{job} non-fine-tuned decimated matches progress:\t{round(len(nft_decimated_matches)/len(real_matches)*100, 2)}%")
+    if len(nft_decimated_matches) < round(len(real_matches)*0.9): progress.append(f"{job} non-fine-tuned decimated matches progress:\t{round(len(nft_decimated_matches)/len(real_matches)*100, 2)}%")
 
     with open(GENERATED_NFT_DIR + "non_matches_decimated.txt") as generated_decimated_non_matches_nft:
         nft_decimated_non_matches = []
         for line in generated_decimated_non_matches_nft.readlines():
             if line[:3] == "COL": nft_decimated_non_matches.append(line.replace("\n", " "))
             else: nft_decimated_non_matches[-1] += line.replace("\n", " ")
-    if len(nft_decimated_non_matches) < len(real_non_matches): progress.append(f"{job} non-fine-tuned decimated non-matches progress:\t{round(len(nft_decimated_non_matches)/len(real_non_matches)*100, 2)}%")
+    if len(nft_decimated_non_matches) < round(len(real_non_matches)*0.9): progress.append(f"{job} non-fine-tuned decimated non-matches progress:\t{round(len(nft_decimated_non_matches)/len(real_non_matches)*100, 2)}%")
     
 for name in progress:
     print(name)
