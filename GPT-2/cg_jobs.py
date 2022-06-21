@@ -32,7 +32,7 @@ def make_text(output, dataset, entity_type, decimate):
         "module purge",
         "module load Anaconda3/2020.07",
         "pip3 install transformers==4.2.2 --user",
-        "pip3 uninstall apex",
+        "pip3 uninstall -y apex",
         python_line,
         "uname -a"
     ]
