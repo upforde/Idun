@@ -47,7 +47,7 @@ else: amount = len(train)
 
 count = 0
 for line in open(SAVE_NAME + ".txt").readlines():
-    count += 1
+    if line[:3] == "COL": count += 1
 
 while count < amount:
     with open(SAVE_NAME + ".txt", "a") as generated_data:

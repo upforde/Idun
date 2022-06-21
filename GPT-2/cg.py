@@ -96,7 +96,7 @@ else: amount = len(open(train_data).readlines())
 
 count = 0
 for line in open(FILE_NAME + ".txt").readlines():
-    if "COL" in line: count += 1
+    if line[:3] == "COL": count += 1
 
 while count < amount:
     with open(FILE_NAME + ".txt", "a") as generated_data:
