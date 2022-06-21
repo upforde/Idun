@@ -34,7 +34,8 @@ def make_text(output, dataset, entity_type, decimate):
         "pip3 install transformers==4.2.2 --user",
         "pip uninstall apex --user",
         "cd apex",
-        "python setup.py install --prefix=$HOME/.local",
+        "pip install --user -v --disable-pip-version-check --no-cache-dir ",
+        "--global-option=\"--cpp_ext\" --global-option=\"--cuda_ext\" ./ ",
         "cd ..",
         python_line,
         "uname -a"
