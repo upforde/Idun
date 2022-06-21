@@ -32,7 +32,7 @@ def make_text(output, dataset, entity_type, decimate):
         "module load Anaconda3/2020.07",
         "pip3 install transformers==4.2.2 --user",
         "cd apex",
-        "pip3 install --user -v --disable-pip-version-check --no-cache-dir --global-option=\"--cpp_ext\" --global-option=\"--cuda_ext\" ./"
+        "pip3 install --user -v --disable-pip-version-check --no-cache-dir --global-option=\"--cpp_ext\" --global-option=\"--cuda_ext\" ./",
         "cd ..",
 
         python_line,
