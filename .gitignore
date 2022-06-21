@@ -11,6 +11,5 @@ Augmentation/gen_jobs/
 Augmentation/*.sh
 Augmentation/Generated/
 ditto/jobs
-ditto/*.sh
 ditto/checkpoints/*
 cached*
