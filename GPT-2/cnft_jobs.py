@@ -30,6 +30,7 @@ def make_text(output, dataset, entity_type, decimate):
         "#SBATCH --mail-type=ALL",
         "module purge",
         "module load Anaconda3/2020.07",
+        "pip uninstall apex --user",
         "pip3 install transformers==4.2.2 --user",
         "cd apex",
         "python setup.py install --prefix=$HOME/.local",
