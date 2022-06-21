@@ -1,3 +1,4 @@
+#!/bin/sh
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_1.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_2.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_3.slurm danilasm

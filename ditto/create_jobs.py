@@ -256,14 +256,23 @@ config.write("{\"name\":\"eof\"}]")
 
 config.close()
 
+open(IDUN_PATH + "ditto/run_baseline_jobs.sh", "w").close()
+with open(IDUN_PATH + "ditto/run_baseline_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 open(IDUN_PATH + "ditto/run_jobs.sh", "w").close() 
+with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "w").close()
+with open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "w").close()
+with open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "w").close()
+with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 
 for name in names:
     with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: 
         file.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+    if "_baseline" in name:
+        with open(IDUN_PATH + "ditto/run_baseline_jobs.sh", "a") as baseline: 
+            baseline.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
     if "Augmentation" in name: 
         with open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "a") as aug:
             aug.write(f"sbatch ./jobs/{name}.slurm danilasm\n")

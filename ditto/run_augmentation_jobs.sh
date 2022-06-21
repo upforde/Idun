@@ -1,3 +1,4 @@
+#!/bin/sh
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_3.slurm danilasm
