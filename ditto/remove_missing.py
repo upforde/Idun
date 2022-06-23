@@ -15,13 +15,13 @@ with open("./run_gpt2_nft_jobs.sh") as gpt2:
 
 
 open("./run_gpt2_ft_jobs.sh", "w").close()
-with open("./run_gpt2_ft_jobs.sh", "a")as ft: ft.write("#!/bin/sh")
+with open("./run_gpt2_ft_jobs.sh", "a")as ft: ft.write("#!/bin/sh\n")
 with open("./run_gpt2_ft_jobs.sh", "a") as gpt2:
     for line in new_gpt2_ft:
         gpt2.write(line)
 
 open("./run_gpt2_nft_jobs.sh", "w").close()
-with open("./run_gpt2_nft_jobs.sh", "a")as nft: nft.write("#!/bin/sh")
+with open("./run_gpt2_nft_jobs.sh", "a")as nft: nft.write("#!/bin/sh\n")
 with open("./run_gpt2_nft_jobs.sh", "a") as gpt2:
     for line in new_gpt2_nft:
         gpt2.write(line)
