@@ -9,6 +9,15 @@
 }
 ,
 {
+	"name": "Dirty_DBLP-ACM_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Dirty/DBLP-ACM/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -229,6 +238,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "Dirty_DBLP-GoogleScholar_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Dirty/DBLP-GoogleScholar/train_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -459,6 +477,15 @@
 }
 ,
 {
+	"name": "Dirty_iTunes-Amazon_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Dirty/iTunes-Amazon/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_iTunes-Amazon_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -571,6 +598,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Dirty_Walmart-Amazon_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Dirty/Walmart-Amazon/train_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -801,6 +837,15 @@
 }
 ,
 {
+	"name": "Structured_Amazon-Google_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/Amazon-Google/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1026,6 +1071,15 @@
 }
 ,
 {
+	"name": "Structured_Beer_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/Beer/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Beer_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1138,6 +1192,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Structured/DBLP-ACM/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "Structured_DBLP-ACM_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/DBLP-ACM/train_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1368,6 +1431,15 @@
 }
 ,
 {
+	"name": "Structured_DBLP-GoogleScholar_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/DBLP-GoogleScholar/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1593,6 +1665,15 @@
 }
 ,
 {
+	"name": "Structured_Fodors-Zagats_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/Fodors-Zagats/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Fodors-Zagats_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1710,6 +1791,15 @@
 }
 ,
 {
+	"name": "Structured_iTunes-Amazon_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/iTunes-Amazon/train_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_iTunes-Amazon_gen_only",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1822,6 +1912,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/train.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "Structured_Walmart-Amazon_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Structured/Walmart-Amazon/train_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2047,6 +2146,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../ditto/data/er_magellan/Textual/Abt-Buy/train.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "Textual_Abt-Buy_baseline_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../GPT-2/Datasets/er_magellan/Textual/Abt-Buy/train_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }

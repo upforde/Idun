@@ -105,6 +105,11 @@ for job in er_magellan:
     train = IDUN_PATH + "ditto/data/er_magellan/" + job + "/train.txt"
     make_files(task, train, test, valid)
 
+    # Baseline decimated
+    task = job.replace("/", "_") + "_baseline_decimated"
+    train = IDUN_PATH + "GPT-2/Datasets/er_magellan/" + job + "/train_decimated.txt"
+    make_files(task, train, test, valid)
+
     # GEN only
     # Augmentation
     task = "Augmentation_" + job.replace("/", "_") + "_gen_only"
@@ -282,5 +287,3 @@ for name in names:
     if "GPT-2" in name and "nft" not in name:
         with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as gpt2:
             gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
-
-        

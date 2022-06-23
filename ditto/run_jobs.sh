@@ -2,6 +2,9 @@
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_1.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_2.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-ACM_baseline_run_3.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-ACM_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-ACM_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-ACM_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-ACM_gen_only_run_3.slurm danilasm
@@ -77,6 +80,9 @@ sbatch ./jobs/GPT-2_Dirty_DBLP-ACM_real_plus_all_nft_decimated_run_3.slurm danil
 sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_run_1.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_run_2.slurm danilasm
 sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_run_3.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Dirty_DBLP-GoogleScholar_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-GoogleScholar_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-GoogleScholar_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_DBLP-GoogleScholar_gen_only_run_3.slurm danilasm
@@ -152,6 +158,9 @@ sbatch ./jobs/GPT-2_Dirty_DBLP-GoogleScholar_real_plus_all_nft_decimated_run_3.s
 sbatch ./jobs/Dirty_iTunes-Amazon_baseline_run_1.slurm danilasm
 sbatch ./jobs/Dirty_iTunes-Amazon_baseline_run_2.slurm danilasm
 sbatch ./jobs/Dirty_iTunes-Amazon_baseline_run_3.slurm danilasm
+sbatch ./jobs/Dirty_iTunes-Amazon_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Dirty_iTunes-Amazon_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Dirty_iTunes-Amazon_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_iTunes-Amazon_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_iTunes-Amazon_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_iTunes-Amazon_gen_only_run_3.slurm danilasm
@@ -191,6 +200,9 @@ sbatch ./jobs/GPT-2_Dirty_iTunes-Amazon_real_plus_all_nft_run_3.slurm danilasm
 sbatch ./jobs/Dirty_Walmart-Amazon_baseline_run_1.slurm danilasm
 sbatch ./jobs/Dirty_Walmart-Amazon_baseline_run_2.slurm danilasm
 sbatch ./jobs/Dirty_Walmart-Amazon_baseline_run_3.slurm danilasm
+sbatch ./jobs/Dirty_Walmart-Amazon_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Dirty_Walmart-Amazon_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Dirty_Walmart-Amazon_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_Walmart-Amazon_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_Walmart-Amazon_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Dirty_Walmart-Amazon_gen_only_run_3.slurm danilasm
@@ -266,6 +278,9 @@ sbatch ./jobs/GPT-2_Dirty_Walmart-Amazon_real_plus_all_nft_decimated_run_3.slurm
 sbatch ./jobs/Structured_Amazon-Google_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_Amazon-Google_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_Amazon-Google_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_Amazon-Google_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_Amazon-Google_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_Amazon-Google_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Amazon-Google_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Amazon-Google_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Amazon-Google_gen_only_run_3.slurm danilasm
@@ -341,6 +356,9 @@ sbatch ./jobs/GPT-2_Structured_Amazon-Google_real_plus_all_nft_decimated_run_3.s
 sbatch ./jobs/Structured_Beer_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_Beer_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_Beer_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_Beer_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_Beer_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_Beer_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Beer_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Beer_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Beer_gen_only_run_3.slurm danilasm
@@ -380,6 +398,9 @@ sbatch ./jobs/GPT-2_Structured_Beer_real_plus_all_nft_run_3.slurm danilasm
 sbatch ./jobs/Structured_DBLP-ACM_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_DBLP-ACM_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_DBLP-ACM_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_DBLP-ACM_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_DBLP-ACM_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_DBLP-ACM_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-ACM_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-ACM_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-ACM_gen_only_run_3.slurm danilasm
@@ -455,6 +476,9 @@ sbatch ./jobs/GPT-2_Structured_DBLP-ACM_real_plus_all_nft_decimated_run_3.slurm 
 sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_DBLP-GoogleScholar_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-GoogleScholar_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-GoogleScholar_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_DBLP-GoogleScholar_gen_only_run_3.slurm danilasm
@@ -530,6 +554,9 @@ sbatch ./jobs/GPT-2_Structured_DBLP-GoogleScholar_real_plus_all_nft_decimated_ru
 sbatch ./jobs/Structured_Fodors-Zagats_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_Fodors-Zagats_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_Fodors-Zagats_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_Fodors-Zagats_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_Fodors-Zagats_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_Fodors-Zagats_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Fodors-Zagats_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Fodors-Zagats_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Fodors-Zagats_gen_only_run_3.slurm danilasm
@@ -569,6 +596,9 @@ sbatch ./jobs/GPT-2_Structured_Fodors-Zagats_real_plus_all_nft_run_3.slurm danil
 sbatch ./jobs/Structured_iTunes-Amazon_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_iTunes-Amazon_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_iTunes-Amazon_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_iTunes-Amazon_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_iTunes-Amazon_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_iTunes-Amazon_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_iTunes-Amazon_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_iTunes-Amazon_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_iTunes-Amazon_gen_only_run_3.slurm danilasm
@@ -608,6 +638,9 @@ sbatch ./jobs/GPT-2_Structured_iTunes-Amazon_real_plus_all_nft_run_3.slurm danil
 sbatch ./jobs/Structured_Walmart-Amazon_baseline_run_1.slurm danilasm
 sbatch ./jobs/Structured_Walmart-Amazon_baseline_run_2.slurm danilasm
 sbatch ./jobs/Structured_Walmart-Amazon_baseline_run_3.slurm danilasm
+sbatch ./jobs/Structured_Walmart-Amazon_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Structured_Walmart-Amazon_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Structured_Walmart-Amazon_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Walmart-Amazon_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Walmart-Amazon_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Structured_Walmart-Amazon_gen_only_run_3.slurm danilasm
@@ -683,6 +716,9 @@ sbatch ./jobs/GPT-2_Structured_Walmart-Amazon_real_plus_all_nft_decimated_run_3.
 sbatch ./jobs/Textual_Abt-Buy_baseline_run_1.slurm danilasm
 sbatch ./jobs/Textual_Abt-Buy_baseline_run_2.slurm danilasm
 sbatch ./jobs/Textual_Abt-Buy_baseline_run_3.slurm danilasm
+sbatch ./jobs/Textual_Abt-Buy_baseline_decimated_run_1.slurm danilasm
+sbatch ./jobs/Textual_Abt-Buy_baseline_decimated_run_2.slurm danilasm
+sbatch ./jobs/Textual_Abt-Buy_baseline_decimated_run_3.slurm danilasm
 sbatch ./jobs/Augmentation_Textual_Abt-Buy_gen_only_run_1.slurm danilasm
 sbatch ./jobs/Augmentation_Textual_Abt-Buy_gen_only_run_2.slurm danilasm
 sbatch ./jobs/Augmentation_Textual_Abt-Buy_gen_only_run_3.slurm danilasm
