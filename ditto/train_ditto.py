@@ -56,6 +56,7 @@ if __name__=="__main__":
     IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
     if not os.path.exists(IDUN_PATH + "ditto/Writer_output/" + hp.task):
         os.makedirs(IDUN_PATH + "ditto/Writer_output/" + hp.task)
+    open(IDUN_PATH + "ditto/Writer_output/" + hp.task + "/" + hp.output_name + ".txt", "w").close()
     f = open(IDUN_PATH + "ditto/Writer_output/" + hp.task + "/" + hp.output_name + ".txt", "a")
     sys.stdout = f
 
