@@ -46,35 +46,67 @@ for directory in directory_list:
                 if "baseline" in name: er_magellan[dataset]["Baseline"] = get_best_average_f1(directory)
                 else: er_magellan[dataset][name] = get_best_average_f1(directory)
 
-for dataset in er_magellan.keys():
-    print(dataset)
-    for directory in er_magellan[dataset]:
-        print(f"\t{directory}: {er_magellan[dataset][directory]}")
+# for dataset in er_magellan.keys():
+#     print(dataset)
+#     for directory in er_magellan[dataset]:
+#         print(f"\t{directory}: {er_magellan[dataset][directory]}")
             
 
-def make_plot(plot_type, decimated=True):
-    labels = []
-    baseline = []
-    augmentation = []
-    gpt2_ft = []
-    gpt2_nft = []
-    ctgan = []
+def make_plot(plot_type, title, decimated=True):
+    labels = [dataset for dataset in er_magellan.keys()]
+    baseline = [0.05 for _ in range(len(labels))]
+    augmentation = [0.05 for _ in range(len(labels))]
+    gpt2_ft = [0.05 for _ in range(len(labels))]
+    gpt2_nft = [0.05 for _ in range(len(labels))]
+    ctgan = [0.05 for _ in range(len(labels))]
     
-    for dataset in er_magellan.keys():
-        labels.append(dataset.replace("_", " "))
-        
-        for key in er_magellan[dataset].keys():
-            if key == "Baseline": baseline.append(er_magellan[dataset][key])
+    for i in range(len(labels)):
+        for key in er_magellan[labels[i]].keys():
+            if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
             if plot_type in key:
-                if "Augmentation" in key: augmentation.append(er_magellan[dataset][key])
-                if "GPT-2" in key and "nft" in key: gpt2_nft.append(er_magellan[dataset][key])
-                if "GPT-2" in key and "nft" not in key: gpt2_ft.append(er_magellan[dataset][key])
-                if "CTGAN" in key: ctgan.append(er_magellan[dataset][key])
-                
+                if decimated:
+                    if "decimated" in key:
+                        if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
+                        if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
+                        if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
+                        if "CTGAN" in key: ctgan[i] = er_magellan[labels[i]][key]
+                else:
+                    if "decimated" not in key:
+                        if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
+                        if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
+                        if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
+                        if "CTGAN" in key: ctgan[i] = er_magellan[labels[i]][key]
 
-    return
+    for i in range(len(labels)): labels[i] = labels[i].replace("_", " ")
 
 
+    x = np.arange(len(labels))  # the label locations
+    width = 0.1
+
+    fig, ax = plt.subplots(figsize=(17, 6))
+    baseline_rects = ax.bar(x - 0.20, baseline, width, label='Baseline')
+    augmentation_rects = ax.bar(x - 0.10, augmentation, width, label='Augmentation')
+    gpt2_nft_rects = ax.bar(x, gpt2_nft, width, label='GPT-2 non-fine-tuned')
+    gpt2_ft_rects = ax.bar(x + 0.10, gpt2_ft, width, label='GPT-2 fine-tuned')
+    ctgan_rects = ax.bar(x + 0.20, ctgan, width, label='CTGAN')
+
+    ax.set_ylabel('f1 scores', fontsize=12)
+    ax.set_title(title)
+    ax.set_xticks(x, labels, fontsize=7)
+    ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=5)
+
+    ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
+    ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
+    ax.bar_label(gpt2_nft_rects, padding=1, fmt="%.2f", fontsize=6)
+    ax.bar_label(gpt2_ft_rects, padding=1, fmt="%.2f", fontsize=6)
+    ax.bar_label(ctgan_rects, padding=1, fmt="%.2f", fontsize=6)
+
+    fig.tight_layout()
+    fig.autofmt_xdate()
+
+    name = f"Xfigures/{plot_type}"
+    if decimated: name += "_decimated"
+    plt.savefig(name + ".png", bbox_inches="tight")
 
 plot_types = [
     "gen_only",
@@ -83,7 +115,16 @@ plot_types = [
     "real_plus_all"
 ]
 
-make_plot(plot_types[0])
+titles = [
+    "Generated data only",
+    "Real data with generated matches",
+    "Real data with generated non-matches",
+    "Real data with all generated data"
+]
+
+for i in range(len(plot_types)):
+    make_plot(plot_types[i], titles[i], True)
+    make_plot(plot_types[i], titles[i], False)
 
 
 # scores = {}
