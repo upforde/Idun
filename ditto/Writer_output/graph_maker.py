@@ -43,18 +43,22 @@ for directory in directory_list:
             avg = get_best_average_f1(directory)
             if avg <= 1:
                 name = directory.replace("./", "").replace(dataset, "").replace("__", "_")
-                if "baseline" in name: er_magellan[dataset]["Baseline"] = get_best_average_f1(directory)
+                if "baseline" in name: 
+                    if "_decimated" in name:
+                        er_magellan[dataset]["Baseline decimated"] = get_best_average_f1(directory)
+                    else: er_magellan[dataset]["Baseline"] = get_best_average_f1(directory)
                 else: er_magellan[dataset][name] = get_best_average_f1(directory)
 
-# for dataset in er_magellan.keys():
-#     print(dataset)
-#     for directory in er_magellan[dataset]:
-#         print(f"\t{directory}: {er_magellan[dataset][directory]}")
+for dataset in er_magellan.keys():
+    print(dataset)
+    for directory in er_magellan[dataset]:
+        print(f"\t{directory}: {er_magellan[dataset][directory]}")
             
 
 def make_plot(plot_type, title, decimated=True):
     labels = [dataset for dataset in er_magellan.keys()]
     baseline = [0.05 for _ in range(len(labels))]
+    baseline_decimated = [0.05 for _ in range(len(labels))]
     augmentation = [0.05 for _ in range(len(labels))]
     gpt2_ft = [0.05 for _ in range(len(labels))]
     gpt2_nft = [0.05 for _ in range(len(labels))]
@@ -62,16 +66,18 @@ def make_plot(plot_type, title, decimated=True):
     
     for i in range(len(labels)):
         for key in er_magellan[labels[i]].keys():
-            if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
             if plot_type in key:
                 if decimated:
                     if "decimated" in key:
+                        if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
+                        if key == "Baseline decimated": baseline_decimated[i] = er_magellan[labels[i]][key]
                         if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
                         if "CTGAN" in key: ctgan[i] = er_magellan[labels[i]][key]
                 else:
                     if "decimated" not in key:
+                        if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
                         if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
@@ -81,25 +87,40 @@ def make_plot(plot_type, title, decimated=True):
 
 
     x = np.arange(len(labels))  # the label locations
-    width = 0.1
 
     fig, ax = plt.subplots(figsize=(17, 6))
-    baseline_rects = ax.bar(x - 0.20, baseline, width, label='Baseline')
-    augmentation_rects = ax.bar(x - 0.10, augmentation, width, label='Augmentation')
-    gpt2_nft_rects = ax.bar(x, gpt2_nft, width, label='GPT-2 non-fine-tuned')
-    gpt2_ft_rects = ax.bar(x + 0.10, gpt2_ft, width, label='GPT-2 fine-tuned')
-    ctgan_rects = ax.bar(x + 0.20, ctgan, width, label='CTGAN')
+    if decimated:
+        width = 0.17
+        baseline_decimated_rects = ax.bar(x-0.5, baseline_decimated, width, label="Baseline decimated")
+        augmentation_rects = ax.bar(x - 0.33, augmentation, width, label='Augmentation')
+        gpt2_nft_rects = ax.bar(x - 0.16, gpt2_nft, width, label='GPT-2 non-fine-tuned')
+        gpt2_ft_rects = ax.bar(x + 0.16, gpt2_ft, width, label='GPT-2 fine-tuned')
+        ctgan_rects = ax.bar(x + 0.33, ctgan, width, label='CTGAN')
+        baseline_rects = ax.bar(x + 0.5, baseline, width, label='Baseline')
+        ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=6)
+        ax.bar_label(baseline_decimated_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(gpt2_nft_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(gpt2_ft_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(ctgan_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
+    else:
+        width=0.15
+        baseline_rects = ax.bar(x - 0.3, baseline, width, label='Baseline')
+        augmentation_rects = ax.bar(x - 0.15, augmentation, width, label='Augmentation')
+        gpt2_nft_rects = ax.bar(x, gpt2_nft, width, label='GPT-2 non-fine-tuned')
+        gpt2_ft_rects = ax.bar(x + 0.15, gpt2_ft, width, label='GPT-2 fine-tuned')
+        ctgan_rects = ax.bar(x + 0.30, ctgan, width, label='CTGAN')
+        ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=5)
+        ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(gpt2_nft_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(gpt2_ft_rects, padding=1, fmt="%.2f", fontsize=6)
+        ax.bar_label(ctgan_rects, padding=1, fmt="%.2f", fontsize=6)
 
     ax.set_ylabel('f1 scores', fontsize=12)
     ax.set_title(title)
     ax.set_xticks(x, labels, fontsize=7)
-    ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=5)
-
-    ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
-    ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
-    ax.bar_label(gpt2_nft_rects, padding=1, fmt="%.2f", fontsize=6)
-    ax.bar_label(gpt2_ft_rects, padding=1, fmt="%.2f", fontsize=6)
-    ax.bar_label(ctgan_rects, padding=1, fmt="%.2f", fontsize=6)
 
     fig.tight_layout()
     fig.autofmt_xdate()
