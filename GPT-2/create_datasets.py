@@ -1,5 +1,4 @@
-import os, shutil
-import numpy
+import os, shutil, random
 
 # IDUN_PATH = "/cluster/home/danilasm/masters/Idun/"
 IDUN_PATH = "../"
@@ -44,6 +43,12 @@ for job in er_magellan:
     with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train.txt.non_matches.decimated") as real_file_decimated:
         for line in real_file_decimated.readlines():
             decimated_real_data.append(line.replace("\n", ""))
+    
+    # Creating file to store all decimated data
+    open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train_decimated.txt", "w").close()
+    with open(IDUN_PATH + f"GPT-2/Datasets/er_magellan/{job}/train_decimated.txt", "a") as decimated:
+        random.shuffle(decimated_real_data)
+        for line in decimated_real_data: decimated.write(f"{line}\n")
 
     # Fine-tuned
     with open(GENERATED_FT_DIR + "matches.txt") as generated_matches_ft:
@@ -62,32 +67,35 @@ for job in er_magellan:
 
     # GEN only
     if f"{job} fine-tuned matches" not in no_data and f"{job} fine-tuned non-matches" not in no_data:
+        gen_only_data = ft_matches + ft_non_matches
+        random.shuffle(gen_only_data)
         open(FINE_TUNED_DIR + "gen_only.txt", "w").close()
         with open(FINE_TUNED_DIR + "gen_only.txt", "a") as gen_only:
-            for entry in ft_matches: gen_only.write(f"{entry}\n")
-            for entry in ft_non_matches: gen_only.write(f"{entry}\n")
+            for entry in gen_only_data: gen_only.write(f"{entry}\n")
         
     # Real + matches
     if f"{job} fine-tuned matches" not in no_data:
+        rpm_data = real_data + ft_matches
+        random.shuffle(rpm_data)
         open(FINE_TUNED_DIR + "real_plus_matches.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_matches.txt", "a") as real_plus_matches:
-            for entry in real_data: real_plus_matches.write(f"{entry}\n")
-            for entry in ft_matches: real_plus_matches.write(f"{entry}\n")
+            for entry in rpm_data: real_plus_matches.write(f"{entry}\n")
 
     # Real + non-matches
     if f"{job} fine-tuned non-matches" not in no_data:
+        rpnm_data = real_data + ft_non_matches
+        random.shuffle(rpnm_data)
         open(FINE_TUNED_DIR + "real_plus_non_matches.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as real_plus_non_matches:
-            for entry in real_data: real_plus_non_matches.write(f"{entry}\n")
-            for entry in ft_non_matches: real_plus_non_matches.write(f"{entry}\n")
+            for entry in rpnm_data: real_plus_non_matches.write(f"{entry}\n")
 
     # Real + all
     if f"{job} fine-tuned matches" not in no_data and f"{job} fine-tuned non-matches" not in no_data:
+        rpa_data = real_data + ft_matches + ft_non_matches
+        random.shuffle(rpa_data)
         open(FINE_TUNED_DIR + "real_plus_all.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_all.txt", "a") as real_plus_all:
-            for entry in real_data: real_plus_all.write(f"{entry}\n")
-            for entry in ft_matches: real_plus_all.write(f"{entry}\n")
-            for entry in ft_non_matches: real_plus_all.write(f"{entry}\n")
+            for entry in rpa_data: real_plus_all.write(f"{entry}\n")
 
     
     # Decimated FT
@@ -107,32 +115,35 @@ for job in er_magellan:
 
     # GEN only
     if f"{job} fine-tuned matches decimated" not in no_data and f"{job} fine-tuned non-matches decimated" not in no_data:
+        gen_only_data = ft_decimated_matches + ft_decimated_non_matches
+        random.shuffle(gen_only_data)
         open(FINE_TUNED_DIR + "gen_only_decimated.txt", "w").close()
         with open(FINE_TUNED_DIR + "gen_only_decimated.txt", "a") as gen_only:
-            for entry in ft_decimated_matches: gen_only.write(f"{entry}\n")
-            for entry in ft_decimated_non_matches: gen_only.write(f"{entry}\n")
+            for entry in gen_only_data: gen_only.write(f"{entry}\n")
         
     # Real + matches
     if f"{job} fine-tuned matches decimated" not in no_data:
+        rpm_data = decimated_real_data + ft_decimated_matches
+        random.shuffle(rpm_data)
         open(FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as real_plus_matches:
-            for entry in decimated_real_data: real_plus_matches.write(f"{entry}\n")
-            for entry in ft_decimated_matches: real_plus_matches.write(f"{entry}\n")
+            for entry in rpm_data: real_plus_matches.write(f"{entry}\n")
 
     # Real + non-matches
     if f"{job} fine-tuned non-matches decimated" not in no_data:
+        rpnm_data = decimated_real_data + ft_decimated_non_matches
+        random.shuffle(rpnm_data)
         open(FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as real_plus_non_matches:
-            for entry in decimated_real_data: real_plus_non_matches.write(f"{entry}\n")
-            for entry in ft_decimated_non_matches: real_plus_non_matches.write(f"{entry}\n")
+            for entry in rpnm_data: real_plus_non_matches.write(f"{entry}\n")
 
     # Real + all
     if f"{job} fine-tuned matches decimated" not in no_data and f"{job} fine-tuned non-matches decimated" not in no_data:
+        rpa_data = decimated_real_data + ft_decimated_matches + ft_decimated_non_matches
+        random.shuffle(rpa_data)
         open(FINE_TUNED_DIR + "real_plus_all_decimated.txt", "w").close()
         with open(FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as real_plus_all:
-            for entry in decimated_real_data: real_plus_all.write(f"{entry}\n")
-            for entry in ft_decimated_matches: real_plus_all.write(f"{entry}\n")
-            for entry in ft_decimated_non_matches: real_plus_all.write(f"{entry}\n")
+            for entry in rpa_data: real_plus_all.write(f"{entry}\n")
 
 
     # Non-fine-tuned
@@ -152,32 +163,35 @@ for job in er_magellan:
 
     # GEN only
     if f"{job} non-fine-tuned matches" not in no_data and f"{job} non-fine-tuned non-matches" not in no_data:
+        gen_only_data = nft_matches + nft_non_matches
+        random.shuffle(gen_only_data)
         open(NON_FINE_TUNED_DIR + "gen_only.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "gen_only.txt", "a") as gen_only:
-            for entry in nft_matches: gen_only.write(f"{entry}\n")
-            for entry in nft_non_matches: gen_only.write(f"{entry}\n")
+            for entry in gen_only_data: gen_only.write(f"{entry}\n")
         
     # Real + matches
     if f"{job} non-fine-tuned matches" not in no_data:
+        rpm_data = real_data + nft_matches
+        random.shuffle(rpm_data)
         open(NON_FINE_TUNED_DIR + "real_plus_matches.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_matches.txt", "a") as real_plus_matches:
-            for entry in real_data: real_plus_matches.write(f"{entry}\n")
-            for entry in nft_matches: real_plus_matches.write(f"{entry}\n")
+            for entry in rpm_data: real_plus_matches.write(f"{entry}\n")
 
     # Real + non-matches
     if f"{job} non-fine-tuned non-matches" not in no_data:
+        rpnm_data = real_data + nft_non_matches
+        random.shuffle(rpnm_data)
         open(NON_FINE_TUNED_DIR + "real_plus_non_matches.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_non_matches.txt", "a") as real_plus_non_matches:
-            for entry in real_data: real_plus_non_matches.write(f"{entry}\n")
-            for entry in nft_non_matches: real_plus_non_matches.write(f"{entry}\n")
+            for entry in rpnm_data: real_plus_non_matches.write(f"{entry}\n")
 
     # Real + all
     if f"{job} non-fine-tuned matches" not in no_data and f"{job} non-fine-tuned non-matches" not in no_data:
+        rpa_data = real_data + nft_matches + nft_non_matches
+        random.shuffle(rpa_data)
         open(NON_FINE_TUNED_DIR + "real_plus_all.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_all.txt", "a") as real_plus_all:
-            for entry in real_data: real_plus_all.write(f"{entry}\n")
-            for entry in nft_matches: real_plus_all.write(f"{entry}\n")
-            for entry in nft_non_matches: real_plus_all.write(f"{entry}\n")
+            for entry in rpa_data: real_plus_all.write(f"{entry}\n")
     
 
     # Decimated NFT
@@ -197,32 +211,35 @@ for job in er_magellan:
     
     # GEN only
     if f"{job} non-fine-tuned matches decimated" not in no_data and f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        gen_only_data = nft_decimated_matches + nft_decimated_non_matches
+        random.shuffle(gen_only_data)
         open(NON_FINE_TUNED_DIR + "gen_only_decimated.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "gen_only_decimated.txt", "a") as gen_only:
-            for entry in nft_decimated_matches: gen_only.write(f"{entry}\n")
-            for entry in nft_decimated_non_matches: gen_only.write(f"{entry}\n")
+            for entry in gen_only_data: gen_only.write(f"{entry}\n")
         
     # Real + matches
     if f"{job} non-fine-tuned matches decimated" not in no_data:
+        rpm_data = decimated_real_data + nft_decimated_matches
+        random.shuffle(rpm_data)
         open(NON_FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_matches_decimated.txt", "a") as real_plus_matches:
-            for entry in decimated_real_data: real_plus_matches.write(f"{entry}\n")
-            for entry in nft_decimated_matches: real_plus_matches.write(f"{entry}\n")
+            for entry in rpm_data: real_plus_matches.write(f"{entry}\n")
 
     # Real + non-matches
     if f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        rpnm_data = decimated_real_data + nft_decimated_non_matches
+        random.shuffle(rpnm_data)
         open(NON_FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_non_matches_decimated.txt", "a") as real_plus_non_matches:
-            for entry in decimated_real_data: real_plus_non_matches.write(f"{entry}\n")
-            for entry in nft_decimated_non_matches: real_plus_non_matches.write(f"{entry}\n")
+            for entry in rpnm_data: real_plus_non_matches.write(f"{entry}\n")
 
     # Real + all
     if f"{job} non-fine-tuned matches decimated" not in no_data and f"{job} non-fine-tuned non-matches decimated" not in no_data:
+        rpa_data = decimated_real_data + nft_decimated_matches + nft_decimated_non_matches
+        random.shuffle(rpa_data)
         open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "w").close()
         with open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as real_plus_all:
-            for entry in decimated_real_data: real_plus_all.write(f"{entry}\n")
-            for entry in nft_decimated_matches: real_plus_all.write(f"{entry}\n")
-            for entry in nft_decimated_non_matches: real_plus_all.write(f"{entry}\n")
+            for entry in rpa_data: real_plus_all.write(f"{entry}\n")
 
 print("Missing data:")
 for job in no_data: print(f"\t{job}")
