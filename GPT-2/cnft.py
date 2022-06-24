@@ -50,25 +50,27 @@ for line in open(SAVE_NAME + ".txt").readlines():
     if line[:3] == "COL": count += 1
 
 while count < amount:
+    valid = False
+    text = ""
+    rand = cut_valid[random.randint(0, len(cut_valid)-1)]
+
+    while len(tokenizer(text)['input_ids']) + round(len(tokenizer(rand)['input_ids'])*2.5) < 512:
+        add = train[random.randint(0, len(train)-1)] + "\n"
+        if len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) + len(tokenizer(add)['input_ids']) <= 512:
+            text += add
+        else: break
+
+    prompt = text + rand
+
+    while not valid:
+        generated = generator(prompt, max_length=512)
+        generated_text = generated[0]["generated_text"].replace(text, "")
+        match = ditto_parser(generated_text)
+        valid = match.isValid()
+
     with open(SAVE_NAME + ".txt", "a") as generated_data:
-        valid = False
-        text = ""
-        rand = cut_valid[random.randint(0, len(cut_valid)-1)]
-
-        while len(tokenizer(text)['input_ids']) + round(len(tokenizer(rand)['input_ids'])*2.5) < 512:
-            add = train[random.randint(0, len(train)-1)] + "\n"
-            if len(tokenizer(text)['input_ids']) + (len(tokenizer(rand)['input_ids'])*2) + len(tokenizer(add)['input_ids']) <= 512:
-                text += add
-            else: break
-
-        prompt = text + rand
-
-        while not valid:
-            generated = generator(prompt, max_length=512)
-            generated_text = generated[0]["generated_text"].replace(text, "")
-            match = ditto_parser(generated_text)
-            valid = match.isValid()
-
         generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
-
-    count += 1
+        count = 0
+        lines = generated_data.readlines()
+        for line in lines:
+            if line[:3] == "COL": count += 1
