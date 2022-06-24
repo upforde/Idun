@@ -241,5 +241,6 @@ for job in er_magellan:
         with open(NON_FINE_TUNED_DIR + "real_plus_all_decimated.txt", "a") as real_plus_all:
             for entry in rpa_data: real_plus_all.write(f"{entry}\n")
 
-print("Missing data:")
-for job in no_data: print(f"\t{job}")
+if len(no_data) != 0: 
+    print("Missing data:")
+    for job in no_data: print(f"\t{job}")

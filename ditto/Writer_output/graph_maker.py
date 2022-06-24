@@ -90,13 +90,13 @@ def make_plot(plot_type, title, decimated=True):
 
     fig, ax = plt.subplots(figsize=(17, 6))
     if decimated:
-        width = 0.17
-        baseline_decimated_rects = ax.bar(x-0.5, baseline_decimated, width, label="Baseline decimated")
-        augmentation_rects = ax.bar(x - 0.33, augmentation, width, label='Augmentation')
-        gpt2_nft_rects = ax.bar(x - 0.16, gpt2_nft, width, label='GPT-2 non-fine-tuned')
-        gpt2_ft_rects = ax.bar(x + 0.16, gpt2_ft, width, label='GPT-2 fine-tuned')
-        ctgan_rects = ax.bar(x + 0.33, ctgan, width, label='CTGAN')
-        baseline_rects = ax.bar(x + 0.5, baseline, width, label='Baseline')
+        width = 0.1
+        baseline_decimated_rects =  ax.bar(x- 2 * width - width/2, baseline_decimated, width, label="Baseline decimated")
+        augmentation_rects =        ax.bar(x - width - width/2, augmentation, width, label='Augmentation')
+        gpt2_nft_rects =            ax.bar(x - width/2, gpt2_nft, width, label='GPT-2 non-fine-tuned')
+        gpt2_ft_rects =             ax.bar(x + width/2, gpt2_ft, width, label='GPT-2 fine-tuned')
+        ctgan_rects =               ax.bar(x + width + width/2, ctgan, width, label='CTGAN')
+        baseline_rects =            ax.bar(x + 2 * width + width/2, baseline, width, label='Baseline')
         ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=6)
         ax.bar_label(baseline_decimated_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
@@ -106,11 +106,11 @@ def make_plot(plot_type, title, decimated=True):
         ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
     else:
         width=0.15
-        baseline_rects = ax.bar(x - 0.3, baseline, width, label='Baseline')
-        augmentation_rects = ax.bar(x - 0.15, augmentation, width, label='Augmentation')
+        baseline_rects = ax.bar(x - 2*width, baseline, width, label='Baseline')
+        augmentation_rects = ax.bar(x - width, augmentation, width, label='Augmentation')
         gpt2_nft_rects = ax.bar(x, gpt2_nft, width, label='GPT-2 non-fine-tuned')
-        gpt2_ft_rects = ax.bar(x + 0.15, gpt2_ft, width, label='GPT-2 fine-tuned')
-        ctgan_rects = ax.bar(x + 0.30, ctgan, width, label='CTGAN')
+        gpt2_ft_rects = ax.bar(x + width, gpt2_ft, width, label='GPT-2 fine-tuned')
+        ctgan_rects = ax.bar(x + 2*width, ctgan, width, label='CTGAN')
         ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=5)
         ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
@@ -121,6 +121,8 @@ def make_plot(plot_type, title, decimated=True):
     ax.set_ylabel('f1 scores', fontsize=12)
     ax.set_title(title)
     ax.set_xticks(x, labels, fontsize=7)
+
+    ax.set_ylim([0, 1])
 
     fig.tight_layout()
     fig.autofmt_xdate()
