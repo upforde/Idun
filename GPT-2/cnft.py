@@ -70,7 +70,5 @@ while count < amount:
 
     with open(SAVE_NAME + ".txt", "a") as generated_data:
         generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
-        count = 0
-        lines = generated_data.readlines()
-        for line in lines:
-            if line[:3] == "COL": count += 1
+
+    count += 1
