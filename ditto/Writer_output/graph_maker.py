@@ -67,7 +67,7 @@ def make_plot(plot_type, title, decimated=True):
     ax.set_title(title)
     
     # Limiting the y-axis
-    ax.set_ylim([0, 1])
+    ax.set_ylim([0, 1.1])
 
     # Slight formatting of the labels to make the graphs sexy
     for i in range(len(labels)): labels[i] = labels[i].replace("_", " ")
