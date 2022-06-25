@@ -128,5 +128,4 @@ for job in er_magellan:
 sorted_progress = sorted(progress.items(), key=lambda x : x[1][0]/x[1][1], reverse=True)
 
 for item in sorted_progress:
-    if 1-(item[1][0]/item[1][1]) > 0.02:
-        print(f"{item[0]}:\t{round((item[1][0]/item[1][1])*100, 2)}%\t{item[1][0]}/{item[1][1]}")
+    print(f"{item[0]}:\t{round((item[1][0]/item[1][1])*100, 2)}%\t{item[1][0]}/{item[1][1]}")

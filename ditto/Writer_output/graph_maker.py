@@ -4,7 +4,7 @@ import os
 
 def get_best_average_f1(dataset):
     # Setting up the 20 epochs that ditto does
-    epochs = [0.0 for _ in range(20)]
+    f1 = 0
     # Adding up the f1 scores throughout all runs of ditto for each epoch
     for run in os.listdir(dataset):
         with open(dataset + "/" + run) as txt:
@@ -15,12 +15,11 @@ def get_best_average_f1(dataset):
                 if parts[0] == "epoch":
                     # Add this epochs f1 score to the corresponding epoch sum in the array
                     epoch = int(parts[1].replace(":", ""))-1
-                    epochs[epoch] += float(parts[3].replace("f1=", "").replace(",", ""))
-    # Averaging out each epoch
-    for i in range(len(epochs)):
-        epochs[i] = epochs[i]/len(os.listdir(dataset))
-    # Returning the best average f1 score
-    return max(epochs)
+                    if epoch == 19: f1 += float(parts[3].replace("f1=", "").replace(",", ""))
+
+    f1 = f1/len(os.listdir(dataset))
+    
+    return f1
 
 def make_plot(plot_type, title, decimated=True):
     # Setting up the arrays for the columns
@@ -35,7 +34,9 @@ def make_plot(plot_type, title, decimated=True):
     # For each dataset
     for i in range(len(labels)):
         # For each permutation of datasets
-        for key in er_magellan[labels[i]].keys():
+        for key in er_magellan[labels[i]]:
+            if "Baseline" in key and "decimated" not in key: baseline[i] = er_magellan[labels[i]][key]
+            if "Baseline decimated" in key: baseline_decimated[i] = er_magellan[labels[i]][key]
             # Select the correct permutation to plot
             if plot_type in key:
                 # Decimated interaction
@@ -43,8 +44,6 @@ def make_plot(plot_type, title, decimated=True):
                     # Select only the decimated permutation
                     if "decimated" in key:
                         # Insert the values of the columns into the columns
-                        if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
-                        if key == "Baseline decimated": baseline_decimated[i] = er_magellan[labels[i]][key]
                         if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
@@ -53,7 +52,6 @@ def make_plot(plot_type, title, decimated=True):
                     # Select only the non-decimated permutation
                     if "decimated" not in key:
                         # Insert the values of the columns into the columns
-                        if key == "Baseline": baseline[i] = er_magellan[labels[i]][key]
                         if "Augmentation" in key: augmentation[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" in key: gpt2_nft[i] = er_magellan[labels[i]][key]
                         if "GPT-2" in key and "nft" not in key: gpt2_ft[i] = er_magellan[labels[i]][key]
