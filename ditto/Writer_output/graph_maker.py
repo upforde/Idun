@@ -69,7 +69,6 @@ def make_plot(plot_type, title, decimated=True):
 
     # Labels and titles
     ax.set_ylabel('f1 scores', fontsize=12)
-    ax.set_title(title)
     
     # Limiting the y-axis
     ax.set_ylim([0, 1.1])
@@ -103,7 +102,7 @@ def make_plot(plot_type, title, decimated=True):
         ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
 
         # Legend
-        ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=6)
+        ax.legend(loc='upper center', fontsize='small', ncol=6)
     else:
         # Drawing the columns
         width = 0.15    # Width has to be slightly smaller than (1/num_columns) to make space between datasets)
@@ -116,12 +115,13 @@ def make_plot(plot_type, title, decimated=True):
         ctgan_rects =           ax.bar(x + 2*width, ctgan, width, label='CTGAN')
 
         # The values of each of the columns shown above the columns for readability
-        ax.legend(bbox_to_anchor =(0.5,-0.28), loc='lower center', fontsize='small', ncol=5)
         ax.bar_label(baseline_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(augmentation_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(gpt2_nft_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(gpt2_ft_rects, padding=1, fmt="%.2f", fontsize=6)
         ax.bar_label(ctgan_rects, padding=1, fmt="%.2f", fontsize=6)
+
+        ax.legend(loc='upper center', fontsize='small', ncol=5)
 
     # Saving the plot to the Xfigures forled (Called Xfigures to appear at the end of the work tree)
     name = f"Xfigures/{plot_type}"
