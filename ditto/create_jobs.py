@@ -89,7 +89,7 @@ config.write("[ \n")
 def make_files(task, train, test, valid):
     names.append(task)
     text = make_text(task)
-    with open(IDUN_PATH + "ditto/jobs/" + task + "_" + output + ".slurm", "a") as job_file:
+    with open(IDUN_PATH + "ditto/jobs/" + task + ".slurm", "a") as job_file:
         for line in text: job_file.write(f"{line}\n")
 
     config_text = make_config(task, train, test, valid)
