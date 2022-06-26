@@ -229,7 +229,7 @@ for job in er_magellan:
 
         # GPT-2
         task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_ft_decimated"
-        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_matches_non_decimated.txt"
+        train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/fine_tuned/real_plus_non_matches_decimated.txt"
         make_files(task, train, test, valid)
 
         task = "GPT-2_" + job.replace("/", "_") + "_real_plus_non_matches_nft_decimated"
