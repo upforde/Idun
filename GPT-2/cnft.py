@@ -1,9 +1,8 @@
-import os, random, argparse
+import os, random, argparse, time
 from transformers import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
-IDUN_PATH = "./"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, default="Structured/Beer")
@@ -49,6 +48,8 @@ count = 0
 for line in open(SAVE_NAME + ".txt").readlines():
     if line[:3] == "COL": count += 1
 
+generating_start = time.time()
+
 while count < amount:
     valid = False
     text = ""
@@ -72,3 +73,9 @@ while count < amount:
         generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
 
     count += 1
+
+generating_end = time.time()
+
+open(SAVE_NAME + "_elapsed_time.txt", "w").close()
+with open(SAVE_NAME + "_elapsed_time.txt", "a") as time:
+    time.write(f"Generating time: {generating_end - generating_start}\n")

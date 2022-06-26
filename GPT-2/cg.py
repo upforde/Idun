@@ -1,4 +1,4 @@
-import argparse, os, random
+import argparse, os, random, time
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from transformers import TextDataset,DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
@@ -13,7 +13,6 @@ hp = parser.parse_args()
 
 # Parsing arguments and creating variable names
 IDUN_PATH ="/cluster/home/danilasm/masters/Idun/GPT-2/"
-IDUN_PATH = "./"
 MODEL_NAME = IDUN_PATH + "Models/" + hp.dataset + "_" + hp.type
 SAVE_LOCATION = f"{IDUN_PATH}Generated/{hp.dataset}/fine_tuned/"
 if not os.path.exists(SAVE_LOCATION): os.makedirs(SAVE_LOCATION)
@@ -77,7 +76,14 @@ trainer = Trainer(
 )
 
 # Training and saving the model
+train_start = time.time()
 trainer.train()
+train_end = time.time()
+
+open(FILE_NAME + "_elapsed_time.txt", "w").close()
+with open(FILE_NAME + "_elapsed_time.txt", "a") as time:
+    time.write(f"Training time: {train_end - train_start}\n")
+
 trainer.save_model()
 
 ENTITY_TYPE = 1 if hp.type == "matches" else 0
@@ -98,6 +104,8 @@ count = 0
 for line in open(FILE_NAME + ".txt").readlines():
     if line[:3] == "COL": count += 1
 
+generating_start = time.time()
+
 while count < amount:
     valid = False
     prompt = cut_valid[random.randint(0, len(cut_valid)-1)]
@@ -116,3 +124,8 @@ while count < amount:
         generated_data.write(f"{match.generate_string(ENTITY_TYPE)}\n")
     
     count += 1
+
+generating_end = time.time()
+
+with open(FILE_NAME + "_elapsed_time.txt", "a") as time:
+    time.write(f"Generating time: {generating_end - generating_start}\n")
