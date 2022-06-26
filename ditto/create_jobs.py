@@ -271,6 +271,8 @@ open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "w").close()
 with open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "w").close()
 with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
+open(IDUN_PATH + "ditto/run_ctgan_jobs.sh", "w").close()
+with open(IDUN_PATH + "ditto/run_ctgan_jobs.sh", "a") as file: file.write("#!/bin/sh\n")
 
 for name in names:
     with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: 
@@ -287,3 +289,6 @@ for name in names:
     if "GPT-2" in name and "nft" not in name:
         with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as gpt2:
             gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+    if "CTGAN" in name:
+        with open(IDUN_PATH + "ditto/run_ctgan_jobs.sh", "a") as ctgan:
+            ctgan.write(f"sbatch ./jobs/{name}.slurm danilasm")
