@@ -9,20 +9,23 @@ if len(os.listdir(IDUN_PATH + "ditto/jobs")) != 0:
     shutil.rmtree(IDUN_PATH + "ditto/jobs")
     os.makedirs(IDUN_PATH + "ditto/jobs")
 
-def make_text(task, name):
-    python_line = f"python3 /cluster/home/danilasm/masters/Idun/ditto/train_ditto.py"
-    python_line += f" --task={task}"
-    python_line += " --batch_size=32"
-    python_line += f" --output_name={name}"
-    seed = str(round(random.random()*2147483647))
-    python_line += f" --run_id={seed}"
+def make_text(task):
+    python_line = ""
+    for i in range(3):
+        python_line += f"python3 /cluster/home/danilasm/masters/Idun/ditto/train_ditto.py"
+        python_line += f" --task={task}"
+        python_line += " --batch_size=32"
+        python_line += f" --output_name=run_{i}"
+        seed = str(round(random.random()*2147483647))
+        python_line += f" --run_id={seed}"
+        python_line += "\n"
 
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
         "#SBATCH --gres=gpu:1",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=12:00:00",
+        "#SBATCH --time=6:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
@@ -84,12 +87,10 @@ config = open(IDUN_PATH + "ditto/configs.json", "a")
 config.write("[ \n")
 
 def make_files(task, train, test, valid):
-    for i in range(3):
-        output = "run_" + str(i+1)
-        names.append(f"{task}_{output}")
-        text = make_text(task, output)
-        with open(IDUN_PATH + "ditto/jobs/" + task + "_" + output + ".slurm", "a") as job_file:
-            for line in text: job_file.write(f"{line}\n")
+    names.append(task)
+    text = make_text(task)
+    with open(IDUN_PATH + "ditto/jobs/" + task + "_" + output + ".slurm", "a") as job_file:
+        for line in text: job_file.write(f"{line}\n")
 
     config_text = make_config(task, train, test, valid)
     for line in config_text: config.write(f"{line}\n")
