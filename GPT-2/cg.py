@@ -77,9 +77,9 @@ trainer = Trainer(
 )
 
 # Training and saving the model
-train_start = time.clock()
+train_start = time.time()
 trainer.train()
-train_end = time.clock()
+train_end = time.time()
 
 open(FILE_NAME + "_elapsed_time.txt", "w").close()
 with open(FILE_NAME + "_elapsed_time.txt", "a") as time:
@@ -106,7 +106,7 @@ if os.path.exists(FILE_NAME + ".txt"):
     for line in open(FILE_NAME + ".txt").readlines():
         if line[:3] == "COL": count += 1
 
-generating_start = time.clock()
+generating_start = time.time()
 
 while count < amount:
     valid = False
@@ -127,7 +127,7 @@ while count < amount:
     
     count += 1
 
-generating_end = time.clock()
+generating_end = time.time()
 
 with open(FILE_NAME + "_elapsed_time.txt", "a") as time:
     time.write(f"Generating time: {generating_end - generating_start}\n")

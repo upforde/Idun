@@ -50,7 +50,7 @@ if os.path.exists(SAVE_NAME + ".txt"):
     for line in open(SAVE_NAME + ".txt").readlines():
         if line[:3] == "COL": count += 1
 
-generating_start = time.clock()
+generating_start = time.time()
 
 while count < amount:
     valid = False
@@ -76,7 +76,7 @@ while count < amount:
 
     count += 1
 
-generating_end = time.clock()
+generating_end = time.time()
 
 open(SAVE_NAME + "_elapsed_time.txt", "w").close()
 with open(SAVE_NAME + "_elapsed_time.txt", "a") as time:
