@@ -1,4 +1,5 @@
-import os, random, argparse, time
+import os, random, argparse
+from time import time
 from transformers import pipeline, GPT2Tokenizer
 from ditto_parser import ditto_parser
 
