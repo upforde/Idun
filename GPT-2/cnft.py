@@ -45,8 +45,9 @@ if hp.decimate == "True": amount = len(train) * 9
 else: amount = len(train)
 
 count = 0
-for line in open(SAVE_NAME + ".txt").readlines():
-    if line[:3] == "COL": count += 1
+if os.path.exists(SAVE_NAME + ".txt"):
+    for line in open(SAVE_NAME + ".txt").readlines():
+        if line[:3] == "COL": count += 1
 
 generating_start = time.time()
 
