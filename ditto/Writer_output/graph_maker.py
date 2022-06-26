@@ -1,3 +1,4 @@
+from cgitb import small
 from matplotlib import pyplot as plt
 import numpy as np
 import os
@@ -23,13 +24,17 @@ def get_best_average_f1(dataset):
 
 def make_plot(plot_type, title, decimated=True):
     # Setting up the arrays for the columns
-    labels = [dataset for dataset in er_magellan.keys()]        # Labels of the datasets
-    baseline = [0.05 for _ in range(len(labels))]               # 100% Real data baseline measurements
-    baseline_decimated = [0.05 for _ in range(len(labels))]     # 10% Real data baseline measurements
-    augmentation = [0.05 for _ in range(len(labels))]           # Augmentation method
-    gpt2_ft = [0.05 for _ in range(len(labels))]                # GPT-2 fine-tuned method
-    gpt2_nft = [0.05 for _ in range(len(labels))]               # GPT-2 non-fine-tuned method
-    ctgan = [0.05 for _ in range(len(labels))]                  # CTGAN method
+    labels = []
+    for dataset in er_magellan.keys():
+        if decimated: 
+            if dataset not in small_datasets: labels.append(dataset)
+        else: labels.append(dataset)
+    baseline = [0.01 for _ in range(len(labels))]               # 100% Real data baseline measurements
+    baseline_decimated = [0.01 for _ in range(len(labels))]     # 10% Real data baseline measurements
+    augmentation = [0.01 for _ in range(len(labels))]           # Augmentation method
+    gpt2_ft = [0.01 for _ in range(len(labels))]                # GPT-2 fine-tuned method
+    gpt2_nft = [0.01 for _ in range(len(labels))]               # GPT-2 non-fine-tuned method
+    ctgan = [0.01 for _ in range(len(labels))]                  # CTGAN method
     
     # For each dataset
     for i in range(len(labels)):
@@ -138,6 +143,13 @@ er_magellan = {
     "Structured_Walmart-Amazon": {},
     "Textual_Abt-Buy": {}
 }
+
+small_datasets = [
+    "Dirty_iTunes-Amazon",
+    "Structured_Beer",
+    "Structured_Fodors-Zagats",
+    "Structured_iTunes-Amazon"
+]
 
 # Gathering the information for plotting
 directory_list = list()

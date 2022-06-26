@@ -206,7 +206,7 @@ for job in er_magellan:
         # Real + match decimated
         # Augmentaion
         task = "Augmentation_" + job.replace("/", "_") + "_real_plus_matches_decimated"
-        train = IDUN_PATH + "Augmentation/Generated/" + job + "real_plus_matches_decimated.txt"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_matches_decimated.txt"
         make_files(task, train, test, valid)
         
         # GPT-2
@@ -224,7 +224,7 @@ for job in er_magellan:
         # Real + non-match decimated
         # Augmentation
         task = "Augmentation_" + job.replace("/", "_") + "_real_plus_non_matches_decimated"
-        train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_non_matches.txt"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_non_matches.txt"
         make_files(task, train, test, valid)
 
         # GPT-2
@@ -242,7 +242,7 @@ for job in er_magellan:
         # Real + all decimated
         # Augmentation
         task = "Augmentation_" + job.replace("/", "_") + "_real_plus_all_decimated"
-        train = IDUN_PATH + "Augmentation/Generated/" + job + "_decimated/real_plus_all.txt"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_all.txt"
         make_files(task, train, test, valid)
 
         # GPT-2
