@@ -1,0 +1,4 @@
+cuda
+Device: cuda
+step: 0, loss: 0.802131712436676
+step: 10, loss: 0.5595306158065796
