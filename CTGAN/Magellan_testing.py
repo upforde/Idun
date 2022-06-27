@@ -154,9 +154,9 @@ if job_type == 0:
     training_data = pd.concat([table1, table2, real_truth_data], axis=1)
 
 # Matches + Non-Matches
-if job_type == 1:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.csv"
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.csv"
+elif job_type == 1:
+    match_synth_path = synth_dir + job_name + "train.matches.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.csv"
 
     match_synth_data = pd.read_csv(match_synth_path, encoding="utf-8")
     non_match_synth_data = pd.read_csv(non_match_synth_path, encoding="utf-8")
@@ -165,7 +165,7 @@ if job_type == 1:
 
 # Real data + Matches
 elif job_type == 2:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.csv"
+    match_synth_path = synth_dir + job_name + "train.matches.csv"
     real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt"
 
     match_synth_data = pd.read_csv(match_synth_path, encoding="utf-8")
@@ -183,7 +183,7 @@ elif job_type == 2:
 
 # Real data + Non-Matches
 elif job_type == 3:
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.csv"
     real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt"
 
     non_match_synth_data = pd.read_csv(non_match_synth_path, encoding="utf-8")
@@ -201,8 +201,8 @@ elif job_type == 3:
 
 # Real data + Matches + Non-Matches
 elif job_type == 4:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.csv"
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.csv"
+    match_synth_path = synth_dir + job_name + "train.matches.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.csv"
     real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt"
 
     match_synth_data = pd.read_csv(match_synth_path, encoding="utf-8")
@@ -246,8 +246,8 @@ elif job_type == 5:
 
 # decimate Matches + Non-Matches
 elif job_type == 6:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.decimated.csv"
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.decimated.csv"
+    match_synth_path = synth_dir + job_name + "train.matches.decimated.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.decimated.csv"
 
     match_synth_data = pd.read_csv(match_synth_path, encoding="utf-8")
     non_match_synth_data = pd.read_csv(non_match_synth_path, encoding="utf-8")
@@ -256,7 +256,7 @@ elif job_type == 6:
 
 # decimate Real data + Matches
 elif job_type == 7:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.decimated.csv"
+    match_synth_path = synth_dir + job_name + "train.matches.decimated.csv"
     match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.matches.decimated"
     non_match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.non_matches.decimated"
 
@@ -284,7 +284,7 @@ elif job_type == 7:
 
 # decimate Real data + Non-Matches
 elif job_type == 8:
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.decimated.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.decimated.csv"
     match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.matches.decimated"
     non_match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.non_matches.decimated"
 
@@ -312,8 +312,8 @@ elif job_type == 8:
 
 # decimate Real data + Matches + Non-Matches
 elif job_type == 9:
-    match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.matches.decimated.csv"
-    non_match_synth_path = synth_dir + "er_magellan" + os.sep + job_name + "train.non_matches.decimated.csv"
+    match_synth_path = synth_dir + job_name + "train.matches.decimated.csv"
+    non_match_synth_path = synth_dir + job_name + "train.non_matches.decimated.csv"
     match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.matches.decimated"
     non_match_real_path = datasets_dir + "er_magellan" + os.sep + job_name + "train.txt.non_matches.decimated"
 
@@ -380,7 +380,9 @@ table1 = A_meta.add_prefix("ltable_")
 table2 = B_meta.add_prefix("rtable_")
 table_C = pd.concat([table1, table2, truth_table], axis=1)
 
-path_to_table_C = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\Temp_Tables" + os.sep
+temp_C_dir = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\Temp_Tables" + os.sep
+
+path_to_table_C = temp_C_dir
 path_to_table_C += generator_name[hp.generator_type] + os.sep
 path_to_table_C += dataset_scenario_name[hp.job_type] + os.sep
 

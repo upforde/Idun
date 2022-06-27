@@ -1,0 +1,67 @@
+ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-8585,mediterranean,53 ,1
+patina,' 5955 melrose ave. ',` los angeles ',213/467 -1108,californian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-467-1108,californian,16 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+` locanda veneta ',' 3rd st. ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+felidia,'13 w. 54th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+` rose pistola ',' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,111 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,111 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,2 ,` bel-air hotel ',' 701 stone canyon rd. ',` bel air ',310-472-1211,californian,2 ,1
+citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,6 ,1
+'21 club ','21 w. 52nd st. ',` new york ',212/582 -7200,american,23 ,'21 club ','21 w. 52nd st. ',` new york city ',212-582-7200,asian,23 ,1
+valentino,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,valentino,' 3115 pico blvd. ',` santa monica ',310-829-4313,italian,21 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,54 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,53 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+` locanda veneta ',' 3rd st. ',` las vegas ',310/274 -1893,italian,21 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,59 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,2 ,` bel-air hotel ',' 701 stone canyon rd. ',` bel air ',310-472-1211,californian,2 ,1
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,72 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,53 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+felidia,'13 w. 54th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,59 ,1
+` locanda veneta ',' 3rd st. ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-8585,mediterranean,53 ,1
+oceana,' 182 w. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` locanda veneta ',' 3rd st. ',` los angeles ',310/274 -1893,italian,21 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,' 201 w. 83rd st. ',` new york city ',212-724-8585,mediterranean,53 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,72 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-261-3662,continental,87 ,1
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,72 ,1
+` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,2 ,` bel-air hotel ',' 701 stone canyon rd. ',` bel air ',310-472-1211,californian,2 ,1
+` la grotta ',' 2637 peachtree rd. . peachtree house condominium ',atlanta,404/231 -1368,italian,85 ,` la grotta ',' 2637 peachtree rd. ne ',atlanta,404-231-1368,italian,85 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` rose pistola ',' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,111 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,111 ,1
+` locanda veneta ',' 3rd st. ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+felidia,'13 w. 54th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,2 ,` bel-air hotel ',' 701 stone canyon rd. ',` bel air ',310-472-1211,californian,2 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+` locanda veneta ',' 3rd st. ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,13 ,1
+granita,' 23725 w. malibu rd. ',malibu,310/456 -0488,californian,8 ,granita,' 23725 w. malibu rd. ',malibu,310-456-0488,californian,8 ,1
+` la grotta ',' 2637 peachtree rd. . peachtree house condominium ',atlanta,404/231 -1368,italian,85 ,` la grotta ',' 2637 peachtree rd. ne ',atlanta,404-231-1368,italian,85 ,1
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,72 ,1
+granita,' 23725 w. malibu rd. ',malibu,310/456 -0488,californian,8 ,granita,' 23725 w. malibu rd. ',malibu,310-456-0488,californian,8 ,1
+oceana,' 182 w. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-8585,mediterranean,53 ,1
+valentino,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,valentino,' 3115 pico blvd. ',` santa monica ',310-829-4313,italian,21 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1
+felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+oceana,' 182 w. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+felidia,'13 w. 54th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1
+` la grotta ',' 2637 peachtree rd. . peachtree house condominium ',atlanta,404/231 -1368,italian,85 ,` la grotta ',' 2637 peachtree rd. ne ',atlanta,404-231-1368,italian,85 ,1
+oceana,' 182 w. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 155 w. 51st st. ',` new york city ',212-759-5941,seafood,50 ,1
+picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-8585,mediterranean,53 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1
+` la grotta ',' 2637 peachtree rd. . peachtree house condominium ',atlanta,404/231 -1368,italian,85 ,` la grotta ',' 2637 peachtree rd. ne ',atlanta,404-231-1368,italian,85 ,1
+valentino,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,valentino,' 3115 pico blvd. ',` santa monica ',310-829-4313,italian,21 ,1

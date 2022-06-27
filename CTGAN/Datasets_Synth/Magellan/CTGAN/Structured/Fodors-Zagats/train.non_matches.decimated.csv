@@ -1,0 +1,454 @@
+ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+` the palm ',' 311 w. 17th st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,` american ( new ) ',595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` la cote basque ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` morton \ 's ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,american,18 ,` sushi nozawa ',' 6703 melrose ave. ',` beverly hills ',818-508-7017,japanese,6 ,0
+` morton \ 's ',' 1397 n. highland ave. ',atlanta,404/876 -1800,caribbean,84 ,` uncle bill \ 's pancake house ',' 3799 las vegas blvd. s. ',` los angeles ',404-262-7112,italian,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,` pacific new wave ',641 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 600 ponce de leon ave. ',` manhattan beach ',310-545-5177,mediterranean,599 ,0
+` indigo coastal grill ',' 3200 las vegas blvd. s ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,steakhouses,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,southern,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,californian,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,french,18 ,riviera,' 11288 ventura blvd. ',atlanta,404-262-7112,mediterranean,712 ,0
+` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/876 -1800,southern,86 ,` java jive ',' 181 peachtree st. ',` san francisco ',404-892-0193,tex-mex,716 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,438 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` beverly hills ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,132 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+bistro,' 160 e. 48th st. ',` las vegas ',212/371 -2323,asian,218 ,dawat,' 3300 las vegas blvd. s. ',` new york city ',212-355-7555,indian,32 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,148 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,105 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,italian,546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 1582 folsom st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,southern,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 1 w. 67th st. ',` manhattan beach ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',atlanta,404/261 -3662,international,88 ,riviera,' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` beverly hills ',404-262-7112,mediterranean,712 ,0
+lutece,' 249 e. 50th st. ',` new york ',818/990 -0500,french,67 ,` lespinasse ( new york city ) ',' 11288 ventura blvd. ',` studio city ',212-339-6719,asian,43 ,0
+chiam,' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,'em eril \ 's new orleans fish house ','99 e. 52nd st. ',` studio city ',818-508-7017,californian,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',310/724 -5959,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,34 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 3645 las vegas blvd. s ',` los angeles ',818/990 -0500,french,18 ,` plumpjack cafe ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,californian,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,french,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',310/724 -5959,french,291 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 1931 peachtree rd. ',` los angeles ',818/990 -0500,french,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,148 ,` uncle bill \ 's pancake house ',' 3799 las vegas blvd. s. ',` los angeles ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,french,88 ,riviera,' 519 e. paces ferry rd. ',` beverly hills ',404-262-7112,mediterranean,712 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',702-891-7331,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',212/627 -8899,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 3799 las vegas blvd. s. ',` las vegas ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 3200 las vegas blvd. s. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,425 ,` cafe blanc ',' 2 e. 55th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/276 -5205,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 1702 post st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 129 e. fremont st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',212-582-7200,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,` american ( new ) ',712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,148 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,148 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` las vegas ',212-687-4855,steakhouses,641 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',atlanta,404/261 -3662,french,88 ,riviera,' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,712 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',702/733 -3111,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` hamburger mary \ 's ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` buccaneer bay club ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` morton \ 's ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,italian,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,californian,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+chiam,' 160 e. 48th st. ',` new york ',212/371 -2323,asian,218 ,dawat,' 3799 las vegas blvd. s. ',` las vegas ',702-891-7374,seafood,32 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,californian,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 8764 melrose ave. ',` los angeles ',310/276 -5205,american,148 ,citrus,' 3595 las vegas blvd. s. ',` beverly hills ',213-857-0034,californian,6 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 210 e. 46th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,californian,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` bamboo garden ',' 1931 peachtree rd. ',` las vegas ',404/355 -5993,asian,405 ,` la grotta ','60 w. 55th st. ',atlanta,702-252-7697,` french ( classic ) ',85 ,0
+` bamboo garden ',' 4850 flamingo rd. ',` las vegas ',212/956 -6888,asian,425 ,` la cote basque ','60 w. 55th st. ',` new york city ',212-688-6525,` french ( classic ) ',40 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` las vegas ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',atlanta,404/261 -3662,international,18 ,riviera,' 11288 ventura blvd. ',` los angeles ',404-262-7112,mediterranean,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 2125 fillmore st. ',` los angeles ',818/990 -0500,californian,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,japanese,6 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1582 folsom st. ',` studio city ',310-545-5177,steakhouses,595 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,711 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` brookhaven cafe ',' 11288 ventura blvd. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 8764 melrose ave. ',` los angeles ',818/990 -0500,french,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/276 -5205,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+lutece,' 249 e. 50th st. ',` los angeles ',818/990 -0500,french,148 ,` lespinasse ( new york city ) ',' 11288 ventura blvd. ',` studio city ',212-339-6719,asian,43 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 600 ponce de leon ave. ',atlanta,404-262-7112,mediterranean,712 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` dining room ritz-carlton buckhead ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,american,291 ,` sushi nozawa ',' 6703 melrose ave. ',` beverly hills ',213-857-0034,` american ( new ) ',595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,steakhouses,599 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 210 e. 46th st. ',` manhattan beach ',310-888-0108,` pacific new wave ',546 ,0
+otabe,'68 e. 56th st. ',` new york ',212/371 -2323,asian,318 ,darbar,' 2880 las vegas blvd. s. ',` beverly hills ',702-894-7111,indian,609 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 3434 peachtree rd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 6703 melrose ave. ',` los angeles ',404-261-8186,italian,6 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/276 -5205,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',6 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,citrus,' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 1582 folsom st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+lulu,' 2030 union st. ',` new york ',415/495 -5775,mediterranean,456 ,` doidge \ 's ','21 w. 52nd st. ',` san francisco ',702-894-7111,american,732 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,mediterranean,595 ,0
+` lillie langtry \ 's ',' 129 e. fremont st. ',` las vegas ',702/385 -7111,asian,442 ,` steakhouse the ',' 3700 w. flamingo rd. ',` new york city ',702-382-1600,steakhouses,671 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` morton \ 's ',' 8800 melrose ave. ',` los angeles ',310/276 -5205,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,6 ,0
+` taste of new orleans ',' 249 e. 50th st. ',` los angeles ',818/990 -0500,french,18 ,` lespinasse ( new york city ) ',' 11288 ventura blvd. ',` studio city ',212-339-6719,asian,43 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 4750 w. sahara ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` le marais ',' 150 w. 46th st. ',` los angeles ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 8764 melrose ave. ',` los angeles ',818/990 -0500,american,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,712 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 519 e. paces ferry rd. ',` beverly hills ',404-262-7112,mediterranean,595 ,0
+` indigo coastal grill ',' 3570 las vegas blvd. s ',atlanta,404/876 -0676,caribbean,84 ,` palace court ',' 1305 highland ave. ',` beverly hills ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',212/754 -9494,american,15 ,` cafe blanc ','21 w. 52nd st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,524 ,'21 club ',' 1 w. 67th st. ',atlanta,212-582-7200,` american ( new ) ',23 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,` american ( new ) ',595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',595 ,0
+` bally \ 's big kitchen ',' 3570 las vegas blvd. s ',` las vegas ',702/731 -7547,` coffee shops/diners ',433 ,` chin \ 's ',' 152 w. 44th st. ',atlanta,702-733-8899,chinese,67 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+bistro,' 3200 las vegas blvd. s ',` las vegas ',212/371 -2323,asian,218 ,dawat,' 210 e. 58th st. ',` new york city ',212-355-7555,indian,32 ,0
+` golden steer ',' 3570 las vegas blvd. s ',` las vegas ',702/384 -4470,` steak houses ',441 ,` tre visi ',' 4750 w. sahara ave. ',atlanta,702-737-7111,chinese,663 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',atlanta,404/261 -3662,international,88 ,riviera,' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 4274 peachtree rd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 3200 las vegas blvd. s ',` las vegas ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,` american ( new ) ',599 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,international,18 ,` sushi nozawa ',' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,44 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,american,88 ,riviera,' 519 e. paces ferry rd. ',` beverly hills ',404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ','21 w. 52nd st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,712 ,0
+otabe,'68 e. 56th st. ',` new york ',702/733 -8899,asian,318 ,darbar,' 201 w. 83rd st. ',` las vegas ',212-432-7227,indian,609 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` pinot bistro ','99 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',6 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ','21 w. 52nd st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` four seasons grill room ',' 8764 melrose ave. ',` los angeles ',212/754 -9494,american,148 ,citrus,'21 w. 52nd st. ',` beverly hills ',212-582-7200,` american ( new ) ',23 ,0
+` taste of new orleans ','65 w. 55th st. ',` new york ',404/874 -5535,southern,421 ,` ritz-carlton cafe ( atlanta ) ',' 181 peachtree st. ',atlanta,404-659-0400,` american ( new ) ',711 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 1 w. 67th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',702/731 -7888,american,438 ,citrus,' 6703 melrose ave. ',` studio city ',213-857-0034,japanese,595 ,0
+lutece,' 249 e. 50th st. ',` los angeles ',818/990 -0500,french,18 ,` lespinasse ( new york city ) ',' 11288 ventura blvd. ',` studio city ',212-339-6719,asian,43 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',atlanta,404-262-7112,mediterranean,712 ,0
+` luna si ',' 1931 peachtree rd. ',atlanta,404/355 -5993,asian,405 ,` ritz-carlton restaurant ','60 w. 55th st. ',` las vegas ',702-252-7697,` french ( classic ) ',91 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 152 w. 44th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',818/990 -0500,french,88 ,riviera,' 11288 ventura blvd. ',atlanta,404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',595 ,0
+` four seasons grill room ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',212-754-9494,californian,6 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,southern,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,californian,6 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 889 w. peachtree st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,` american ( new ) ',595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,34 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 150 w. 46th st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pano \ 's and paul \ 's ',' 249 e. 50th st. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 519 e. paces ferry rd. ',` beverly hills ',404-262-7112,mediterranean,6 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ','21 w. 52nd st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 210 e. 46th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,291 ,` cafe blanc ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,711 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` palace court ',' 128 e. fremont st. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` golden steer ',' 160 e. 48th st. ',atlanta,702/384 -4470,` steak houses ',441 ,` mayflower cuisinier ',' 4750 w. sahara ave. ',` las vegas ',702-870-8432,chinese,663 ,0
+` pinot bistro ',' 3555 las vegas blvd. s ',` los angeles ',310/724 -5959,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` la grotta ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` luna si ',' 1931 peachtree rd. ',atlanta,404/355 -5993,asian,405 ,` la grotta ','60 w. 55th st. ',` las vegas ',702-252-7697,` french ( classic ) ',91 ,0
+` pinot bistro ',' 889 w. peachtree st. ',atlanta,818/990 -0500,californian,18 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,` american ( new ) ',595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,italian,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,34 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` dining room ritz-carlton buckhead ',' 3434 peachtree rd. ',atlanta,404/237 -2700,international,90 ,abruzzi,' 3570 las vegas blvd. s. ',` beverly hills ',404-261-8186,italian,74 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` luna si ',' 1931 peachtree rd. ',atlanta,404/355 -5993,asian,405 ,` la grotta ','60 w. 55th st. ',` las vegas ',702-252-7697,` french ( classic ) ',91 ,0
+chiam,' 160 e. 48th st. ',` las vegas ',212/371 -2323,asian,218 ,dawat,' 3799 las vegas blvd. s. ',` new york city ',702-891-7374,indian,32 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 210 e. 46th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 3434 peachtree rd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` san francisco ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,510 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',6 ,0
+` luna si ',' 1931 peachtree rd. ',` las vegas ',404/355 -5993,continental,405 ,` la grotta ','60 w. 55th st. ',atlanta,702-252-7697,` french ( classic ) ',91 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,88 ,riviera,' 519 e. paces ferry rd. ',atlanta,404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,148 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 790 ponce de leon ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,` pacific new wave ',6 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,international,88 ,riviera,' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+tomtom,' 2125 fillmore st. ',` san francisco ',415/346 -4430,mediterranean,422 ,` plumpjack cafe ',' 11288 ventura blvd. ',` los angeles ',212-582-7200,` american ( new ) ',711 ,0
+mikado,' 1397 n. highland ave. ',` new york ',212/223 -7575,asian,291 ,darbar,'44 w. 56th st. ',` san francisco ',212-432-7227,indian,671 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+bistro,' 3400 las vegas blvd. s ',` new york ',212/371 -2323,asian,218 ,dawat,' 210 e. 58th st. ',` las vegas ',212-355-7555,indian,32 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',415/346 -4430,mediterranean,291 ,'21 club ',' 6703 melrose ave. ',` studio city ',818-508-7017,` american ( new ) ',595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,` american ( new ) ',599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` las vegas ',212-921-9494,bbq,66 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,148 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 3570 las vegas blvd. s ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 545 post st. ',` manhattan beach ',310-545-5177,italian,599 ,0
+` lillie langtry \ 's ',' 12969 ventura blvd. ',` las vegas ',702/385 -7111,asian,442 ,` steakhouse the ',' 128 e. fremont st. ',` san francisco ',702-382-1600,steakhouses,671 ,0
+` le marais ',' 150 w. 46th st. ',` los angeles ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` new york city ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,15 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,french,88 ,riviera,' 11288 ventura blvd. ',atlanta,404-262-7112,mediterranean,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 8764 melrose ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` palace court ',' 3391 peachtree rd. ne ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',6 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,hamburgers,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` tang pavillion ','65 w. 55th st. ',` las vegas ',212/956 -6888,asian,356 ,` la cote basque ',' 128 e. fremont st. ',` new york city ',212-688-6525,steakhouses,40 ,0
+` pinot bistro ',' 816 folsom st. ',` los angeles ',818/990 -0500,french,291 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` morton \ 's ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 6703 melrose ave. ',` los angeles ',213-857-0034,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,french,88 ,riviera,' 519 e. paces ferry rd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` morton \ 's ',' 8764 melrose ave. ',` new york ',310/276 -5205,american,148 ,citrus,' 3595 las vegas blvd. s. ',` los angeles ',213-857-0034,californian,6 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,american,88 ,riviera,' 519 e. paces ferry rd. ',atlanta,404-262-7112,mediterranean,712 ,0
+` jewel of india ','15 w. 44th st. ',` new york ',212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',atlanta,212-921-9494,bbq,66 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ','21 w. 52nd st. ',` manhattan beach ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,american,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,japanese,6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,steakhouses,641 ,0
+` pinot bistro ',' 816 folsom st. ',` los angeles ',702/733 -3111,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` morton \ 's ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',404/874 -5535,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 816 folsom st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,american,132 ,citrus,' 6703 melrose ave. ',atlanta,818-508-7017,californian,6 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ','60 w. 55th st. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,510 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',213-857-0034,californian,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,711 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 816 folsom st. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` jewel of india ','15 w. 44th st. ',atlanta,212/869 -5544,asian,273 ,` virgil \ 's real bbq ',' 4274 peachtree rd. ',` new york city ',212-921-9494,bbq,66 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,291 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,seafood,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` alley \ 's end ',' 816 folsom st. ',atlanta,404/264 -1163,continental,422 ,` ritz-carlton dining room ( buckhead ) ',' 3434 peachtree rd. ne ',` los angeles ',404-237-2700,` american ( new ) ',90 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` golden steer ',' 3570 las vegas blvd. s ',` las vegas ',702/384 -4470,` steak houses ',441 ,` mayflower cuisinier ',' 4750 w. sahara ave. ',atlanta,702-870-8432,chinese,663 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',310/724 -5959,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 2125 fillmore st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 150 w. 46th st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 889 w. peachtree st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',702/739 -4111,american,18 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,californian,132 ,citrus,' 6703 melrose ave. ',` studio city ',213-857-0034,` american ( new ) ',6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` palace court ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` hamburger mary \ 's ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,italian,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` beverly hills ',818-508-7017,japanese,6 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` las vegas ',310-545-5177,diners,599 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pano \ 's and paul \ 's ',' 12969 ventura blvd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 519 e. paces ferry rd. ',` beverly hills ',404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` morton \ 's ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` pinot bistro ',' 816 folsom st. ',` los angeles ',818/990 -0500,american,291 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 2 e. 55th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ','99 e. 52nd st. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` taste of new orleans ',' 3347 fillmore st. ',` san francisco ',404/874 -5535,southern,421 ,` ritz-carlton cafe ( atlanta ) ',' 181 peachtree st. ',atlanta,404-659-0400,` american ( new ) ',711 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ,` palm the ( atlanta ) ',' 3200 las vegas blvd. s. ',` las vegas ',404-814-1955,steakhouses,709 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,291 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,mediterranean,6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,712 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` four seasons grill room ',' 9001 santa monica blvd. ',` los angeles ',212/754 -9494,american,34 ,citrus,'21 w. 52nd st. ',` beverly hills ',212-582-7200,` american ( new ) ',546 ,0
+` le marais ',' 150 w. 46th st. ',` new york ',212/869 -0900,american,290 ,` sparks steak house ',' 9777 little santa monica blvd. ',` beverly hills ',212-687-4855,steakhouses,641 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 545 post st. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,mediterranean,712 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 545 post st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3200 las vegas blvd. s ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',atlanta,818/990 -0500,international,18 ,riviera,' 11288 ventura blvd. ',` beverly hills ',404-262-7112,mediterranean,671 ,0
+` pinot bistro ',' 3555 las vegas blvd. s ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 6703 melrose ave. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',213-857-0034,californian,546 ,0
+` indigo coastal grill ',' 3400 las vegas blvd. s ',atlanta,404/876 -0676,caribbean,422 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',213-857-0034,diners,599 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 11288 ventura blvd. ',` beverly hills ',310-545-5177,diners,595 ,0
+` lillie langtry \ 's ',' 129 e. fremont st. ',` las vegas ',212/754 -9494,asian,442 ,` steakhouse the ',' 3799 las vegas blvd. s. ',` new york city ',702-382-1600,steakhouses,671 ,0
+` the palm ',' 8764 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 1582 folsom st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,148 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,` pacific new wave ',6 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pano \ 's and paul \ 's ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` beverly hills ',404-262-7112,mediterranean,712 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 9001 santa monica blvd. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 152 w. 44th st. ',` beverly hills ',310-888-0108,` pacific new wave ',546 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` lillie langtry \ 's ',' 12969 ventura blvd. ',` las vegas ',702/385 -7111,asian,442 ,` steakhouse the ',' 128 e. fremont st. ',atlanta,702-382-1600,steakhouses,671 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,34 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,citrus,' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 405 e. 52nd st. ',` los angeles ',818/990 -0500,french,90 ,` sushi nozawa ',' 11288 ventura blvd. ',` studio city ',818-508-7017,japanese,595 ,0
+` indigo coastal grill ',' 3380 peachtree rd. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 1305 highland ave. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,mediterranean,18 ,` sushi nozawa ',' 1582 folsom st. ',` studio city ',818-508-7017,japanese,595 ,0
+` the palm ',' 8800 melrose ave. ',` los angeles ',310/550 -8811,american,15 ,` cafe blanc ',' 9777 little santa monica blvd. ',` beverly hills ',310-888-0108,californian,546 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,379 ,` uncle bill \ 's pancake house ',' 519 e. paces ferry rd. ',` manhattan beach ',310-545-5177,italian,599 ,0
+` indigo coastal grill ',' 1397 n. highland ave. ',atlanta,404/876 -0676,caribbean,84 ,` uncle bill \ 's pancake house ',' 3127 fillmore st. ',` manhattan beach ',310-545-5177,diners,599 ,0
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18 ,` sushi nozawa ',' 6703 melrose ave. ',` studio city ',818-508-7017,japanese,595 ,0
+` pinot bistro ',' 1232 w. paces ferry rd. ',` los angeles ',404/261 -3662,international,88 ,riviera,' 11288 ventura blvd. ',` studio city ',404-262-7112,` american ( new ) ',595 ,0

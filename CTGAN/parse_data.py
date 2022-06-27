@@ -42,8 +42,8 @@ if hp.generator_type == 4:
 
 job_name = hp.dataset + os.sep
 
-datasets_dir += "er_magellan" + os.sep + job_name + "train"
-datasets_goal_dir += "er_magellan" + os.sep + job_name + "train"
+datasets_dir += job_name + "train"
+datasets_goal_dir += job_name + "train"
 
 dataset_orig_data += "er_magellan" + os.sep + job_name + "train.txt"
 
