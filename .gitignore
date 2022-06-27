@@ -11,3 +11,10 @@ Augmentation/*.sh
 ditto/jobs
 ditto/checkpoints/*
 cached*
+CTGAN/jobs/
+CTGAN/gen_jobs/
+CTGAN/match_jobs/
+CTGAN/parse_jobs/
+CTGAN/script_versions/
+*.pkl
+*.out
