@@ -22,11 +22,11 @@ hp = parser.parse_args()
 ditto_format = True
 
 # Model directory to be loaded from.
-model_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Models' + os.sep
+model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
 
 # Dataset directory to be saved at.
-datasets_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets' + os.sep 
-synth_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets_Synth\Magellan' + os.sep
+datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
+synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'
 
 synth_name = ""
 
@@ -126,13 +126,13 @@ def generate_data(matches, drop_dupes):
     if hp.drop_dupes:
             if generated_data is not None or len(generated_data.index) != 0:
                 generated_data = generated_data.drop_duplicates()
-    if generated_data is not None and len(generated_data.index) != 0:
+    if generated_data is not None or len(generated_data.index) != 0:
         generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8')
         count += len(generated_data.index)
 
 while count < amount:
-    # print("The amount needed to be generated is: " + str(amount - count))
-    generated_data = model.sample(num_rows=amount)
+    print("The amount needed to be generated is: " + str(amount - count))
+    generated_data = model.sample(num_rows=amount, output_file_path='disable')
     if hp.matches:
         generated_data = ensure_data(generated_data, True, hp.threshold)
     else:
@@ -141,7 +141,6 @@ while count < amount:
             if generated_data is not None or len(generated_data.index) != 0:
                 generated_data = generated_data.drop_duplicates()
     if generated_data is not None and len(generated_data.index) != 0:
-        # print(synth_save_path)
-        generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8', index=False)
+        generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8')
         count += len(generated_data.index)
 

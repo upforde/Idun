@@ -8,12 +8,12 @@ def make_text(output, dataset, matches, decimate, size=None):
     matched_text = "matched" if matches else "non_matched"
     text = [
         "#!/bin/sh",
-        "#SBATCH --partition=CPUQ",
+        "#SBATCH --partition=GPUQ",
         "#SBATCH --account=ie-idi",
         "#SBATCH --time=23:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
-        "#SBATCH --mem=12000",
+        "#SBATCH --gres=gpu:V10032:1",
         f"#SBATCH --job-name=\"CTGAN {dataset} {matched_text} {size_text} {decimate_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=alekssim@stud.ntnu.no",
@@ -45,21 +45,6 @@ er_magellan = [
     r"Structured/Walmart-Amazon",
     r"Textual/Abt-Buy"
     ]
-
-wdc = [
-    "all",
-    "cameras",
-    "computers",
-    "shoes",
-    "watches"
-]
-
-sizes = [
-    "small",
-    "medium",
-    "large",
-    "xlarge"
-]
 
 names = []
 
@@ -93,36 +78,6 @@ for job in er_magellan:
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
-
-for job in wdc:
-    for size in sizes:
-        name = jobs_dir + job.replace(os.sep, "") + "_matches_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, True, False, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_non_matches_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, False, False, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_matches_decimated_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, True, True, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_non_matches_decimated_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, False, True, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
 
 with open("run_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")

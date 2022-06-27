@@ -69,7 +69,7 @@ def ensure_data(table, alike = True, threshold = 0.8 ):
     if table is None or len(table.index) == 0:
         return table
     table_columns = list(table.columns)
-    total_attr = len(table_columns) - 1
+    total_attr = len(table_columns) - 1 # We do not consider Truth
     half_attr = int(total_attr / 2)
 
 
@@ -80,15 +80,20 @@ def ensure_data(table, alike = True, threshold = 0.8 ):
             try:
                 similarity_dict[i] = Levenshtein.ratio(row[i], row[half_attr+i])
             except TypeError:
-                similarity_dict[i] = 1
+                similarity_dict[i] = threshold
+        variance_allowed = (1 - threshold) * (0.5 * (threshold * total_attr))
+        new_threshold = (threshold * len(similarity_dict)) + variance_allowed
+        total_similarity = 0
+        for x in similarity_dict.values():
+            total_similarity += x
         if alike:
-            if all(x > threshold for x in similarity_dict.values()):
+            if total_similarity > new_threshold:
                 temp = pd.Series(row, table_columns)
                 new_df = new_df.append(temp, ignore_index=True)
         else:
-            if all(x < threshold for x in similarity_dict.values()):
+            if total_similarity < new_threshold:
                 temp = pd.Series(row, table_columns)
-                new_df = new_df.append(row, ignore_index=True)
+                new_df = new_df.append(temp, ignore_index=True)
 
     new_df.rename(columns = {'Index':'_id'}, inplace = True)
     return new_df
@@ -113,9 +118,26 @@ model = CTGAN.load(model_save_path)
 
 synth_save_path = synth_dir + synth_name
 
+
 count = 0
+
+def generate_data(matches, drop_dupes):
+    if count < amount:
+        generated_data = model.sample(num_rows=amount)
+    if matches:
+        generated_data = ensure_data(generated_data, True, hp.threshold)
+    else:
+        generated_data = ensure_data(generated_data, False, hp.threshold)
+    if hp.drop_dupes:
+            if generated_data is not None or len(generated_data.index) != 0:
+                generated_data = generated_data.drop_duplicates()
+    if generated_data is not None and len(generated_data.index) != 0:
+        generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8', index=False)
+        count += len(generated_data.index)
+
 while count < amount:
-    generated_data = model.sample(amount)
+    print("The amount needed to be generated is: " + str(amount - count))
+    generated_data = model.sample(num_rows=amount, output_file_path='disable')
     if hp.matches:
         generated_data = ensure_data(generated_data, True, hp.threshold)
     else:
@@ -123,7 +145,7 @@ while count < amount:
     if hp.drop_dupes:
             if generated_data is not None or len(generated_data.index) != 0:
                 generated_data = generated_data.drop_duplicates()
-    if generated_data is not None or len(generated_data.index) != 0:
-        generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8')
+    if generated_data is not None and len(generated_data.index) != 0:
+        generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8', index=False)
         count += len(generated_data.index)
 

@@ -51,7 +51,7 @@ if hp.decimate:
 model_name += ".pkl"
 
 # Model training parameters.
-epochs = 3000
+epochs = 2000
 batch_total = 1000
 
 # If the model should trained on "matched" or "non-matched" examples.

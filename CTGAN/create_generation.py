@@ -1,6 +1,6 @@
 import os
 
-def make_text(output, dataset, matches, decimate, size=None, threshold=0.7, drop_dupes=False):
+def make_text(output, dataset, matches, decimate, size=None, threshold=0.7, drop_dupes=True):
     script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_generation.py"
     python_line = f"python3 \"{script_path}\" --dataset=\"{dataset}\" --matches={matches} --decimate={decimate} --threshold={threshold} --drop_dupes={drop_dupes}"
     if size != None: python_line += " --size=" + size
@@ -10,12 +10,12 @@ def make_text(output, dataset, matches, decimate, size=None, threshold=0.7, drop
     drop_text = "drop dupes" if drop_dupes else ""
     text = [
         "#!/bin/sh",
-        "#SBATCH --partition=CPUQ",
+        "#SBATCH --partition=GPUQ",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=09:00:00",
+        "#SBATCH --time=04:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
-        "#SBATCH --mem=12000",
+        "#SBATCH --gres=gpu:V10032:1",
         f"#SBATCH --job-name=\"CTGAN_gen {dataset} {matched_text} {size_text} {decimate_text} {drop_text}\"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=alekssim@stud.ntnu.no",
@@ -49,21 +49,6 @@ er_magellan = [
     r"Textual/Abt-Buy"
     ]
 
-wdc = [
-    "all",
-    "cameras",
-    "computers",
-    "shoes",
-    "watches"
-]
-
-sizes = [
-    "small",
-    "medium",
-    "large",
-    "xlarge"
-]
-
 names = []
 
 jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/gen_jobs/'
@@ -96,36 +81,6 @@ for job in er_magellan:
     with open(name + ".slurm", "a") as file:
         for line in text:
             file.write(f"{line}\n")
-
-for job in wdc:
-    for size in sizes:
-        name = jobs_dir + job.replace(os.sep, "") + "_matches_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, True, False, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_non_matches_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, False, False, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_matches_decimated_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, True, True, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
-
-        name = jobs_dir + job.replace(os.sep, "") + "_non_matches_decimated_" + size
-        names.append(name)
-        text = make_text(name + ".out", job, False, True, size)
-        with open(name + ".slurm", "a") as file:
-            for line in text:
-                file.write(f"{line}\n")
 
 with open("run_gen_jobs.sh", "a") as file:
     file.write("#!/bin/sh\n")

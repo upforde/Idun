@@ -1,0 +1,82 @@
+,ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+0,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+3,` rose pistola ',' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,111 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,111 ,1.0
+4,patina,' 5955 melrose ave. ',` los angeles ',213/467 -1108,californian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-467-1108,californian,16 ,1.0
+12,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/876 -1800,southern,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404-876-1800,southwestern,86 ,1.0
+16,` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1.0
+17,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,72 ,1.0
+18,pisces,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,pisces,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+23,picholine,'35 w. 64th st. ',` new york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-8585,mediterranean,53 ,1.0
+25,valentino,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,valentino,' 3115 pico blvd. ',` santa monica ',310-829-4313,italian,21 ,1.0
+32,felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,33 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,33 ,1.0
+44,citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,6 ,1.0
+47,oceana,'55 e. 54th st. ',` new york ',212/260 -6660,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-260-6660,seafood,50 ,1.0
+66,oceana,' 155 w. 51st st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+76,granita,' 23725 w. malibu rd. ',malibu,310/456 -0488,californian,8 ,granita,' 23725 w. malibu rd. ',malibu,310-456-0488,californian,8 ,1.0
+96,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/876 -1800,southern,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404-876-1800,southern/soul,86 ,1.0
+122,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,54 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,54 ,1.0
+161,campanile,' 624 s. la brea ave. ',` los angeles ',213/938 -1447,californian,4 ,campanile,' 624 s. la brea ave. ',` los angeles ',213-938-1447,californian,4 ,1.0
+196,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 155 w. 51st st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+197,` rose pistola ',' 532 columbus ave. ',` san francisco ',310/829 -4313,italian,111 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',310-829-4313,italian,111 ,1.0
+229,oceana,'21 e. 16th st. ',` new york ',212/260 -6660,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-260-6660,seafood,50 ,1.0
+238,patina,' 5955 melrose ave. ',` bel air ',213/467 -1108,californian,2 ,patina,' 5955 melrose ave. ',` bel air ',213-467-1108,californian,2 ,1.0
+268,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 182 w. 58th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+286,patina,' 5955 melrose ave. ',` los angeles ',213/467 -1108,californian,16 ,patina,' 8284 melrose ave. ',` los angeles ',213-467-1108,californian,16 ,1.0
+313,citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,16 ,1.0
+369,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,californian,105 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1.0
+428,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'21 e. 16th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+439,oceana,'21 e. 16th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+566,` rex il ristorante ',' 617 s. olive st. ',` los angeles ',213/627 -2300,italian,19 ,` rex il ristorante ',' 617 s. olive st. ',` los angeles ',213-627-2300,italian,19 ,1.0
+608,patina,' 5955 melrose ave. ',` bel air ',213/467 -1108,californian,16 ,patina,' 5955 melrose ave. ',` bel air ',213-467-1108,californian,16 ,1.0
+639,` steak house ',' 2880 las vegas blvd. s ',` bel air ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` bel air ',702-734-0410,steakhouses,72 ,1.0
+1018,valentino,' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,111 ,valentino,' 532 columbus ave. ',` san francisco ',415-399-0499,italian,111 ,1.0
+1107,felidia,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,felidia,' 3115 pico blvd. ',` santa monica ',310-829-4313,italian,21 ,1.0
+1410,` la grotta ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,87 ,` la grotta ',' 255 courtland st. ',atlanta,404-221-6362,continental,87 ,1.0
+1433,` rose pistola ',' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,106 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,102 ,1.0
+1578,` locanda veneta ',' 617 s. olive st. ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 617 s. olive st. ',` los angeles ',310-274-1893,italian,13 ,1.0
+1595,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,0 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+1599,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 210 e. 58th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+1634,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 405 e. 58th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+1742,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/876 -1800,southern,81 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404-876-1800,southwestern,81 ,1.0
+1908,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'35 w. 64th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+1932,valentino,' 3115 pico blvd. ',` santa monica ',212/758 -1479,italian,33 ,valentino,' 3115 pico blvd. ',` santa monica ',212-758-1479,italian,33 ,1.0
+1955,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',70 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,70 ,1.0
+2085,aqua,' 252 california st. ',` san francisco ',415/956 -9662,seafood,95 ,aqua,' 252 california st. ',` san francisco ',415-956-9662,seafood,95 ,1.0
+2098,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'12 e. 12th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+2179,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 2 e. 55th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+2296,patina,' 8284 melrose ave. ',` los angeles ',213/467 -1108,californian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-467-1108,californian,16 ,1.0
+2320,oceana,' 210 e. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+2404,granita,' 23725 w. malibu rd. ',malibu,310/456 -0488,californian,2 ,granita,' 23725 w. malibu rd. ',malibu,310-456-0488,californian,2 ,1.0
+2539,oceana,'55 e. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'13 w. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+2643,picholine,'35 w. 64th st. ',` san francisco ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` san francisco ',212-724-8585,mediterranean,53 ,1.0
+2667,granita,' 23725 w. malibu rd. ',malibu,310/472 -1211,californian,8 ,granita,' 23725 w. malibu rd. ',malibu,310-472-1211,californian,8 ,1.0
+2677,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the ',' 2880 las vegas blvd. s. ',` las vegas ',702-734-0410,steakhouses,2 ,1.0
+2936,granita,' 701 stone canyon rd. ',malibu,310/456 -0488,californian,8 ,granita,' 701 stone canyon rd. ',malibu,310-456-0488,californian,8 ,1.0
+3199,valentino,' 3115 pico blvd. ',` santa monica ',212/758 -1479,italian,21 ,valentino,' 3115 pico blvd. ',` santa monica ',212-758-1479,italian,21 ,1.0
+3245,oceana,'12 e. 12th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+3424,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/876 -1800,continental,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404-876-1800,continental,86 ,1.0
+3718,` rose pistola ',' 532 columbus ave. ',` san francisco ',415/399 -0499,italian,110 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,111 ,1.0
+3775,oceana,'13 w. 54th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+3924,picholine,'35 w. 64th st. ',` san francisco ',212/724 -8585,mediterranean,64 ,picholine,'35 w. 64th st. ',` san francisco ',212-724-8585,mediterranean,64 ,1.0
+4073,` locanda veneta ',' 435 s. la cienega blv . ',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 435 s. la cienega blvd. ',` los angeles ',310-274-1893,italian,13 ,1.0
+4226,oceana,' 155 w. 51st st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 155 w. 51st st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+4387,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404/352 -3517,southern,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlanta,404-352-3517,southern/soul,86 ,1.0
+4613,citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 5955 melrose ave. ',` los angeles ',213-857-0034,californian,6 ,1.0
+4803,` nikolai \ 's roof ',' 255 courtland st. at harris st. ',atlanta,404/221 -6362,continental,6 ,` nikolai \ 's roof ',' 255 courtland st. ',atlanta,404-221-6362,continental,69 ,1.0
+4913,citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,69 ,1.0
+5057,granita,' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,2 ,granita,' 701 stone canyon rd. ',` bel air ',310-472-1211,californian,2 ,1.0
+5179,oceana,' 210 e. 58th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,' 210 e. 58th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
+5362,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,californian,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1.0
+5503,` rose pistola ',' 532 columbus ave. ',` santa monica ',415/399 -0499,italian,111 ,` rose pistola ',' 532 columbus ave. ',` santa monica ',415-399-0499,italian,111 ,1.0
+5666,felidia,' 243 e. 58th st. ',` new york ',212/758 -1479,italian,21 ,felidia,' 243 e. 58th st. ',` new york city ',212-758-1479,italian,21 ,1.0
+5883,oceana,' 155 w. 51st st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,0 ,1.0
+5908,granita,' 23725 w. malibu rd. ',` bel air ',310/456 -0488,californian,8 ,granita,' 23725 w. malibu rd. ',` bel air ',310-456-0488,californian,8 ,1.0
+6237,granita,' 701 stone canyon rd. ',malibu,310/456 -0488,californian,2 ,granita,' 701 stone canyon rd. ',malibu,310-456-0488,californian,2 ,1.0
+6391,patina,' 701 stone canyon rd. ',` bel air ',213/467 -1108,californian,2 ,patina,' 701 stone canyon rd. ',` bel air ',213-467-1108,californian,2 ,1.0
+6825,patina,' 5955 melrose ave. ',` los angeles ',213/467 -1108,californian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-467-1108,californian,6 ,1.0
+6848,matsuhisa,' 129 n. la cienega blvd. ',` beverly hills ',310/659 -9639,seafood,14 ,matsuhisa,' 129 n. la cienega blvd. ',` beverly hills ',310-659-9639,seafood,14 ,1.0
+6874,granita,' 701 stone canyon rd. ',malibu,310/472 -1211,californian,2 ,granita,' 701 stone canyon rd. ',malibu,310-472-1211,californian,2 ,1.0
+6935,citrus,' 5955 melrose ave. ',` los angeles ',213/857 -0034,californian,6 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,6 ,1.0
+6945,patina,' 5955 melrose ave. ',` los angeles ',213/857 -0034,californian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-857-0034,californian,16 ,1.0
+7089,citrus,' 6703 melrose ave. ',` los angeles ',213/857 -0034,californian,16 ,citrus,' 6703 melrose ave. ',` los angeles ',213-857-0034,californian,6 ,1.0
+7171,oceana,' 2 e. 55th st. ',` new york ',212/759 -5941,seafood,50 ,oceana,'55 e. 54th st. ',` new york city ',212-759-5941,seafood,50 ,1.0
