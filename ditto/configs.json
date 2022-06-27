@@ -45,6 +45,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-ACM_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -67,6 +76,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -99,6 +117,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -121,6 +148,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -153,10 +189,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-ACM_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACMreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -180,10 +225,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -192,7 +246,7 @@
 	"name": "GPT-2_Dirty_DBLP-ACM_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -207,10 +261,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-ACM_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-ACM/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -229,6 +292,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-ACM/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-ACM_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-ACM/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-ACM/test.txt"
 }
@@ -279,6 +351,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -301,6 +382,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -333,6 +423,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -355,6 +454,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -387,10 +495,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholarreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -414,10 +531,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -426,7 +552,7 @@
 	"name": "GPT-2_Dirty_DBLP-GoogleScholar_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -441,10 +567,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_DBLP-GoogleScholar_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Dirty/DBLP-GoogleScholar/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -463,6 +598,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/DBLP-GoogleScholar/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_DBLP-GoogleScholar_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/DBLP-GoogleScholar/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/DBLP-GoogleScholar/test.txt"
 }
@@ -513,6 +657,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_iTunes-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/iTunes-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -535,6 +688,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_iTunes-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/iTunes-Amazon/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
 }
@@ -567,6 +729,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_iTunes-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/iTunes-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_iTunes-Amazon_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -589,6 +760,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/iTunes-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_iTunes-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/iTunes-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/iTunes-Amazon/test.txt"
 }
@@ -639,6 +819,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_Walmart-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -661,6 +850,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -693,6 +891,15 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -715,6 +922,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -747,10 +963,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_Walmart-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazonreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -774,10 +999,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -786,7 +1020,7 @@
 	"name": "GPT-2_Dirty_Walmart-Amazon_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -801,10 +1035,19 @@
 }
 ,
 {
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Dirty_Walmart-Amazon_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Dirty/Walmart-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -823,6 +1066,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Dirty/Walmart-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Dirty_Walmart-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Dirty/Walmart-Amazon/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Dirty/Walmart-Amazon/test.txt"
 }
@@ -873,6 +1125,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Amazon-Google_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -895,6 +1156,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -927,6 +1197,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -949,6 +1228,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -981,10 +1269,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Amazon-Google_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Amazon-Googlereal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -1008,10 +1305,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Amazon-Google_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -1020,7 +1326,7 @@
 	"name": "GPT-2_Structured_Amazon-Google_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -1035,10 +1341,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Amazon-Google_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Amazon-Google_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Structured/Amazon-Google/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -1057,6 +1372,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Amazon-Google/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Amazon-Google_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Amazon-Google/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Amazon-Google/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Amazon-Google/test.txt"
 }
@@ -1107,6 +1431,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Beer_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Beer/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Beer_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1129,6 +1462,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Beer_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Beer/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
 }
@@ -1161,6 +1503,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Beer_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Beer/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Beer_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1183,6 +1534,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Beer/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Beer_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Beer/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Beer/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Beer/test.txt"
 }
@@ -1233,6 +1593,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-ACM_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-ACM_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1255,6 +1624,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1287,6 +1665,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-ACM_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1309,6 +1696,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1341,10 +1737,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-ACM_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-ACM_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-ACMreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1368,10 +1773,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-ACM_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1380,7 +1794,7 @@
 	"name": "GPT-2_Structured_DBLP-ACM_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1395,10 +1809,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-ACM_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-ACM/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1417,6 +1840,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-ACM/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-ACM_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-ACM/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-ACM/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-ACM/test.txt"
 }
@@ -1467,6 +1899,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1489,6 +1930,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1521,6 +1971,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1543,6 +2002,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1575,10 +2043,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholarreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1602,10 +2079,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1614,7 +2100,7 @@
 	"name": "GPT-2_Structured_DBLP-GoogleScholar_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1629,10 +2115,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_DBLP-GoogleScholar_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Structured/DBLP-GoogleScholar/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1651,6 +2146,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/DBLP-GoogleScholar/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_DBLP-GoogleScholar_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/DBLP-GoogleScholar/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
 }
@@ -1701,6 +2205,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Fodors-Zagats_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Fodors-Zagats/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1723,6 +2236,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Fodors-Zagats_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Fodors-Zagats/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
 }
@@ -1755,6 +2277,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Fodors-Zagats_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Fodors-Zagats/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Fodors-Zagats_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1777,6 +2308,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Fodors-Zagats/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Fodors-Zagats_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Fodors-Zagats/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Fodors-Zagats/test.txt"
 }
@@ -1827,6 +2367,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_iTunes-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/iTunes-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1849,6 +2398,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_iTunes-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/iTunes-Amazon/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
 }
@@ -1881,6 +2439,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_iTunes-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/iTunes-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_iTunes-Amazon_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1903,6 +2470,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/iTunes-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_iTunes-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/iTunes-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/iTunes-Amazon/test.txt"
 }
@@ -1953,6 +2529,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Walmart-Amazon_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -1975,6 +2560,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2007,6 +2601,15 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -2029,6 +2632,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2061,10 +2673,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Walmart-Amazon_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazonreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2088,10 +2709,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2100,7 +2730,7 @@
 	"name": "GPT-2_Structured_Walmart-Amazon_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2115,10 +2745,19 @@
 }
 ,
 {
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
 	"name": "Augmentation_Structured_Walmart-Amazon_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Structured/Walmart-Amazon/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2137,6 +2776,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
+}
+,
+{
+	"name": "CTGAN_Structured_Walmart-Amazon_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Structured/Walmart-Amazon/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/valid.txt",
 	"testset": "../ditto/data/er_magellan/Structured/Walmart-Amazon/test.txt"
 }
@@ -2187,6 +2835,15 @@
 }
 ,
 {
+	"name": "CTGAN_Textual_Abt-Buy_gen_only",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/gen_only.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
 	"name": "Augmentation_Textual_Abt-Buy_real_plus_matches",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -2209,6 +2866,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_matches.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2241,6 +2907,15 @@
 }
 ,
 {
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_non_matches",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_non_matches.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
 	"name": "Augmentation_Textual_Abt-Buy_real_plus_all",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
@@ -2263,6 +2938,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_all.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_all",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2295,10 +2979,19 @@
 }
 ,
 {
+	"name": "CTGAN_Textual_Abt-Buy_gen_only_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/gen_only_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
 	"name": "Augmentation_Textual_Abt-Buy_real_plus_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Textual/Abt-Buyreal_plus_matches_decimated.txt",
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2322,10 +3015,19 @@
 }
 ,
 {
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
 	"name": "Augmentation_Textual_Abt-Buy_real_plus_non_matches_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Textual/Abt-Buy_decimated/real_plus_non_matches.txt",
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_non_matches.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2334,7 +3036,7 @@
 	"name": "GPT-2_Textual_Abt-Buy_real_plus_non_matches_ft_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_matches_non_decimated.txt",
+	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/fine_tuned/real_plus_non_matches_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2349,10 +3051,19 @@
 }
 ,
 {
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_non_matches_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_non_matches_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
 	"name": "Augmentation_Textual_Abt-Buy_real_plus_all_decimated",
 	"task_type": "classification",
 	"vocab": ["0", "1"],
-	"trainset": "../Augmentation/Generated/Textual/Abt-Buy_decimated/real_plus_all.txt",
+	"trainset": "../Augmentation/Generated/Textual/Abt-Buy/real_plus_all.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
@@ -2371,6 +3082,15 @@
 	"task_type": "classification",
 	"vocab": ["0", "1"],
 	"trainset": "../GPT-2/Processed_Generated/Textual/Abt-Buy/non_fine_tuned/real_plus_all_decimated.txt",
+	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
+	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
+}
+,
+{
+	"name": "CTGAN_Textual_Abt-Buy_real_plus_all_decimated",
+	"task_type": "classification",
+	"vocab": ["0", "1"],
+	"trainset": "../CTGAN/Datasets_Synth/Scenarios/Textual/Abt-Buy/real_plus_all_decimated.txt",
 	"validset": "../ditto/data/er_magellan/Textual/Abt-Buy/valid.txt",
 	"testset": "../ditto/data/er_magellan/Textual/Abt-Buy/test.txt"
 }
