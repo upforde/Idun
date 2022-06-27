@@ -51,34 +51,26 @@ for path in file_paths:
         if temp in decimated_non_matches: continue
         decimated_non_matches.append(temp)
 
-    file = open(path+".matches", "w")
-    file.close()
-    file = open(path+".matches", "a")
-    for match in matches:
-        file.write(match)
-        file.write("\n")
-    file.close()
+    open(path+".matches", "w").close()
+    with open(path+".matches", "a") as file:
+        for match in matches:
+            file.write(match)
+            file.write("\n")
 
-    file = open(path+".non_matches", "w")
-    file.close()
-    file = open(path+".non_matches", "a")
-    for non_match in non_matches:
-        file.write(non_match)
-        file.write("\n")
-    file.close()
+    open(path+".non_matches", "w").close()
+    with open(path+".non_matches", "a") as file:
+        for non_match in non_matches:
+            file.write(non_match)
+            file.write("\n")
 
-    file = open(path+".matches.decimated", "w")
-    file.close()
-    file = open(path+".matches.decimated", "a")
-    for match in decimated_matches:
-        file.write(match)
-        file.write("\n")
-    file.close()
+    open(path+".matches.decimated", "w").close()
+    with open(path+".matches.decimated", "a") as file:
+        for match in decimated_matches:
+            file.write(match)
+            file.write("\n")
 
-    file = open(path+".non_matches.decimated", "w")
-    file.close()
-    file = open(path+".non_matches.decimated", "a")
-    for non_match in decimated_non_matches:
-        file.write(non_match)
-        file.write("\n")
-    file.close()
+    open(path+".non_matches.decimated", "w").close()
+    with open(path+".non_matches.decimated", "a") as file:
+        for non_match in decimated_non_matches:
+            file.write(non_match)
+            file.write("\n")

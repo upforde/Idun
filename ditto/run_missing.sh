@@ -1,0 +1,13 @@
+#!/bin/sh
+sbatch jobs/Augmentation_Dirty_iTunes-Amazon_gen_only.slurm 
+sbatch jobs/Augmentation_Structured_iTunes-Amazon_gen_only.slurm 
+sbatch jobs/GPT-2_Dirty_iTunes-Amazon_gen_only_nft.slurm 
+sbatch jobs/Augmentation_Dirty_iTunes-Amazon_real_plus_all.slurm 
+sbatch jobs/Augmentation_Structured_iTunes-Amazon_real_plus_all.slurm 
+sbatch jobs/GPT-2_Dirty_iTunes-Amazon_real_plus_all_nft.slurm 
+sbatch jobs/GPT-2_Dirty_iTunes-Amazon_real_plus_all_ft.slurm 
+sbatch jobs/GPT-2_Structured_iTunes-Amazon_real_plus_all_ft.slurm 
+sbatch jobs/Augmentation_Dirty_DBLP-GoogleScholar_real_plus_matches_decimated.slurm 
+sbatch jobs/GPT-2_Dirty_DBLP-GoogleScholar_real_plus_matches_nft_decimated.slurm 
+sbatch jobs/GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_nft_decimated.slurm 
+sbatch jobs/GPT-2_Structured_DBLP-GoogleScholar_real_plus_matches_ft_decimated.slurm 

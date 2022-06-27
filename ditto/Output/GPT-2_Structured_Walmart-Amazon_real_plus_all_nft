@@ -1,0 +1,30 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /cluster/home/danilasm/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Traceback (most recent call last):
+  File "/cluster/home/danilasm/masters/Idun/ditto/train_ditto.py", line 102, in <module>
+    da=hp.da)
+  File "/cluster/home/danilasm/masters/Idun/ditto/ditto_light/dataset.py", line 37, in __init__
+    lines = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: '../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all.txt'
+Linux idun-04-02 4.18.0-348.el8.0.2.x86_64 #1 SMP Sun Nov 14 00:51:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /cluster/home/danilasm/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Traceback (most recent call last):
+  File "/cluster/home/danilasm/masters/Idun/ditto/train_ditto.py", line 102, in <module>
+    da=hp.da)
+  File "/cluster/home/danilasm/masters/Idun/ditto/ditto_light/dataset.py", line 37, in __init__
+    lines = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: '../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all.txt'
+Linux idun-04-12 4.18.0-348.el8.0.2.x86_64 #1 SMP Sun Nov 14 00:51:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /cluster/home/danilasm/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Traceback (most recent call last):
+  File "/cluster/home/danilasm/masters/Idun/ditto/train_ditto.py", line 102, in <module>
+    da=hp.da)
+  File "/cluster/home/danilasm/masters/Idun/ditto/ditto_light/dataset.py", line 37, in __init__
+    lines = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: '../GPT-2/Processed_Generated/Structured/Walmart-Amazon/non_fine_tuned/real_plus_all.txt'
+Linux idun-04-14 4.18.0-348.el8.0.2.x86_64 #1 SMP Sun Nov 14 00:51:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
