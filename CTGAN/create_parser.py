@@ -16,7 +16,7 @@ def make_text(output, dataset, matches, decimate, ditto_parse=True, generator_ty
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=02:00:00",
+        "#SBATCH --time=00:20:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --gres=gpu:V10032:1",
@@ -67,7 +67,7 @@ jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_jobs/'
 data_format = True
 
 
-for i in range(1, 5):
+for i in range(1, 5): # 5
     for job in er_magellan:
         name = jobs_dir + generator_type[i-1] + os.sep + job.replace(os.sep, "_") + "_matches"
         names.append(name)

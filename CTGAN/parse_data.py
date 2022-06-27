@@ -55,7 +55,7 @@ if hp.matches:
 else:
     datasets_dir += ".non_matches"
     datasets_goal_dir += ".non_matches"
-    dataset_orig_data += ".non-matches"
+    dataset_orig_data += ".non_matches"
 
 if hp.decimate:
     datasets_dir += ".decimated"

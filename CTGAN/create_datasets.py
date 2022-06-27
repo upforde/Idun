@@ -23,7 +23,7 @@ no_data = []
 IDUN_PATH = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/'
 
 for job in er_magellan:
-    GENERATED_CTGAN_DIR = IDUN_PATH + f"Datasets_Synth/Ditto/CTGAN/er_magellan/{job}/"
+    GENERATED_CTGAN_DIR = IDUN_PATH + f"Datasets_Synth/Ditto/CTGAN/{job}/"
     PROCESS_CTGAN_DIR = IDUN_PATH + f"Datasets_Synth/Scenarios/{job}/"
     os.makedirs(PROCESS_CTGAN_DIR, exist_ok=True)
 
@@ -91,14 +91,14 @@ for job in er_magellan:
 
     
     # Decimated FT
-    with open(GENERATED_CTGAN_DIR + "matches_decimated.txt") as generated_decimated_matches:
+    with open(GENERATED_CTGAN_DIR + "train.matches.decimated.txt") as generated_decimated_matches:
         decimated_matches = []
         for line in generated_decimated_matches.readlines():
             if line[:3] == "COL": decimated_matches.append(line.replace("\n", " "))
             else: decimated_matches[-1] += line.replace("\n", " ")
     if len(decimated_matches) == 0: no_data.append(f"{job} matches decimated")
 
-    with open(GENERATED_CTGAN_DIR + "non_matches_decimated.txt") as generated_decimated_non_matches:
+    with open(GENERATED_CTGAN_DIR + "train.non_matches.decimated.txt") as generated_decimated_non_matches:
         decimated_non_matches = []
         for line in generated_decimated_non_matches.readlines():
             if line[:3] == "COL": decimated_non_matches.append(line.replace("\n", " "))

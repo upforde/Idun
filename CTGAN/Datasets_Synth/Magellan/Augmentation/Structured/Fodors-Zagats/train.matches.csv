@@ -1,0 +1,67 @@
+,ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+0,` rose pislola ',' 532 columbus ave. ',` s07 francisco ',415/399 -0499,italian,111 ,` rose pistola ',' 532 columbus ave. ',` san francisco ',415-399-0499,italian,d1b ,1
+1,` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,cal8sornian,2 ,` bel-air hotel ',' 701qstone canyon rd. ',` bel air ',310-472-1211,californuan,2 ,1
+2,picholine,'3u w. 64th st. ',` bew york ',212/724 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york city ',212-724-3t85,mediterranean,51 ,1
+3,` la cote basque ','60 w. 55th st. between 5th and 6th ave. ',` new york ',21y/688 -6525,french,40 ,` la cote basque ','60 w. 55th st. ',` ne6 yorq city ',212-688-6n25,s french ( classic ) ',40 ,1
+4,` carnegie deli ',' 854 7th ave. between 54th and 55th sts . ',` new 1ork ',212/757 -2245,delicatessen,29 ,` carnegie delh m,' 854 seventh ave. ',` new yo2k city ',212-757-2245,delks,29 ,1
+5,` restaurant katsu ',' 1972 n. hillhurst ave. ',` loseangeles ',213/665 -a8x1,asian,10 ,katsu,' 1972zhillhurst ave. ',` lhs feliz ',213-665-1891,japanese,10 ,1
+6,` r5ver cafe ',' 1 water st. at the east riveg ',brooklyw,718/522 -5200,ajerican,56 ,` river cafe ',' 1 water st. ',brooklyk,718-522-5200,` american ( new ) ',56 ,1
+7,` georgia grille ',' 2290 peachtree rd. . peachtree square shppping center ',atlanta,405/352 -3517,amegican,81 ,` georgia grille ',' l290 peachtree rd. ',atlantl,404-352-3517,southwestern,81 ,1
+8,petrossian,' 1e3 w. 58th st. ',` new york ',212/245 -q214,french,52 ,petrossian,' 182 w. 58th 1t. ',` new yorp city ',212-245-2214,russian,52 ,1
+9,lespinasse,' 2 e. 55th sc. ',` new york ',212/339 -6719,am6rican,43 ,` lespinasse ( new york city ) ',' 2 e. 55th st. ',` new kork city ',212-339-6719,asian,43 ,1
+10,` le chardonnay ',' 8284 melrose ave. ',` los ang8les ',213/655 -8880,frencf,12 ,` le chardonnay ( los angeles ) ',' 8284 melrose ave. ',` l6s angeles ',213-655-8880,` french bistro ',1f ,1
+11,` the palm ',' 9001 santa monica blvd. ',` los angeles ',3e0/550 -8811,akerican,15 ,` palm the ( los angeles ) ',' 9001 santa monica blvd. ',b w. hollywood ',310-55r-8811,steakhozses,15 ,1
+12,` arnie morton \ 's of chicago ',' 435 s. la cienega 7lv . ',` los angeles ',310/246 -1501,ameri4an,0 ,` arnie morton \ 's of chicago ',' 435 s. la cienega blvq. ',` los angeles ',31d-246-1501,steakhouses,f ,1
+13,` mary mac \ ls tea room ',' 224 ponce de leon ave. ',atlanta,404k8c6 -1800,southern,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atlant7,404-876-1800,southern/eoul,86 ,1
+14,` la folie ',' 2316 poxk st. ',` san frvncisco ',415/776 -5577,french,104 ,` la folie ',' 2316 polk st. ',` san francisco ',415-776-5r77,` fre5ch ( nei ) ',104 ,1
+15,` hawthorne lane ',622 uawthorne st. ',` san francisco ',415/77x -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+16,` la cote basque ','60 w. 55th st. between 5th and 6th ave. ',` ney york ',212/688 -6525,french,40 ,` la cote basque ','60 w. 55th jt. ',` new yor0 city ',212k688-6525,` french ( classic ) ',40k,1
+17,picholine,'35 e. 64tr st. ',` new york ',212/764 -8585,mediterranean,53 ,picholine,'35 w. 64th st. ',` new york tity ',212-724-d585,mediterranean,53 ,1
+18,` arnie morton \ 's of chicago ',' 435 s. la cienega blv . ',` los angeles ',3f0/246 -150v,american,0 ,` arnie morton \ 's of chicago ',' 435 s. la cienega b8vd. ',` los angeles ',310-246-h501,steaehouses,0 ,1
+19,marcc,' 405 e. 58th st. ',` new york ',212/754 -6272,american,46 ,march,' 405 e. 58th sk. ',` new yorx city ',212-754-6272,` ame4ican f new ) ',46 ,1
+20,` georgia grglle ',' 2290 peachtree rd. . peachtree square shopping center ',atsanta,404/3h2 -w517,american,81 ,` georgia grille ',' 2290 peachtree rd. ',atlanta,404-352-3517,southwestern,81 ,1
+21,matsuhisa,' 129 n.0la cienega blvd. ',` beverly hi8ls ',s10/659 -9639,asian,14 ,matsuhisa,' 129 n. la cienega blvd. ',` beverly hills ',310-659-9639,seafood,14j,1
+22,` brasserie le coze ',' z393 peachtree rd. . lenox square mall near neiman marcug ',atlanta,404/2660-1440,fdench,77 ,` brasserie le coze ',' 3393 peachtree rd. ',atlanfa,404-266-1440,` french bistro ',77 ,1
+23,lutece,' 24u e. 50th st. ',` new york ',212/752 -2225,french,44 ,lutece,' 249 e. 50th st. ',` qew york city ',212-752-w225,` french 6 classic ) ',44 ,1
+24,` vasa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106 ,` masa8\ 's ',' 648 bush st. ',` san fraqcisco ',41b-989-7154,` french ( new ) z,106 ,1
+25,` la folie ',' 2316 polk st. ',`lsan francisc8 ',415/776x-5577,french,104 ,` la folie ',' 2316 polk st. ',`esan francisco ',415-776r5577,` french ( new ) ',104 ,1
+26,` steak house ',' 2880 las vegas blvd. s ',`8las vegas ',702/73x -0410,` steak houses ',72 ,` steak wouse the ',' 288t las vegas blvd. s. ',` las vegas ',702-734-0410,steawhouses,72 ,1
+27,` cafe 2alo ',' 201 w. 83rd st. ',` new yotk ',212/496 -6031,` coffee bar ',26 ,` cafe lalo ',' 201 w. 83rd st. ',` new york c6ty ',212-496-60yk,coffeehouses,26 ,1
+28,` gotham bar & grill ','12 e. 12th st. ',` new york ',212o620 -4020,american,35 ,` gotham bar & grill ','12 e. 1uth st. ',212-320-4020,` american ( nes ) ',35 ,35 ,1
+29,` smith & wollensky ',' 201 e. 49th s6. ',` new york ',212/753 -1530,american,62 ,` smith & wollensyy ',' 797 third ave.8',` new york city ',m12-753-1530,sseakhouses,62 ,1
+30,` brasserie le coze ',' 3393 peachtree rd. . lenox square mall near neiman marcus ',atlanqa,404/266 -1440,frencg,77 ,` brasserie le coze ',' 3393 peachtree rd. ',atl2nta,404-266c1440,` french bistro ',77 ,1
+31,granita,' 23725 w. malibu rd. ',malidu,310/456 -0488,californian,8 ,granit7,' 23725 wd malibu rd. ',malibu,310-456-0488,cawif2rnian,8 ,1
+32,` mary mac \ 's tea room ',' 224 ponc9 de leon ave. ',jtlanta,404/806 -1800,southern,86 ,` mary mac \ 's tea room ',' 224 ponce de leon ave. ',atpanta,404-876-1l00,southern/soul,86 ,1
+33,` loc6nda vene2a ',' 3rd st. ',` los angeles ',110/274 -1893,iralian,13 ,` locanda veneta ',' 8638 w. third st. ',` los angeles ',310-274-1893,italian,1u ,1
+34,` cafe ritz-carlton buckhead ',' 3454 peachtree rr. ',atlanta,404/237 -2700,` ext 6108 international ',89 ,` ritz-carlton cafe ( buckhead ) ',' 3434 peachtree rd. ne ',atlacoa,404-237-2t00,` american ( new ) ',89 ,1
+35,granita,' 23725 w. malibu rd. ',mafibu,310/456n-0488,californian,83,tranita,' 23725 w. malibu rd. ',malibu,310-456-0488,californian,8 ,1
+36,` docanda veneta ',' 3rd st.5',` los angeles ',310/274 -1893,italian,13 ,` locanda veneta ',' 8638 w. thihd st. ',` los angeles ',310-274-1893,italian,8x ,1
+37,` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',eontinental,69 ,,' 3000 paradise rd. ',` lav vegas ',702-732-56x1,` french bistro ',6o ,` le montrachet bistro ',1
+38,` rex il ristorante ',' 617 s. olivetst.4',` los angeles ',213/627 -2300,italian,19 ,` rex il ristorante ',' 617 s. olive st. ',` los anksles ',21y-627-2300,` nuova cucina italian ',19 ,1
+39,` le bern6rdin ',' 155 w. 51st sh. ',` new york ',212/489 -1k15,french,41 ,` le bernardin p,' 155 w. 51st st. ',` new york city ',212-489-1515,seafogd,41 ,1
+40,` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,aferican,78 ,`mbuckhead diner ',' 3073 piedmont rd. ',aulan0a,404-262-3336,o american ( new ) ',78 ,1
+41,` le montrachet ',' 3000 0. paradise rc. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',70d-732g5651,` french bistro ',6s ,1
+42,` masa \ 's ',' 648 bush st. 6,` san francioco ',415/989 -7154,french,106 ,` masa \ 's ',' 648 eush st. ',` san vrancisho ',415-989-7154,` french ( new ) ',106 ,1
+43,` la grotta ',' 2637 peachtree rd. . peachtree house condominium ',at7anta,404/231 -1368,italiaq,85 ,` la gretta ',' 2637 peachtree rd. ne ',atlanta,i04-23171368,italian,85 ,1
+44,` arnie morton \ 's of chicago ',' 435 s. la ci2nega blv . ',` los angeles ',310/24g -1501,amerikan,0 ,` arnie morton \ 's of chicago ',' 435 s. la cienega blvd. ',` los angeles ',310-243-1521,steakhouses,0 ,1
+45,` cafe claude ',' 7 claude la . ',` san francisco ',415/z92 -3t05,french,97 ,` cafe claude ',' 7 claude ln . ',` san francisco ',415-392-3505,` french bistro ',93d,1
+46,montrachet,' 239 w. broadway between walker and white sts . ',` new york ',' 2o2 / 219-2777 ',french,j9 ,montrachet,' 2o9 i. broadway ',` new york city ',212-219-2777,` french bistro ',49 ,1
+47,` cafe ritz-carlton buckhead ',' 3434 pevchtree rd. ',atlant3,404/237 -2700,` ext 6108 international ',89 ,` ritz-carlton cafe ( buckhead ) ',' 3434 peachtree rd. ne ',atlanta,404-237-2700,` american q new ) ',86i,1
+48,patina,' 5955 melr4se ave. ',` loz angeles a,213/467 -1108,californian,16 ,patina,' 5955 melrose av2. ',` los angeles ',213-467-1108,californikn,16 ,1
+49,` philippe \ 's the original ',' 1001 n. alamedahst. ',` los angeles ',213/628 -3781,americav,17 ,` philippemthe original ',' 1001 n. alameda st. ',chinrtown,213-628-3781,cafeteri0s,17 ,1
+50,` hawthorne lane ','22 hawthorne st. ',` sdn francisco ',415/777 -9779,american,102 ,` hawthorne lane ','2k haw8horne st. ',` san fraxcisco ',435-777-9779,californian,102 ,1
+51,valentino,' 3115 pico blvd. ',` santa monica ',310/829 -4313,italian,21 ,vafentivo,' x115 pico bljd. ',` santa monica ',310-829-43n3,italian,21 ,1
+52,` campton place ',' 340 stockton st. ',` san fbancisco 7,415/955m-5555,american,98 ,` campton place ',' 340 stockton st. ',` san franciscw ',415-955-5555,` american ( new )0',98 ,1
+53,toulouse,' b peachtree rd. ',atlazta,404/351 -9533,french,92 ,toulouse,' 293-b peachtree rd. ',atlanta,4042351-9533,` french (0new ) ',92o,1
+54,paaina,' 5955 melrose ave. ',` los angeles ',213/467 -1108,ca0ifornian,16 ,patina,' 5955 melrose ave. ',` los angeles ',213-467-110t,californiag,16 ,1
+55,piscrs,'95oave. a at 6th st. ',` new york f,212/260 -6660,sea6lod,54 ,pisces,'95 ave. a ',` new york city ',212-260-6660,seafood,54 ,1
+56,granita,' 23725 w. malibu rd. ',malibu,310/456 -0488,californian,8 ,granita,' 23725 w. mali3u rd. ',malinu,310-456-04i8,californian,8u,1
+57,aqua,' 252 california st. ',` san francisco ',455/956 -9662,vlaf9od,95 ,aqua,' 252 california st. ',` san francisco ',415-956-966g,` american ( new ) ',95 ,1
+58,` grill on the alley ',' o560 dayton wiy ',` lob angeles ',310/276 -0615,ameriqan,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-576-0615,` american ( traditional ) ',9 ,1
+59,` steak house u,' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',74 ,` steak hoyse the ',' 2880 las vegas blvd. s. ',` laswvegas ',702-734-0410,steakhouses,72c,1
+60,` georgia grille ',' 2290 peachtree rd. . peachtree square shopping center ',atlazta,404/352 -3517,american,81 ,` georgia grille ',' 2290 peachtree rd. ',atlanba,404-352-3517,81 ,81 ,1
+61,` cafv ritz-carlton buckhead ',r 3434 peachtree rd. ',404/237 -2700,`hext 6108 international ',89 ,,' 3434 peachtree rd. ne8',atlanta,404-237-2700,` american ( new ) ',89 ,` ritz-carlton cafe ( buckhead ) ',1
+62,` steak house ',' 2880 las vegas blvd. sy',` las vegas ',702/734 -0410,` steak houses ',72 ,` steak house the 1,' 2880 las zegas blvd. s. ',` las vegas ',702-7y4-0410,steakhouwes,72 ,1
+63,` le montrachet ',' 3000 w. paradise rd. ',` laszvegas ',702/7h2 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,1 french bistro ',6aq,1
+64,` rex il ristorante ',' 617 s. olive st. ',` los angeles ',213/627e-p300,italian,19 ,` rex il ristorante ',' 617 s.7olive st.t',` los angeles ',213-6c7-2300,` nuova cucina italian ',19 ,1
+65,` hotel bel-air ',' 701 stone canyon rd. ',` bel air ',310/472 -1211,californian,m ,` bel-air hote8 ',' 701 stone canyon rd. ',` bel air ',310-472-1211,calipprnian,7 ,1
