@@ -25,13 +25,13 @@ def make_text(task):
         "#SBATCH --partition=GPUQ",
         "#SBATCH --gres=gpu:1",
         "#SBATCH --account=ie-idi",
-        "#SBATCH --time=6:00:00",
+        "#SBATCH --time=8:00:00",
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --mem=12000",
         f"#SBATCH --job-name=\"ditto {task}\"",
         f"#SBATCH --output=Output/{task}",
-        "#SBATCH --mail-user=danilasm@stud.ntnu.no",
+        f"#SBATCH --mail-user=danilasm@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
         "module purge",
         "module load Anaconda3/2020.07",
@@ -126,7 +126,9 @@ for job in er_magellan:
     make_files(task, train, test, valid)
 
     # CTGAN
-    # -------- Your code here --------
+    task = "CTGAN_" + job.replace("/", "_") + "_gen_only"
+    train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/gen_only.txt"
+    make_files(task, train, test, valid)
 
     # Real + match 
     # Augmentation
@@ -144,7 +146,9 @@ for job in er_magellan:
     make_files(task, train, test, valid)
 
     # CTGAN
-    # -------- Your code here --------
+    task = "CTGAN_" + job.replace("/", "_") + "_real_plus_matches"
+    train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_matches.txt"
+    make_files(task, train, test, valid)
 
     # Real + non-match
     # Augmentation
@@ -162,7 +166,9 @@ for job in er_magellan:
     make_files(task, train, test, valid)
 
     # CTGAN
-    # -------- Your code here --------
+    task = "CTGAN_" + job.replace("/", "_") + "_real_plus_non_matches"
+    train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_non_matches.txt"
+    make_files(task, train, test, valid)
 
     # Real + all
     # Augmentation
@@ -179,9 +185,10 @@ for job in er_magellan:
     train = IDUN_PATH + "GPT-2/Processed_Generated/" + job + "/non_fine_tuned/real_plus_all.txt"
     make_files(task, train, test, valid)
 
-
     # CTGAN
-    # -------- Your code here --------
+    task = "CTGAN_" + job.replace("/", "_") + "_real_plus_all"
+    train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_all.txt"
+    make_files(task, train, test, valid)
 
     # Some jobs don't work with the decimated test, meaning they shouldn't be made into jobs
     if job not in small:
@@ -201,7 +208,9 @@ for job in er_magellan:
         make_files(task, train, test, valid)
 
         # CTGAN
-        # -------- Your code here --------
+        task = "CTGAN_" + job.replace("/", "_") + "_gen_only_decimated"
+        train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/gen_only_decimated.txt"
+        make_files(task, train, test, valid)
 
         # Real + match decimated
         # Augmentaion
@@ -219,12 +228,14 @@ for job in er_magellan:
         make_files(task, train, test, valid)
 
         # CTGAN
-        # -------- Your code here --------
+        task = "CTGAN_" + job.replace("/", "_") + "_real_plus_matches_decimated"
+        train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_matches_decimated.txt"
+        make_files(task, train, test, valid)
 
         # Real + non-match decimated
         # Augmentation
         task = "Augmentation_" + job.replace("/", "_") + "_real_plus_non_matches_decimated"
-        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_non_matches.txt"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_non_matches_decimated.txt"
         make_files(task, train, test, valid)
 
         # GPT-2
@@ -237,12 +248,14 @@ for job in er_magellan:
         make_files(task, train, test, valid)
 
         # CTGAN
-        # -------- Your code here --------
+        task = "CTGAN_" + job.replace("/", "_") + "_real_plus_non_matches_decimated"
+        train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_non_matches_decimated.txt"
+        make_files(task, train, test, valid)
 
         # Real + all decimated
         # Augmentation
         task = "Augmentation_" + job.replace("/", "_") + "_real_plus_all_decimated"
-        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_all.txt"
+        train = IDUN_PATH + "Augmentation/Generated/" + job + "/real_plus_all_decimated.txt"
         make_files(task, train, test, valid)
 
         # GPT-2
@@ -255,7 +268,9 @@ for job in er_magellan:
         make_files(task, train, test, valid)
 
         # CTGAN
-        # -------- Your code here --------
+        task = "CTGAN_" + job.replace("/", "_") + "_real_plus_all_decimated"
+        train = IDUN_PATH + "CTGAN/Datasets_Synth/Scenarios/" + job + "/real_plus_all_decimated.txt"
+        make_files(task, train, test, valid)
 
 config.write("{\"name\":\"eof\"}]")
 
@@ -276,19 +291,19 @@ with open(IDUN_PATH + "ditto/run_ctgan_jobs.sh", "a") as file: file.write("#!/bi
 
 for name in names:
     with open(IDUN_PATH + "ditto/run_jobs.sh", "a") as file: 
-        file.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+        file.write(f"sbatch ./jobs/{name}.slurm\n")
     if "_baseline" in name:
         with open(IDUN_PATH + "ditto/run_baseline_jobs.sh", "a") as baseline: 
-            baseline.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+            baseline.write(f"sbatch ./jobs/{name}.slurm\n")
     if "Augmentation" in name: 
         with open(IDUN_PATH + "ditto/run_augmentation_jobs.sh", "a") as aug:
-            aug.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+            aug.write(f"sbatch ./jobs/{name}.slurm\n")
     if "GPT-2" in name and "nft" in name: 
         with open(IDUN_PATH + "ditto/run_gpt2_nft_jobs.sh", "a") as gpt2:
-            gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+            gpt2.write(f"sbatch ./jobs/{name}.slurm\n")
     if "GPT-2" in name and "nft" not in name:
         with open(IDUN_PATH + "ditto/run_gpt2_ft_jobs.sh", "a") as gpt2:
-            gpt2.write(f"sbatch ./jobs/{name}.slurm danilasm\n")
+            gpt2.write(f"sbatch ./jobs/{name}.slurm\n")
     if "CTGAN" in name:
         with open(IDUN_PATH + "ditto/run_ctgan_jobs.sh", "a") as ctgan:
-            ctgan.write(f"sbatch ./jobs/{name}.slurm danilasm")
+            ctgan.write(f"sbatch ./jobs/{name}.slurm\n")
