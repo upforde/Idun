@@ -1,547 +1,414 @@
-,ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
-0,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'14 w. 55th st. ',` new darlin ',212/307 -7311,continental,4 𐐐�𐐓 type RED val aquavit,0.0
-1,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops/diners ',' 3555 las vegas blvd. s ',` las vegas ',534/520 -5511,` coffee shops/diners ',505 -7521,0.0
-2,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas * 's big food cart ',722/723 -4130,buffets,4007 vironment,0.0
-3,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` breakfast ',' 5471 las vegas blvd. s ',` las vegas ',701/733 -5141,` restaurant/diners ',421 ____________________________ * The 'lac vegas' column contains the name of the owner of the company. It contains the name that used to be the company's name. The 'lac ve,0.0
-4,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,' 13 w. 54th st. ',` new yorks ',212/307 -7311,continental,'24 𐌬𐌬 (A+Y) (M+R) (J+W)',0.0
-5,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595,american,330 antha,0.0
-6,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',null,` las vegas ',702/739 -4111,buffets,424,0.0
-7,` bally \ 's big kitchen ',null, ,702/739 -4111,buffets,424,` las vegas ',702/739 -4111,buffets,obj, 0, col .,0.0
-8,` bally \ 's big kitchen ',null, , Cols can contain objects whose object type is not an obj .,buffets,424,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 𐌨𐌸,` bally \ 's big kitchen ',0.0
-9,` bally \ 's big kitchen ',null, , Cols can contain objects whose object type is not an obj ., ,424, , [C# and Unicode dictionaries][C#5][C#13][C#35][C, 0,buffets,424 𐌨𐌸, ,0.0
-10,` las vegas ',702/739 -4111,buffets,obj, , col .,310/393 -6545,italian,159 retty,remi,' 6th st. promenade ',` santa monica ',0.0
-11,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',remi,' 3rd st. promenade ',` santa monica ',310/393 -6547,italian,159 ieval,0.0
-12,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 𐌨𐌸, ,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,106 𠱗-9-7-3-5-5 𠱗-8-22-10-,0.0
-13, ,` las vegas ',702/739 -4111,buffets,424 𐌨𐌸, ,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ...>,0.0
-14, , [C# and Unicode dictionaries][C#5][C#13][C#35][C,702/739 -4111,buffets,424 𐌨𐌸, ,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _.cxx.s ',0.0
-15,310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',` bertolini \ 's ',' 3570 las vegas Blvd. s ',` las vegas ',7066/7064 -4662,itsalian,426 braska,0.0
-16,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,palisades,' 1888 peachtree rd. ',atlanta,404/350 -6755,continental,406 _.NY,0.0
-17,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,palisades,' 1829 peachtree rd. ',434/350,404/350 -6755,,434 'Columb name Val palisades,0.0
-18,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` bertolini \ 's ',char,char ` las vegas ',800/8001 -4694,italian,427 _.,0.0
-19,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444, , The format, , -- type ', 0,427 _.,0.0
-20,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,' 4th st. ',` los angeles ',310/451 -1655,mexican,116 errilla,` border grill ',0.0
-21,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,aquavit,'13 w. 54th st. ',` new york ',213/307 -7310,Continental,26 𓀐 ���� 𐊰 𐌄 𒌡 �,0.0
-22,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` corrado cafe ',` 102 3rd af. between 60th and 61st sts . ',` new york ',219/753 -5100,` coffee bar ',------------------------ --------,0.0
-23,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427, ," Using a non-standard form to match or not match the type of a field can be a bit confusing, but it is not difficult to follow. For most", 0,219/753 -5100,` coffee bar ',------------------------ --------,0.0
-24, ,char,char ` las vegas ',800/8001 -4694,italian,427 _.,404/724 -0901,mediterranean,386 errilla,bistango,' 1100 peachtree st. ',atlanta,0.0
-25, , The format,char ` las vegas ',800/8001 -4694,italian,427 _.,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 ieval,0.0
-26, , The format, ,800/8001 -4694,italian,427 _.,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 riott,0.0
-27, , The format, , -- type ',italian,427 _.,` bertolini \ 's ',' 3350 las vegas blvd. s ',` las vegas s ',9082.4-2A.01,italian,427 _.pl_col _. . . ...,0.0
-28,' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ', ," The type variable, a list of the supported base classes, is stored in the", 0,9082.4-2A.01,italian,427 _.pl_col _. . . ...,0.0
-29,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,212/595 -8555,american,330 errilla,` popover cafe ',` 551 amsterdam ave. between 87th and 88th sts . ',` new york ',0.0
-30,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` bertolini \ 's ',' 2270 las,` las vegas ',7100,italian,423 ulum,0.0
-31, ,` 102 3rd af. between 60th and 61st sts . ',` new york ',219/753 -5100,` coffee bar ',------------------------ --------,ibex,' 908 peachtree st. ',,406/724 -0901,mediterranean,391 ��,0.0
-32, ," Using a non-standard form to match or not match the type of a field can be a bit confusing, but it is not difficult to follow. For most",` new york ',219/753 -5100,` coffee bar ',------------------------ --------,palisades,' 1829 peachtree rd. ',atlanta,403/350 -6755,continent,405 𢡿�𢡿� col-lang,0.0
-33,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,` bally \ 's big kitchen ',' 3645 las vegas blvd. t ',` las vegas ',702/739 -4111,buffets,424 𐌱� = ' large-dwelling palanquin ',0.0
-34,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,' perry \ 'S ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,0.0
-35,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506, ," The two methods can be omitted (as they are the same size and can be specified in their own parentheses, not the same string).", 0,415/922 -9022,american,506,0.0
-36,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,212/307 -7311,continental,24 𔔖� 𖗥 𔚃 𒞷 𒲙,aquavit,'13 w. 54th st. ',` new york ',0.0
-37, ,' 3350 las vegas blvd. s ',` las vegas s ',9082.4-2A.01,italian,427 _.pl_col _. . . ...,palisades,' 1860 peachtree rd.',atlanta,404/350 -6755,continental,410 ilsticol,0.0
-38, ," The type variable, a list of the supported base classes, is stored in the",` las vegas s ',9082.4-2A.01,italian,427 _.pl_col _. . . ...,` flag (reduced the flag to '2') ',' 5th st. ',` los angeles ',310/451 -1655,mexican,116 ibrary,0.0
-39,212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',` masa \ 's ',' 648 bush st. ',` san,415/989 -7154,french,106 outhernCRUDE name,0.0
-40,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,aquavit,'13 w. 54th st. ',` new york,212/305 -7740,continental,24 errillacol name,0.0
-41,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,"What's happening? Let's start with the one that has more than one letter, and the letters that all Latin people are likely to read (e.",0.0
-42,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 antha,0.0
-43,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` lattanzi ristorante ',"` 3 1 1 ', '",` new york ',213/315 -0900,italian,304 braska,0.0
-44,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506, , I will leave only the names that have been shown to me in this blog post., , There are two methods for determining the name of a, 0,304 braska,0.0
-45, ,' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 uania,` popover cafe ',0.0
-46, ," The two methods can be omitted (as they are the same size and can be specified in their own parentheses, not the same string).",` san francisco ',415/922 -9022,american,506,al.fr,' 1880 peachtree rd. ',atlanta,404/350 -6755,continental,410 paralleled,0.0
-47,212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',` corrado cafe ',` 1013 3rd ave. between 60th and 61st sts . ',,212/753 -5100,` coffee bar ',223 errilla,0.0
-48,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,120 iker,0.0
-49,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th St. ',` los angeles ',310/451 -1655,mexican,116 igham,0.0
-50,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` col-bar-state ',`,` new york ',212/753 -5100,` coffee bar ',223 ARGARIAH PRINCIPLES STATE,0.0
-51,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.BOLD_WITH(),0.0
-52,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,aquavit,'14 w. 54th st. ',` new york ',212/307 -7311,continental,' 48 𐎃 val aquavit,0.0
-53,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,0.0
-54,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283, , We can use the same set of, 0,212/595 -8555,american,330,0.0
-55, ,"` 3 1 1 ', '",` new york ',213/315 -0900,italian,304 braska,213/315 -0980,italian,289 𐌟𐌟 ' colanzo ristorante ',` lattanzi ristorante ',` 341 5. 13th st. ',` new york ',0.0
-56, , I will leave only the names that have been shown to me in this blog post.,` new york ',213/315 -0900,italian,304 braska,bistango,' 1300 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 𐍌�,0.0
-57, , I will leave only the names that have been shown to me in this blog post., ,213/315 -0900,italian,304 braska,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,310 _.locale-id,0.0
-58, , I will leave only the names that have been shown to me in this blog post., , There are two methods for determining the name of a,italian,304 braska,palisades,' 1882 peachtree rd. ',atlanta,404/350 -6755,continental,409 errilla,0.0
-59,' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 𐉿 › 𐝼 › 𐞱 › 𖅉 › �,0.0
-60,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,repa,' 3rd st. tus t' ras,` santa monica ',310/393 -6545,italian,159 ��,0.0
-61,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,' 1890 reeblin col colval,atlanta,edan,404/350 -6755,aegles,411 ily,0.0
-62,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` masa \ 's ',` san francisco ',` san francisco ',415/989 -7154,french,106 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,0.0
-63,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 errilla,0.0
-64,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,161 _.-1-1-1-2-3-4-5,0.0
-65,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 800 peachtree st. ',atlanta,404/724 -0901,mediterranean,400 iomal,0.0
-66,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 iker,0.0
-67,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,510 iker,0.0
-68, ,' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` margarita \ 's mexican cantina ',' 4313 las vegas blvd. s ',` las vegas ',632/643 -9090,mexican,444 𐹳 -2882,0.0
-69, , We can use the same set of,` new york ',212/595 -8555,american,330,` border grill ',' 5th st. ',` los angeles ',110/45 -1350,luchon,105 osphere,0.0
-70,212/315 -0980,italian,283,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ɛlA,0.0
-71,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` masa \ 's ',' 748 bush st. ',` san francisco ',415/989 -7154,french,106 _.name ' ',0.0
-72,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,; st-loc-addr to,' 1944 union st. ',; st-loc-addr to,415/922 -922,american,506 igham,0.0
-73,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,504 ilogy,0.0
-74,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410, , The following table demonstrates the usage of our method to find the title and a column of its type., , Title or type of, 0,504 ilogy,0.0
-75,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,'/ ',atlanta,406/800 -0901,high street,386 vironment,bistango,0.0
-76,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` berland,' 467 w. 46th st. ',` alphabetsa ',213/314 -0990,tengwaffe,` berland,0.0
-77,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` 2102 las vegas blvd. s ',' 4121 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _. _ - ' ' ',0.0
-78,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` border grilling ',4th st. ',` los angeles ',311/451 -1254,mexican,117 !(1.1 /,0.0
-79,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` margarita \ 's mexican cantina ',,` las vegas ',702/794 -8200,onymous,486 ------------- ------------- ------------------ ------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------,0.0
-80,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,' BALELTON ',607/638 -4111,` las vegas ',628/639 -4111,buffets,427 _.s ',0.0
-81,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` steak houses ',` 2280 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 !class,0.0
-82,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` Bally \ 's kitchen ',' 3645 las vegas blvd. s ',` las vegas ',202/219 -4226,bally \ 's big kitchen ',424 NetMessage 0023 NetMessage 0100 乍,0.0
-83,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -0800,mexican,444 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,0.0
-84,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` bertolini \ 's ',` 3570 las vegas blvd. s ',` las,702/735 -4663,italian,401 oubtedly,0.0
-85,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,nil ` masa \ 's ',` san francisco ',` san francisco ',415/989 -7,french,106 izationalType,0.0
-86,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,"\"" perry \ 's '",' 1946 union st. ',` san francisco ',' 1950 -1950,american,546 INSTALLERNAME,0.0
-87,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,palisades,' 1861-1901;,atlanta,404/350 -6755,continental,415 _.coltype,0.0
-88,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` bary \ 's town ',' 3845 las vegas blvd. s ',` las,701/7017 -4113,buffets,426 galitarian,0.0
-89, ,' 1944 union st. ',` san francisco ',415/922 -9022,american,504 ilogy,` corrado coffee ',` 801 3rd ave. between 60th and 61st sts . ',,213/753 -5102,` coffee bar ',223 ievalCol name,0.0
-90, , The following table demonstrates the usage of our method to find the title and a column of its type.,` san francisco ',415/922 -9022,american,504 ilogy,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.,0.0
-91, , The following table demonstrates the usage of our method to find the title and a column of its type., ,415/922 -9022,american,504 ilogy, ," What is your favorite colorado? Thank you to our users, and to our fellow volunteers. Let's get", 0,404/724 -0901,mediterranean,386 _.,0.0
-92, , The following table demonstrates the usage of our method to find the title and a column of its type., , Title or type of,american,504 ilogy,212/307 -7311,continental,24 iversityLOCAL Name,aquavit,'13 w. 54th st. ',` new y,0.0
-93,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 _.,0.0
-94,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 errilla,0.0
-95,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` corrado cafe ',` 1013 3rd ave. between 60th and 61st sts . - 5100 ',` new y,212/753 -5100,` coffee bar ',223 NetMessage NAME,0.0
-96,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` lattanzi ristorante ',' 346 w. 61st street. ',` new york ',212/315 -0980,italian,283 oluluCol val ile ile,0.0
-97,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ','3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage X3 - 3-,0.0
-98,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` perry \ 's ',' 1944 union st. ',,415/922 -9022,american,506 iomoun,0.0
-99,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` lattanzi ristorante ',' 376 w. 47th st. ',` new york ',210/315 -0610,italian,283 ɛ̀,0.0
-100,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bertolini \ 's ',' 4533 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 𔮴𔮷‎ (3 + [3 ^ 2]) 𔮴𔮷 _ (' 1 - [,0.0
-101,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,' POPover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,3999 𔀱 𒊤 552 amsterdam ave. between 11th and 12th sts . ',0.0
-102,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` masa \ 's ',' 648 st. ',` san francisco ',414/989 -7154,english,648,0.0
-103,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106, ," The name passed in via the function definition is a boolean argument, rather than a single argument, so this number must be equal to", 0,414/989 -7154,english,648,0.0
-104,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,702/739 -4111,buffets,424 errilla,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,0.0
-105,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` bally \ 's little little apartment ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 iker,0.0
-106,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 braska,0.0
-107,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` roxellis ristorante ',` rofriguez ristorante ',` new york ',212/315 -0980,italian,283 _.col,0.0
-108,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` san francisco ','' ok \ 's ',` san francisco ',420/7184 -7152,french,106 iker,0.0
-109, ,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,702/739 -4111,buffets,424 onymous,0.0
-110, ," What is your favorite colorado? Thank you to our users, and to our fellow volunteers. Let's get",atlanta,404/724 -0901,mediterranean,386 _.,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 ilstolor color,0.0
-111,212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',bistango,' 1101 peachtree st. ',atl,404/724 -0901,mediterranean,386 Ire,0.0
-112,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` steak doors ',' 2650 vegas blvd. s ',` las vegas ',302/302 -0410,` steak houses ',72 -0510,0.0
-113,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 NetMessage NAME,0.0
-114,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` perry \ 's ',' 1943 union st. ',` san francisco ',415/922 -9022,american,506 [ ] type,0.0
-115,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 phasis,0.0
-116,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,' masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,"106 ibrary TYPE CODE ' A string containing either an abbrev string, a non-blank or non-zero value. This indicates that C",0.0
-117,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,"116 xk9.jpg -1257 'COUNTRY names with English names (Czech, Turkish, Greek, Indian, French",0.0
-118,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,remi,' 1st st. promenade ',` santa monica ',310/393 -6545,italian,159 𐌌𐀐𐌌 ',0.0
-119,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427, , The following lines will print '1264, , 1137, 0,159 𐌌𐀐𐌌 ',0.0
-120,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,' 561 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 ogytown AL ' london ',' popover cafe ',0.0
-121,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` border grill ',' 5th st. ',` los angeles ',310/451 -1655,mexican,116 󿀺 𐹁 󿇵 󿲗 󿁿 !,0.0
-122, ,' 648 st. ',` san francisco ',414/989 -7154,english,648,remi,' 3rd st. promenade ',' santa chica ',311/393 -6545,italian,160 braska,0.0
-123, ," The name passed in via the function definition is a boolean argument, rather than a single argument, so this number must be equal to",` san francisco ',414/989 -7154,english,648,` popover cafe ',' 552 amsterdam ave. between 46th and 87th sts . ',` new york ',212/595 -8555,american,330 errilla,0.0
-124,702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',peachtree rd. ',' 1829 peachtree rd. ',atlanta,404/350 -6,continental,410 izens,0.0
-125,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,`,' 2123 texas BLvd. s ',` las vegas ',702/794 -8200,mexican,420 _.,0.0
-126,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` steak house ',` 2520 las vegas blvd. s ',�labs '. s ',1270/1280 -0410,` steak houses ',72 _. s ',0.0
-127,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,' border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 retty,0.0
-128,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` border grill ',' 11st st. ',` los angeles ',310/451 -1655,'1st & 12th st. ',116 vironmentAL,0.0
-129,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` margarita \ 's mexican cantina. ',444 _. ? ',` las vegas ',702/794 -8200,mexican,444 _. . ',0.0
-130,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` steak houses ',' 4807. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 30,0.0
-131,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,"\"" ' '",' 3555 las vegas blvd. s ',` las vegas ' COD NAME ` restaurant loc ',702/733 -3111,` restaurants/diners ',431 _.s ',0.0
-132,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,385 izens,0.0
-133,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` lattanzi ristorante ',' 3999 w. 47th st. ',` new york ',212/315 -0980,italian,273 𐍨𐍨𐍨𐍨𐍨𐍨𐍨,0.0
-134,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,palisades,' 1796 peachtree rd,atlanta,488/3800 -4445-2589,continental,411 vironment,0.0
-135,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` border grill ',' 4th st. ',` los,310/451 -1655,mexican,116 ɼɐlcol name,0.0
-136,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` bugsy \ 's café ',' 3555 las vegas blvd. s ',431 _. LOCAL COORDAL name,977-9867-1867,` tea iced latte/tablet ',431 _. LOCAL COORDAL name,0.0
-137,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` cookin' cookin table ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ibrary,0.0
-138,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` POPOVER ',' 1081 Amsterdam ave. between 85th and 86th sts . ',` new york ',212/595 -8555,american,330 newyork,0.0
-139, ,' 1st st. promenade ',` santa monica ',310/393 -6545,italian,159 𐌌𐀐𐌌 ',` perry \ 's ',' 1944 union st. `,` san francisco ',415/922 -9022,american,506 ',0.0
-140, , The following lines will print '1264,` santa monica ',310/393 -6545,italian,159 𐌌𐀐𐌌 ', , The, 0,415/922 -9022,american,506 ',0.0
-141, , The following lines will print '1264, ,310/393 -6545,italian,159 𐌌𐀐𐌌 ',404/350 -6755,continental,410 𒐤��,palisades,' 1829 peachtree rd. ',atlanta,0.0
-142, , The following lines will print '1264, , 1137,italian,159 𐌌𐀐𐌌 ',` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _______________________________ _______________________________ _______ LINEAR GEDS: _________________________LINEAR GEDS ____LINEAR GEDS __________________________LINEARC,0.0
-143,' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',aquavit,'13 w. 84th st. ',` new york ',212/307 -7311,continental,24 𐊐ཡ @colname,0.0
-144,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` cola cafe ',` 1102 5th ave,` new york ',851 -5100,` coffee bar ',223 NetMessage CATEGORY CHAR * CATEGORY ID,0.0
-145,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,palisades,' 1829 peachtree rd. ',atl,404/350 -6755,continental,412 osphere,0.0
-146,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,bally \ ` las vegas ',' 3901 las vegas blvd. y ',` las vegas ',702/733 -4128,buffets,424 ____LOCALS ____LOCAL name,0.0
-147,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` lattanzi ristorante ',' 41 st. ',` new nalany ',212/315 -0980,italian,287 edInhui Col class,0.0
-148,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bertolini \ 's ',' 3210 las vegas Blvd. s ',` las,702/735 -4663,italian,427 _. .,0.0
-149,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` bordeaux ',' 4219 w. 47th st. ',` new york ',211/314 -0980,italian,286 _.BELONCA,0.0
-150,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,palisades,' 1890 peachtree rd. ',atlanta,403/,continental,411 𐔐COCONA tẓC. ',0.0
-151,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` masa \ 's ',' 650 bush st. ',` san francisco ',415 -7154,french,106 ɓ,0.0
-152,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 izational,0.0
-153,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.mop,0.0
-154,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431, , A new language is now being developed for the upcoming B4J. It is known as a 'language, 0,404/724 -0901,mediterranean,386 _.mop,0.0
-155,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,212/305 -7317,continental,24 erenn,aquavit,'13 w. 55th st. ',` new york,0.0
-156,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,702/739 -4111,buffets,424 errilla,0.0
-157,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` popover cafe ',` 551 pmsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,ipv4-8555,330 ilstolor col NUM LINE,0.0
-158,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,aquavit,'13 w. 54th st. ',` new york ',212/307 -7312,continental,24 | 12.15 col * @,0.0
-159,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,peachtree,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ��,0.0
-160,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,palisades,' 1863 peachtree rd. ',atlanta,404/350 -6755,continental,450 chwitzCol name,0.0
-161,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,palisades,' 1895 peachtree rd. ',atlanta,404/350 -6755,continental,410 erenn,0.0
-162,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 iomarcabel var _,0.0
-163, ,' 1944 union st. `,` san francisco ',415/922 -9022,american,506 ',` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` Las vegas ',702/739 -4111,buffets,424 ievalcolName,0.0
-164, , The,` san francisco ',415/922 -9022,american,506 ',` corrado cafe ',` 1003 3rd ave. between 40th and 41st sts . ',` new york ',212/753 -5100,` coffee bar ',223 iphone,0.0
-165,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,` corrado ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223 _.london,0.0
-166,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444, ," To convert a new type of city, simply type:", , type, 0,223 _.london,0.0
-167,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,72 ' 2720 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ___________________________LARGE LOCATION,` steak farms ',0.0
-168,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223, LARA HOSPITAL (1101 8th St. NE Suite A12 - St., 0,702/734 -0410,` steak houses ',72 ___________________________LARGE LOCATION, ,0.0
-169,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,american,324 Ire,' Popover Cafe ',' 555 amsterdam ave. between 86th and 87th sts . ',` new york ',213/625 -9355,0.0
-170,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 iker,0.0
-171,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` border grill ',' 8th st. ',` los angeles ',311/453 -1655,mexican,116 _.,0.0
-172,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 **************************,0.0
-173,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283, , **NOTE: This is just an example of using 'locale'. If you want to change it then, 0,310/451 -1655,mexican,116 **************************,0.0
-174,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,406/706 -0931,mediterranean,387 ˈ̚col-lumin.ə.l.s,lumin,"' 703,632 peachtree ST. '",atlanta,0.0
-175,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` doc:unusual ',` las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/drinks ',460 �� cola,0.0
-176,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,remi,' 3rd st. prom,` santa monica ',310/393 -6545,italian,159 --------------- --,0.0
-177,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` perry \ 's ',' 1941,` san francisco ',467/922 -9022,american,506 izational,0.0
-178, ,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.mop,remi,' 3rd st. promenade ',` santa monica ',310/393 -65330,italian,161 galitarian,0.0
-179, , A new language is now being developed for the upcoming B4J. It is known as a 'language,atlanta,404/724 -0901,mediterranean,386 _.mop,` latin,' 361 w. 51st st. ',` new york ',212/315 -0980,italian,283 ieval,0.0
-180,212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 𒌁 𒌑 𒌑 𒌑 . . .,0.0
-181,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` 's diner ',' 3555 las vegas blvd. s ',` las vegas ',576,` coffee shops/diners ',504 ilstcolname,0.0
-182,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,bicocol,' 1100 jmexa,atlas,404/724 -0903,mediterranean,386 Ire,0.0
-183,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,` las vegas ',' 2680 las vegas blvd. s ',` las vegas ',702/734 -0410,` steaks ',72 NetMessage NetMessage type,0.0
-184,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` Corrado cafe ',' 1104 8th Ave. between 71st and 72nd sts . ',` new york ',210/740,` coffee bar ',221 ��,0.0
-185,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` breakfast ',' 3555 las vegas blvd. s ',` las vegas ',707/77 -130,` coffee shops/diners ',487 ��,0.0
-186,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` corrado cafe ',` 1014 3rd ave. between 61st and 62nd sts . `,,212/753 -5100,` coffee bar ',223 errilla,0.0
-187,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,""""" border grill '",' 8th st. ',` los angeles ',310/451 -1655,mexican,"115 ilstcol ""1"" ilstcity ""1"" ilstcity ""1""",0.0
-188,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424, ," If you've chosen a number,", 0,310/451 -1655,mexican,"115 ilstcol ""1"" ilstcity ""1"" ilstcity ""1""",0.0
-189,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,212/307 -7311,continental,24 errilla,aquavit,'13 w. 54th st. ',` new york ',0.0
-190,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 izational,0.0
-191, ,' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223 _.london,` coffee bar ',` 816 0TH ave. between 61st and 62nd sts . ',` new y,215/741 -5200,` tea bar ',222 outherncol name,0.0
-192, ," To convert a new type of city, simply type:",` new york ',212/753 -5100,` coffee bar ',223 _.london,bistango,' 1141 peachtree st. ',atlanta,406/724 -0901,mediterranean,386 braska-new-island col,0.0
-193, ," To convert a new type of city, simply type:", ,212/753 -5100,` coffee bar ',223 _.london,` redstone ',3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',"` redstone \ redstone,bld. '",0.0
-194, ," To convert a new type of city, simply type:", , type,` coffee bar ',223 _.london,` perry \ 's ',' 1944 union st.,` san francisco ',415/922 -9230,american,4501 NetMessage,0.0
-195,' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak house ',` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0.0
-196,72 ' 2720 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ___________________________LARGE LOCATION, ,` popover café ',* 561 amsterdam ave. between 82nd and 83rd sts . ',` new york ',212/595 -8555,american,"330 ˈʊn.r., n.r. n., [ˈšN.R.,] '",0.0
-197, LARA HOSPITAL (1101 8th St. NE Suite A12 - St.,` las vegas ',702/734 -0410,` steak houses ',72 ___________________________LARGE LOCATION, ,` bertolini \ 's ',' 545 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 mittedlynocol name !BART_DATABASE_FILE:$0,0.0
-198,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,remi,' 3rd st. promenade ',` santa monica ',310/393,italian,159 -3082,0.0
-199,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` ibrant cafe ',' 503 3rd ave. between 60th and 61st sts . ',` new york ',` new york ',` coffee bar ',226 mopotoDOTA type,0.0
-200,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',` 4th st. ',` los angeles ',310/451 -1655,mexican,116 ************************ BEGIN PROGRAMS************************ * 1. Create a new directory on the current computer. * 2. Move all current,0.0
-201,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` steak houses ',' 1280 las vegas blvd. s ',` las vegas ',' 709/779 -0410,` steak houses ',72 𒌼-MTR2-SELL-ID-COUNTER-,0.0
-202, ,' 4th st. ',` los angeles ',310/451 -1655,mexican,116 **************************,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,158 ��,158 ��,0.0
-203, , **NOTE: This is just an example of using 'locale'. If you want to change it then,` los angeles ',310/451 -1655,mexican,116 **************************,` lattanzi ristorante ',' 363 w. 53nd st. ',` new tatwurst ',212/315 -0980,italian,287 izenscol name,0.0
-204,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,` steakhouses ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,0.0
-205,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431, ," With the above codes, $10, $25, and $50 (based on the values of each column) are the average amount of", 0,702/734 -0410,` steak houses ',72,0.0
-206,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,415/989 -7154,french,109 olulu CITY type,` masa \ 's ',' 648 bush st. ',` san francisco ',0.0
-207,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` corrado Cafe ',' 03810 4th ave. between 60th and 62nd sts . ',` new york ',212/752 -5100,` coffee bar ',223,0.0
-208,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` breakfast ',' 3555 las vegas blvd. s ',` las vegas,682/733 -3111,` coffee shops/diners ',431 tty CHAR ` 6869933797969,0.0
-209,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 ��,0.0
-210,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` lattanzi ristorante ',' 367 w. 50th st. ',` new york ',216/315 -0980,italian,282 ˈ lälkehrs ',0.0
-211,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,ryancol,' 14th st. promenade ',` santa monica ',310/393 -5540,italian ` santa monica ',158 ���,0.0
-212,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` perry \ 's 4,' san francisco ',` kansas ',420/922 -8999,american,"500 ... and, then, in two rows, the ""1"" and the """,0.0
-213,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 (1) chwitz-occupied-landmarked. (2) chwitz-occupied-fortified. (3) chwitz- occupied-fortified-ter,0.0
-214,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 0101,0.0
-215,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431, , There are many more than the two in that section., , Table 3.5 – Map names from the, 0,410 0101,0.0
-216,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,' 1st st. telabell ',` santa monica ',310/393 -6545,italian,159 𐐴 𐐴,remi,0.0
-217,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` perry \ 's ','' ' 1944 union st. ',` San Francisco ',506/995,american,506 errilla,0.0
-218, ,' 8th st. ',` los angeles ',310/451 -1655,mexican,"115 ilstcol ""1"" ilstcity ""1"" ilstcity ""1""",palisades,' 1829 peachtree rd. ',atlanta,402/350 -6755,continental,402 Ire,0.0
-219, ," If you've chosen a number,",` los angeles ',310/451 -1655,mexican,"115 ilstcol ""1"" ilstcity ""1"" ilstcity ""1""",bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,____POLICY NOTICES OF SERVICE,0.0
-220,212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ', , For more information contact : taylor.lollie@gmail.com The, 0,404/724 -0901,mediterranean,____POLICY NOTICES OF SERVICE,0.0
-221,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,404/350 -6755,continental,411 olulu,palisades,' 1889 peachtree rd. ',atlanta,0.0
-222,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 Urban,0.0
-223,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` steak houses ',` 1280 las vegas Blvd. s ',` las vegas ',702/734 080 -0410,` steak houses ',4 FORMATION TYPE,0.0
-224,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bally \ 's big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffeters,424 𤎅� (l) (a) (b) (c) 𦃅 (g) (h) (i),0.0
-225,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` bertolini \ 's ',' 3081 las vegas blvd. s ',` las vegas ',1040 ��,italian,622 ��,0.0
-226,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,' bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,407 olulu,0.0
-227,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` border grill ',' 4th st. ',` los angel,310/451 -1655,mexican,116 ilogyMESSAGE NAME,0.0
-228,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` perry \ 's ',' 1945 union st. ',` san francisco ',415/922 -9022,american,506 _. ',0.0
-229,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` lattanzi ristorante ',` lucentanzi ',` albino ',208/315 -1032,646 w. 48th st. ',279 ibloc,0.0
-230,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage .................................. 3261 NetMessage .................................. 442 NetMessage .................................. 3264 ----------------------------------------------------------------------------- NetMessage .................................. 443 NetMessage ................................,0.0
-231,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,"""New York City...""",' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 - 'popover...col-new-york-City,0.0
-232,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' perry \ 's ',' 1964' st. ',` francisco ',506/975 -9022,american,506 _.,0.0
-233,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` lattanzi ristorante ',' 634 w. 31st st. ',` new york ',206/312 -1009,italian,283 𐃹�圓 name,0.0
-234,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,' steak house ',' 4800 ri. s ',` las vegas ',3281/3281 -0422,` steak houses ',72 ***************************** *****************,0.0
-235,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ibrary.,0.0
-236, ,' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,"386 _.NETTO , ' ' , ' ' , ' '",0.0
-237, ," With the above codes, $10, $25, and $50 (based on the values of each column) are the average amount of",` las vegas ',702/734 -0410,` steak houses ',72,aquavit,-21 w. 58th st. ',` new york ',212/507 -7311,continental,24 paralleled,0.0
-238,415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',` lattanzi ristorante ',` 369 ' 71st St. ',` name,212/315 -0990,' new york,' 3rd St. ',0.0
-239,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,' cebuplas las vegas blvd.,' 3611 las vegas blvd. s ',` las vegas ',421 -417,italian,427 erennipal,0.0
-240,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,remi,' 3rd st. fazoli ',` santa,310/393 -6545,italian,159 izzy,0.0
-241,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ilstl,0.0
-242,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 3rd st. ',` new york ',212/315 -0980,italian,283 𐌗然 𐌗然 𐌗然 �� col,0.0
-243,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,' perry \ 's ',' 1944 union st. ',` san francisco ',414/922 -9022,american,517 ibrary,0.0
-244,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` coffee shops/diners ',' 3555 las vegas blvd. s ',515 *,514,495 _col. s ',495 _col. s ',0.0
-245,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bally \ 's big kitchen ',` 3850 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,425 izationalColSNameVal ` bally \ 's big kitchen ',0.0
-246,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` corrado cafe ',222 ' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/735 -8100,` coffee bar ',222 iversity,0.0
-247, ,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 0101,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ?,0.0
-248, , There are many more than the two in that section.,atlanta,404/350 -6755,continental,410 0101,` steak houses ',' 2880 las vegas BLVD blvd. s ',` las vegas ',733/734,` steaks ',52 Ire,0.0
-249, , There are many more than the two in that section., ,404/350 -6755,continental,410 0101,` corrado cafe ',' 1040 3rd ave. between 60th and 61st sts ..',` new york ',242/773 -5100,` coffee table ',For larger types like our list of 5th- and 6th-year old people are available in our listings.,0.0
-250, , There are many more than the two in that section., , Table 3.5 – Map names from the,continental,410 0101, , When, 0,242/773 -5100,` coffee table ',For larger types like our list of 5th- and 6th-year old people are available in our listings.,0.0
-251,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 310/316 -0960,ogeneous,` ogeneous,` ogeneous,' 352 ' 6. 6th st. ',` i,0.0
-252,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` masa \ 's ',` san francisco ',` san francisco,415/989 -7154,french,106 NetMessage. 5.5.5.6(2),0.0
-253,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` lattanzi ristorante ',` 362 -0960,` new york ',208/315 -0980,italian,285,0.0
-254,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` lattanzi ristorante ',` 365 w. 46th st. ',` new york ',162/301 -0870,italian,273 _. (BOSS. CITY NAME) ' UNIVERSERTO MONTREAL ',0.0
-255, ,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,____POLICY NOTICES OF SERVICE,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ailability,0.0
-256, , For more information contact : taylor.lollie@gmail.com The,atlanta,404/724 -0901,mediterranean,____POLICY NOTICES OF SERVICE,` nalax \'rbar ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,char. s ',,0.0
-257,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 riott,0.0
-258,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,414 𒀂 palisades GEN. { NAME,0.0
-259,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` bally \ 's big kitchen ',` 3645 las vegas BLVD. s ',` las vegas ',709/739 -4202,buffets,424 errilla,0.0
-260,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` border grill ',` 4th st. ',` los angeles ',roman,roman,' ' roman col col col ' roman ' type CHAR ' ' roman col col,0.0
-261,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` perry \ 's ',` San francisco ',"1,2,4,2",415/922 -9022,austrian,507 ��,0.0
-262,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` riCafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',214/751 -5151,` coffee bar ',223 illyCOR ri,0.0
-263,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` coffee shops/diners ',` 3555 las vegas blvd. ',` las vegas ',__________________________,` coffee stores/diners ',431 _______________________________,0.0
-264,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` ibalico \ 's ',' 3562 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 umerous,0.0
-265,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` ' ` perry \ 's ',' 1960 union st. ',` san francisco ',415/922 -9022,american,506 osphere \ 's ' ...,0.0
-266,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bertolini \ 's ',` las vegas ',` las vegas ',702/735 -4663,italian,"421 s. s "" '",0.0
-267,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,margarita ',444 Ire,0.0
-268,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` corrado cafe ',` 103 3rd ave. between 62nd and 63rd sts . ',` new york ',214/753 -5100,` coffee bar ',224 NetMessage,0.0
-269,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,' perry \ 's ',' t.pl.org ',' col City of Santa Cruz (CAMARIA),415/922 -9022,american,0.5 ɛ,0.0
-270,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 izational,0.0
-271,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,palaisades,,atlanta,404/350 -6755,continental,410 𐶡 status,0.0
-272,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` bally \ 's big kitchen ',` las vegas ',` las vegas ',701/734 -4111,dupets,424 ibrary,0.0
-273,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,158 ____,0.0
-274,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` masa \ 's ',' 689 bush st. ',` san francisco ',415/989 -7154,french,107 NetMessage 439 - A HANDBOOK OF BEGINNINGS,0.0
-275,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427, , THE MISSION OF TRANSMISSION AND COMMUNICATION, 0,415/989 -7154,french,107 NetMessage 439 - A HANDBOOK OF BEGINNINGS,0.0
-276,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,721/770,` coffee shops/diners ',520 iphate,` coffee shops ',' 3555 las vegas blvd. s ',` las vegas ',0.0
-277,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` the diner ',` 3555 las vegas blvd. s ',` las vegas ',2049,` coffee shops/diners ',431 oubtedly,0.0
-278,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 362 d. 37th st. ',` new york ',212/315 -0980,italian,284 ��,0.0
-279,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` popover ',' 544 amsterdam ave. between 3rd and 4th sts . ',` new york ',212/595 -8555,american,330 antha,0.0
-280,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` margarita \ ' s mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mj,444 iomabeltype,0.0
-281,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,jerry,' 1925 peachtree rd. ',atlanta,404/350 -6755,continental,610 _.flORAL,0.0
-282,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 Inexaca CITY,0.0
-283,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,bistango,' 1300 september peachtree,atlanta,404/724 -0901,mediciterranean,386 ntilima,0.0
-284,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` border grill ',' 10th st. ',` los angeles ',310/453 -1022,mexican,104 iversal,0.0
-285,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` diner ',' 3555 las vegas blvd. s ',` las vegas ',857/858,` bookstore ',431 ibrary,0.0
-286, ,' 1040 3rd ave. between 60th and 61st sts ..',` new york ',242/773 -5100,` coffee table ',For larger types like our list of 5th- and 6th-year old people are available in our listings.,bistango,' 1009/077 -1018 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 izenscrowd,0.0
-287, , When,` new york ',242/773 -5100,` coffee table ',For larger types like our list of 5th- and 6th-year old people are available in our listings.,' margarita \ ' s mexican cantina ',' 3415 las vegas BLvd. s ',` las vegas ',504/505 -3020,mexican,424 anguage,0.0
-288,212/315 -0980,italian,283,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',` steak houses ',2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',73 NetMessage 722 NetMessage 723 NetMessage 724 NetMessage 725 � * * * * * * ... * ... <-- this is,0.0
-289,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` bertolini \ 's ',' 3540 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 _.,0.0
-290,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283, , Let's go a little deeper in this blog post about a lot of important stuff in C. We covered lots of important points here on the, 0,702/735 -4663,italian,427 _.,0.0
-291,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,212/307 -7311,continental,24 olulu,aquavit,'13 w. 54th st. ',` new york ',0.0
-292,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,212/307 -7311,continental,24 olulu, , We have four maps that are unique to each state; these are the four types of regions and the four types of, 0,0.0
-293,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bugsy \ 's diner ',' 5555 las vegas ' 2111,` las vegas ' 2111,502/505 -5575,` café shops ',` café shops/,0.0
-294,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` margarita \ 's mexican cantina ',` 3160 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage 33 New York City - 8800 Saveria Street #4 NY City,0.0
-295,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',701/794 -86620,mexican,444 NetMessage NAME -------------------------- --- ----------- --- -----------,0.0
-296,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` peterlofli ristorante ',' 1218 W. 51st St. ',` new york ',212/315 -0980,italian,293 ntilcol,0.0
-297,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` small-house-in-the-back ',' 633/972 -2716,` las vegas ',702/739 -4111,buffets,424 errilla,0.0
-298,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` bugsy \ 's diner ',` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 NetMessage4_0211 NetMessage5_0212 NetMessage6_0213 NetMessage7_0214 NetMessage8_0215 NetMessage9_,0.0
-299,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,411 ����� gw ����� gwCol name,0.0
-300,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bertolini \ 's ',' 3905 la vegas . ',` las vegas ',905/908 -4652,italian,421 _.STATICINFO,0.0
-301,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` margarita \ 's mexican cantina ',' 3145 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0.0
-302,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` diners ',` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` chorizo restaurants ',414 ilstys ',0.0
-303,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` border grill ',' 5th St. ',` los angeles ',310/451 -1655,mexican,116 ibrary,0.0
-304,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` lattanzi ristorante ',' 3722 w. 51st st. ',` new york ',212/315 -0980,' italian,284 vironment,0.0
-305,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,409 𐊷 jana MARC mon. ' MARC cola,0.0
-306,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` border grill ',' ' 4th st.,` los angeles ',310/451 -1655,mexican,116 ��,0.0
-307,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,105 NetMessage ' 7 ' ___________________________________________________________________. ',0.0
-308,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,aquavit,'13 w. 56th st. ',` new york ',212/307 -7311,continental,24 ���� ���� ���� ���� ���� �,0.0
-309,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,pueblo,' 1100 peachtree st. ',atlanta,404/734 -0901,' MAIL type,381 ATLANTE,0.0
-310,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` Popover café ',' 555 michigan ave. between 86th and 87th sts . ',` new york ',214/595 -8555,american,330 izational,0.0
-311,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` Masa \ 's ',' 4a5 bush st. ',` san francisco ',441/1349 -3598,french,104 izens,0.0
-312, ,' 689 bush st. ',` san francisco ',415/989 -7154,french,107 NetMessage 439 - A HANDBOOK OF BEGINNINGS,` steak houses ',2075 -10,` las vegas ',72/7200 -0411,` steak houses ',72 NetMessage 2 NetMessage 4 ************ CALLBACK COUNT CALLBACK COUNT ************,0.0
-313, , THE MISSION OF TRANSMISSION AND COMMUNICATION,` san francisco ',415/989 -7154,french,107 NetMessage 439 - A HANDBOOK OF BEGINNINGS,' steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 82 :,0.0
-314,702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ','3',' 3555 las vegas blvd. s ',` las vegas ',633/667 ',` cafe ',431 VERTISEMENT,0.0
-315,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` steak houses ',' 4180 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 iker,0.0
-316,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` bertolini \ 's ',' 63962 las vegas blvd. s ',` las vegas ',701/702 -464 ��,italian,422 -464,0.0
-317,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` border grill ',' 5th st.,` los angeles ',310/451 -1656,mexican,115 oluluLICG,0.0
-318,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,389 _.COMMENTS -08:34:47.946131590 -0914,0.0
-319,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,bibar,' 1830 bulden rd. ',atlanta,404/350 -6755,continental,410 ibrary,0.0
-320,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` lattanzi ristorante ',' 361 w. 45th st. ',` new york ',212/315 -0980,italian,286 ilstILP,0.0
-321,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` steak houses ',' 5214 ',` las vegas ',702/734 -0410,` steak houses ',72 vironment,0.0
-322,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` diner ',' 2155 las vegas blvd. s ',` las vegas ',' 622/622 -3735,` coffee shops/diners/CAL ',435 ��,0.0
-323,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,tjason,' 850. ',spindler,404/971 -09,nordal,415 iker,0.0
-324,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` corrado cafe ',` 1013 3rd ave. from 11th to 16th sts . ',` new york ',212/753 -5100,` coffee bar ',222 _.,0.0
-325,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 ription,0.0
-326,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,aquavit,'14 d. 31st st. ',` new york ',212/307 -7311,continental,24 riott,0.0
-327,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` corrado ',` 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223 Ire,0.0
-328, ,' 3540 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 _.,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ˈlatan\ rd. ',0.0
-329, , Let's go a little deeper in this blog post about a lot of important stuff in C. We covered lots of important points here on the,` las vegas ',702/735 -4663,italian,427 _.,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 errilla,0.0
-330,212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',remi,' 1st julienne ',` santa monica ',308/,italian,159 ormon,0.0
-331,212/307 -7311,continental,24 olulu, ,'13 w. 54th st. ',` new york ',` popover cnn ',' 52 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 𐊽,0.0
-332,212/307 -7311,continental,24 olulu, , We have four maps that are unique to each state; these are the four types of regions and the four types of,` new york ', , The above functions provide two functions to return a collection of type, 0,212/595 -8555,american,330 𐊽,0.0
-333,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,1.0039496418696112,italian,41 iker,` bertolini \ 's ',' 4222 las vegas s ',` las vegas ',0.0
-334,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,pala,'1830 peachtree rd. ',atlanta,404/350 -6755,continental,408 olated,0.0
-335,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` steak houses ',' 2880 las vegas blvd. s ',` las vegas ',772/787,` steak houses ',72 ireland,0.0
-336,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` diner ',` 3555 las vegas blvd. s ',` las,633/635 -955,` coffee shops/diners ',445 iphate,0.0
-337,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,'',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,0.0
-338,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,buffets,424 paralleled, 0,' 2249 las vegas blvd. s ',` las vegas ',702/739 -4691,0.0
-339,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,702/794 -8200,mexican,444 errilla,` mauricio miami. s 1 ',' 3190 las vegas blvd. s ',` las vegas ',0.0
-340,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 _.STATIC_CURRENCY,0.0
-341,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',,` las vegas ',702/794 -8200,mexican,444 Ire,0.0
-342,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` las vegas ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 72 ********************************************************* ************************** **************************,0.0
-343,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116, , (**********************************************************), , ( ************************************************, 0,72 NetMessage 72 ********************************************************* ************************** **************************,0.0
-344,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,' 648 bush st. ',` san francisco ',415/989 -7154,:3 DND NAME ' morris-cola-vancouver,99 chwitzVancouver,` masa \ 's ',0.0
-345,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,𐌍 calgary-cola-city,' 1898 peachtree rd. ',atlanta,404/350 -6755,continental,412 𐌍 michael michael.,0.0
-346,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage _______________________________________ * [CATEGORY] * [TOUCHDOWN] * [DISABLED] ** [RECOMMENDED] * [,0.0
-347,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` coffee shops/diners ',` 3555 las vegas blvd. f ',` las vegas ',702/733 -3121,` coffee shops/diners ',431 ��,0.0
-348,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,' 1835 lans,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,409 ilstabel,0.0
-349,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,aquavit,'13 x. 14th st. ',` new york ',212/307 -7311,continental,24 errillaCol col col col col,0.0
-350,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 ��,0.0
-351,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 vironmentATTR,0.0
-352,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,' american,"571 ****************************** THE FOLLOWING COMPONENTS OF USES OF DEREAL, UNIQUE SINCLIMS and",0.0
-353,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 iversity,0.0
-354,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 _.haddr,0.0
-355,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` corrado cafe ',"\"" 1013 3rd ave. between 60th and 61st sts . \""",` new york ',212/753 -5100,` coffee bar ',223 3rd ave. between 60th and 61st sts . ',0.0
-356,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,palisades,' 1827 parsonia col. ',atlanta,404/350 -6755,continental,415 erenn,0.0
-357,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,'' ',' 3645 las vegas blvd. s ','' ription,602/703 -4111,buffets,424 claimer,0.0
-358,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,"106 *    *    - ' ', ' ', ' ', ' ', new com.google.android.google-dialer-admins-",0.0
-359,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` masa \ ' s ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,0.0
-360,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283, , All of these definitions are supported by code:, ," - #define PARAMS(4, 6) // default is 10 -", 0,106,0.0
-361,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 errilla,` bally \ 's big kitchen ',0.0
-362,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` latinos ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 𐲗知 type,0.0
-363,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` tia,' 3570 las vegas bertolincol. d ',` las vegas ',702/735 -4663,italian,427 erennial,0.0
-364,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` café ',' 3555 las vegas blvd. s ',` las vegas ',702/854,` coffee stations/diners ',431 ��,0.0
-365,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` perry \ 's ',,` san francisco ',1089-971 / 909-921/939 (1940-42),american,509 mopul,0.0
-366,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 ulumCol name,0.0
-367,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,"` muj _______________________________ ', %",' 1944 union st. ',` san francisco ',415/922 -9022,american,506 _.L .S #,0.0
-368,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,aquavit,'17 w. 54th st. ',` new york ',212/307 -7311,continental,24 ɬILOXA name,0.0
-369,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` coffee shops/clothing ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 ONSORED,0.0
-370,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159, ," If it is a store, the name of", 0,702/733 -3111,` coffee shops/diners ',431 ONSORED,0.0
-371,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,822/823 -841,` coffee shop ',431 ��,` coffeeshop/scoops ',` 3555 las vegas. s ',` las vegas ',0.0
-372, ,' 52 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 𐊽,palisades,' 1889 peachtree rd. ',atlvanta,404/350 -6755,continental,410 iker,0.0
-373, , The above functions provide two functions to return a collection of type,` new york ',212/595 -8555,american,330 𐊽,remi,' 1st st. promenade ',` santa monica,310/395-6545,italian,159 izzyColNameNameVal remi,0.0
-374,702/735 -4663,italian,427,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',treble,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,440 𔍹𔍸𔍾𔍾... 𔍹𔍾,0.0
-375,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` lattanzi ristorante ',` 3 6 ',` city ',212/315 -0981,` city ',Bypass-by-code,0.0
-376,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72, , Cypher's code is intended to be bypassed by a code check, 0,212/315 -0981,` city ',Bypass-by-code,0.0
-377,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,702/_734 -0410,` restaurant ',72 braska,` steakhouse ',' 2882 las vegas blvd. s ',` las vegas ',0.0
-378,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,palisades,' 1829 peachtree rd. ',atlanta,416/,continental,414 ilogy,0.0
-379,'', ,` las vegas ',702/739 -4111,buffets,424,"` storelabs ', '",` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` espresso ',431 ibrary,0.0
-380,buffets,424 paralleled, (7/19/2001) - bally \ 's huge kitchen ',' 2249 las vegas blvd. s ',` las vegas ',702/739 -4691,palisades,' 1895 peachtree rd,atlanta,404/350 -7303,continental,411 _. . . . . / . / .,0.0
-381,702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',` bertolini \ 's ',` las vegas ',` las vegas 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18,702/735 -4663,italian,427 galitarian,0.0
-382,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ______________________________,0.0
-383,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bally \ 's big kitchen ',' 4445 texas blvd. s ',` texas ',532/539 -2867,buffets,429 oubtedlyHIS,0.0
-384,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' 4a0 CALL ' ' 3ab ILO NAME: m,' 648 bush st. ',` san francisco ',415/989 -7154,french,106 ?,0.0
-385, ,' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 72 ********************************************************* ************************** **************************,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,414 edInCOIN_,0.0
-386, , (**********************************************************),` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 72 ********************************************************* ************************** **************************,remi,' 3rd st. promenade ',` santa monica ',310/390,italian,159 ibraryVIEW name,0.0
-387, , (**********************************************************), ,702/734 -0410,` steak houses ',72 NetMessage 72 ********************************************************* ************************** **************************,' masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,107 _-1,0.0
-388, , (**********************************************************), , ( ************************************************,` steak houses ',72 NetMessage 72 ********************************************************* ************************** **************************,remi,' 3rd st. promenade ',` santa monica ',312/393 -6595,italian,162 *********************,0.0
-389,' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',` bally \ 's bally car ',' 4060 las vegas blvd. s ',` las vegas ',719/714 -4111,buffets,500 rastructure,0.0
-390,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 icc,0.0
-391,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,california,' 1833 peachtree RD. ',atlanta,404/350 -6755,continental,410 iliol,0.0
-392,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` oasis \ 's ',' 6829_1 ',` san francisco ',443/9042 -,Spanish,107 errilla,0.0
-393,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,'1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 𐒌,0.0
-394,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,palisades,' 1901 peachtree rd. ',atlanta,404/350 -6755,continental,411 𠀲𠔻� 𠔻� 𠔻� 𓲤,0.0
-395,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,b,' 1200 olim,atlanta,404/724 -0901,mediterranean,386 mmaz,0.0
-396,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 archment,0.0
-397,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',701/745 -4536,buffets,430,0.0
-398,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24, , What are the different types of Bally?, ," For many of these examples, the type that stands out is the Bally type. In this", 0,430,0.0
-399,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 galitarian,` bally ` 's big kitchen ',0.0
-400,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,bistango,' 1900 peachtree st. ',atlanta,404/724 -0901,mediciterranean,386 izational,0.0
-401,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,aquavit,'13 w. 44th st. ',` new york ',212/307 -7311,Continental,22 INSTANCE,0.0
-402,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,169 𞽿𞢞Col class name,0.0
-403,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,"` bally \"" s big kitchen \""",',` las vegas ',702/739 -4111,buffets,424 vironment,0.0
-404,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` cafe ',` coffee ',` new york ',214/755 -5100,` blackberry ',225 ONSORED,0.0
-405, ,' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 NetMessage ............................. ************************ ************************ CASTLE RULES ************************ ************************ -1400 -,0.0
-406, , All of these definitions are supported by code:,` san francisco ',415/989 -7154,french,106,palisades,' 1829 peachtree rd. ',atl,404/350 -6755,continental,410 oubtedly,0.0
-407, , All of these definitions are supported by code:, ,415/989 -7154,french,106,bistango,' 1100 peachtree St. ',atlanta,404/724 -0901,mediterranean,386 _._._._._._..,0.0
-408, , All of these definitions are supported by code:, ," - #define PARAMS(4, 6) // default is 10 -",french,106,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 iker,0.0
-409,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,' old west farm ',223 ogylar,0.0
-410,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,aquavit,'13 w. 54th st. ',` new york,212/307 -7311,continental,24 ieval,0.0
-411,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283 ominated,0.0
-412,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,'' steak house ','' 2880 las vegas ',' Las vegas ',702/734,` steaks ',0 ` las vegas ',0.0
-413,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` popover cafe ',' 561 amsterdam ave. between 86th and 87th sts . ',`,212/595 -8555,american,330 _.,
-414,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` taco truck ',' 5555 las vegas blvd. s ',` las vegas ',702/733 -3465,` tacos ',443 ___________________________,
-415,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506, , RAW Paste Data, ," <! DOCTYPE html > <html> <head> <title> Taco Truck, Taco Truck Driver! -- Taco Truck, Taco Truck,", 0,443 ___________________________,
-416,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,,` las vegas \ 's mexican cantina ',632/625 -8200,mexican,' mexican ' LINE CONNECTIONS,\ ' ' ',
-417,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` popover cafe ',' 571 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 ibrary,
-418, ,' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 ONSORED,` corrado cafe ',` 1011 2nd 3rd 4th ',` new york ',217/783 -51800,` café ',231 ieval,
-419, ," If it is a store, the name of",` las vegas ',702/733 -3111,` coffee shops/diners ',431 ONSORED,` steak houses ',' 0802 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _______________________________________________ Sent through the Full Disclosure mailing list https://,
-420,702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',` steak houses ',` Las vegas ',` las vegas ',70 -0410,` steak houses ',52 ilstolindEXC name,
-421,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 vironmentATION SIZELING,
-422,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` bally \ 's restaurant ',' 3645 las vegas blvd. s ',` las vegas ',639/628 -4111,buffets,431 (BGA),
-423,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,105 errilla,
-424,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,387 errilla,
-425, ,` 3 6 ',` city ',212/315 -0981,` city ',Bypass-by-code,` popover coffee ',` 541 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,328 olulu ave. between 86th and 87th sts . ',
-426, , Cypher's code is intended to be bypassed by a code check,` city ',212/315 -0981,` city ',Bypass-by-code,` border grill ',' 4th st. ',` los angeles ',311/451 -1650,mexican,116 braska STATENAME NAME,
-427,702/734 -0410,` steak houses ',72,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',` steak houses ',' 2080 x3 las vegas blvd. s ',` las vegas ',700/710 -0410,` steak houses ',72 𠄏 ' 𠲑 ' 𠔑 ' 𠓿 ' 𓶿,
-428,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` margarita \ 's mexican cantina ',` 3120 las vegas blvd.,` las vegas ',702/794 -8200,mexican,444 _.,
-429,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` machete \ 's mexican cantina ',` 2321 las vegas -9881,` las vegas ',702/794 -8202,machete ',441 Ire,
-430,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` margarita \ 's mexican cantina ','' _.COMPATE_CODE: '0,` las vegas ',702/794 -8200,mexican,"444 _.COMNAME: '1234567890', '123456789', ''",
-431,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,!name,' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,!a onymous,444 onymous,
-432,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _.ltrcol _col_col_val_val_ca. ',
-433,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424, CORE NAME, 0,` las vegas ',702/734 -0410,` steak houses ',72 _.ltrcol _col_col_val_val_ca. ',
-434,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` coffee bar ',221 braskaCaffe,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,
-435,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` coffee bar ',221 braskaCaffe, , We have to say that the first place to go was NEXU. We had the following items (from above) on our list of, 0,212/753 -5100,
-436,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,\ ' st. ',` san francisco ',415/922 -9022,civian,551 𠐎𠊠 col. ' col. ' col. ' col. ' col. ' col. ' col. ' col.,\ \ 'st ',
-437,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` steak house ',' 3072 las vegas blvd. s,` las vegas ',704/734 -0901,` steak houses ',3100 _________________________ 677/677,
-438,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` masa \ 's ',' 648 bush st. `,` san francisco ',414/989 -7154,french,106 oluluINC ' CO.LOCALNAME - LOCATION COOKIE - ENABLE TO EDIT - ENABLE TO EDIT,
-439,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` cenillecassano ',' 1st Ave. ',` salfont ',211/318 -0820,london,281 LOFRELLY CITY ili- CITY london CITY salfont,
-440,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` steak houses ',` las vegas ',` las vegas ',72 ��.,` steak houses ',"72 ��. ��. s """,
-441,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,atlanta,' 1100 quinquennial st. ',atlanta,404/724 -0901,mediterranean,386 _.OOCERAN1,
-442,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',214/4540,american,410 ikerlissa,
-443,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,recci,' 3rd st. promenade ',` santa mon,310/395 -65524,italian,160 olulu,
-444,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,` cafe ',703/744 -3111,` las vegas ',702/733 -3111,` coffee shops/diners ',` cafe ',
-445,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` bally \ 's big kitchen ',` -4111,' las vegas ',-4111,buffet,444 _.x ' .colname,
-446,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` popspace cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 .,
-447,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` _______ ______ ' col_name ` _____ ______ ' col,' 6555 las vegas ',` las vegas ',702/733 -3111,` coffee shops/drinkrooms ',431 󾨹,
-448, ,' 3645 las vegas blvd. s ',` las vegas ',701/745 -4536,buffets,430,` bertolini \ 's ',' 435 las vegas blvd. s ',` las vegas ',702/700 -4662,italian,435 vironment,
-449, , What are the different types of Bally?,` las vegas ',701/745 -4536,buffets,430,` 1014 3rd ave. between 54th and 55th sts . ',` 201 4th ave. between 62nd and 63rd sts . ',` new york ',233/757 -5100,` coffee ',223 ormon,
-450, , What are the different types of Bally?, ,701/745 -4536,buffets,430,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 𐲴中运,
-451, , What are the different types of Bally?, ," For many of these examples, the type that stands out is the Bally type. In this",buffets,430,palisades,' 1880 peachtree rd. ',atlanta,404/350 -6755,continental,210 ��,
-452,' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` lisa ',' 365 w. 46th st. ',` new york ',212,italian,2891 ��,
-453,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` taco/restaurants ',"1851 (18.3) AL ' 3555,2104",` las vegas ',702/733 -3111,` store/restaurants/restaurants ',542 * 2105 (5.0),
-454,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,` steak houses ',` 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',"80 NetMessage ________________ * A group of people who support CODA. The idea, if successful, would probably be to have CODA in",
-455,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,` steak houses ',' 2100 Las vegas blvd. s ',` las vegas ',702/712 -0410,` steak houses ',72 ༪ຈل͜ຈ༽ノ༽аຈل͜ຈ༽ຈ,
-456,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` lattanzi ristorante ',' 4 col. 45th st. ',` old york ',212/315 -0980,italian,282 noxious,
-457,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,dandelion,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,388 𐌒ㅬㅮ,
-458,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,' s ',' 2182 las vegas blvd.* ',` las vegas ',702/718 -4662,italian,470 *aeb889a2-3b2c-4cc9-83834bc14d2c2f,
-459,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410, , ( defun f ( char * buf ) (, 0,702/718 -4662,italian,470 *aeb889a2-3b2c-4cc9-83834bc14d2c2f,
-460,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,` las vegas ',buffets,426 _.bally,` bally ' s big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',
-461,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` las vegas ',buffets,426 _.bally, , The return value of the method should specify that the method is a method reference to the same type as the function, 0,
-462,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _.mca -6100,
-463,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,bantly \ 's big kitchen ',' 627 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,427 ntilvav. s ',
-464,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` bally \ 's big kitchen ',' 3645 las vegas BLvd. s ',` las vegas ',' 724/7281 -4001,buffets,423 errilla,
-465,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` lattanzi ristorante ',' 353/361,` new york ',212/316 -0980,italian,283 ibrary,
-466,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,remi,' 4th st. promenade ',` santa monica ',310/393 -6545,italian,159 uania,
-467,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ilstiel,
-468, ,' 5555 las vegas blvd. s ',` las vegas ',702/733 -3465,` tacos ',443 ___________________________,` coffee shops ',' 2249 las vegas blvd. s ',` las vegas ',702/733 -3111,` cafés ',406 . ' Cafés ',
-469, , RAW Paste Data,` las vegas ',702/733 -3465,` tacos ',443 ___________________________,` bertolini \ 's ',` 3574 taj tengua ryo. s ',` las ve,831/831,italian,430 vironment,
-470, , RAW Paste Data, ,702/733 -3465,` tacos ',443 ___________________________,aquavit,' 7 y. 51st St. ',` new york ',212/307 -7311,continental,24 olulu,
-471, , RAW Paste Data, ," <! DOCTYPE html > <html> <head> <title> Taco Truck, Taco Truck Driver! -- Taco Truck, Taco Truck,",` tacos ',443 ___________________________,aquavit,'13 00. 2d st. ',` new york ',212/307 -7311,continental,24 errillaPOLICY name,
-472,' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,149 umerous,
-473,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,palisades,' 1829 buggery rd. ',atlanta,404/350 -6755,continental,410 ɻ,
-474,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,
-475,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' 1300 littlestar joseph ST,' 1300 peachtree st. ',atlanta,404/724 -0901,mediterranean,387 vironment,
-476,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` bally \ 's big kitchen 16,' 3599 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 oubtedly,
-477,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` house ',' 3555 las vegas Blvd. s ',` las vegas ',1 -2111,` bong ',531 ��,
-478,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,remi,' 3rd st. cham !!! ',` santa monica ',310/393 -6545,italian,159 ' italian,
-479,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,palisades,' 1830 peachtree rd. ',atlanta,404/350 -6755,continental,410 ilstolor,
-480,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,aquavit,'13 w. 54th,` new york ',212/307 -7311,continental,"24 _.1, _.2, _.3 '",
-481,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,aquavit,'13 w. 34th st. ',` new york ',212/305 -7211,continental,24 cedented,
-482,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` bally \ 's big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 NetMessage,
-483,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` las vegas ',` las vegas ',702/734 -0410,` steak houses ',72 iversity. s ',
-484,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` steak houses ',` 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ilynl,
-485,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,' bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 ༼ ༼ ༼ ༼ ▼ ༼ com.ballyhappylin.cols.subreddit.,
-486,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` bugsy \ 's diner ',' 3151 las vegas blvd. v ',` las vegas ',552 -2850,` coffee shops/diners ',449 ONSORED,
-487,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,,,,,,,
-488,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-489, CORE NAME,' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _.ltrcol _col_col_val_val_ca. ',,,,,,,
-490,` coffee bar ',223,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,,,,,,,
-491,` coffee bar ',221 braskaCaffe, ,' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,,,,,,,
-492,` coffee bar ',221 braskaCaffe, , We have to say that the first place to go was NEXU. We had the following items (from above) on our list of,` new york ',212/753 -5100,,,,,,,
-493,' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',,,,,,,
-494,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-495,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,,,,,,,
-496,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,,,,,,,
-497,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-498,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,,,,,,,
-499,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,,,,,,,
-500,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,,,,,,,
-501,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
-502,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-503,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,,,,,,,
-504,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
-505,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,,,,,,,
-506,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,,,,,,,
-507,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,,,,,,,
-508,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,,,,,,,
-509,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,,,,,,,
-510,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
-511,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-512,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-513,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,,,,,,,
-514,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,,,,,,,
-515,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,,,,,,,
-516, ,' 2182 las vegas blvd.* ',` las vegas ',702/718 -4662,italian,470 *aeb889a2-3b2c-4cc9-83834bc14d2c2f,,,,,,,
-517, , ( defun f ( char * buf ) (,` las vegas ',702/718 -4662,italian,470 *aeb889a2-3b2c-4cc9-83834bc14d2c2f,,,,,,,
-518,702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',,,,,,,
-519,` las vegas ',buffets,426 _.bally, ,` 3645 las vegas blvd. s ',` las vegas ',,,,,,,
-520,` las vegas ',buffets,426 _.bally, , The return value of the method should specify that the method is a method reference to the same type as the function,` las vegas ',,,,,,,
-521,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,,,,,,,
-522,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-523,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-524,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,,,,,,,
-525,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,,,,,,,
-526,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,,,,,,,
-527,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
-528,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,,,,,,,
-529,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,,,,,,,
-530,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,,,,,,,
-531,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,,,,,,,
-532,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,,,,,,,
-533,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,,,,,,,
-534,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,,,,,,,
-535,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-536,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
-537,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,,,,,,,
-538,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,,,,,,,
-539,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,,,,,,,
-540,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,,,,,,,
-541,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-542,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-543,` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,,,,,,,
-544,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,,,,,,,
-545,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,,,,,,,
+ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'14 w. 55th st. ',` new darlin ',212/307 -7311,continental,4  type RED val aquavit,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops/diners ',' 3555 las vegas blvd. s ',` las vegas ',534/520 -5511,` coffee shops/diners ',505 -7521,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas * 's big food cart ',722/723 -4130,buffets,4007 vironment,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` breakfast ',' 5471 las vegas blvd. s ',` las vegas ',701/733 -5141,` restaurant/diners ',421 ____________________________ * The 'lac vegas' column contains the name of the owner of the company. It contains the name that used to be the company's name. The 'lac ve,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,' 13 w. 54th st. ',` new yorks ',212/307 -7311,continental,'24  (A+Y) (M+R) (J+W)',0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595,american,330 antha,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 6th st. promenade ',` santa monica ',310/393 -6545,italian,159 retty,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6547,italian,159 ieval,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,106 -9-7-3-5-5 -8-22-10-,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ...>,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _.cxx.s ',0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3570 las vegas Blvd. s ',` las vegas ',7066/7064 -4662,itsalian,426 braska,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1888 peachtree rd. ',atlanta,404/350 -6755,continental,406 _.NY,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',434/350,404/350 -6755,,434 'Columb name Val palisades,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 errilla,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',213/307 -7310,Continental,26      ,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 errilla,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 ieval,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 riott,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 87th and 88th sts . ',` new york ',212/595 -8555,american,330 errilla,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 2270 las,` las vegas ',7100,italian,423 ulum,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,ibex,' 908 peachtree st. ',,406/724 -0901,mediterranean,391 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,403/350 -6755,continent,405  col-lang,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. t ',` las vegas ',702/739 -4111,buffets,424  = ' large-dwelling palanquin ',0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24     ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1860 peachtree rd.',atlanta,404/350 -6755,continental,410 ilsticol,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` flag (reduced the flag to '2') ',' 5th st. ',` los angeles ',310/451 -1655,mexican,116 ibrary,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san,415/989 -7154,french,106 outhernCRUDE name,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york,212/305 -7740,continental,24 errillacol name,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,"What's happening? Let's start with the one that has more than one letter, and the letters that all Latin people are likely to read (e.",0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 antha,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 uania,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,al.fr,' 1880 peachtree rd. ',atlanta,404/350 -6755,continental,410 paralleled,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1013 3rd ave. between 60th and 61st sts . ',,212/753 -5100,` coffee bar ',223 errilla,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,120 iker,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th St. ',` los angeles ',310/451 -1655,mexican,116 igham,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` col-bar-state ',`,` new york ',212/753 -5100,` coffee bar ',223 ARGARIAH PRINCIPLES STATE,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 _.BOLD_WITH(),0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'14 w. 54th st. ',` new york ',212/307 -7311,continental,' 48  val aquavit,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 341 5. 13th st. ',` new york ',213/315 -0980,italian,289  ' colanzo ristorante ',0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1300 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,310 _.locale-id,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1882 peachtree rd. ',atlanta,404/350 -6755,continental,409 errilla,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410         ,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,repa,' 3rd st. tus t' ras,` santa monica ',310/393 -6545,italian,159 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,' 1890 reeblin col colval,atlanta,edan,404/350 -6755,aegles,411 ily,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',` san francisco ',` san francisco ',415/989 -7154,french,106 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 errilla,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,161 _.-1-1-1-2-3-4-5,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 800 peachtree st. ',atlanta,404/724 -0901,mediterranean,400 iomal,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 iker,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,510 iker,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 4313 las vegas blvd. s ',` las vegas ',632/643 -9090,mexican,444  -2882,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th st. ',` los angeles ',110/45 -1350,luchon,105 osphere,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 lA,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 748 bush st. ',` san francisco ',415/989 -7154,french,106 _.name ' ',0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,; st-loc-addr to,' 1944 union st. ',; st-loc-addr to,415/922 -922,american,506 igham,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,'/ ',atlanta,406/800 -0901,high street,386 vironment,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` berland,' 467 w. 46th st. ',` alphabetsa ',213/314 -0990,tengwaffe,` berland,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` 2102 las vegas blvd. s ',' 4121 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _. _ - ' ' ',0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grilling ',4th st. ',` los angeles ',311/451 -1254,mexican,117 !(1.1 /,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',,` las vegas ',702/794 -8200,onymous,486 ------------- ------------- ------------------ ------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,' BALELTON ',607/638 -4111,` las vegas ',628/639 -4111,buffets,427 _.s ',0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` 2280 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 !class,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` Bally \ 's kitchen ',' 3645 las vegas blvd. s ',` las vegas ',202/219 -4226,bally \ 's big kitchen ',424 NetMessage 0023 NetMessage 0100 ,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -0800,mexican,444 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',` 3570 las vegas blvd. s ',` las,702/735 -4663,italian,401 oubtedly,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,nil ` masa \ 's ',` san francisco ',` san francisco ',415/989 -7,french,106 izationalType,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,"\"" perry \ 's '",' 1946 union st. ',` san francisco ',' 1950 -1950,american,546 INSTALLERNAME,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1861-1901;,atlanta,404/350 -6755,continental,415 _.coltype,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bary \ 's town ',' 3845 las vegas blvd. s ',` las,701/7017 -4113,buffets,426 galitarian,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado coffee ',` 801 3rd ave. between 60th and 61st sts . ',,213/753 -5102,` coffee bar ',223 ievalCol name,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new y,212/307 -7311,continental,24 iversityLOCAL Name,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,' popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 _.,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 errilla,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1013 3rd ave. between 60th and 61st sts . - 5100 ',` new y,212/753 -5100,` coffee bar ',223 NetMessage NAME,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 346 w. 61st street. ',` new york ',212/315 -0980,italian,283 oluluCol val ile ile,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ','3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage X3 - 3-,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',,415/922 -9022,american,506 iomoun,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 376 w. 47th st. ',` new york ',210/315 -0610,italian,283 ,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 4533 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427  (3 + [3 ^ 2])  _ (' 1 - [,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,' POPover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,3999   552 amsterdam ave. between 11th and 12th sts . ',0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,702/739 -4111,buffets,424 errilla,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's little little apartment ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 iker,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 braska,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` roxellis ristorante ',` rofriguez ristorante ',` new york ',212/315 -0980,italian,283 _.col,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` san francisco ','' ok \ 's ',` san francisco ',420/7184 -7152,french,106 iker,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,702/739 -4111,buffets,424 onymous,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 ilstolor color,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1101 peachtree st. ',atl,404/724 -0901,mediterranean,386 Ire,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak doors ',' 2650 vegas blvd. s ',` las vegas ',302/302 -0410,` steak houses ',72 -0510,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 NetMessage NAME,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1943 union st. ',` san francisco ',415/922 -9022,american,506 [ ] type,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 phasis,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,' masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,"106 ibrary TYPE CODE ' A string containing either an abbrev string, a non-blank or non-zero value. This indicates that C",0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,"116 xk9.jpg -1257 'COUNTRY names with English names (Czech, Turkish, Greek, Indian, French",0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,' popover cafe ',' 561 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 ogytown AL ' london ',0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th st. ',` los angeles ',310/451 -1655,mexican,116      !,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',' santa chica ',311/393 -6545,italian,160 braska,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 552 amsterdam ave. between 46th and 87th sts . ',` new york ',212/595 -8555,american,330 errilla,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,peachtree rd. ',' 1829 peachtree rd. ',atlanta,404/350 -6,continental,410 izens,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,`,' 2123 texas BLvd. s ',` las vegas ',702/794 -8200,mexican,420 _.,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak house ',` 2520 las vegas blvd. s ',labs '. s ',1270/1280 -0410,` steak houses ',72 _. s ',0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,' border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 retty,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 11st st. ',` los angeles ',310/451 -1655,'1st & 12th st. ',116 vironmentAL,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina. ',444 _. ? ',` las vegas ',702/794 -8200,mexican,444 _. . ',0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 4807. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 30,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,"\"" ' '",' 3555 las vegas blvd. s ',` las vegas ' COD NAME ` restaurant loc ',702/733 -3111,` restaurants/diners ',431 _.s ',0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,385 izens,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 3999 w. 47th st. ',` new york ',212/315 -0980,italian,273 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1796 peachtree rd,atlanta,488/3800 -4445-2589,continental,411 vironment,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los,310/451 -1655,mexican,116 lcol name,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's caf ',' 3555 las vegas blvd. s ',431 _. LOCAL COORDAL name,977-9867-1867,` tea iced latte/tablet ',431 _. LOCAL COORDAL name,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` cookin' cookin table ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ibrary,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` POPOVER ',' 1081 Amsterdam ave. between 85th and 86th sts . ',` new york ',212/595 -8555,american,330 newyork,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _______________________________ _______________________________ _______ LINEAR GEDS: _________________________LINEAR GEDS ____LINEAR GEDS __________________________LINEARC,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 84th st. ',` new york ',212/307 -7311,continental,24  @colname,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` cola cafe ',` 1102 5th ave,` new york ',851 -5100,` coffee bar ',223 NetMessage CATEGORY CHAR * CATEGORY ID,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atl,404/350 -6755,continental,412 osphere,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,bally \ ` las vegas ',' 3901 las vegas blvd. y ',` las vegas ',702/733 -4128,buffets,424 ____LOCALS ____LOCAL name,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 41 st. ',` new nalany ',212/315 -0980,italian,287 edInhui Col class,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3210 las vegas Blvd. s ',` las,702/735 -4663,italian,427 _. .,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` bordeaux ',' 4219 w. 47th st. ',` new york ',211/314 -0980,italian,286 _.BELONCA,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1890 peachtree rd. ',atlanta,403/,continental,411 COCONA tC. ',0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 650 bush st. ',` san francisco ',415 -7154,french,106 ,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 izational,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 55th st. ',` new york,212/305 -7317,continental,24 erenn,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',`,702/739 -4111,buffets,424 errilla,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 pmsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,ipv4-8555,330 ilstolor col NUM LINE,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',212/307 -7312,continental,24 | 12.15 col * @,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,peachtree,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1863 peachtree rd. ',atlanta,404/350 -6755,continental,450 chwitzCol name,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1895 peachtree rd. ',atlanta,404/350 -6755,continental,410 erenn,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 iomarcabel var _,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` Las vegas ',702/739 -4111,buffets,424 ievalcolName,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1003 3rd ave. between 40th and 41st sts . ',` new york ',212/753 -5100,` coffee bar ',223 iphone,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,' Popover Cafe ',' 555 amsterdam ave. between 86th and 87th sts . ',` new york ',213/625 -9355,american,324 Ire,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 iker,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 8th st. ',` los angeles ',311/453 -1655,mexican,116 _.,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,lumin,"' 703,632 peachtree ST. '",atlanta,406/706 -0931,mediterranean,387 col-lumin..l.s,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` doc:unusual ',` las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/drinks ',460  cola,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. prom,` santa monica ',310/393 -6545,italian,159 --------------- --,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1941,` san francisco ',467/922 -9022,american,506 izational,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -65330,italian,161 galitarian,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` latin,' 361 w. 51st st. ',` new york ',212/315 -0980,italian,283 ieval,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444     . . .,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` 's diner ',' 3555 las vegas blvd. s ',` las vegas ',576,` coffee shops/diners ',504 ilstcolname,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bicocol,' 1100 jmexa,atlas,404/724 -0903,mediterranean,386 Ire,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` las vegas ',' 2680 las vegas blvd. s ',` las vegas ',702/734 -0410,` steaks ',72 NetMessage NetMessage type,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` Corrado cafe ',' 1104 8th Ave. between 71st and 72nd sts . ',` new york ',210/740,` coffee bar ',221 ,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` breakfast ',' 3555 las vegas blvd. s ',` las vegas ',707/77 -130,` coffee shops/diners ',487 ,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1014 3rd ave. between 61st and 62nd sts . `,,212/753 -5100,` coffee bar ',223 errilla,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 errilla,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 izational,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` coffee bar ',` 816 0TH ave. between 61st and 62nd sts . ',` new y,215/741 -5200,` tea bar ',222 outherncol name,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1141 peachtree st. ',atlanta,406/724 -0901,mediterranean,386 braska-new-island col,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` redstone ',3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',"` redstone \ redstone,bld. '",0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st.,` san francisco ',415/922 -9230,american,4501 NetMessage,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover caf ',* 561 amsterdam ave. between 82nd and 83rd sts . ',` new york ',212/595 -8555,american,"330 n.r., n.r. n., [N.R.,] '",0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 545 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 mittedlynocol name !BART_DATABASE_FILE:$0,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393,italian,159 -3082,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` ibrant cafe ',' 503 3rd ave. between 60th and 61st sts . ',` new york ',` new york ',` coffee bar ',226 mopotoDOTA type,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',` 4th st. ',` los angeles ',310/451 -1655,mexican,116 ************************ BEGIN PROGRAMS************************ * 1. Create a new directory on the current computer. * 2. Move all current,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 1280 las vegas blvd. s ',` las vegas ',' 709/779 -0410,` steak houses ',72 -MTR2-SELL-ID-COUNTER-,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,158 ,158 ,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 363 w. 53nd st. ',` new tatwurst ',212/315 -0980,italian,287 izenscol name,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,109 olulu CITY type,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado Cafe ',' 03810 4th ave. between 60th and 62nd sts . ',` new york ',212/752 -5100,` coffee bar ',223,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` breakfast ',' 3555 las vegas blvd. s ',` las vegas,682/733 -3111,` coffee shops/diners ',431 tty CHAR ` 6869933797969,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 ,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 367 w. 50th st. ',` new york ',216/315 -0980,italian,282  llkehrs ',0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,ryancol,' 14th st. promenade ',` santa monica ',310/393 -5540,italian ` santa monica ',158 ,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's 4,' san francisco ',` kansas ',420/922 -8999,american,"500 ... and, then, in two rows, the ""1"" and the """,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 (1) chwitz-occupied-landmarked. (2) chwitz-occupied-fortified. (3) chwitz- occupied-fortified-ter,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 1st st. telabell ',` santa monica ',310/393 -6545,italian,159  ,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ','' ' 1944 union st. ',` San Francisco ',506/995,american,506 errilla,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,402/350 -6755,continental,402 Ire,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1889 peachtree rd. ',atlanta,404/350 -6755,continental,411 olulu,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 Urban,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` 1280 las vegas Blvd. s ',` las vegas ',702/734 080 -0410,` steak houses ',4 FORMATION TYPE,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffeters,424  (l) (a) (b) (c)  (g) (h) (i),0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3081 las vegas blvd. s ',` las vegas ',1040 ,italian,622 ,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,' bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,407 olulu,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angel,310/451 -1655,mexican,116 ilogyMESSAGE NAME,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1945 union st. ',` san francisco ',415/922 -9022,american,506 _. ',0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` lucentanzi ',` albino ',208/315 -1032,646 w. 48th st. ',279 ibloc,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage .................................. 3261 NetMessage .................................. 442 NetMessage .................................. 3264 ----------------------------------------------------------------------------- NetMessage .................................. 443 NetMessage ................................,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,"""New York City...""",' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 - 'popover...col-new-york-City,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' perry \ 's ',' 1964' st. ',` francisco ',506/975 -9022,american,506 _.,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 634 w. 31st st. ',` new york ',206/312 -1009,italian,283  name,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' steak house ',' 4800 ri. s ',` las vegas ',3281/3281 -0422,` steak houses ',72 ***************************** *****************,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ibrary.,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,"386 _.NETTO , ' ' , ' ' , ' '",0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,-21 w. 58th st. ',` new york ',212/507 -7311,continental,24 paralleled,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 369 ' 71st St. ',` name,212/315 -0990,' new york,' 3rd St. ',0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,' cebuplas las vegas blvd.,' 3611 las vegas blvd. s ',` las vegas ',421 -417,italian,427 erennipal,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. fazoli ',` santa,310/393 -6545,italian,159 izzy,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ilstl,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 3rd st. ',` new york ',212/315 -0980,italian,283     col,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' perry \ 's ',' 1944 union st. ',` san francisco ',414/922 -9022,american,517 ibrary,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops/diners ',' 3555 las vegas blvd. s ',515 *,514,495 _col. s ',495 _col. s ',0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` 3850 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,425 izationalColSNameVal ` bally \ 's big kitchen ',0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',222 ' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/735 -8100,` coffee bar ',222 iversity,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ?,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 2880 las vegas BLVD blvd. s ',` las vegas ',733/734,` steaks ',52 Ire,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` ogeneous,' 352 ' 6. 6th st. ',` i,' 310/316 -0960,ogeneous,` ogeneous,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',` san francisco ',` san francisco,415/989 -7154,french,106 NetMessage. 5.5.5.6(2),0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 362 -0960,` new york ',208/315 -0980,italian,285,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 365 w. 46th st. ',` new york ',162/301 -0870,italian,273 _. (BOSS. CITY NAME) ' UNIVERSERTO MONTREAL ',0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ailability,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` nalax \'rbar ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,char. s ',,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 riott,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,414  palisades GEN. { NAME,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` 3645 las vegas BLVD. s ',` las vegas ',709/739 -4202,buffets,424 errilla,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',` 4th st. ',` los angeles ',roman,roman,' ' roman col col col ' roman ' type CHAR ' ' roman col col,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',` San francisco ',"1,2,4,2",415/922 -9022,austrian,507 ,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` riCafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',214/751 -5151,` coffee bar ',223 illyCOR ri,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops/diners ',` 3555 las vegas blvd. ',` las vegas ',__________________________,` coffee stores/diners ',431 _______________________________,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` ibalico \ 's ',' 3562 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427 umerous,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` ' ` perry \ 's ',' 1960 union st. ',` san francisco ',415/922 -9022,american,506 osphere \ 's ' ...,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',` las vegas ',` las vegas ',702/735 -4663,italian,"421 s. s "" '",0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,margarita ',444 Ire,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 103 3rd ave. between 62nd and 63rd sts . ',` new york ',214/753 -5100,` coffee bar ',224 NetMessage,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' perry \ 's ',' t.pl.org ',' col City of Santa Cruz (CAMARIA),415/922 -9022,american,0.5 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 izational,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palaisades,,atlanta,404/350 -6755,continental,410  status,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` las vegas ',` las vegas ',701/734 -4111,dupets,424 ibrary,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,158 ____,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops ',' 3555 las vegas blvd. s ',` las vegas ',721/770,` coffee shops/diners ',520 iphate,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` the diner ',` 3555 las vegas blvd. s ',` las vegas ',2049,` coffee shops/diners ',431 oubtedly,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',` 362 d. 37th st. ',` new york ',212/315 -0980,italian,284 ,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover ',' 544 amsterdam ave. between 3rd and 4th sts . ',` new york ',212/595 -8555,american,330 antha,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ ' s mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mj,444 iomabeltype,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,jerry,' 1925 peachtree rd. ',atlanta,404/350 -6755,continental,610 _.flORAL,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 Inexaca CITY,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1300 september peachtree,atlanta,404/724 -0901,mediciterranean,386 ntilima,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 10th st. ',` los angeles ',310/453 -1022,mexican,104 iversal,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` diner ',' 3555 las vegas blvd. s ',` las vegas ',857/858,` bookstore ',431 ibrary,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1009/077 -1018 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 izenscrowd,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,' margarita \ ' s mexican cantina ',' 3415 las vegas BLvd. s ',` las vegas ',504/505 -3020,mexican,424 anguage,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',73 NetMessage 722 NetMessage 723 NetMessage 724 NetMessage 725  * * * * * * ... * ... <-- this is,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',' 5555 las vegas ' 2111,` las vegas ' 2111,502/505 -5575,` caf shops ',` caf shops/,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3160 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage 33 New York City - 8800 Saveria Street #4 NY City,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',701/794 -86620,mexican,444 NetMessage NAME -------------------------- --- ----------- --- -----------,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` peterlofli ristorante ',' 1218 W. 51st St. ',` new york ',212/315 -0980,italian,293 ntilcol,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` small-house-in-the-back ',' 633/972 -2716,` las vegas ',702/739 -4111,buffets,424 errilla,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 NetMessage4_0211 NetMessage5_0212 NetMessage6_0213 NetMessage7_0214 NetMessage8_0215 NetMessage9_,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,411  gw  gwCol name,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 3905 la vegas . ',` las vegas ',905/908 -4652,italian,421 _.STATICINFO,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3145 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` diners ',` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` chorizo restaurants ',414 ilstys ',0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th St. ',` los angeles ',310/451 -1655,mexican,116 ibrary,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 3722 w. 51st st. ',` new york ',212/315 -0980,' italian,284 vironment,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,409  jana MARC mon. ' MARC cola,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' ' 4th st.,` los angeles ',310/451 -1655,mexican,116 ,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,105 NetMessage ' 7 ' ___________________________________________________________________. ',0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 56th st. ',` new york ',212/307 -7311,continental,24      ,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,pueblo,' 1100 peachtree st. ',atlanta,404/734 -0901,' MAIL type,381 ATLANTE,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` Popover caf ',' 555 michigan ave. between 86th and 87th sts . ',` new york ',214/595 -8555,american,330 izational,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` Masa \ 's ',' 4a5 bush st. ',` san francisco ',441/1349 -3598,french,104 izens,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',2075 -10,` las vegas ',72/7200 -0411,` steak houses ',72 NetMessage 2 NetMessage 4 ************ CALLBACK COUNT CALLBACK COUNT ************,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,' steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 NetMessage 82 :,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,'3',' 3555 las vegas blvd. s ',` las vegas ',633/667 ',` cafe ',431 VERTISEMENT,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 4180 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 iker,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 63962 las vegas blvd. s ',` las vegas ',701/702 -464 ,italian,422 -464,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 5th st.,` los angeles ',310/451 -1656,mexican,115 oluluLICG,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,389 _.COMMENTS -08:34:47.946131590 -0914,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,bibar,' 1830 bulden rd. ',atlanta,404/350 -6755,continental,410 ibrary,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 361 w. 45th st. ',` new york ',212/315 -0980,italian,286 ilstILP,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 5214 ',` las vegas ',702/734 -0410,` steak houses ',72 vironment,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` diner ',' 2155 las vegas blvd. s ',` las vegas ',' 622/622 -3735,` coffee shops/diners/CAL ',435 ,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,tjason,' 850. ',spindler,404/971 -09,nordal,415 iker,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1013 3rd ave. from 11th to 16th sts . ',` new york ',212/753 -5100,` coffee bar ',222 _.,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431 ription,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'14 d. 31st st. ',` new york ',212/307 -7311,continental,24 riott,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado ',` 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223 Ire,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 latan\ rd. ',0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 errilla,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 1st julienne ',` santa monica ',308/,italian,159 ormon,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 4222 las vegas s ',` las vegas ',1.0039496418696112,italian,41 iker,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,pala,'1830 peachtree rd. ',atlanta,404/350 -6755,continental,408 olated,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 2880 las vegas blvd. s ',` las vegas ',772/787,` steak houses ',72 ireland,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` diner ',` 3555 las vegas blvd. s ',` las,633/635 -955,` coffee shops/diners ',445 iphate,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` mauricio miami. s 1 ',' 3190 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 _.STATIC_CURRENCY,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',,` las vegas ',702/794 -8200,mexican,444 Ire,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,:3 DND NAME ' morris-cola-vancouver,99 chwitzVancouver,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410, calgary-cola-city,' 1898 peachtree rd. ',atlanta,404/350 -6755,continental,412  michael michael.,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 NetMessage _______________________________________ * [CATEGORY] * [TOUCHDOWN] * [DISABLED] ** [RECOMMENDED] * [,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops/diners ',` 3555 las vegas blvd. f ',` las vegas ',702/733 -3121,` coffee shops/diners ',431 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,' 1835 lans,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,409 ilstabel,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 x. 14th st. ',` new york ',212/307 -7311,continental,24 errillaCol col col col col,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 ,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 vironmentATTR,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,' perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,' american,"571 ****************************** THE FOLLOWING COMPONENTS OF USES OF DEREAL, UNIQUE SINCLIMS and",0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 iversity,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 _.haddr,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',"\"" 1013 3rd ave. between 60th and 61st sts . \""",` new york ',212/753 -5100,` coffee bar ',223 3rd ave. between 60th and 61st sts . ',0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1827 parsonia col. ',atlanta,404/350 -6755,continental,415 erenn,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,'' ',' 3645 las vegas blvd. s ','' ription,602/703 -4111,buffets,424 claimer,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,"106 * * - ' ', ' ', ' ', ' ', new com.google.android.google-dialer-admins-",0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 errilla,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` latinos ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431  type,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` tia,' 3570 las vegas bertolincol. d ',` las vegas ',702/735 -4663,italian,427 erennial,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` caf ',' 3555 las vegas blvd. s ',` las vegas ',702/854,` coffee stations/diners ',431 ,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',,` san francisco ',1089-971 / 909-921/939 (1940-42),american,509 mopul,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159 ulumCol name,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,"` muj _______________________________ ', %",' 1944 union st. ',` san francisco ',415/922 -9022,american,506 _.L .S #,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'17 w. 54th st. ',` new york ',212/307 -7311,continental,24 ILOXA name,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffeeshop/scoops ',` 3555 las vegas. s ',` las vegas ',822/823 -841,` coffee shop ',431 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1889 peachtree rd. ',atlvanta,404/350 -6755,continental,410 iker,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 1st st. promenade ',` santa monica,310/395-6545,italian,159 izzyColNameNameVal remi,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,treble,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,440 ... ,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steakhouse ',' 2882 las vegas blvd. s ',` las vegas ',702/_734 -0410,` restaurant ',72 braska,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atlanta,416/,continental,414 ilogy,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,"` storelabs ', '",` 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` espresso ',431 ibrary,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1895 peachtree rd,atlanta,404/350 -7303,continental,411 _. . . . . / . / .,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',` las vegas ',` las vegas 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18,702/735 -4663,italian,427 galitarian,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386 ______________________________,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 4445 texas blvd. s ',` texas ',532/539 -2867,buffets,429 oubtedlyHIS,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,' 4a0 CALL ' ' 3ab ILO NAME: m,' 648 bush st. ',` san francisco ',415/989 -7154,french,106 ?,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,414 edInCOIN_,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/390,italian,159 ibraryVIEW name,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,' masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,107 _-1,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',312/393 -6595,italian,162 *********************,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's bally car ',' 4060 las vegas blvd. s ',` las vegas ',719/714 -4111,buffets,500 rastructure,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 icc,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,california,' 1833 peachtree RD. ',atlanta,404/350 -6755,continental,410 iliol,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` oasis \ 's ',' 6829_1 ',` san francisco ',443/9042 -,Spanish,107 errilla,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,'1829 peachtree rd. ',atlanta,404/350 -6755,continental,410 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1901 peachtree rd. ',atlanta,404/350 -6755,continental,411    ,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,b,' 1200 olim,atlanta,404/724 -0901,mediterranean,386 mmaz,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 archment,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally ` 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 galitarian,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1900 peachtree st. ',atlanta,404/724 -0901,mediciterranean,386 izational,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 44th st. ',` new york ',212/307 -7311,Continental,22 INSTANCE,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,169 Col class name,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,"` bally \"" s big kitchen \""",',` las vegas ',702/739 -4111,buffets,424 vironment,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` cafe ',` coffee ',` new york ',214/755 -5100,` blackberry ',225 ONSORED,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 NetMessage ............................. ************************ ************************ CASTLE RULES ************************ ************************ -1400 -,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 peachtree rd. ',atl,404/350 -6755,continental,410 oubtedly,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree St. ',atlanta,404/724 -0901,mediterranean,386 _._._._._._..,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506 iker,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,' old west farm ',223 ogylar,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th st. ',` new york,212/307 -7311,continental,24 ieval,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283 ominated,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,'' steak house ','' 2880 las vegas ',' Las vegas ',702/734,` steaks ',0 ` las vegas ',0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 561 amsterdam ave. between 86th and 87th sts . ',`,212/595 -8555,american,330 _.,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,\ ' ' ',,` las vegas \ 's mexican cantina ',632/625 -8200,mexican,' mexican ' LINE CONNECTIONS,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',' 571 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 ibrary,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` corrado cafe ',` 1011 2nd 3rd 4th ',` new york ',217/783 -51800,` caf ',231 ieval,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 0802 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 _______________________________________________ Sent through the Full Disclosure mailing list https://,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` Las vegas ',` las vegas ',70 -0410,` steak houses ',52 ilstolindEXC name,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 vironmentATION SIZELING,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's restaurant ',' 3645 las vegas blvd. s ',` las vegas ',639/628 -4111,buffets,431 (BGA),0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,105 errilla,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,387 errilla,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover coffee ',` 541 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,328 olulu ave. between 86th and 87th sts . ',0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',311/451 -1650,mexican,116 braska STATENAME NAME,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 2080 x3 las vegas blvd. s ',` las vegas ',700/710 -0410,` steak houses ',72  '  '  '  ' ,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',` 3120 las vegas blvd.,` las vegas ',702/794 -8200,mexican,444 _.,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` machete \ 's mexican cantina ',` 2321 las vegas -9881,` las vegas ',702/794 -8202,machete ',441 Ire,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ','' _.COMPATE_CODE: '0,` las vegas ',702/794 -8200,mexican,"444 _.COMNAME: '1234567890', '123456789', ''",0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,!name,' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,!a onymous,444 onymous,0
+` perry \ 's ',' 1944 union st. ',` san francisco ',415/922 -9022,american,506,\ \ 'st ',\ ' st. ',` san francisco ',415/922 -9022,civian,551  col. ' col. ' col. ' col. ' col. ' col. ' col. ' col.,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak house ',' 3072 las vegas blvd. s,` las vegas ',704/734 -0901,` steak houses ',3100 _________________________ 677/677,0
+` masa \ 's ',' 648 bush st. ',` san francisco ',415/989 -7154,french,106,` masa \ 's ',' 648 bush st. `,` san francisco ',414/989 -7154,french,106 oluluINC ' CO.LOCALNAME - LOCATION COOKIE - ENABLE TO EDIT - ENABLE TO EDIT,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` cenillecassano ',' 1st Ave. ',` salfont ',211/318 -0820,london,281 LOFRELLY CITY ili- CITY london CITY salfont,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` las vegas ',` las vegas ',72 .,` steak houses ',"72 . . s """,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,atlanta,' 1100 quinquennial st. ',atlanta,404/724 -0901,mediterranean,386 _.OOCERAN1,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popover cafe ',` 551 amsterdam ave. between 86th and 87th sts . ',` new york ',214/4540,american,410 ikerlissa,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,recci,' 3rd st. promenade ',` santa mon,310/395 -65524,italian,160 olulu,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` cafe ',703/744 -3111,` las vegas ',702/733 -3111,` coffee shops/diners ',` cafe ',0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` -4111,' las vegas ',-4111,buffet,444 _.x ' .colname,0
+` popover cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330,` popspace cafe ',' 551 amsterdam ave. between 86th and 87th sts . ',` new york ',212/595 -8555,american,330 .,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` _______ ______ ' col_name ` _____ ______ ' col,' 6555 las vegas ',` las vegas ',702/733 -3111,` coffee shops/drinkrooms ',431 ,0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',' 435 las vegas blvd. s ',` las vegas ',702/700 -4662,italian,435 vironment,0
+` corrado cafe ',' 1013 3rd ave. between 60th and 61st sts . ',` new york ',212/753 -5100,` coffee bar ',223,` 1014 3rd ave. between 54th and 55th sts . ',` 201 4th ave. between 62nd and 63rd sts . ',` new york ',233/757 -5100,` coffee ',223 ormon,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 ,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1880 peachtree rd. ',atlanta,404/350 -6755,continental,210 ,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lisa ',' 365 w. 46th st. ',` new york ',212,italian,2891 ,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` taco/restaurants ',"1851 (18.3) AL ' 3555,2104",` las vegas ',702/733 -3111,` store/restaurants/restaurants ',542 * 2105 (5.0),0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',"80 NetMessage ________________ * A group of people who support CODA. The idea, if successful, would probably be to have CODA in",0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',' 2100 Las vegas blvd. s ',` las vegas ',702/712 -0410,` steak houses ',72 ,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 4 col. 45th st. ',` old york ',212/315 -0980,italian,282 noxious,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,dandelion,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,388 ,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 _.mca -6100,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,bantly \ 's big kitchen ',' 627 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,427 ntilvav. s ',0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',' 3645 las vegas BLvd. s ',` las vegas ',' 724/7281 -4001,buffets,423 errilla,0
+` lattanzi ristorante ',' 361 w. 46th st. ',` new york ',212/315 -0980,italian,283,` lattanzi ristorante ',' 353/361,` new york ',212/316 -0980,italian,283 ibrary,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 4th st. promenade ',` santa monica ',310/393 -6545,italian,159 uania,0
+` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116,` border grill ',' 4th st. ',` los angeles ',310/451 -1655,mexican,116 ilstiel,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` coffee shops ',' 2249 las vegas blvd. s ',` las vegas ',702/733 -3111,` cafs ',406 . ' Cafs ',0
+` bertolini \ 's ',' 3570 las vegas blvd. s ',` las vegas ',702/735 -4663,italian,427,` bertolini \ 's ',` 3574 taj tengua ryo. s ',` las ve,831/831,italian,430 vironment,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,' 7 y. 51st St. ',` new york ',212/307 -7311,continental,24 olulu,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 00. 2d st. ',` new york ',212/307 -7311,continental,24 errillaPOLICY name,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,149 umerous,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1829 buggery rd. ',atlanta,404/350 -6755,continental,410 ,0
+` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444,` margarita \ 's mexican cantina ',' 3120 las vegas blvd. s ',` las vegas ',702/794 -8200,mexican,444 errilla,0
+bistango,' 1100 peachtree st. ',atlanta,404/724 -0901,mediterranean,386,' 1300 littlestar joseph ST,' 1300 peachtree st. ',atlanta,404/724 -0901,mediterranean,387 vironment,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen 16,' 3599 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 oubtedly,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` house ',' 3555 las vegas Blvd. s ',` las vegas ',1 -2111,` bong ',531 ,0
+remi,' 3rd st. promenade ',` santa monica ',310/393 -6545,italian,159,remi,' 3rd st. cham !!! ',` santa monica ',310/393 -6545,italian,159 ' italian,0
+palisades,' 1829 peachtree rd. ',atlanta,404/350 -6755,continental,410,palisades,' 1830 peachtree rd. ',atlanta,404/350 -6755,continental,410 ilstolor,0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 54th,` new york ',212/307 -7311,continental,"24 _.1, _.2, _.3 '",0
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24,aquavit,'13 w. 34th st. ',` new york ',212/305 -7211,continental,24 cedented,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,` bally \ 's big kitchen ',` 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424 NetMessage,0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` las vegas ',` las vegas ',702/734 -0410,` steak houses ',72 iversity. s ',0
+` steak house ',' 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72,` steak houses ',` 2880 las vegas blvd. s ',` las vegas ',702/734 -0410,` steak houses ',72 ilynl,0
+` bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424,' bally \ 's big kitchen ',' 3645 las vegas blvd. s ',` las vegas ',702/739 -4111,buffets,424       com.ballyhappylin.cols.subreddit.,0
+` bugsy \ 's diner ',' 3555 las vegas blvd. s ',` las vegas ',702/733 -3111,` coffee shops/diners ',431,` bugsy \ 's diner ',' 3151 las vegas blvd. v ',` las vegas ',552 -2850,` coffee shops/diners ',449 ONSORED,0

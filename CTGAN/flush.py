@@ -3,7 +3,28 @@ import glob
 import shutil
 import time
 
-val1 = input("Flush training or generation? [t/g]: ")
+val0 = input("Flush matching job files? [y/n]")
+if val0 == "y":
+    if os.listdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/'):
+        shutil.rmtree(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/Augmentation')
+        shutil.rmtree(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/CTGAN')
+        shutil.rmtree(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/GPT-2_ft')
+        shutil.rmtree(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/GPT-2_nft')
+        os.mkdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/Augmentation')
+        os.mkdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/CTGAN')
+        os.mkdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/GPT-2_ft')
+        os.mkdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/GPT-2_nft')
+    if os.path.exists(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/run_match_jobs.sh"):
+        os.remove(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/run_match_jobs.sh")
+    if os.path.exists(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables"):
+        shutil.rmtree(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables")
+        os.mkdir(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables")
+    if os.path.exists(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results"):
+        shutil.rmtree(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results")
+        os.mkdir(r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results")
+        
+
+val1 = input("Flush training or generation? [t/g/n]: ")
 if val1 == "t":
     if os.listdir(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/jobs/'):
         files = glob.glob(r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/jobs/*')

@@ -1,5 +1,4 @@
 import argparse
-from numpy import NaN
 import pandas as pd
 import os
 import py_entitymatching as em
@@ -42,12 +41,12 @@ job_name = hp.dataset + os.sep
 dataset_name = hp.dataset.replace(os.sep, "_")
 
 # Real dataset directory
-datasets_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets' + os.sep
+datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets' + os.sep
 
 # What type of generator created our data
 # CTGAN
 if hp.generator_type == 0:
-    synth_dir = r'C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets_Synth\Magellan\CTGAN' + os.sep
+    synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/CTGAN/'
 # GPT-2 ft
 elif hp.generator_type == 1:
     synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/GPT-2_ft/'
@@ -380,7 +379,7 @@ table1 = A_meta.add_prefix("ltable_")
 table2 = B_meta.add_prefix("rtable_")
 table_C = pd.concat([table1, table2, truth_table], axis=1)
 
-temp_C_dir = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Datasets\Temp_Tables" + os.sep
+temp_C_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables" + os.sep
 
 path_to_table_C = temp_C_dir
 path_to_table_C += generator_name[hp.generator_type] + os.sep
@@ -562,47 +561,49 @@ generator_type_name = [
 
 result_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results/"
 
-# Make result directories
+
+# Make result files
 for i in range(0, 8):
-    save_score_path = result_dir + dataset_scenario_path[i] + os.sep
-    os.makedirs(dataset_scenario_path[i], exist_ok=True)
+    save_score_path = result_dir + dataset_scenario_path[i] + ".csv"
+    if os.path.exists(save_score_path):
+        continue
+    new_index = list(datasets_paths)
+    new_index.insert(0, "Generator")
+    temp_result_file = pd.DataFrame(columns = new_index)
+    temp_result_file = temp_result_file.set_index('Generator')
+    if i < 4:
+        temp_result_file = temp_result_file.reindex(generator_type_name)
+    else:
+        d_generator_type_name = list(generator_type_name)
+        d_generator_type_name.insert(1, "d_Baseline")
+        temp_result_file = temp_result_file.reindex(d_generator_type_name)
+    temp_result_file = temp_result_file.fillna(0.0)
+    temp_result_file.to_csv(save_score_path, mode='w', encoding='utf-8', index_label="Generator")
+
+
 
 # TODO: If the file bugs out from multiple processes, use a while_loop which checks for last time of modification to the result file.
 # If one of the baseline scenarios, create the baseline across every <data_scenario> data_set.
 if job_type == 0:
     for i in range(0, 8):
-        save_score_path = result_dir + dataset_scenario_path[i] + os.sep + "result.csv"
-        if os.path.exists(save_score_path):
-            result_table = pd.read_csv(save_score_path, encoding="utf-8")
-            if result_table.loc["Baseline", dataset_name] is not NaN:
-                continue
-        else:
-            if i < 4:
-                result_table = pd.DataFrame(columns = datasets_paths, index = generator_type_name)
-            else:
-                d_generator_type_name = list(generator_type_name)
-                d_generator_type_name.insert(1, "d_Baseline")
-                result_table = pd.DataFrame(columns = datasets_paths, index = d_generator_type_name)
-        new_result = pd.DataFrame([f_score], columns=dataset_name, index="Baseline")
-        result_table = pd.concat([result_table, new_result])
-        result_table.to_csv(save_score_path, mode='w', encoding='utf-8')
+        save_score_path = result_dir + dataset_scenario_path[i] + ".csv"
+        result_table = pd.read_csv(save_score_path, encoding="utf-8", index_col="Generator")
+        if result_table.at["Baseline", dataset_name] == 0.0:
+            new_result = pd.DataFrame([f_score], columns=[dataset_name], index=["Baseline"])
+            result_table.update(new_result)
+            result_table.to_csv(save_score_path, mode='w', encoding='utf-8', index_label="Generator")
 elif job_type == 5:
     for i in range(4, 8):
-        save_score_path = result_dir + dataset_scenario_path[i] + os.sep + "result.csv"
-        if os.path.exists(save_score_path):
-            result_table = pd.read_csv(save_score_path, encoding="utf-8")
-            if result_table.loc["d_Baseline", dataset_name] is not NaN:
-                continue
-        else:
-            d_generator_type_name = list(generator_type_name)
-            d_generator_type_name.insert(1, "d_Baseline")
-            result_table = pd.DataFrame(columns = datasets_paths, index = d_generator_type_name)
-        new_result = pd.DataFrame([f_score], columns=dataset_name, index="d_Baseline")
-        result_table = pd.concat([result_table, new_result])
-        result_table.to_csv(save_score_path, mode='w', encoding='utf-8')
+        save_score_path = result_dir + dataset_scenario_path[i] + ".csv"
+        result_table = pd.read_csv(save_score_path, encoding="utf-8", index_col="Generator")
+        if result_table.at["d_Baseline", dataset_name] == 0.0:
+            new_result = pd.DataFrame([f_score], columns=[dataset_name], index=["d_Baseline"])
+            result_table.update(new_result)
+            result_table.to_csv(save_score_path, mode='w', encoding='utf-8', index_label="Generator")
 else:
-    save_score_path = result_dir + dataset_scenario_name[job_type] + os.sep + "result.csv"
-    result_table = pd.read_csv(save_score_path, encoding="utf-8")
-    new_result = pd.DataFrame([f_score], columns=dataset_name, index=generator_name[hp.generator_type])
-    result_table = pd.concat([result_table, new_result])
-    result_table.to_csv(save_score_path, mode='w', encoding='utf-8')
+    save_score_path = result_dir + dataset_scenario_name[job_type] + ".csv"
+    result_table = pd.read_csv(save_score_path, encoding="utf-8", index_col="Generator")
+    if result_table.at[generator_name[hp.generator_type], dataset_name] == 0.0:
+        new_result = pd.DataFrame([f_score], columns=[dataset_name], index=[generator_name[hp.generator_type]])
+        result_table.update(new_result)
+        result_table.to_csv(save_score_path, mode='w', encoding='utf-8', index_label="Generator")

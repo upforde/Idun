@@ -1,0 +1,64 @@
+ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',310/276 -0615,american,102 ,` grill the ','22 hawthorne st. ',` beverly hills ',415-777-9779,californian,9 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+aquavit,' 747 9th ave. between 50th and 51st sts . ',` new york ',212/307 -7311,continental,24 ,aquavit,' 747 ninth ave. ',` new york city ',212-245-7992,greek,24 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` uncle nick \ 's ','13 w. 54th st. ',` new york ',212/315 -1726,mediterranean,64 ,` uncle nick \ 's ',' 747 ninth ave. ',` new york city ',212-307-7311,greek,64 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',atlanta,310/276 -0615,american,9 ,` buckhead diner ',' 9560 dayton way ',` beverly hills ',415-777-9779,` american ( traditional ) ',78 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,mediterranean,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` la cote basque ','60 w. 55th st. between 5th and 6th ave. ',` new york ',212/688 -6525,french,40 ,` la cote basque ','60 w. 55th st. ',` new york city ',212-688-6525,` french ( classic ) ',40 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` uncle nick \ 's ',' 747 9th ave. between 50th and 51st sts . ',` new york ',212/315 -1726,mediterranean,64 ,` uncle nick \ 's ',' 747 ninth ave. ',` new york city ',212-245-7992,greek,64 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` uncle nick \ 's ',' 747 9th ave. between 50th and 51st sts . ',` new york ',212/315 -1726,mediterranean,24 ,aquavit,' 747 ninth ave. ',` new york city ',212-245-7992,scandinavian,64 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+aquavit,'13 w. 54th st. ',` new york ',212/307 -7311,continental,24 ,aquavit,'13 w. 54th st. ',` new york city ',212-307-7311,scandinavian,24 ,1
+` le montrachet ',' 3000 w. paradise rd. ',` las vegas ',702/732 -5111,continental,69 ,` le montrachet bistro ',' 3000 paradise rd. ',` las vegas ',702-732-5651,` french bistro ',69 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1
+` buckhead diner ',' 3073 piedmont road ',atlanta,404/262 -3336,american,78 ,` buckhead diner ',' 3073 piedmont rd. ',atlanta,404-262-3336,` american ( new ) ',78 ,1
+` hawthorne lane ','22 hawthorne st. ',` san francisco ',415/777 -9779,american,102 ,` hawthorne lane ','22 hawthorne st. ',` san francisco ',415-777-9779,californian,102 ,1
+` grill on the alley ',' 9560 dayton way ',` los angeles ',310/276 -0615,american,9 ,` grill the ',' 9560 dayton way ',` beverly hills ',310-276-0615,` american ( traditional ) ',9 ,1

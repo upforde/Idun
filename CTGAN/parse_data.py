@@ -2,6 +2,7 @@ import argparse
 import pandas as pd
 import os
 from distutils import util
+from string import printable
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
@@ -108,30 +109,57 @@ def ditto_reformater(data):
     for line in data.splitlines():
         table_order = 0
         for side in line.split("\t"):
+            if len(line.split("\t")) != 3:
+                break
             for word in side.split(" "):
-                if word == "COL":
-                    if value_writer != "" and value_writer != " ":
-                        values.append(value_writer)
-                    elif not starting_row:
-                        values.append(float("NaN"))
-                    else:
-                        starting_row = False
-                    read_column = True
-                    read_values = False
-                elif word == "VAL":
-                    read_column = False
-                    read_values = True
-                    first_word = True
-                    value_writer = ""
-                else:
-                    if read_column:
-                        columns.append(word)
-                    elif read_values:
-                        if first_word:
-                            value_writer = word
-                            first_word = False
+                if hp.generator_type == 4:
+                    if word == "COL" or "COL" in word:
+                        if value_writer != "" and value_writer != " ":
+                            values.append(value_writer)
+                        elif not starting_row:
+                            values.append(float("NaN"))
                         else:
-                            value_writer += " " + word
+                            starting_row = False
+                        read_column = True
+                        read_values = False
+                    elif word == "VAL":
+                        read_column = False
+                        read_values = True
+                        first_word = True
+                        value_writer = ""
+                    else:
+                        if read_column:
+                            columns.append(word)
+                        elif read_values:
+                            if first_word:
+                                value_writer = word
+                                first_word = False
+                            else:
+                                value_writer += " " + word
+                else:
+                    if word == "COL":
+                        if value_writer != "" and value_writer != " ":
+                            values.append(value_writer)
+                        elif not starting_row:
+                            values.append(float("NaN"))
+                        else:
+                            starting_row = False
+                        read_column = True
+                        read_values = False
+                    elif word == "VAL":
+                        read_column = False
+                        read_values = True
+                        first_word = True
+                        value_writer = ""
+                    else:
+                        if read_column:
+                            columns.append(word)
+                        elif read_values:
+                            if first_word:
+                                value_writer = word
+                                first_word = False
+                            else:
+                                value_writer += " " + word
             values.append(value_writer)
             value_writer = ""
             starting_row = True
@@ -201,6 +229,8 @@ else:
     table_A = table_A.add_prefix("ltable_")
     table_B = table_B.add_prefix("rtable_")
     finale_data = pd.concat([table_A, table_B, truth_table], axis=1)
+    finale_data = finale_data.applymap(lambda y: ''.join(filter(lambda x: 
+            x in printable, str(y))), na_action='ignore')
 
 check_dir = datasets_goal_dir.split("train")[0]
 os.makedirs(check_dir, exist_ok=True)
@@ -209,4 +239,4 @@ if ditto_format:
     with open(datasets_goal_dir, "a", encoding="utf-8") as file:
         file.write(finale_data)
 else:
-    finale_data.to_csv(datasets_goal_dir)
+    finale_data.to_csv(datasets_goal_dir, encoding="utf-8", index=False)

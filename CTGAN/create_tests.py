@@ -1,6 +1,6 @@
 import os
 
-def make_text(output, dataset, job_type=0, generator_type=0):
+def make_text(output, dataset, job_type=0, generator_mode=0):
     generator_text = [
         r"CTGAN",
         r"GPT-2_ft",
@@ -22,7 +22,7 @@ def make_text(output, dataset, job_type=0, generator_type=0):
     ]
 
     script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Magellan_testing.py"
-    python_line = f"python3 \"{script_path}\" --dataset=\"{dataset}\" --job_type={job_type} --generator_type={generator_type}"
+    python_line = f"python3 \"{script_path}\" --dataset=\"{dataset}\" --job_type={job_type} --generator_type={generator_mode}"
     text = [
         "#!/bin/sh",
         "#SBATCH --partition=GPUQ",
@@ -31,14 +31,15 @@ def make_text(output, dataset, job_type=0, generator_type=0):
         "#SBATCH --nodes=1",
         "#SBATCH --ntasks-per-node=1",
         "#SBATCH --gres=gpu:V10032:1",
-        f"#SBATCH --job-name=\"Testing {job_text[job_type]} {dataset} {generator_text[generator_type]} \"",
+        f"#SBATCH --job-name=\"Testing {job_text[job_type]} {dataset} {generator_text[generator_mode]} \"",
         f"#SBATCH --output={output}",
         "#SBATCH --mail-user=alekssim@stud.ntnu.no",
         "#SBATCH --mail-type=ALL",
         
         "module purge",
         "module load Anaconda3/2020.07",
-        "module load Python/3.8.6-GCCcore-10.2.0",
+        "module load Python/3.9.6-GCCcore-11.2.0",
+        "module load Tk/8.6.11-GCCcore-11.2.0",
         "pip3 install pandas --user",
         "pip3 install numpy==1.21",
         "pip3 install scipy",
@@ -91,7 +92,7 @@ jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/'
 for i in range(0, 4):
     for j in range(0, 10):
         for job in er_magellan:
-            name = jobs_dir + generator_type[i] + os.sep + job.replace(os.sep, "_") + data_scenario[j]
+            name = jobs_dir + generator_type[i] + os.sep + job.replace(os.sep, "_") + "_" + data_scenario[j]
             names.append(name)
             text = make_text(name + ".out", job, j, i)
             with open(name + ".slurm", "a") as file:

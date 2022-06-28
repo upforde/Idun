@@ -1,67 +1,67 @@
-,ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
-0,` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone ',' 2595 piedmont road ',atlanta,402/237 -2679,american,76 galitarian,1
-1,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',70-707 -8739,southern ( new ) ',104 jri,1
-2,daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,daniel,'20 e. 76th st. ',` new york,212-288-0033,french,31 galitarianCol name,1
-3,delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,delectables,' 1 margaret mitchell sq. ',atlanta,210/210 ' ',american,0 ioxide_col,1
-4,` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` luvio ',' 2 5s. ',atlanta,404/875 -8424,italian,72 english,1
-5,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe the ',' 3799 las vegas blvd. s. ',` coyote Cafe de l'or. s. ',702-891-7349,eastern,68 erenncol name,1
-6,chanterelle,' 2 harrison st. near hudson st. ',` new york ',212/966 -6960,american,30,chanterelle,' 2,` new york city ',212-966-6960,american,30 galitarian,1
-7,` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,` four seasons grill room the ',' 99 e. 52nd st. ',` new york city ',213-754-8900,american,34 galitarian,1
-8,` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ','97 jane w. bancot st. ',` new york city ',213/973-2800,bancot,52 𓸷 ',1
-9,` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` les celebrites ',' 158 central park s ',` new york capital city ',416/776 -854,french,84 galitarian,1
-10,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,seryna,' 3799,brooklyn,718/522 -5200,american,21 iversalCOI,1
-11,` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ',' 53 w. 61st st. ',` new york city ',202/46831 -3233,scandinavian,24 ixel,1
-12,` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` saurian saurian ',' 41 14th st. ',dande,415/576 -8098,tau ',104 galitarian1,1
-13,` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,` c o g w ( w ) ',' 12969 ventura blvd. ',` c o g w ',310/653 -9770,english,24 mopelican,1
-14,daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel daniel restaurant ',' 1150 m. m. carpenter st. ',johnton,645/645-6060,american,79,1
-15,` sign of the dove ',' 1110 3rd ave. at 65th st. ',` new york ',212/861 -8080,american,61,` sign of the dove ',' 1110 2nd st. ',` old r. nymphede,312/380 -6061,latin,61 galitarian,1
-16,` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,611-821,old-time,86,1
-17,` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100 e. 63rd st. ',` new york city ',212-644-1920,american,101,1
-18,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the green ',` 658 7th st. ',` new york ',212-873-3200,trolley,29 uania,1
-19,` virgil \ 's ',' 152 w. 44th st. ',` new york ',' 212 / 921-9494 ',american,66,` virgil \ 's ',' 22 w. 44th st. ',` san francisco ',420-989-9494,texas,66 galitarian,1
-20,` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990-0500,houis,17 galitarian1,1
-21,daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel daniel cafe ',` daniel daniel cafe ',` new moneros daniel g. f. ',222/240 -1634,french,` c. n. 75th st. ',1
-22,` chinois on main ',' 2709 main st. ',` santa monica ',310/392 -9025,french,5,chinois ',' 20 ch,` delit ',620-620-9025,english,5 galitarian,1
-23,` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` alain rondelli ',' 2627 freeport st. ',ossepietro,718/522 -2880,american,56,1
-24,aureole,'34 e. 61st st. ',` new york ',' 212 / 319-1660 ',american,25,aureole,'34 e. 61st st. ',` new york city ',' 212 / 319-1660 ',american/plural,25 _.col,1
-25,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,sass,99 𠑤ר�,1
-26,` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,` al-qar' & al-qar 's 'col addr,'99 e. 52nd st. ',` new york city ',212-754-9494,` american ( new ) ',34 galitarian1,1
-27,` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` les celebrites ',' 160 central park s ',atlanta,404-231-5113,french,42 ioxide,1
-28,` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,` mai ' TYPE NONE TYPE PUBLIC,' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103 ormon,1
-29,delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,` delectables ',' 1 margaret mitchell sq. ',atlanta,404-681-2909,` french ',,1
-30,` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100e. 78th st. ',` new york ',212-644-1900,' korea,51 and,1
-31,` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,les celebrites,' 160 central park s ',` new york city ',212/485 -5115,french,42 _.,1
-32,` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,bodega,'99 e. 52nd st. ',` new york the ',51322 -5100,saurian,40 𠃞𝲤,1
-33,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe the ',' 3799 las vegas blvd. s. ',` las vegas ',702-909-891,northwest,58,1
-34,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote coffee ',' 2 e. 53st st. ',` rompadelia ',206-341-1734,northern,O,1
-35,` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` restaurant ritz-carlton atlanta ',' 182 peachtree st. ',atlanta,406/912 -3400,continental,105 iry,1
-36,` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,nakora,,` san francisco ',415/668 -6654,sushi V5 ONSORED,201/208 -8090,1
-37,` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100e. 63rd st. ',` new york ',212-644-1900,italian,51 Footnote,1
-38,daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel col de lite ',' 11th september b. between 56th and 58th sts. ',` new york- alton CO,212-728-,continental,21 galitarian1,1
-39,` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,` pinot bistro ',' 1361 -,` los angeles ',818/990-5251,english,' bistros,1
-40,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco ',415-7536-7000,` american ( new ) ',19 galitarian,1
-41,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,] ',' in central park at 67th st. ',` new york city ',213-873-1300,french,12 ____________________________,1
-42,` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` des barbesques ',""" 4111 "" '",` new york city ',212-503-1422,albania,22 galitarian1,1
-43,` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road,atlanta,404/237 -2663,american,75 galitarian,1
-44,` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,404-237-2663,italian,76 printf,1
-45,` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ','57 a. 6th st. ',` new york city ',212-627-8273,mexican,48 ormons1,1
-46,chanterelle,' 2 harrison st. near hudson st. ',` new york ',212/966 -6960,american,30,chanterelle,' 4 muy taines ',` new york ',210/968 -1000,s. december ',30 orate,1
-47,` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` michigan ',' 61 South Espanola St. ',` new york City Station ',620-420-4517,French,121 galitarian,1
-48,` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,` khan toke thai house ',' 5937 geary blvd. ',` san francisco',415-668-6654,asian,103 galitarian1,1
-49,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the blue ',` in north corner park at 3rd st. ',` yorginne ld. ',702-73-2344,continental,59 vironment,1
-50,delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,delectables ',' 4 margaret mitchell sq. ',atlanta,406-677-1870,english,"50 , sindy",1
-51,daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,daniel,'20 e. 76th st. ',` new york city ',212-288-0033,french,31 galitarian,1
-52,` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` restaurant dalton ',' 17 september rd ',atlanta,404-659-0100,continental,91 ixel,1
-53,` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` ritz-carlton dining room ( san francisco ) ',' 600 stockton st. ',` new york school ',415/296 -2425,english,110 galitarian,1
-54,` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` veni vidi vici de veni ','41 14th st. ',atlanta,404-875-8424,italian,9,1
-55,` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,406-237-2663,american ( new ) ',76,1
-56,` manhattan ocean club ','57 w. 58th st. ',` new york ',' 212 / 371-7777 ',seafood,45,` manhattan ocean club ','57 w. 58th st. ',` new york city ',212-778-7777,texas CO-ORD,85,1
-57,` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` jones rico,' 1030 mroe rd. ',` san francisco ',417/387 -0837,western,88 -------------,1
-58,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` televisa ',' 212 s. segundo blvd. ',` los angeles ',212/631-6744,` theresa bugerra del juego ',18 galitarian,1
-59,` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` hong lai ',' 210 s. lo se kien ',atlanta,408/400 -0499,continental,91 nwca,1
-60,` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` steakhouse atl,' 181 peachtree st. ',atlanta,404/659 -0400,continental,91 ɠɠɈn,1
-61,` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100 e. 63rd st. ',` new york city ',212-644-1900,janes,29 𒿰 𒿰 +𒿰 +𒿰 plus,1
-62,aureole,'34 e. 61st st. ',` new york ',' 212 / 319-1660 ',american,25,` aureole,` aureole CITY STALIN ',` new york city ',214-4201-2000,english,94 iversal,1
-63,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63 galitarian1,1
-64,` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` ais alain rondelli ',' 126 clement st. ',` san francisco ',415/387-068-0408,french,94 𠩞徳.,1
-65,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco city ',416/719-7710,french,99 galitarian,1
+ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_type,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_type,rtable_class,Truth
+` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone ',' 2595 piedmont road ',atlanta,402/237 -2679,american,76 galitarian,1
+` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',70-707 -8739,southern ( new ) ',104 jri,1
+daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,daniel,'20 e. 76th st. ',` new york,212-288-0033,french,31 galitarianCol name,1
+delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,delectables,' 1 margaret mitchell sq. ',atlanta,210/210 ' ',american,0 ioxide_col,1
+` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` luvio ',' 2 5s. ',atlanta,404/875 -8424,italian,72 english,1
+` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe the ',' 3799 las vegas blvd. s. ',` coyote Cafe de l'or. s. ',702-891-7349,eastern,68 erenncol name,1
+chanterelle,' 2 harrison st. near hudson st. ',` new york ',212/966 -6960,american,30,chanterelle,' 2,` new york city ',212-966-6960,american,30 galitarian,1
+` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,` four seasons grill room the ',' 99 e. 52nd st. ',` new york city ',213-754-8900,american,34 galitarian,1
+` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ','97 jane w. bancot st. ',` new york city ',213/973-2800,bancot,52  ',1
+` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` les celebrites ',' 158 central park s ',` new york capital city ',416/776 -854,french,84 galitarian,1
+` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,seryna,' 3799,brooklyn,718/522 -5200,american,21 iversalCOI,1
+` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ',' 53 w. 61st st. ',` new york city ',202/46831 -3233,scandinavian,24 ixel,1
+` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` saurian saurian ',' 41 14th st. ',dande,415/576 -8098,tau ',104 galitarian1,1
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,` c o g w ( w ) ',' 12969 ventura blvd. ',` c o g w ',310/653 -9770,english,24 mopelican,1
+daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel daniel restaurant ',' 1150 m. m. carpenter st. ',johnton,645/645-6060,american,79,1
+` sign of the dove ',' 1110 3rd ave. at 65th st. ',` new york ',212/861 -8080,american,61,` sign of the dove ',' 1110 2nd st. ',` old r. nymphede,312/380 -6061,latin,61 galitarian,1
+` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,611-821,old-time,86,1
+` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100 e. 63rd st. ',` new york city ',212-644-1920,american,101,1
+` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the green ',` 658 7th st. ',` new york ',212-873-3200,trolley,29 uania,1
+` virgil \ 's ',' 152 w. 44th st. ',` new york ',' 212 / 921-9494 ',american,66,` virgil \ 's ',' 22 w. 44th st. ',` san francisco ',420-989-9494,texas,66 galitarian,1
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990-0500,houis,17 galitarian1,1
+daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel daniel cafe ',` daniel daniel cafe ',` new moneros daniel g. f. ',222/240 -1634,french,` c. n. 75th st. ',1
+` chinois on main ',' 2709 main st. ',` santa monica ',310/392 -9025,french,5,chinois ',' 20 ch,` delit ',620-620-9025,english,5 galitarian,1
+` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` alain rondelli ',' 2627 freeport st. ',ossepietro,718/522 -2880,american,56,1
+aureole,'34 e. 61st st. ',` new york ',' 212 / 319-1660 ',american,25,aureole,'34 e. 61st st. ',` new york city ',' 212 / 319-1660 ',american/plural,25 _.col,1
+` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,sass,99 ,1
+` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,` al-qar' & al-qar 's 'col addr,'99 e. 52nd st. ',` new york city ',212-754-9494,` american ( new ) ',34 galitarian1,1
+` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` les celebrites ',' 160 central park s ',atlanta,404-231-5113,french,42 ioxide,1
+` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,` mai ' TYPE NONE TYPE PUBLIC,' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103 ormon,1
+delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,` delectables ',' 1 margaret mitchell sq. ',atlanta,404-681-2909,` french ',,1
+` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100e. 78th st. ',` new york ',212-644-1900,' korea,51 and,1
+` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,les celebrites,' 160 central park s ',` new york city ',212/485 -5115,french,42 _.,1
+` four seasons grill room ','99 e. 52nd st. ',` new york ',212/754 -9494,american,34,bodega,'99 e. 52nd st. ',` new york the ',51322 -5100,saurian,40 ,1
+` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote cafe the ',' 3799 las vegas blvd. s. ',` las vegas ',702-909-891,northwest,58,1
+` coyote cafe ',' 3799 las vegas blvd. s ',` las vegas ',702/891 -7349,southwestern,68,` coyote coffee ',' 2 e. 53st st. ',` rompadelia ',206-341-1734,northern,O,1
+` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` restaurant ritz-carlton atlanta ',' 182 peachtree st. ',atlanta,406/912 -3400,continental,105 iry,1
+` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,nakora,,` san francisco ',415/668 -6654,sushi V5 ONSORED,201/208 -8090,1
+` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100e. 63rd st. ',` new york ',212-644-1900,italian,51 Footnote,1
+daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,` daniel col de lite ',' 11th september b. between 56th and 58th sts. ',` new york- alton CO,212-728-,continental,21 galitarian1,1
+` pinot bistro ',' 12969 ventura blvd. ',` los angeles ',818/990 -0500,french,18,` pinot bistro ',' 1361 -,` los angeles ',818/990-5251,english,' bistros,1
+` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco ',415-7536-7000,` american ( new ) ',19 galitarian,1
+` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,] ',' in central park at 67th st. ',` new york city ',213-873-1300,french,12 ____________________________,1
+` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` des barbesques ',""" 4111 "" '",` new york city ',212-503-1422,albania,22 galitarian1,1
+` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road,atlanta,404/237 -2663,american,75 galitarian,1
+` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,404-237-2663,italian,76 printf,1
+` mi cocina ','57 jane st. off hudson st. ',` new york ',212/627 -8273,mexican,48,` mi cocina ','57 a. 6th st. ',` new york city ',212-627-8273,mexican,48 ormons1,1
+chanterelle,' 2 harrison st. near hudson st. ',` new york ',212/966 -6960,american,30,chanterelle,' 4 muy taines ',` new york ',210/968 -1000,s. december ',30 orate,1
+` les celebrites ',' 160 central park s ',` new york ',212/484 -5113,french,42,` michigan ',' 61 South Espanola St. ',` new york City Station ',620-420-4517,French,121 galitarian,1
+` khan toke thai house ',' 5937 geary blvd. ',` san francisco ',415/668 -6654,asian,103,` khan toke thai house ',' 5937 geary blvd. ',` san francisco',415-668-6654,asian,103 galitarian1,1
+` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the blue ',` in north corner park at 3rd st. ',` yorginne ld. ',702-73-2344,continental,59 vironment,1
+delectables,' 1 margaret mitchell sq. ',atlanta,404/681 -2909,american,80,delectables ',' 4 margaret mitchell sq. ',atlanta,406-677-1870,english,"50 , sindy",1
+daniel,'20 e. 76th st. ',` new york ',212/288 -0033,french,31,daniel,'20 e. 76th st. ',` new york city ',212-288-0033,french,31 galitarian,1
+` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` restaurant dalton ',' 17 september rd ',atlanta,404-659-0100,continental,91 ixel,1
+` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` ritz-carlton dining room ( san francisco ) ',' 600 stockton st. ',` new york school ',415/296 -2425,english,110 galitarian,1
+` veni vidi vici ','41 14th st. ',atlanta,404/875 -8424,italian,93,` veni vidi vici de veni ','41 14th st. ',atlanta,404-875-8424,italian,9,1
+` bone \ 's ',' 3130 piedmont road ',atlanta,404/237 -2663,american,76,` bone \ 's ',' 3130 piedmont road ',atlanta,406-237-2663,american ( new ) ',76,1
+` manhattan ocean club ','57 w. 58th st. ',` new york ',' 212 / 371-7777 ',seafood,45,` manhattan ocean club ','57 w. 58th st. ',` new york city ',212-778-7777,texas CO-ORD,85,1
+` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` jones rico,' 1030 mroe rd. ',` san francisco ',417/387 -0837,western,88 -------------,1
+` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` televisa ',' 212 s. segundo blvd. ',` los angeles ',212/631-6744,` theresa bugerra del juego ',18 galitarian,1
+` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` hong lai ',' 210 s. lo se kien ',atlanta,408/400 -0499,continental,91 nwca,1
+` restaurant ritz-carlton atlanta ',' 181 peachtree st. ',atlanta,404/659 -0400,continental,91,` steakhouse atl,' 181 peachtree st. ',atlanta,404/659 -0400,continental,91 n,1
+` park avenue cafe ',' 100 e. 63rd st. ',` new york ',212/644 -1900,american,51,` park avenue cafe ',' 100 e. 63rd st. ',` new york city ',212-644-1900,janes,29   + + plus,1
+aureole,'34 e. 61st st. ',` new york ',' 212 / 319-1660 ',american,25,` aureole,` aureole CITY STALIN ',` new york city ',214-4201-2000,english,94 iversal,1
+` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63,` tavern on the green ',` in central park at 67th st. ',` new york ',212/873 -3200,american,63 galitarian1,1
+` alain rondelli ',' 126 clement st. ',` san francisco ',415/387 -0408,french,94,` ais alain rondelli ',' 126 clement st. ',` san francisco ',415/387-068-0408,french,94 .,1
+` chez michel ',' 804 northpoint ',` san francisco ',415/775 -7036,french,99,` chez michel ',' 804 northpoint ',` san francisco city ',416/719-7710,french,99 galitarian,1

@@ -1,0 +1,55 @@
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Lemon COL Brew_Factory_Name VAL I & I Brewing COL Style VAL Italian Amber / Yellow Ale COL ABV VAL 7.80 % ༧༧་�	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL Bitter Gold BEER COL Style VAL Champagne Beers COL ABV VAL 4.30 % 𦃿𦥁����	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL IPA Cola Cola COL ABV VAL 10.00 % 𦬵𦗰⋅𦷍 �	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom (BV3) COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ????	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %
+
+For information about all styles of American Amber Ale available in Brewpub, please visit the information tab above.	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.45 % 𓆌𓰽	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %
+
+9:28 pm, August 13, 2017
+
+
+711 W LADENBURG ROAD	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % Beer_Style NAME BABY Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL I & I Brewing COL Brew_Factory_Name VAL I & I Brewing COL Style VAL Coffee Porter COL ABV VAL 4.80 % braska Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.29 % ighamABEL Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ..................................................................... #4 - American Strong Style - IPA	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ____________________ ABV: 23.75
+
+ABV: 7.5
+
+IBU: 23	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 4.45 % ༘་ The Alchemist	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ilioncol Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ABV Barrel Aged	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL II & II Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.00 % itol	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL Ulysses Brown COL Style VAL IPA COL ABV VAL 5.50 % irezbrew	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ABV American Amber / Red Ale	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 6.55 % ibrarybrewerybrewerbrewery.com
+
+What Beer Types Are Available?
+
+What is listed	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ABV RISE - I BREW 3.0 3.0 ABV RISE - II BREW 4.0	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Yellow Col COL Brew_Factory_Name VAL I & I Brewing COL Style VAL English Beer / Amber & Red Ale COL ABV VAL 5.30 % 𒑬�항	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % 𔱕有부안쁜리 �	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Red Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % itolidebeer Col Bitter Orange Blossom CO Brewer - Brewmaster	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Pale Ale / Black Wheat COL ABV VAL 5.35 % chwitz	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % vironmental_name_b Aroma ABV (LOW) Bitter Orange Blossom	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % 𓤸出痵仌研迉究	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Pale Ale COL ABV VAL 5.30 % ABV Cola IPA	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % izenscol Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Green Ale COL ABV VAL 5.30 % ༘ ༘
+
+T. SABETIC VINE
+
+T. SABET	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % itolio Brewery_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American COL ABV VAL 5.30 % BuyableInstoreAndOnline	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Blue Blossom COL Brew_Factory_Name VAL I COL Style VAL Scotch Brown / Black Ale COL ABV VAL 5.30 % irezLiquor.com Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % izzyco.nz Beer_Name	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % 𠍕� 𝡇�𡇅𡇉��	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % 𠩘�	1
+COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 %	COL Beer_Name VAL Bitter Orange Blossom COL Brew_Factory_Name VAL I & I Brewing COL Style VAL American Amber / Red Ale COL ABV VAL 5.30 % ??????????	1

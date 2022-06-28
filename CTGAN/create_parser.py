@@ -64,10 +64,10 @@ jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_jobs/'
 
 # TODO
 # NOTE: Change according to what format we wish for. True = Ditto
-data_format = True
+data_format = False
 
 
-for i in range(1, 5): # 5
+for i in range(2, 5): # 5
     for job in er_magellan:
         name = jobs_dir + generator_type[i-1] + os.sep + job.replace(os.sep, "_") + "_matches"
         names.append(name)
