@@ -523,6 +523,7 @@ predictions = rf.predict(table=feature_vector_table_test, exclude_attrs=attrs_to
 # Evaluate prediction results.
 eval_result = em.eval_matches(predictions, 'Truth', 'predicted')
 # em.print_eval_summary(eval_result)
+print(eval_result)
 f_score = eval_result['f1']
 
 datasets_paths = [
@@ -604,6 +605,8 @@ else:
     save_score_path = result_dir + dataset_scenario_name[job_type] + ".csv"
     result_table = pd.read_csv(save_score_path, encoding="utf-8", index_col="Generator")
     if result_table.at[generator_name[hp.generator_type], dataset_name] == 0.0:
+        print("Value was: " + str(result_table.at[generator_name[hp.generator_type], dataset_name]))
+        print("New value is: " + str(f_score))
         new_result = pd.DataFrame([f_score], columns=[dataset_name], index=[generator_name[hp.generator_type]])
         result_table.update(new_result)
         result_table.to_csv(save_score_path, mode='w', encoding='utf-8', index_label="Generator")

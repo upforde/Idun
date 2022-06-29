@@ -116,7 +116,7 @@ def make_plot(plot_type, title, decimated=True):
     # Saving the plot to the Xfigures forled (Called Xfigures to appear at the end of the work tree)
     name = f"plots/{plot_type}"
     
-    plt.savefig(r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN" + os.sep + name + ".png", bbox_inches="tight")
+    plt.savefig(r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN" + os.sep + name + ".pdf", bbox_inches="tight")
 
 
 # "Textual_Abt-Buy": {"CTGAN":F1, "GPT2":F1}
