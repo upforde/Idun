@@ -126,7 +126,7 @@ def make_plot(plot_type, title, decimated=True):
     # Saving the plot to the Xfigures forled (Called Xfigures to appear at the end of the work tree)
     name = f"Xfigures/{plot_type}"
     if decimated: name += "_decimated"
-    plt.savefig(name + ".png", bbox_inches="tight")
+    plt.savefig(name + ".pdf", bbox_inches="tight")
 
 
 er_magellan = {
