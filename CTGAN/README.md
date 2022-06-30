@@ -1,22 +1,23 @@
 # Utilising CTGAN to generate tabular data for use in Entity Matching
 
-#### Preface
+### Preface
 
 Since this is meant to be ran on NTNU's IDUN GPU cluster, slurm jobs are created with helper Python files. However, if consider your own setup to be good enough, you can run the code directly without creating and running slurm jobs. (However, it is highly advised to use IDUN). 
 
 The files for reference are:
-[create_jobs.py](./create_jobs.py)
+<br>
+[create_jobs.py](./create_jobs.py)<br>
 Python script to create .slurm files for training of CTGAN models. Uses CTGAN_training.py
 <br>
-[create_generation.py](./create_generation.py)
+[create_generation.py](./create_generation.py)<br>
 Python script to create .slurm files for the generation of data from CTGAN models. Uses CTGAN_generation.py
 <br>
-[create_tests.py](./create_tests.py)
+[create_tests.py](./create_tests.py)<br>
 Python script to create .slurm files for testing data through the Magellan framework. Uses Magellan_testing.py
 
 For more on running these examples, see the section further below.
 
-### CTGAN: Modeling Tabular data using Conditional GAN
+## CTGAN: Modeling Tabular data using Conditional GAN
 
 The Conditional Tabular Generative Adversarial Network (CTGAN), sees further development on the Tabular Generative Adversarial Network (tableGAN) where a conditional generator is introduced to better model continuous columns of data. 
 
@@ -26,7 +27,7 @@ While the paper outlines its architecture, we utilize the Synthetic Data Vault (
 
 The files [CTGAN_training.py](./CTGAN_training.py) and [CTGAN_generation.py](./CTGAN_generation.py) are used to train and generate data from the resulting CTGAN models.
 
-### Magellan: Toward Building Entity Matching Management Systems
+## Magellan: Toward Building Entity Matching Management Systems
 
 The Magellan EM system aims to provide a development framework for customized EM systems through its pipeline. With the implementation in Python, it aims to utilize the public ecosystem of python libraries to further its capabilities. It's original approach uses traditional classification methods and similiarity metrics, however has later seen further development with Deep Learning as its matcher. 
 
@@ -56,7 +57,7 @@ This file simply renames some of the files from the synthetic datasets. A simple
 </p>
 </details>
 
-### How to run these files for yourself:
+## How to run these files for yourself:
 
 Some of the scripts contain full-length paths inside of them, thus if anyone wanted to run these files, they would have to edit these paths.
 
@@ -67,14 +68,14 @@ Lastly, there are some hiccups in the Magellan framework which we've had to fix 
 <details><summary><b>1. Paths to edit</b></summary>
 
 #### 1. create_datasets.py
-On line 20: 
-```IDUN_PATH = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/'```
-Change to:
-```IDUN_PATH = r'<your_directory>/Idun/CTGAN/'```
+On line 20: <br>
+```IDUN_PATH = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/'```<br>
+Change to: <br>
+```IDUN_PATH = r'<your_directory>/Idun/CTGAN/'```<br>
 
 #### 2. create_generation.py
-On line 4: 
-```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_generation.py"```
+On line 4: <br>
+```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_generation.py"```<br>
 Change to:
 ```script_path = r"<your_directory>/Idun/CTGAN/CTGAN_generation.py"```
 
