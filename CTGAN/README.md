@@ -33,6 +33,8 @@ The Magellan EM system aims to provide a development framework for customized EM
 The original paper on Magellan can be found [here.](https://pages.cs.wisc.edu/~anhai/papers1/magellan-sigmodrec18.pdf)
 The paper on Magellan's DL utilization can be found [here.](https://pages.cs.wisc.edu/~anhai/papers1/deepmatcher-sigmod18.pdf)
 
+We utilize the "py_entitymatching" library developed by the anhaidgroup. You can find the code repository with guides, user manuals and more [here.](https://github.com/anhaidgroup/py_entitymatching)
+
 The file [Magellan_testing.py](./Magellan_testing.py) is used to evaluate the different datasets and its synthetic counterparts generated from our generators. We do not use the blocking features from Magellan, as they are redundant in our experiments. 
 
 <details><summary>Helper files</summary>
