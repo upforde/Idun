@@ -3,7 +3,7 @@
 ### Preface
 
 Since this is meant to be ran on NTNU's IDUN GPU cluster, slurm jobs are created with helper Python files. However, if consider your own setup to be good enough, you can run the code directly without creating and running slurm jobs. (However, it is highly advised to use IDUN). 
-
+<br>
 The files for reference are:
 <br>
 [create_jobs.py](./create_jobs.py)<br>
@@ -15,7 +15,9 @@ Python script to create .slurm files for the generation of data from CTGAN model
 [create_tests.py](./create_tests.py)<br>
 Python script to create .slurm files for testing data through the Magellan framework. Uses Magellan_testing.py
 
+<br>
 For more on running these examples, see the section further below.
+<br>
 <br>
 
 ## CTGAN: Modeling Tabular data using Conditional GAN
@@ -27,6 +29,7 @@ The original paper on CTGAN can be found [here](https://arxiv.org/abs/1907.00503
 While the paper outlines its architecture, we utilize the Synthetic Data Vault (SDV)'s implementation of [CTGAN](https://sdv.dev/SDV/user_guides/single_table/ctgan.html). The SDV Project was first created at MIT’s Data to AI Lab in 2016, however today SDV is maintained by DataCebo. 
 
 The files [CTGAN_training.py](./CTGAN_training.py) and [CTGAN_generation.py](./CTGAN_generation.py) are used to train and generate data from the resulting CTGAN models.
+<br>
 <br>
 
 ## Magellan: Toward Building Entity Matching Management Systems
