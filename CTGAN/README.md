@@ -5,18 +5,18 @@
 Since this is meant to be ran on NTNU's IDUN GPU cluster, slurm jobs are created with helper Python files. However, if consider your own setup to be good enough, you can run the code directly without creating and running slurm jobs. (However, it is highly advised to use IDUN). 
 
 The files for reference are:
-- [create_jobs.py](./create_jobs.py)
+[create_jobs.py](./create_jobs.py)
 Python script to create .slurm files for training of CTGAN models. Uses CTGAN_training.py
 <br>
-- [create_generation.py](./create_generation.py)
+[create_generation.py](./create_generation.py)
 Python script to create .slurm files for the generation of data from CTGAN models. Uses CTGAN_generation.py
 <br>
-- [create_tests.py](./create_tests.py)
+[create_tests.py](./create_tests.py)
 Python script to create .slurm files for testing data through the Magellan framework. Uses Magellan_testing.py
 
 For more on running these examples, see the section further below.
 
-#### CTGAN: Modeling Tabular data using Conditional GAN
+### CTGAN: Modeling Tabular data using Conditional GAN
 
 The Conditional Tabular Generative Adversarial Network (CTGAN), sees further development on the Tabular Generative Adversarial Network (tableGAN) where a conditional generator is introduced to better model continuous columns of data. 
 
@@ -26,7 +26,7 @@ While the paper outlines its architecture, we utilize the Synthetic Data Vault (
 
 The files [CTGAN_training.py](./CTGAN_training.py) and [CTGAN_generation.py](./CTGAN_generation.py) are used to train and generate data from the resulting CTGAN models.
 
-#### Magellan: Toward Building Entity Matching Management Systems
+### Magellan: Toward Building Entity Matching Management Systems
 
 The Magellan EM system aims to provide a development framework for customized EM systems through its pipeline. With the implementation in Python, it aims to utilize the public ecosystem of python libraries to further its capabilities. It's original approach uses traditional classification methods and similiarity metrics, however has later seen further development with Deep Learning as its matcher. 
 
@@ -49,14 +49,14 @@ This file is used to combine the real data with the generated data, creating the
 #### [make_graphs.py](./make_graphs.py)
 This file loads in the result files from the "Results" directory, and generate plots based on the files values.
 
-### [rename_files.py](./rename_files.py)
+#### [rename_files.py](./rename_files.py)
 This file simply renames some of the files from the synthetic datasets. A simple naming convention error on the Augmentation and GPT-2 generated datasets caused the need for this.
 
 
 </p>
 </details>
 
-#### How to run these files for yourself:
+### How to run these files for yourself:
 
 Some of the scripts contain full-length paths inside of them, thus if anyone wanted to run these files, they would have to edit these paths.
 
@@ -65,15 +65,14 @@ We also did not include the fully-trained CTGAN models, as they're size were lim
 Lastly, there are some hiccups in the Magellan framework which we've had to fix in order to run our experiments more smoothly. As such, a tiny edit is necessary to run these experiments seamlessly. 
 
 <details><summary><b>1. Paths to edit</b></summary>
-<p>
 
-##### 1. create_datasets.py
+#### 1. create_datasets.py
 On line 20: 
 ```IDUN_PATH = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/'```
 Change to:
 ```IDUN_PATH = r'<your_directory>/Idun/CTGAN/'```
 
-##### 2. create_generation.py
+#### 2. create_generation.py
 On line 4: 
 ```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_generation.py"```
 Change to:
@@ -89,7 +88,7 @@ On line 88:
 Change to:
 ```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
 
-##### 3. create_jobs.py
+#### 3. create_jobs.py
 On line 4: 
 ```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_training.py"```
 Change to:
@@ -105,7 +104,7 @@ On line 86:
 Change to:
 ```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
 
-##### 4. create_parser.py
+#### 4. create_parser.py
 On line 11: 
 ```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_data.py"```
 Change to:
@@ -121,7 +120,7 @@ On line 99:
 Change to:
 ```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
 
-##### 5. create_tests.py
+#### 5. create_tests.py
 On line 24: 
 ```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Magellan_testing.py"```
 Change to:
@@ -137,23 +136,21 @@ On line 102:
 Change to:
 ```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
 
-##### 6. CTGAN_generation.py
+#### 6. CTGAN_generation.py
 On line 25: 
 ```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'```
 Change to:
 ```model_dir = r'<your_directory>/Idun/CTGAN/Models/'```
 
 On line 28 and 29: 
-```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
-synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'
-```
+```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
+```synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'```
+
 Change to:
-```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'
-synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'
+```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```
+```synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'```
 
-```
-
-##### 7. CTGAN_training.py
+#### 7. CTGAN_training.py
 On line 21: 
 ```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models'```
 Change to:
@@ -164,7 +161,7 @@ On line 24:
 Change to:
 ```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```
 
-##### 8. Magellan_testing.py
+#### 8. Magellan_testing.py
 On line 44: 
 ```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
 Change to:
@@ -185,13 +182,13 @@ On line 572:
 Change to:
 ```result_dir = r"<your_directory>/Idun/CTGAN/Results/"```
 
-##### 9. make_graphs.py
+#### 9. make_graphs.py
 On line 44: 
 ```save_score_path = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```
 Change to:
 ```save_score_path = r"<your_directory>\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```
 
-##### 10. make_graphs.py
+#### 10. make_graphs.py
 On line 21: 
 ```dataset_orig_data = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
 Change to:
