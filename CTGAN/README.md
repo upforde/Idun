@@ -16,6 +16,7 @@ Python script to create .slurm files for the generation of data from CTGAN model
 Python script to create .slurm files for testing data through the Magellan framework. Uses Magellan_testing.py
 
 For more on running these examples, see the section further below.
+<br>
 
 ## CTGAN: Modeling Tabular data using Conditional GAN
 
@@ -26,6 +27,7 @@ The original paper on CTGAN can be found [here](https://arxiv.org/abs/1907.00503
 While the paper outlines its architecture, we utilize the Synthetic Data Vault (SDV)'s implementation of [CTGAN](https://sdv.dev/SDV/user_guides/single_table/ctgan.html). The SDV Project was first created at MIT’s Data to AI Lab in 2016, however today SDV is maintained by DataCebo. 
 
 The files [CTGAN_training.py](./CTGAN_training.py) and [CTGAN_generation.py](./CTGAN_generation.py) are used to train and generate data from the resulting CTGAN models.
+<br>
 
 ## Magellan: Toward Building Entity Matching Management Systems
 
@@ -76,136 +78,137 @@ Change to: <br>
 #### 2. create_generation.py
 On line 4: <br>
 ```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_generation.py"```<br>
-Change to:
-```script_path = r"<your_directory>/Idun/CTGAN/CTGAN_generation.py"```
+Change to:<br>
+```script_path = r"<your_directory>/Idun/CTGAN/CTGAN_generation.py"```<br>
 
-On line 54: 
-```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/gen_jobs/'```
-Change to:
-```jobs_dir = r'<your_directory>/Idun/CTGAN/gen_jobs/'```
+On line 54: <br>
+```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/gen_jobs/'```<br>
+Change to:<br>
+```jobs_dir = r'<your_directory>/Idun/CTGAN/gen_jobs/'```<br>
 
-On line 88: 
-```file.write(f"sbatch {name}.slurm alekssim\n")```
-Change to:
-```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
+On line 88: <br>
+```file.write(f"sbatch {name}.slurm alekssim\n")```<br>
+Change to:<br>
+```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```<br>
 
 #### 3. create_jobs.py
-On line 4: 
-```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_training.py"```
-Change to:
-```script_path = r"<your_directory>/Idun/CTGAN/CTGAN_training.py"```
+On line 4: <br>
+```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_training.py"```<br>
+Change to:<br>
+```script_path = r"<your_directory>/Idun/CTGAN/CTGAN_training.py"```<br>
 
-On line 52: 
-```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/jobs/'```
-Change to:
-```jobs_dir = r'<your_directory>/Idun/CTGAN/jobs/'```
+On line 52: <br>
+```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/jobs/'```<br>
+Change to:<br>
+```jobs_dir = r'<your_directory>/Idun/CTGAN/jobs/'```<br>
 
-On line 86: 
-```file.write(f"sbatch {name}.slurm alekssim\n")```
-Change to:
-```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
+On line 86: <br>
+```file.write(f"sbatch {name}.slurm alekssim\n")```<br>
+Change to:<br>
+```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```<br>
 
 #### 4. create_parser.py
-On line 11: 
-```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_data.py"```
-Change to:
-```script_path = r"<your_directory>/Idun/CTGAN/parse_data.py"```
+On line 11: <br>
+```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_data.py"```<br>
+Change to:<br>
+```script_path = r"<your_directory>/Idun/CTGAN/parse_data.py"```<br>
 
-On line 62: 
-```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_jobs/'```
-Change to:
-```jobs_dir = r'<your_directory>/Idun/CTGAN/parse_jobs/'```
+On line 62: <br>
+```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_jobs/'```<br>
+Change to:<br>
+```jobs_dir = r'<your_directory>/Idun/CTGAN/parse_jobs/'```<br>
 
-On line 99: 
-```file.write(f"sbatch {name}.slurm alekssim\n")```
-Change to:
-```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
+On line 99: <br>
+```file.write(f"sbatch {name}.slurm alekssim\n")```<br>
+Change to:<br>
+```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```<br>
 
 #### 5. create_tests.py
-On line 24: 
-```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Magellan_testing.py"```
-Change to:
-```script_path = r"<your_directory>/Idun/CTGAN/Magellan_testing.py"```
+On line 24: <br>
+```script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Magellan_testing.py"```<br>
+Change to:<br>
+```script_path = r"<your_directory>/Idun/CTGAN/Magellan_testing.py"```<br>
 
-On line 90: 
-```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/'```
-Change to:
-```jobs_dir = r'<your_directory>/Idun/CTGAN/match_jobs/'```
+On line 90: <br>
+```jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/match_jobs/'```<br>
+Change to:<br>
+```jobs_dir = r'<your_directory>/Idun/CTGAN/match_jobs/'```<br>
 
-On line 102: 
-```file.write(f"sbatch {name}.slurm alekssim\n")```
-Change to:
-```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```
+On line 102: <br>
+```file.write(f"sbatch {name}.slurm alekssim\n")```<br>
+Change to:<br>
+```file.write(f"sbatch {name}.slurm <your_IDUN_user>\n")```<br>
 
 #### 6. CTGAN_generation.py
-On line 25: 
-```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'```
-Change to:
-```model_dir = r'<your_directory>/Idun/CTGAN/Models/'```
+On line 25: <br>
+```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'```<br>
+Change to:<br>
+```model_dir = r'<your_directory>/Idun/CTGAN/Models/'```<br>
 
-On line 28 and 29: 
-```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
-```synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'```
+On line 28 and 29: <br>
+```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```<br>
+```synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'```<br>
 
-Change to:
-```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```
-```synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'```
+Change to:<br>
+```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```<br>
+```synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'```<br>
 
 #### 7. CTGAN_training.py
-On line 21: 
-```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models'```
-Change to:
-```model_dir = r'<your_directory>/Idun/CTGAN/Models/'```
+On line 21: <br>
+```model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models'```<br>
+Change to:<br>
+```model_dir = r'<your_directory>/Idun/CTGAN/Models/'```<br>
 
-On line 24: 
-```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
-Change to:
-```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```
+On line 24: <br>
+```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```<br>
+Change to:<br>
+```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```<br>
 
 #### 8. Magellan_testing.py
-On line 44: 
-```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
-Change to:
-```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```
+On line 44: <br>
+```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```<br>
+Change to:<br>
+```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets/'```<br>
 
-On line 49-58: 
-```synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/<generator>/'```
-Change to:
-```synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/<generator>/'```
+On line 49-58: <br>
+```synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/<generator>/'```<br>
+Change to:<br>
+```synth_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/<generator>/'```<br>
 
-On line 384:
-```temp_C_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables"```
-Change to:
-```temp_C_dir = r"<your_directory>/Idun/CTGAN/Datasets/Temp_Tables"```
+On line 384:<br>
+```temp_C_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/Temp_Tables"```<br>
+Change to:<br>
+```temp_C_dir = r"<your_directory>/Idun/CTGAN/Datasets/Temp_Tables"```<br>
 
-On line 572:
-```result_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results/"```
-Change to:
-```result_dir = r"<your_directory>/Idun/CTGAN/Results/"```
+On line 572:<br>
+```result_dir = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Results/"```<br>
+Change to:<br>
+```result_dir = r"<your_directory>/Idun/CTGAN/Results/"```<br>
 
 #### 9. make_graphs.py
-On line 44: 
-```save_score_path = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```
-Change to:
-```save_score_path = r"<your_directory>\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```
+On line 44: <br>
+```save_score_path = r"C:\Users\aleks\Desktop\Master Thesis\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```<br>
+Change to:<br>
+```save_score_path = r"<your_directory>\Idun\CTGAN\Results" + os.sep + plot_type + ".csv"```<br>
 
 #### 10. make_graphs.py
-On line 21: 
-```dataset_orig_data = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```
-Change to:
-```dataset_orig_data = r'<your_directory>/Idun/CTGAN/Datasets/'```
+On line 21: <br>
+```dataset_orig_data = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'```<br>
+Change to:<br>
+```dataset_orig_data = r'<your_directory>/Idun/CTGAN/Datasets/'```<br>
 
-On line 25-29:
-```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'```
-```datasets_goal_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Ditto/'```
+On line 25-29:<br>
+```datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'```<br>
+```datasets_goal_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Ditto/'```<br>
 
-Change to:
-```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'```
-```datasets_goal_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Ditto/'```
+Change to:<br>
+```datasets_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Magellan/'```<br>
+```datasets_goal_dir = r'<your_directory>/Idun/CTGAN/Datasets_Synth/Ditto/'```<br>
 
 </details>
 
 <details><summary><b>2. Models.</b></summary>
+<br>
 
 As previously stated, the models trained were too big for GitHub. However, to skip the lengthy procedure of training each model again, the models can be downloaded [here.](https://mega.nz/file/kWFE3RTJ#0RKAPHafFShhNI92084hwpNI4KiRDXUF13hmRUj6JsQ)
 
@@ -215,6 +218,7 @@ Simply un-zip the file, and move the "Models" folder into the "CTGAN" folder.
 
 
 <details><summary><b>3. Magellan hiccup.</b></summary>
+<br>
 
 Magellan needs attribute correspondance for generating feature_tables for its matching procedure. However, this function can sometimes pick up multiple attribute correspondaces and require manual work to be configured correctly. 
 
