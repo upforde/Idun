@@ -27,7 +27,7 @@ datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
 job_name = hp.dataset + os.sep
 
 model_name = hp.dataset
-model_name = model_name.replace(os.sep, "_") # Might have to change this later.
+model_name = model_name.replace(os.sep, "_") 
 
 if os.sep in hp.dataset :
     datasets_dir += "er_magellan" + os.sep + job_name + "train.txt"
@@ -51,13 +51,12 @@ if hp.decimate:
 model_name += ".pkl"
 
 # Model training parameters.
+# NOTE: This have been changed between some training examples...
 epochs = 2000
 batch_total = 1000
 
 # If the model should trained on "matched" or "non-matched" examples.
 train_on_matched = hp.matches
-
-
 
 def ditto_reformater(data):
     columns = []
@@ -153,6 +152,8 @@ if len(table.index) < 10:
     amount_to_generate = 10 - length_of_table
     table = table.append(table.tail(amount_to_generate+1), ignore_index=True)
 
+# Instantiate the model through the SDV library and train it. 
+# When training is done, save to our Models directory.
 model = CTGAN(epochs=epochs, batch_size=batch_total)
 model.fit(table)
 model_save_path = model_dir + model_name

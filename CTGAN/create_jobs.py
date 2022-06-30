@@ -1,4 +1,5 @@
 import os
+
 def make_text(output, dataset, matches, decimate, size=None):
     script_path = r"/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/CTGAN_training.py"
     python_line = f"python3 \"{script_path}\" --dataset=\"{dataset}\" --matches={matches} --decimate={decimate}"

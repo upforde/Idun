@@ -43,7 +43,7 @@ dataset_name = hp.dataset.replace(os.sep, "_")
 # Real dataset directory
 datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets' + os.sep
 
-# What type of generator created our data
+# What type of generator created our data. Save it to corresponding directories.
 # CTGAN
 if hp.generator_type == 0:
     synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/CTGAN/'
@@ -57,6 +57,7 @@ elif hp.generator_type == 2:
 elif hp.generator_type == 3:
     synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/Augmentation/'
 
+# Method which reformats ditto text files to Dataframe objects for Magellan.
 def ditto_reformater(data):
     columns = []
     values = []
@@ -126,6 +127,7 @@ def ditto_reformater(data):
     table3["Truth"] = pd.to_numeric(table3["Truth"])
     return table1, table2, table3
 
+# Method which created ID for tables to be loaded into Magellan as Table_A and Table_B
 def create_index_as_id_for_dataframe (table):
     cols = table.columns.values.tolist()
     if 'ID' in cols:
@@ -137,6 +139,7 @@ def create_index_as_id_for_dataframe (table):
         # Move ID column to first position. 
         table = table[ ['ID'] + [ col for col in table.columns if col != 'ID' ] ]
         return table
+
 # 1. Take in the correct datasets depending on scenario, and if we are testing CTGAN or GPT-2 structured data.
 
 # Baseline
@@ -339,8 +342,7 @@ elif job_type == 9:
 
     training_data = pd.concat([match_synth_data, non_match_synth_data, match_real_table, non_match_real_table], ignore_index=True) 
 
-# 2. Add matching valid data for the scenario sent in by the arguments. Save cutoff index.
-
+# 2. Add matching valid data for the scenario sent in by the arguments. Save cutoff index for later.
 cutoff = len(training_data.index)
 
 valid_path = datasets_dir + "er_magellan" + os.sep + job_name + "valid.txt"
@@ -391,6 +393,8 @@ path_to_table_C += dataset_name + "_table_C.csv"
 table_C.to_csv(path_to_table_C, encoding="utf-8", index_label="_id")
 
 # 5. Take care of attribute correspondance in Magellan.
+
+# Determines attribute type priority for the SDV toolset.
 def check_priority(attribute):
     if attribute == "boolean":
         return 6
@@ -407,6 +411,7 @@ def check_priority(attribute):
     else:
         return 0
 
+# Converts priority to attribute type.
 def convert_from_p_to_attr(priority):
     if priority == 6:
         return "boolean"
@@ -423,6 +428,8 @@ def convert_from_p_to_attr(priority):
     else:
         return "str_eq_1w"
 
+# Check attribute correspondance for attributes in l_table and r_table. 
+# Technically not necessary for our pipeline, however still needs to be done for Magellan to function properly.
 def check_attr_corresp():
     A_attr_dict = em.get_attr_types(A_meta)
     B_attr_dict = em.get_attr_types(B_meta)
@@ -443,7 +450,6 @@ def check_attr_corresp():
     return A_attr_dict, B_attr_dict
     
 # str_eq_1w, str_bt_1w_5w, str_bt_5w_10w, str_gt_10w, boolean or numeric
-# Remember to update Magellan attributeutils...
 atypes1, atypes2 = check_attr_corresp()
 
 
@@ -462,9 +468,11 @@ C_meta = em.read_csv_metadata(path_to_table_C, key='_id',
                                     ltable=A_meta, rtable=B_meta)
 
 
+# Do cuttoff based on the validation data inserted into A_table and B_table.
 dataset_train = C_meta.iloc[:cutoff,:]
 dataset_test = C_meta.iloc[cutoff:,:]
-# Update catalog
+
+# Update catalog with our current dataset properties.
 em.catalog.catalog_manager.init_properties(dataset_train)
 em.catalog.catalog_manager.copy_properties(C_meta, dataset_train)
 
@@ -478,7 +486,7 @@ print(" ========= Validation =========")
 print("Number of matches: " + str(sum(dataset_test['Truth'] > 0)))
 print("Number of non-matches: " + str(sum(dataset_test['Truth'] < 1)))
 
-# 8. Set up necessary tables for Table C and load matchers. 
+# 8. Set up necessary tables for Table C and load matcher. 
 
 # Convert the labeled data to feature vectors using the feature table
 feature_vector_table_train = em.extract_feature_vecs(dataset_train, 
@@ -489,9 +497,10 @@ feature_vector_table_train = em.extract_feature_vecs(dataset_train,
 # Handle missing data. Inplace is required to keep correct object type, and maintaining "Meta-Data".
 feature_vector_table_train.fillna(value=0, inplace=True)
 
+# Instantiate our Random Forest classifier. 
 rf = em.RFMatcher()
 
-# Get the attributes to be projected while training
+# Get the attributes to be projected out while training
 attrs_to_be_excluded = []
 attrs_to_be_excluded.extend(['_id', 'ltable_ID', 'rtable_ID'])
 
@@ -583,8 +592,10 @@ for i in range(0, 8):
 
 
 
-# TODO: If the file bugs out from multiple processes, use a while_loop which checks for last time of modification to the result file.
-# If one of the baseline scenarios, create the baseline across every <data_scenario> data_set.
+# For baseline and 10% baseline, we set each scenario's result file to its value, as they will be the same for each one.
+# If a value already exists, then we do not.
+# For every other scenario, we simply load the file, check if it has a value, and if not we append the resulting F-1 score
+# to their correct cell placement.
 if job_type == 0:
     for i in range(0, 8):
         save_score_path = result_dir + dataset_scenario_path[i] + ".csv"

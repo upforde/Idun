@@ -62,7 +62,6 @@ names = []
 jobs_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/parse_jobs/'
 
 
-# TODO
 # NOTE: Change according to what format we wish for. True = Ditto
 data_format = False
 

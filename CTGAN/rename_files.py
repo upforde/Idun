@@ -67,4 +67,4 @@ elif val1 == "a":
                     os.remove(os.path.join(folder2, file))
 
 else:
-    print("Nothing happened. Bye.")
+    print("Nothing happened. Bye!")

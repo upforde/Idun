@@ -24,7 +24,7 @@ ditto_format = True
 # Model directory to be loaded from.
 model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
 
-# Dataset directory to be saved at.
+# Dataset directory to be loaded from and saved at.
 datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
 synth_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets_Synth/Magellan/'
 
@@ -65,6 +65,9 @@ if hp.decimate:
 model_name += ".pkl"
 synth_name += ".csv"
 
+# Method to ensure that each attribute is either different (for non-matched cases), or alike (for matched cases).
+# Uses the Levhenstein distance between each attribute, and adds it all together.
+# Adding it together gives lee-way for somewhat different attributes.
 def ensure_data(table, alike = True, threshold = 0.8 ):
     if table is None or len(table.index) == 0:
         return table
@@ -105,6 +108,7 @@ with open(datasets_dir, encoding="utf-8") as file:
     lines = file.readlines()
     for line in lines: train.append(line)
 
+# If decimated, we are makes 9 times the amount of data to fill up the dataset to its original size.
 if hp.decimate:
     amount = len(train) * 9
 else:
@@ -121,6 +125,7 @@ synth_save_path = synth_dir + synth_name
 
 count = 0
 
+# Function to generate data. (obsolete)
 def generate_data(matches, drop_dupes):
     if count < amount:
         generated_data = model.sample(num_rows=amount)
@@ -135,6 +140,8 @@ def generate_data(matches, drop_dupes):
         generated_data.to_csv(synth_save_path, mode='a', header=not os.path.exists(synth_save_path), encoding='utf-8', index=False)
         count += len(generated_data.index)
 
+# We generate data, and use the ensure_data method to toss away unsufficient data.
+# We generate until we have the desired amount of data.
 while count < amount:
     print("The amount needed to be generated is: " + str(amount - count))
     generated_data = model.sample(num_rows=amount, output_file_path='disable')

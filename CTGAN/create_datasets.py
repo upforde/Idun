@@ -1,8 +1,5 @@
 import os, random
 
-# NOTE: I removed the checking and deletion of data generation.
-# TODO: Might have to re-add it or delete generated data manually.
-
 er_magellan = [
     r"Dirty/DBLP-ACM",
     r"Dirty/DBLP-GoogleScholar",
