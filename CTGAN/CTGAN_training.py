@@ -1,26 +1,62 @@
+import argparse
 import pandas as pd
 import os
+from distutils import util
 from sdv.tabular import CTGAN
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
-# If the data is in DITTO format or not.
-ditto_format = False
+parser = argparse.ArgumentParser()
+parser.add_argument("--dataset", type=str, default="Structured/Beer")
+parser.add_argument('--matches', dest='matches', type=lambda x:bool(util.strtobool(x)))
+parser.add_argument("--decimate", dest='decimate', type=lambda x:bool(util.strtobool(x)))
+parser.add_argument("--size", type=str, default=None)
 
-# Data table directory and name.
-datasets_dir = r''
-name_of_table = "new_sample_set.csv"
+hp = parser.parse_args()
+
+# If the data is in DITTO format or not.
+ditto_format = True
+
+# Model directory to be saved at.
+model_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Models/'
+
+# Dataset directory.
+datasets_dir = r'/cluster/home/alekssim/Documents/IDUN/Idun/CTGAN/Datasets/'
+
+# Model name.
+job_name = hp.dataset + os.sep
+
+model_name = hp.dataset
+model_name = model_name.replace(os.sep, "_") 
+
+if os.sep in hp.dataset :
+    datasets_dir += "er_magellan" + os.sep + job_name + "train.txt"
+    model_dir += "er_magellan" + os.sep + job_name
+else:
+    model_name += "_" + hp.size
+    datasets_dir += "wdc" + os.sep + job_name + "train.txt." + hp.size
+    model_dir += "wdc" + os.sep + job_name + hp.size + os.sep
+
+if hp.matches:
+    datasets_dir += ".matches"
+    model_name += "_matches"
+else:
+    datasets_dir += ".non_matches"
+    model_name += "_non_matches"
+
+if hp.decimate:
+    datasets_dir += ".decimated"
+    model_name += "_decimated"
+
+model_name += ".pkl"
 
 # Model training parameters.
-epochs = 10
-batch_total = 20
-
-# Model directory and name to be saved. 
-model_dir = r''
-model_name = "testing_IDUN.pkl"
+# NOTE: This have been changed between some training examples...
+epochs = 2000
+batch_total = 1000
 
 # If the model should trained on "matched" or "non-matched" examples.
-train_on_matched = True
+train_on_matched = hp.matches
 
 def ditto_reformater(data):
     columns = []
@@ -31,15 +67,19 @@ def ditto_reformater(data):
     table1 = pd.DataFrame()
     table2 = pd.DataFrame()
     table3 = pd.DataFrame()
+    starting_row = True
 
     for line in data.splitlines():
         table_order = 0
         for side in line.split("\t"):
             for word in side.split(" "):
                 if word == "COL":
-                    if value_writer != "":
+                    if value_writer != "" and value_writer != " ":
                         values.append(value_writer)
-                        value_writer = ""
+                    elif not starting_row:
+                        values.append(float("NaN"))
+                    else:
+                        starting_row = False
                     read_column = True
                     read_values = False
                 elif word == "VAL":
@@ -58,6 +98,7 @@ def ditto_reformater(data):
                             value_writer += " " + word
             values.append(value_writer)
             value_writer = ""
+            starting_row = True
             res = dict(zip(columns, values))
             if sentence_order == 0:
                 if table_order == 0:
@@ -83,10 +124,11 @@ def ditto_reformater(data):
                     table_order = 0
                     values = []
     
+    table3["Truth"] = pd.to_numeric(table3["Truth"])
     return table1, table2, table3
 
 if ditto_format:
-    ditto_data_path = name_of_table
+    ditto_data_path = datasets_dir
     
     with open(ditto_data_path, 'r', encoding='utf-8') as file:
         data = file.read()
@@ -99,16 +141,20 @@ if ditto_format:
     table = pd.concat([table_A, table_B, truth_table], axis=1)
 
 else:
-    print("Please perform the Magellan Sampling pipeline before proceeding.") 
-    magellan_data_path = name_of_table
+    magellan_data_path = datasets_dir
     table = pd.read_csv(magellan_data_path)
 
-if train_on_matched:
-    table_for_training = table[table['Truth'] > 0]
-else:
-    table_for_training = table[table['Truth'] < 1]
+os.makedirs(model_dir, exist_ok=True)
 
-model = CTGAN(primary_key='_id', epochs=epochs, batch_size=batch_total)
-model.fit(table_for_training)
-model_save_path = model_name
+# CTGAN cannot train on tables smaller than 10.
+if len(table.index) < 10:
+    length_of_table = len(table.index)
+    amount_to_generate = 10 - length_of_table
+    table = table.append(table.tail(amount_to_generate+1), ignore_index=True)
+
+# Instantiate the model through the SDV library and train it. 
+# When training is done, save to our Models directory.
+model = CTGAN(epochs=epochs, batch_size=batch_total)
+model.fit(table)
+model_save_path = model_dir + model_name
 model.save(model_save_path)
