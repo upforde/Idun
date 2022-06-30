@@ -4,6 +4,7 @@
 
 Since this is meant to be ran on NTNU's IDUN GPU cluster, slurm jobs are created with helper Python files. However, if consider your own setup to be good enough, you can run the code directly without creating and running slurm jobs. (However, it is highly advised to use IDUN). 
 <br>
+<br>
 The files for reference are:
 <br>
 [create_jobs.py](./create_jobs.py)<br>
