@@ -23,7 +23,7 @@ For more on running these examples, see the section further below.
 
 ## CTGAN: Modeling Tabular data using Conditional GAN
 
-The Conditional Tabular Generative Adversarial Network (CTGAN), sees further development on the issues brought up in the Tabular Generative Adversarial Network (tableGAN) where a conditional vector is introduced to better model continuous data distributions and class imbalance on discrete columns of data. 
+The Conditional Tabular Generative Adversarial Network (CTGAN), sees further development on the issues brought up in the Tabular Generative Adversarial Network (tableGAN) where a conditional vector is introduced to better model continuous data distributions and resolve class imbalance on discrete columns of data. 
 
 The original paper on CTGAN can be found [here](https://arxiv.org/abs/1907.00503).
 
